@@ -1,0 +1,15 @@
+class precisas:
+
+1)Utilizadores ->ArrayList<Utilizador>
+2)Actividade
+3)Actividades ->ArrayList<Actividade>
+4)Estatística
+5)Estatisticas ->ArrayList<Estatistica>
+6)Cache
+7)Caches ->ArrayList<Cache>
+8)Amigo
+9)Amigos ->ArrayList<Amigo>
+10)Evento
+11)Eventos ->ArrayList<Evento>
+
+Em vez de ArrayList pode ser stack;queue;set;tree;etc....(só é uma ideia muito geral)
