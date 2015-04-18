@@ -28,7 +28,7 @@ public class Utilizadores {
   
   public Utilizadores(Utilizadores a) {
     this.nome_grupo = a.getNGrupo();
-    this.carros     = a.getUtilizadores();
+    this.users     = a.getUtilizadores();
     this.capacidade = a.getCapacidade();
   }
   
@@ -79,7 +79,7 @@ public class Utilizadores {
     * grupo que contem todos os utilizadores registados.
     */
     public boolean existeUtilizador(Utilizador urz) {
-     return carros.contains(urz);   
+     return users.contains(urz);   
     }
     
     
