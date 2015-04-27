@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.Iterator;
 
-public class Aplicação {
+public class Aplication {
 
     public TreeSet<User> all;/**Recebe todos os utilizadores até ao momento*/
    
