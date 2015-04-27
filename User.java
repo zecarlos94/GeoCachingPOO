@@ -1,5 +1,9 @@
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.ArrayList;
-
+import java.util.Map;
+import java.util.Iterator;
 /*
 Utilizadores
 Para cada utilizador guarda-se a seguinte informaçãoo pessoal:(setters allowed & getters allowed)
@@ -16,7 +20,7 @@ Além desta informação, que deve poder ser editada, o utilizador regista tamb�
 • E o conjunto dos utilizadores que pertencem á sua rede de amigos.
 */
 
-public class Utilizador
+public class User
 {
     /** Variáveis de instância*/
     private String email;/**email que permite fazer o login á sua conta de utilizador.*/
@@ -26,50 +30,54 @@ public class Utilizador
     private String address;/**Dá a informação relativa á morada de um utilizador.*/
     private String bth_date;/**Dá a informação sobre a data de aniversário de um utilizador.*/
 
-    public ArrayList<Actividades> actividades;/**As estatísticas dos seus registos nos diversos tipos de cache.*/
-    public ArrayList<Estatísticas> estatisticas;/**A informação das actividades que realizou.*/
- 	public ArrayList<Amigo> amigos;/**E o conjunto dos utilizadores que pertencem á sua rede de amigos.*/
+    public TreeSet<User> friends;/**E o conjunto dos utilizadores que pertencem á sua rede de amigos.*/
+    public TreeSet<Cache> stats;/**A informação das actividades que realizou.*/
+    public TreeSet<Activities> activities;/**As estatísticas dos seus registos nos diversos tipos de cache.*/
    
-
-    public static final int capacidade_inicial = 10000;/**Para ter espaço para muitos eventos e muitos amigos*/
     /**
      * Construtor para objetos da classe Utilizador
      */
-    public Utilizador()
+    public User()
     {
         /** inicializa as variáveis de instância*/
         this.email="something@example.com";
         this.password="N/A";
         this.name="N/A";
         this.gender="M/F";
-        this.address="Rua qualquer";
-        this.bth_date="31-03-3015";
-        this.actividades=new ArrayList<Actividades> (capacidade_inicial);
-        this.estatísticas=new ArrayList<Estatísticas> (capacidade_inicial);
-        this.amigos=new ArrayList<Amigo> (capacidade_inicial);
+        this.address="Address";
+        this.bth_date="00-00-0000";
+        this.friends=new TreeSet<User> ();
+        this.stats=new TreeSet<Cache> ();
+        this.activities=new TreeSet<Activities> ();
     }
     
-     public Utilizador(String mail,String pass,String nm,String gd,String adrs,String bydate,int capacidade_actividades,int capacidade_estatisticas,int capacidade_amigos)
+     public User(String mail,String pass,String nm,String gd,String adrs,String bydate)
     {
-    	this.email=mail;
+        this.email=mail;
         this.password=pass;
         this.name=nm;
         this.gender=gd;
         this.address=adrs;
         this.bth_date=bydate;
-        this.actividades=new ArrayList<Actividades> (capacidade_actividades);
-        this.estatísticas=new ArrayList<Estatísticas> (capacidade_estatisticas);
-        this.amigos=new ArrayList<Amigo> (capacidade_amigos);
+        this.friends=new TreeSet<User> ();
+        this.stats=new TreeSet<Cache> ();
+        this.activities=new TreeSet<Activities> ();
     }
     
-     public Utilizador(Utilizador user)
+     public User(User usr)
     {
-    	this.email=user.getEmail();
-        this.password=user.getPassword();
-        this.name=user.getUsername();
-        this.gender=user.getGender();
-        this.address=user.getAddress();
-        this.bth_date=user.getBthdate();
+        this.email=usr.getEmail();
+        this.password=usr.getPassword();
+        this.name=usr.getUsername();
+        this.gender=usr.getGender();
+        this.address=usr.getAddress();
+        this.bth_date=usr.getBthdate();
+        this.friends = new TreeSet<User>();
+        this.friends = (TreeSet)usr.friends.clone();  
+        this.stats= new TreeSet<Cache>();
+        this.stats = (TreeSet)usr.stats.clone();  
+        this.activities = new TreeSet<Activities>();
+        this.activities = (TreeSet)usr.activities.clone();  
     }
     
     /*Métodos de instância**/
@@ -118,23 +126,26 @@ public class Utilizador
      this.address=addrs;
     }
  
-	public void setBthdate(String bdt){
+    public void setBthdate(String bdt){
      this.bth_date=bdt;
     }
     
 
     /*Equals & toString and clone**/
     
-    public boolean equals(Utilizador usr){
-    	return(email==usr.getEmail() && password==usr.getPassword() && name==usr.getUsername() && gender==usr.getGender() && address==usr.getAddress() && bth_date==usr.getBthdate());
+    public boolean equals(Object obj){
+      if(this == obj) return true;  // é o próprio
+      if((obj == null) || (this.getClass() != obj.getClass())) return false;
+      User usr = (User) obj;
+      return(email==usr.getEmail() && password==usr.getPassword() && name==usr.getUsername() && gender==usr.getGender() && address==usr.getAddress() && bth_date==usr.getBthdate());
     }
    
     public String toString(){
      return new String("O Utilizador possuí as seguintes caracteristicas: \n" + "Email de login é: " +email+ ".\nA password é " +password+ ".\nO nome é " +name+ ".\nO género é " +gender+ ".\nA morada é " + address + ".\nE a sua da de nascimento é " +bth_date+".\n");
     }
     
-    public Utilizador clone(){
-      return new Utilizador(this);
+    public User clone(){
+      return new User(this);
     }
 
     /*
@@ -145,30 +156,30 @@ public class Utilizador
     public boolean compare(){
       return True;
     }
-	*/
+    */
 
-   public void mudaEmail(Utilizador u,String mls){
+   public void changeEmail(User u,String mls){
        u.setEmail(mls);
     }
 
-   public void mudaNome(Utilizador u,String str){
-       u.setNome(str);
+   public void changeName(User u,String str){
+       u.setName(str);
     }
     
-   public void mudaPassword(Utilizador u,String pssw){
+   public void changePassword(User u,String pssw){
        u.setPassword(pssw);
     }
 
-   public void mudaMorada(Utilizador u,String mrd){
+   public void changeAdress(User u,String mrd){
        u.setAddress(mrd);
     }
  
-   public void mudaDataN(Utilizador u,String date){
+   public void changeBthdate(User u,String date){
        u.setBthdate(date);
     }
 
 
-   public void mudaGenero(Utilizador u,String gnr){
+   public void changeGender(User u,String gnr){
        u.setGender(gnr);
     }
 

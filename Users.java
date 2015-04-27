@@ -1,6 +1,10 @@
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.ArrayList;
-
-public class Utilizadores {
+import java.util.Map;
+import java.util.Iterator;
+public class Users {
 
   /**Variáveis de instância*/
   private String nome_grupo;
