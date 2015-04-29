@@ -30,9 +30,7 @@ public class User
     private String address;/**Dá a informação relativa á morada de um utilizador.*/
     private String bth_date;/**Dá a informação sobre a data de aniversário de um utilizador.*/
 
-    public TreeSet<User> friends;/**E o conjunto dos utilizadores que pertencem á sua rede de amigos.*/
-    public TreeSet<Cache> stats;/**A informação das actividades que realizou.*/
-    public TreeSet<Activities> activities;/**As estatísticas dos seus registos nos diversos tipos de cache.*/
+    
    
     /**
      * Construtor para objetos da classe Utilizador
@@ -46,9 +44,6 @@ public class User
         this.gender="M/F";
         this.address="Address";
         this.bth_date="00-00-0000";
-        this.friends=new TreeSet<User> ();
-        this.stats=new TreeSet<Cache> ();
-        this.activities=new TreeSet<Activities> ();
     }
     
      public User(String mail,String pass,String nm,String gd,String adrs,String bydate)
@@ -59,9 +54,7 @@ public class User
         this.gender=gd;
         this.address=adrs;
         this.bth_date=bydate;
-        this.friends=new TreeSet<User> ();
-        this.stats=new TreeSet<Cache> ();
-        this.activities=new TreeSet<Activities> ();
+     
     }
     
      public User(User usr)
@@ -72,12 +65,6 @@ public class User
         this.gender=usr.getGender();
         this.address=usr.getAddress();
         this.bth_date=usr.getBthdate();
-        this.friends = new TreeSet<User>();
-        this.friends = (TreeSet)usr.friends.clone();  
-        this.stats= new TreeSet<Cache>();
-        this.stats = (TreeSet)usr.stats.clone();  
-        this.activities = new TreeSet<Activities>();
-        this.activities = (TreeSet)usr.activities.clone();  
     }
     
     /*Métodos de instância**/
@@ -86,7 +73,7 @@ public class User
      return email;
     }
     
-    public float getPassword(){
+    public String getPassword(){
      return password;
     }
     
@@ -94,15 +81,15 @@ public class User
      return name;
     }
     
-    public float getGender(){
+    public String getGender(){
      return gender;
     }
     
-    public float getAddress(){
+    public String getAddress(){
      return address;
     }
     
-    public float getBthdate(){
+    public String getBthdate(){
      return bth_date;
     }
     
@@ -157,7 +144,9 @@ public class User
       return True;
     }
     */
-
+   
+   /* Acho q isto é desnecessario os sets servem perfeitamente para depois editar a informaçao*/ 
+/*
    public void changeEmail(User u,String mls){
        u.setEmail(mls);
     }
@@ -182,5 +171,5 @@ public class User
    public void changeGender(User u,String gnr){
        u.setGender(gnr);
     }
-
+    */
 }

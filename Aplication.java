@@ -7,7 +7,7 @@ import java.util.Iterator;
 
 public class Aplication {
 
-    public TreeSet<User> all;/**Recebe todos os utilizadores até ao momento*/
+    public TreeSet<Profile> all;/**Recebe todos os utilizadores até ao momento*/
    
   
 
