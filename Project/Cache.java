@@ -1,5 +1,4 @@
-import java.util.TreeMap;
-import java.util.ArrayList;
+import java.util.*;
 
 public class Cache
 {
@@ -9,6 +8,7 @@ public class Cache
     private TreeMap<Date, String> register_book;
     private String writing_material;    //caneta ou lápis;
     private ArrayList<String> treasures;
+    private String coordenadas;
     
     /**
      * Construtores
@@ -17,12 +17,19 @@ public class Cache
         this.register_book=new TreeMap<Date, String>(new DateComparator());
         this.writing_material="N/A";
         this.treasures=new ArrayList<String>();
+        this.coordenadas="N/A";
     }
     
-    public Cache(String writing_material) {
-        this.register_book=new TreeMap<Date, String>(new DateComparator());
+    public Cache(TreeMap<Date, String> reg, String writing_material, ArrayList<String> t, String coordenadas) {
+        Set<Map.Entry<Date, String>> eset=reg.entrySet();
+        Iterator<Map.Entry<Date, String>> it=eset.iterator();
+        while(it.hasNext()) {
+            Map.Entry<Date, String> elem=it.next();
+            this.register_book.put(elem.getKey().clone(), elem.getValue());
+        }
         this.writing_material=writing_material;
-        this.treasures=new ArrayList<String>();
+        this.treasures.addAll(t);
+        this.coordenadas=coordenadas;
     }
     
     public Cache(Cache c) {

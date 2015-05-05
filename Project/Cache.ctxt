@@ -2,8 +2,8 @@
 comment0.params=
 comment0.target=Cache()
 comment0.text=\n\ Construtores\n
-comment1.params=writing_material
-comment1.target=Cache(java.lang.String)
+comment1.params=reg\ writing_material\ t\ coordenadas
+comment1.target=Cache(java.util.TreeMap,\ java.lang.String,\ java.util.ArrayList,\ java.lang.String)
 comment2.params=c
 comment2.target=Cache(Cache)
 comment3.params=
