@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Coordenadas()
+comment1.params=latitude\ longitude
+comment1.target=Coordenadas(java.lang.String,\ java.lang.String)
+comment2.params=c
+comment2.target=Coordenadas(Coordenadas)
+comment3.params=
+comment3.target=java.lang.String\ getLatitude()
+comment3.text=\n\ Getters\ e\ Setters\n
+comment4.params=
+comment4.target=java.lang.String\ getLongitude()
+comment5.params=latitude
+comment5.target=void\ setLatitude(java.lang.String)
+comment6.params=longitude
+comment6.target=void\ setLongitude(java.lang.String)
+comment7.params=obj
+comment7.target=boolean\ equals(java.lang.Object)
+comment7.text=\n\ M\u00E9todos\ auxiliares\n
+comment8.params=
+comment8.target=java.lang.String\ toString()
+comment9.params=
+comment9.target=Coordenadas\ clone()
+numComments=10
