@@ -11,7 +11,8 @@ public class Administrador
     
  public static void main (String[] args) {
     Scanner sc = new Scanner (System.in); 
-    Iterator<String> it = utilizadores.iterator();
+    Set<String> ks=utilizadores.keySet();
+    Iterator<String> it = ks.iterator();
     String elem;
     Utilizador user;
         do{
