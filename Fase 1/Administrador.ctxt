@@ -1,2 +1,16 @@
 #BlueJ class context
-numComments=0
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=utilizadores\ file
+comment1.target=void\ insertData(java.util.HashMap,\ java.io.File)
+comment1.text=\n\ Insere\ dados\ de\ um\ ficheiro\ de\ texto\ na\ lista\ de\ utilizadores\n
+comment2.params=utilizadores
+comment2.target=void\ login(java.util.HashMap)
+comment2.text=\n\ Acede\ \u00E0\ conta\ do\ utilizador\n
+comment3.params=utilizadores
+comment3.target=void\ signin(java.util.HashMap)
+comment3.text=\n\ Cria\ um\ novo\ utilizador\n
+comment4.params=utilizadores\ file
+comment4.target=void\ saveData(java.util.HashMap,\ java.io.File)
+comment4.text=\n\ Insere\ os\ dados\ da\ lista\ de\ utilizadores\ num\ ficheiro\ de\ texto\n
+numComments=5
