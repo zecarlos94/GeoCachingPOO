@@ -182,17 +182,22 @@ public class Utilizador
      * Coloca numa String todos os emails dos amigos do utilizador
      */
     public String printAmigos() {
-        String aux="";
+        String newString=new String();
+        String aux=new String();
         int i=0;
         Set<String> kset=this.amigos.keySet();
         Iterator<String> it=kset.iterator();
         while(it.hasNext()) {
             String email=it.next();
             if(i==0) {
-                aux=email;
+                aux=new String(newString+email);
+                newString=aux;
                 i++;
             }
-            else aux.concat(",".concat(email));
+            else {
+                aux=new String(newString+ "," +email);
+                newString=aux;
+            }
         }
         return aux;
     }

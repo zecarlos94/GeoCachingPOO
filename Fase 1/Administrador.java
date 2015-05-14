@@ -93,7 +93,6 @@ public class Administrador
                 }
             } while(cicle==1 && i<3);
             if(i==3) System.out.printf("\n\nEsgotou o limite de tentativas!\n\n");
-            System.out.printf("\n" +u.getAmigos().toString()+ "\n");
         }
         else System.out.printf("\nNão existe nenhum utilizador com o email dado!\n");
     }
@@ -227,11 +226,11 @@ public class Administrador
         Utilizador friend=new Utilizador();
         while(st.hasMoreElements()) {
             String amigo=st.nextElement().toString();
-            if(utilizadores.size()>0) {
+            if(utilizadores.containsKey(amigo)) {
                 friend=utilizadores.get(amigo).clone(); 
+                friendList.put(amigo, friend);
+                friend.getAmigos().put(u.getEmail(), u.clone());
             }
-            friendList.put(amigo, friend);
-            friend.getAmigos().put(u.getEmail(), u.clone());
         }
     }
 }
