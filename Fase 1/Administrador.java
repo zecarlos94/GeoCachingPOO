@@ -191,7 +191,7 @@ public class Administrador
         int optn;
         String email;
         do {
-            System.out.printf("\nOpções de Conta:\n   1-Informações\n   2-Adicionar Amigo\n   3-Sair\n");
+            System.out.printf("\nOpções de Conta:\n   1-Informações\n   2-Adicionar Amigo\n   3-Remover Amigo\n   4-Sair\n");
             optn=sc.nextInt();
             if(optn==1) {
                 System.out.printf("\nInformação do Utilizador:\n");
@@ -204,7 +204,7 @@ public class Administrador
                 System.out.println("   Emails dos amigos: " +u.printAmigos());
             }
             else if(optn==2) {
-                System.out.printf("\nInsira o email do seu amigo: "); email=sc.next();
+                System.out.printf("\nInsira o email do amigo que deseja adicionar: "); email=sc.next();
                 if(u.getAmigos().containsKey(email)) System.out.printf("\nVoçê já adicionou este amigo!\n");
                 else if(utilizadores.containsKey(email)) {
                     Utilizador friend=utilizadores.get(email).clone();
@@ -214,8 +214,18 @@ public class Administrador
                 }
                 else System.out.printf("\nNão existe nenhum utilizador registado com esse email!\n");
             }
-            else if(optn!=1 && optn!=2 && optn!=3) System.out.printf("\nInsira uma opção válida!\n");
-        } while(optn!=3);
+            else if(optn==3) {
+                System.out.printf("\nInsira o email do amigo que deseja remover: "); email=sc.next();
+                if(!u.getAmigos().containsKey(email)) System.out.printf("\nNão existe nenhum amigo com este email, por isso não é possível remover!\n");
+                else {
+                    Utilizador friend=utilizadores.get(email).clone();
+                    u.getAmigos().remove(email);
+                    friend.getAmigos().remove(u.getEmail());
+                    System.out.printf("\nAmigo removido!\n");
+                }
+            }
+            else if(optn!=1 && optn!=2 && optn!=3 && optn!=4) System.out.printf("\nInsira uma opção válida!\n");
+        } while(optn!=4);
     }
     
     /**
