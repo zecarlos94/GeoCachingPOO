@@ -12,9 +12,7 @@ public class Administrador
     //private HashMap<String, Cache> caches;
     
     public static void main(String args[]) {
-        File file=new File("/home/tiago/Desktop/data.txt");
         HashMap<String, Utilizador> utilizadores=new HashMap<String, Utilizador>();
-        insertData(utilizadores, file);
         Scanner sc=new Scanner(System.in); 
         int opção=0;
         System.out.printf("Bem-vindo à aplicação de GeoCaching!\n");
@@ -30,45 +28,6 @@ public class Administrador
             else System.out.printf("Introduza uma opção válida!\n\n");
         } while(opção!=1);
         System.out.printf("\nVoçê saiu da aplicação! Adeus!\n");
-        file.delete(); // se não eliminar ficheiro antes de gravar os dados, estes vão ficar guardados por cima
-        saveData(utilizadores, file);
-    }
-    
-    /**
-     * Insere dados de um ficheiro de texto na lista de utilizadores
-     */
-    public static void insertData(HashMap<String, Utilizador> utilizadores, File file) {
-        BufferedReader br=null;
-        HashMap<String, Utilizador> friendList=new HashMap<String, Utilizador>();
-        Data newData=new Data();
-        try {
-            String line;
-            br=new BufferedReader(new FileReader(file));
-            while((line=br.readLine())!=null) {
-                Utilizador u=new Utilizador();
-                StringTokenizer st=new StringTokenizer(line, " ");
-                while(st.hasMoreElements()) {
-                    String email=st.nextElement().toString(); u.setEmail(email);
-                    String password=st.nextElement().toString(); u.setPassword(password); 
-                    String nome=st.nextElement().toString(); u.setNome(nome);
-                    String genero=st.nextElement().toString(); u.setGenero(genero.charAt(0));
-                    String morada=st.nextElement().toString(); u.setMorada(morada); 
-                    String data=st.nextElement().toString(); createData(data, newData); u.setDataNascimento(newData); 
-                    if(st.hasMoreElements()) {
-                        String amigos=st.nextElement().toString(); createFriendList(u, amigos, utilizadores, friendList); u.setAmigos(friendList);
-                    }
-                }
-                utilizadores.put(u.getEmail(), u.clone());
-            }
-        } catch(IOException e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                if(br!=null) br.close();
-            } catch(IOException ex) {
-                ex.printStackTrace();
-            }
-        }
     }
     
     /**
@@ -137,26 +96,6 @@ public class Administrador
         System.out.printf("\nConta criada com sucesso!\n");
     }
     
-    /**
-     * Insere os dados da lista de utilizadores num ficheiro de texto
-     */
-    public static void saveData(HashMap<String, Utilizador> utilizadores, File file) {
-        try {
-             FileWriter writer=new FileWriter(file, true);
-             BufferedWriter bw=new BufferedWriter(writer);
-             Collection<Utilizador> col=utilizadores.values();
-             Iterator<Utilizador> it=col.iterator();
-             while(it.hasNext()) {
-                 Utilizador u=it.next();
-                 bw.write(u.toString());
-                 if(it.hasNext()) bw.newLine();
-             }
-             bw.close();
-        } catch(IOException e) {
-            e.printStackTrace();
-        }
-    }
-    
      /**
      * Valida uma data
      */
@@ -172,18 +111,6 @@ public class Administrador
     }     
     
     /**
-     * Pega numa string referenta a uma data e cria um novo objeto da classe Data com esses dados
-     */
-    public static void createData(String data, Data newData) {
-        StringTokenizer st=new StringTokenizer(data, "/");
-        while(st.hasMoreElements()) {
-            Integer dia=Integer.parseInt(st.nextElement().toString()); newData.setDay(dia);
-            Integer mes=Integer.parseInt(st.nextElement().toString()); newData.setMonth(mes);
-            Integer ano=Integer.parseInt(st.nextElement().toString()); newData.setYear(ano);
-        }
-    }
-    
-    /**
      * Mexer na conta do utilizador
      */
     public static void user(Utilizador u, HashMap<String, Utilizador> utilizadores) {
@@ -191,21 +118,13 @@ public class Administrador
         int optn;
         String email;
         do {
-            System.out.printf("\nOpções de Conta:\n   1-Informações\n   2-Adicionar Amigo\n   3-Remover Amigo\n   4-Sair\n");
+            System.out.printf("\nOpções de Conta:\n   1-Informações\n   2-Adicionar Amigo\n   3-Remover Amigo\n   4-Informação dos amigos\n   5-Sair\n");
             optn=sc.nextInt();
-            if(optn==1) {
-                System.out.printf("\nInformação do Utilizador:\n");
-                System.out.println("   Email: " +u.getEmail());
-                System.out.println("   Password: " +u.getPassword());
-                System.out.println("   Nome: " +u.getNome());
-                System.out.println("   Género: " +u.getGenero());
-                System.out.println("   Morada: " +u.getMorada());
-                System.out.println("   Data de Nascimento: " +u.getDataNascimento().toString());
-                System.out.println("   Emails dos amigos: " +u.printAmigos());
-            }
+            if(optn==1) infoUser(u);
             else if(optn==2) {
                 System.out.printf("\nInsira o email do amigo que deseja adicionar: "); email=sc.next();
-                if(u.getAmigos().containsKey(email)) System.out.printf("\nVoçê já adicionou este amigo!\n");
+                if(u.getAmigos().containsKey(email)) System.out.printf("\nVocê já adicionou este amigo!\n");
+                else if(u.getEmail().equals(email)) System.out.printf("\nVocê não se pode adicionar como amigo!\n");
                 else if(utilizadores.containsKey(email)) {
                     Utilizador friend=utilizadores.get(email).clone();
                     u.getAmigos().put(email, friend);
@@ -224,23 +143,26 @@ public class Administrador
                     System.out.printf("\nAmigo removido!\n");
                 }
             }
-            else if(optn!=1 && optn!=2 && optn!=3 && optn!=4) System.out.printf("\nInsira uma opção válida!\n");
-        } while(optn!=4);
+            else if(optn==4) {
+                System.out.printf("\nInsira o email do amigo cuja informação deseja ver: "); email=sc.next();
+                if(!u.getAmigos().containsKey(email)) System.out.printf("\nNão existe nenhum amigo com este email!\n");
+                else {
+                    Utilizador friend=utilizadores.get(email).clone();
+                    infoUser(friend);
+                }
+            }
+            else if(optn>5 || optn<1) System.out.printf("\nInsira uma opção válida!\n");
+        } while(optn!=5);
     }
     
-    /**
-     * Pega na string com os emails dos amigos, procura os respetivos utilizadores e coloca-os na HashMap dos amigos
-     */
-    public static void createFriendList(Utilizador u, String amigos, HashMap<String, Utilizador> utilizadores, HashMap<String, Utilizador> friendList) {
-        StringTokenizer st=new StringTokenizer(amigos, ",");
-        Utilizador friend=new Utilizador();
-        while(st.hasMoreElements()) {
-            String amigo=st.nextElement().toString();
-            if(utilizadores.containsKey(amigo)) {
-                friend=utilizadores.get(amigo).clone(); 
-                friendList.put(amigo, friend);
-                friend.getAmigos().put(u.getEmail(), u.clone());
-            }
-        }
+    public static void infoUser(Utilizador u) {
+        System.out.printf("\nInformação do Utilizador:\n");
+        System.out.println("   Email: " +u.getEmail());
+        System.out.println("   Password: " +u.getPassword());
+        System.out.println("   Nome: " +u.getNome());
+        System.out.println("   Género: " +u.getGenero());
+        System.out.println("   Morada: " +u.getMorada());
+        System.out.println("   Data de Nascimento: " +u.getDataNascimento().toString());
+        System.out.println("   Amigos: " +u.getAmigos().toString());
     }
 }

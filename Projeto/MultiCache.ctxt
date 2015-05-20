@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MultiCache()
+comment1.params=livro_registos\ data\ hora\ coordenadas\ checkpoints\ geocoins
+comment1.target=MultiCache(java.util.HashMap,\ Data,\ Hora,\ Coordenadas,\ java.util.ArrayList,\ int)
+comment10.params=obj
+comment10.target=boolean\ equals(java.lang.Object)
+comment2.params=c
+comment2.target=MultiCache(MultiCache)
+comment3.params=
+comment3.target=int\ getGeocoins()
+comment4.params=
+comment4.target=java.util.ArrayList\ getCheckpoints()
+comment5.params=coins
+comment5.target=void\ setGeocoins(int)
+comment6.params=pontos
+comment6.target=void\ setCheckpoints(java.util.ArrayList)
+comment7.params=c
+comment7.target=Coordenadas\ nextPoint(Coordenadas)
+comment7.text=\n\ Devolve\ as\ coordenadas\ do\ pr\u00F3ximo\ checkpoint,\ se\ existir\n
+comment8.params=c
+comment8.target=boolean\ checkMC(Coordenadas)
+comment8.text=\n\ Verifica\ se\ as\ coordenadas\ dadas\ s\u00E3o\ as\ da\ cache\ final\n
+comment9.params=
+comment9.target=MultiCache\ clone()
+numComments=11
