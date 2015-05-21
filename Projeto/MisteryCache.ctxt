@@ -1,2 +1,12 @@
 #BlueJ class context
-numComments=0
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=
+comment1.target=void\ geraPergunta()
+comment2.params=op\u00E7\u00E3o
+comment2.target=void\ perguntas(int)
+comment3.params=pergunta
+comment3.target=java.lang.String\ respostas(int)
+comment4.params=
+comment4.target=void\ problema()
+numComments=5
