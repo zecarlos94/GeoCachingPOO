@@ -1,0 +1,24 @@
+
+
+	Tarefas a Realizar
+
+-Apresentar opções extras para administradores
+	- Pedir lista para ver cache report
+		(toString (HashMap<Coordenadas,String>)
+			com as coordenadas e o texto de report
+	- Opção para remover Cache ( inserir coordenadas)
+	- Opção criar evento (inserir Data de termino de inscrições)
+
+-Adicionar as seguintes opçoes ao utilizador
+	- Add opção report cache (inserir coordenadas e string(texto do report))
+	- Opçao para apresentar caches do utilizador
+	- Add cache (c
+	- Remover cache (da lista de caches do utilizador)
+	
+-Coordenadas
+	-Calcular a distancia entre 2 coordenadas
+	-I/O Transformar String no formato coordenadas
+
+-Gerar estado atmosférico conforme a data ( Sol Chuva nublado ...)
+
+- 
