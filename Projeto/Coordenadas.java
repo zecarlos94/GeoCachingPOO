@@ -3,7 +3,7 @@ public class Coordenadas
     /**
      * Variáveis de Instância
      */
-    private String latitude;
+    private String latitude; // mudar para double ( Parte inteira graus ,  resto minutos decimais)
     private String longitude;
     
     public Coordenadas() {
@@ -64,4 +64,6 @@ public class Coordenadas
     public Coordenadas clone(){
       return new Coordenadas(this);
     }
+    
+    //fazer funçao de hash
 }
