@@ -5,39 +5,60 @@ public class Cache
     /**
      * Variáveis de Instância
      */
-    protected HashMap<String, Data> livro_registos;
-    protected Data_Hora timeline;
+    /*protected HashMap<String, Data> livro_registos;*/
+    protected HashMap<String, Timeline> livro_registos;
+    protected Timeline timeline;
     protected Coordenadas coordenadas;
     
     /**
      * Construtores
      */
+    /*
     public Cache() {
         this.livro_registos=new HashMap<String, Data>();
-        this.timeline=new Data_Hora();
+        this.timeline=new Timeline();
+        this.coordenadas=new Coordenadas();
+    }
+    */
+   
+    public Cache() {
+        this.livro_registos=new HashMap<String, Timeline>();
+        this.timeline=new Timeline();
         this.coordenadas=new Coordenadas();
     }
     
-    public Cache(HashMap<String, Data> livro_registos, Data data, Hora hora, Coordenadas coordenadas) {
-        this.livro_registos=new HashMap<String, Data>(livro_registos);
-        this.timeline=new Data_Hora();
+    public Cache(HashMap<String, Timeline> livro_registos, Timeline t, Coordenadas coordenadas) {
+        this.livro_registos=new HashMap<String, Timeline>(livro_registos);
+        this.timeline=new Timeline(t);
         this.coordenadas=new Coordenadas(coordenadas);
     }
-    
+    /*
+    public Cache(HashMap<String, Data> livro_registos, Data data, Hora hora, Coordenadas coordenadas) {
+        this.livro_registos=new HashMap<String, Data>(livro_registos);
+        this.timeline=new Timeline();
+        this.coordenadas=new Coordenadas(coordenadas);
+    }
+    */
     public Cache(Cache c) {
         this.livro_registos=c.getLivroRegistos();
-        this.timeline=getData_Hora();
+        this.timeline=getTimeline();
         this.coordenadas=c.getCoordenadas();
     }
     
     /**
      * Getters
      */
+    /*
     public HashMap<String, Data> getLivroRegistos() {
         return this.livro_registos;
     }
+    */
+   
+    public HashMap<String, Timeline> getLivroRegistos() {
+        return this.livro_registos;
+    }
     
-    public Data_Hora getData_Hora() {
+    public Timeline getTimeline() {
         return this.timeline;
     }
     
@@ -48,6 +69,7 @@ public class Cache
     /**
      * Setters
      */
+    /*
     public void setLivroRegistos(HashMap<String, Data> livro_registos) {
         HashMap<String, Data> aux=new HashMap<String, Data>();
         Set<Map.Entry<String, Data>> eset=livro_registos.entrySet();
@@ -58,7 +80,19 @@ public class Cache
         }
         this.livro_registos=aux;
     }
+    */
     
+    public void setLivroRegistos(HashMap<String, Timeline> livro_registos) {
+        HashMap<String, Timeline> aux=new HashMap<String, Timeline>();
+        Set<Map.Entry<String, Timeline>> eset=livro_registos.entrySet();
+        Iterator<Map.Entry<String, Timeline>> it=eset.iterator();
+        while(it.hasNext()) {
+            Map.Entry<String, Timeline> elem=it.next();
+            aux.put(elem.getKey(), elem.getValue().clone());
+        }
+        this.livro_registos=aux;
+    }
+   
     public void setCoordenadas(Coordenadas coordenadas) {
         this.coordenadas=new Coordenadas(coordenadas);
     }
@@ -77,6 +111,6 @@ public class Cache
       if(this == obj) return true;  // é o próprio
       if((obj == null) || (this.getClass() != obj.getClass())) return false;
       Cache c = (Cache) obj;
-      return(this.livro_registos.equals(c.getLivroRegistos()) && this.timeline.equals(c.getData_Hora()) && this.coordenadas.equals(c.getCoordenadas()));
+      return(this.livro_registos.equals(c.getLivroRegistos()) && this.timeline.equals(c.getTimeline()) && this.coordenadas.equals(c.getCoordenadas()));
     }
 }
