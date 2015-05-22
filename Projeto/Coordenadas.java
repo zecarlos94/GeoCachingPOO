@@ -41,6 +41,13 @@ public class Coordenadas
     }
     
     /**
+     *  Fazer funçao de scan de coordenadas???
+     */
+    
+  
+    
+    
+    /**
      * Métodos auxiliares
      */
     public boolean equals(Object obj){

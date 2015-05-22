@@ -27,7 +27,9 @@ public class Data
         this.month=d.getMonth();
         this.year=d.getYear();
     }
-    
+   
+  
+   
     /**
      * Getters
      */
@@ -63,10 +65,22 @@ public class Data
     public void setYear(int year) {
         this.year=year;
     }
+  
+      /**
+     * Cria uma Data com as horas do sistema
+     */
+    
+    public Data systemData()
+    {
+        //return this; //funçao a implementar
+        return new Data();
+    }
+    
     
     /**
      * Equals
      */
+    
     public boolean equals(Data d) {
         if(this.day==d.getDay() && this.month==d.getMonth() && this.year==d.getYear()) return true;
         else return false;

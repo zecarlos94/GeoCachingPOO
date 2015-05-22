@@ -11,8 +11,19 @@ public class Administrador
 {
     //private HashMap<String, Cache> caches;
     
+    
     public static void main(String args[]) {
+        // Criaçao das estruturas principais
         HashMap<String, Utilizador> utilizadores=new HashMap<String, Utilizador>();
+        
+        
+        Caches caches = new Caches();
+        
+        CacheReports reports = new CacheReports();
+        
+      
+        
+        
         Scanner sc=new Scanner(System.in); 
         int opção=0;
         out.printf("Bem-vindo à aplicação de GeoCaching!\n");
@@ -23,7 +34,7 @@ public class Administrador
                 out.printf("\nTem a certeza que deseja sair?\n   1-Sim\n   2-Não\n\n");
                 opção=sc.nextInt();
             }
-            else if(opção==2) login(utilizadores);
+            else if(opção==2) login(utilizadores,caches,reports);
             else if(opção==3) signin(utilizadores);
             else out.printf("Introduza uma opção válida!\n\n");
         } while(opção!=1);
@@ -33,7 +44,7 @@ public class Administrador
     /**
      * Acede à conta do utilizador
      */
-    public static void login(HashMap<String, Utilizador> utilizadores) {
+    public static void login(HashMap<String, Utilizador> utilizadores, Caches caches,CacheReports reports) {
         Scanner sc=new Scanner(System.in); 
         Utilizador u;
         String dados;
@@ -45,7 +56,7 @@ public class Administrador
             do {
                 out.printf("Introduza a password: ");
                 dados=sc.next();
-                if(u.getPassword().equals(dados)) user(u, utilizadores);
+                if(u.getPassword().equals(dados)) user(u, utilizadores,caches,reports);
                 else {
                     out.printf("\nPassword Incorreta!\n");
                     cicle=1; i++;
@@ -113,12 +124,13 @@ public class Administrador
     /**
      * Mexer na conta do utilizador
      */
-    public static void user(Utilizador u, HashMap<String, Utilizador> utilizadores) {
+    public static void user(Utilizador u, HashMap<String, Utilizador> utilizadores, Caches caches,CacheReports reports) {
         Scanner sc=new Scanner(System.in); 
         int optn;
         String email;
+       
         do {
-            out.printf("\nOpções de Conta:\n   1-Informações\n   2-Adicionar Amigo\n   3-Remover Amigo\n   4-Informação dos amigos\n   5-Sair\n");
+            out.printf("\nOpções de Conta:\n   1-Informações\n   2-Adicionar Amigo\n   3-Remover Amigo\n   4-Informação dos amigos\n   5-Reportar Cache 6-Sair\n");
             optn=sc.nextInt();
             if(optn==1) infoUser(u);
             else if(optn==2) {
@@ -151,8 +163,23 @@ public class Administrador
                     infoUser(friend);
                 }
             }
-            else if(optn>5 || optn<1) System.out.printf("\nInsira uma opção válida!\n");
-        } while(optn!=5);
+            // nao funcional, faltam funçoes e situaçoes de erro
+            else if(optn==5) {
+                Coordenadas coordenadas;
+                out.printf("\nInsira a latitude e a longitude da cache que deseja reportar:"); coordenadas = new Coordenadas(sc.next(),sc.next()); // Nao deve funcionar direito
+                if(!caches.existe(coordenadas)) out.printf("\n Não existe nenhuma cache com essas coordenadas!\n");
+                else{
+                    String texto;
+                    Data data = new Data(); // 2 linhas a alterar, systemData nao está implementada ainda
+                    data = data.systemData();
+                    out.printf("\nDescreva a razão do seu report numa linha\n"); texto = sc.next(); 
+                    reports.addReport(coordenadas,texto,data);
+                    out.printf("\nReport adicionado com sucesso\n");
+                }
+                       
+            }
+            else if(optn>6 || optn<1) System.out.printf("\nInsira uma opção válida!\n");
+        } while(optn!=6);
     }
     
     public static void infoUser(Utilizador u) {
