@@ -6,8 +6,7 @@ public class Cache
      * Variáveis de Instância
      */
     protected HashMap<String, Data> livro_registos;
-    protected Data data;
-    protected Hora hora;
+    protected Data_Hora timeline;
     protected Coordenadas coordenadas;
     
     /**
@@ -15,22 +14,19 @@ public class Cache
      */
     public Cache() {
         this.livro_registos=new HashMap<String, Data>();
-        this.data=new Data();
-        this.hora=new Hora();
+        this.timeline=new Data_Hora();
         this.coordenadas=new Coordenadas();
     }
     
     public Cache(HashMap<String, Data> livro_registos, Data data, Hora hora, Coordenadas coordenadas) {
         this.livro_registos=new HashMap<String, Data>(livro_registos);
-        this.data=new Data(data);
-        this.hora=new Hora(hora);
+        this.timeline=new Data_Hora();
         this.coordenadas=new Coordenadas(coordenadas);
     }
     
     public Cache(Cache c) {
         this.livro_registos=c.getLivroRegistos();
-        this.data=c.getData();
-        this.hora=c.getHora();
+        this.timeline=getData_Hora();
         this.coordenadas=c.getCoordenadas();
     }
     
@@ -41,12 +37,8 @@ public class Cache
         return this.livro_registos;
     }
     
-    public Data getData() {
-        return this.data;
-    }
-    
-    public Hora getHora() {
-        return this.hora;
+    public Data_Hora getData_Hora() {
+        return this.timeline;
     }
     
     public Coordenadas getCoordenadas() {
@@ -67,14 +59,6 @@ public class Cache
         this.livro_registos=aux;
     }
     
-    public void setData(Data data) {
-        this.data=new Data(data);
-    }
-    
-    public void setHora(Hora hora) {
-        this.hora=new Hora(hora);
-    }
-    
     public void setCoordenadas(Coordenadas coordenadas) {
         this.coordenadas=new Coordenadas(coordenadas);
     }
@@ -93,6 +77,6 @@ public class Cache
       if(this == obj) return true;  // é o próprio
       if((obj == null) || (this.getClass() != obj.getClass())) return false;
       Cache c = (Cache) obj;
-      return(this.livro_registos.equals(c.getLivroRegistos()) && this.data.equals(c.getData()) && this.hora.equals(c.getHora()) && this.coordenadas.equals(c.getCoordenadas()));
+      return(this.livro_registos.equals(c.getLivroRegistos()) && this.timeline.equals(c.getData_Hora()) && this.coordenadas.equals(c.getCoordenadas()));
     }
 }

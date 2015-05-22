@@ -9,7 +9,7 @@ public class DataComparator implements Comparator<Data>, Serializable
     /**
      * Compara duas datas
      */
-    public int compare(Data d1, Data d2) {
+    public int compare(Timeline d1, Timeline d2) {
         if(d1.getYear()>d2.getYear()) return -1;
         if(d1.getYear()<d2.getYear()) return 1;
         if(d1.getYear()==d2.getYear() && d1.getMonth()>d2.getMonth()) return -1;
