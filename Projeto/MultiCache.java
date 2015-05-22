@@ -11,8 +11,8 @@ public class MultiCache extends Cache
            geocoins=0;
     }
     
-    public MultiCache(HashMap<String,Timeline> livro_registos, Timeline timeline, Hora hora, Coordenadas coordenadas, ArrayList<Coordenadas> checkpoints, int geocoins) {
-            super(livro_registos,timeline,hora,coordenadas);
+    public MultiCache(HashMap<String,Timeline> livro_registos, Timeline timeline, Coordenadas coordenadas, ArrayList<Coordenadas> checkpoints, int geocoins) {
+            super(livro_registos,timeline,coordenadas);
             setCheckpoints(checkpoints);
             this.geocoins=geocoins;
     }
@@ -72,7 +72,7 @@ public class MultiCache extends Cache
       if(this == obj) return true;  // é o próprio
       if((obj == null) || (this.getClass() != obj.getClass())) return false;
       MultiCache c = (MultiCache) obj;
-      if(this.livro_registos.equals(c.getLivroRegistos()) && this.data.equals(c.getData()) && this.hora.equals(c.getHora()) && this.coordenadas.equals(c.getCoordenadas()) && this.geocoins == c.getGeocoins() && this.checkpoints.equals(c.getCheckpoints())) return true;   
+      if( super.equals(obj)  && this.geocoins == c.getGeocoins() && this.checkpoints.equals(c.getCheckpoints())) return true;   
       else return false;
     }
     

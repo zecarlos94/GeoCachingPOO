@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.params=
 comment0.target=MultiCache()
-comment1.params=livro_registos\ data\ hora\ coordenadas\ checkpoints\ geocoins
-comment1.target=MultiCache(java.util.HashMap,\ Data,\ Hora,\ Coordenadas,\ java.util.ArrayList,\ int)
+comment1.params=livro_registos\ timeline\ coordenadas\ checkpoints\ geocoins
+comment1.target=MultiCache(java.util.HashMap,\ Timeline,\ Coordenadas,\ java.util.ArrayList,\ int)
 comment10.params=obj
 comment10.target=boolean\ equals(java.lang.Object)
 comment2.params=c

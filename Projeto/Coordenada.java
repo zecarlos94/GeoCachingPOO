@@ -52,6 +52,35 @@ public class Coordenada
        graus = graus;   
     }
     
-    // por acabar
+    public void setMinutos()
+    {
+        minutos = minutos;
+    }
+    
+    public void setSegundos()
+    {
+        segundos = segundos;
+    }
+    
+    public Coordenada clone()
+    {
+        return new Coordenada(this);
+    }
+    
+    public String toString()
+    {
+        return new String( graus + ":" + minutos + ":" + segundos);
+    }
+    
+    public boolean equals(Object obj)
+    {
+       if(this == obj) return true;  // é o próprio
+       if((obj == null) || (this.getClass() != obj.getClass())) return false;
+       Coordenada c = (Coordenada) obj;
+      return(this.graus == c.getGraus() && this.minutos == c.getMinutos() && this.segundos == c.getSegundos());
+        
+    }
+    
+    
   
 }

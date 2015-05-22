@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Actividade()
+comment1.params=nome
+comment1.target=Actividade(java.lang.String)
+comment1.text=\n\ \ Cria\ uma\ actividade\ com\ o\ nome\ do\ individuo\ que\ gerou\ a\ actividade\ com\ as\ horas\ do\ sistema\ \n
+comment2.params=time\ nome
+comment2.target=Actividade(Timeline,\ java.lang.String)
+comment3.params=a
+comment3.target=Actividade(Actividade)
+comment4.params=
+comment4.target=Timeline\ getTime()
+comment5.params=
+comment5.target=java.lang.String\ getNome()
+comment6.params=t
+comment6.target=void\ setTime(Timeline)
+comment7.params=nome
+comment7.target=void\ setNome(java.lang.String)
+comment8.params=
+comment8.target=java.lang.String\ toString()
+comment9.params=obj
+comment9.target=boolean\ equals(java.lang.Object)
+numComments=10

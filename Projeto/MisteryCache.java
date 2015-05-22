@@ -1,5 +1,6 @@
 
 import java.util.*;
+//import java.lang.*;
 
 public class MisteryCache extends Cache
 {
@@ -12,15 +13,15 @@ public class MisteryCache extends Cache
            geocoins=0;
     }
     
-    public MisteryCache(HashMap<String,Timeline> livro_registos, Timeline timeline, Hora hora, Coordenadas coordenadas, ArrayList<ArrayList<String>> perguntasRespostas, int geocoins) {
-            super(livro_registos,timeline,hora,coordenadas);
-            setCheckpoints(perguntasRespostas);
+    public MisteryCache(HashMap<String,Timeline> livro_registos, Timeline timeline, Coordenadas coordenadas, ArrayList<ArrayList<String>> perguntasRespostas, int geocoins) {
+            super(livro_registos,timeline,coordenadas);
+            setPerguntasRespostas(perguntasRespostas);
             this.geocoins=geocoins;
     }
     
-    public MisteryCache(MultiCache c){
+    public MisteryCache(MisteryCache c){
             super(c);
-            checkpoints=c.getCheckpoints();
+            perguntasRespostas =c.getPerguntasRespostas();
             geocoins=c.getGeocoins();
     }
     
@@ -40,10 +41,12 @@ public class MisteryCache extends Cache
     
     public void setPerguntasRespostas(ArrayList<ArrayList<String>> perguntasRespostas){
         this.perguntasRespostas = new ArrayList<ArrayList<String>>();
-        for(ArrayList<String> par : perguntasRespostas)
+        for(ArrayList<String> par : perguntasRespostas){
+            par = new ArrayList<String>(2);
             for(String s : par)
-                this.perguntasRespostas.add(s);
-           
+                par.add(s);
+            this.perguntasRespostas.add(par);
+        }
     }
     
     public MisteryCache clone() {
@@ -54,7 +57,7 @@ public class MisteryCache extends Cache
       if(this == obj) return true;  // é o próprio
       if((obj == null) || (this.getClass() != obj.getClass())) return false;
       MisteryCache c = (MisteryCache) obj;
-      if(this.livro_registos.equals(c.getLivroRegistos()) && this.data.equals(c.getData()) && this.hora.equals(c.getHora()) && this.coordenadas.equals(c.getCoordenadas()) && this.geocoins == c.getGeocoins() && this.checkpoints.equals(c.getCheckpoints())) return true;   
+      if( super.equals(obj) && this.geocoins == c.getGeocoins() && this.perguntasRespostas.equals(c.getPerguntasRespostas())) return true;   
       else return false;
     }
 }

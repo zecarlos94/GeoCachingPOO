@@ -53,6 +53,29 @@ public class Timeline
        this.month=t.getMonth();
        this.year=t.getYear();
    }
+   /**
+    *  Construtor específico para Datas de nascimento, variáveis hora minuto e segundo são ignoradas e deixadas a -1 com o propósito de distinguir tempos de datas
+    */
+   public Timeline(int day, int month,int year)
+   {
+        this.day=day;
+       this.month=month;
+       this.year=year;
+       
+       this.hora=-1;
+       this.minuto=-1;
+       this.segundo=-1;
+       
+   }
+   
+   /**
+    * Distingue datas baseadas ,no construtor anterior ,de tempos 
+    */
+   
+   public boolean isData()
+   {
+       return ( hora ==-1 && minuto == -1 && segundo == -1);
+   }
    
    /**
     * Getters

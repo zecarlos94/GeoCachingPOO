@@ -1,5 +1,5 @@
 #BlueJ class context
 comment0.params=d1\ d2
-comment0.target=int\ compare(Data,\ Data)
+comment0.target=int\ compare(Timeline,\ Timeline)
 comment0.text=\n\ Compara\ duas\ datas\n
 numComments=1

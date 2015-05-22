@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=nome\ cache\ ordem
+comment0.target=ActividadeCache(java.lang.String,\ Cache,\ java.lang.String)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ ActividadeCache\n\ \ Usa\ a\ hora\ do\ sistema\n
+comment1.params=time\ nome\ cache\ ordem
+comment1.target=ActividadeCache(Timeline,\ java.lang.String,\ Cache,\ java.lang.String)
+comment2.params=c
+comment2.target=ActividadeCache(ActividadeCache)
+comment3.params=
+comment3.target=Cache\ getCache()
+comment4.params=
+comment4.target=java.lang.String\ getOrdem()
+comment5.params=cache
+comment5.target=void\ setCache(Cache)
+comment6.params=ordem
+comment6.target=void\ setOrdem(java.lang.String)
+comment7.params=
+comment7.target=ActividadeCache\ clone()
+comment8.params=
+comment8.target=java.lang.String\ toString()
+comment8.text=\n\ \ Gera\ string\ com\ o\ seguinte\ formato\:\n\ \ \ \ \ \ Tempo\n\ \ \ \ \ \ \ \ \ \ Nome\ Acontecimento\ NomeDaCache\ \n\ \ \ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ \ \ Acontecimento\ \=\ "descobriu"\ ||\ "removeu"\ ||\ "adicionou"\ \ \n
+numComments=9

@@ -7,7 +7,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.File;
 
-public class Administrador
+public class Main
 {
     //private HashMap<String, Cache> caches;
     
@@ -94,21 +94,21 @@ public class Administrador
         out.printf("Insira a morada: "); 
         dados=sc.next(); u.setMorada(dados);
         do {
-            out.printf("Insira a data de nascimento:\n");
+            out.printf("Insira a timeline de nascimento:\n");
             out.printf("   Dia: "); dia=sc.nextInt();
             out.printf("   Mês: "); mes=sc.nextInt();
             out.printf("   Ano: "); ano=sc.nextInt();
             if(!validate(dia, mes, ano)) cicle=1;
             else cicle=0;
         } while(cicle==1);
-        Data dataNasc=new Data(dia, mes, ano);
-        u.setDataNascimento(dataNasc);
+        Timeline timelineNasc=new Timeline(dia, mes, ano);
+        u.setTimelineNascimento(timelineNasc);
         utilizadores.add(u);
         out.printf("\nConta criada com sucesso!\n");
     }
     
      /**
-     * Valida uma data
+     * Valida uma timeline
      */
     public static boolean validate(int day, int month, int year) {
         if(month>=1 && month<=12) {
@@ -164,20 +164,22 @@ public class Administrador
                 }
             }
             // nao funcional, faltam funçoes e situaçoes de erro
+            /*
             else if(optn==5) {
                 Coordenadas coordenadas;
                 out.printf("\nInsira a latitude e a longitude da cache que deseja reportar:"); coordenadas = new Coordenadas(sc.next(),sc.next()); // Nao deve funcionar direito
                 if(!caches.existe(coordenadas)) out.printf("\n Não existe nenhuma cache com essas coordenadas!\n");
                 else{
                     String texto;
-                    Data data = new Data(); // 2 linhas a alterar, systemData nao está implementada ainda
-                    data = data.systemData();
+                    Timeline timeline = new Timeline(); // 2 linhas a alterar, systemTimeline nao está implementada ainda
+                    timeline = timeline.systemTimeline();
                     out.printf("\nDescreva a razão do seu report numa linha\n"); texto = sc.next(); 
-                    reports.addReport(coordenadas,texto,data);
+                    reports.addReport(coordenadas,texto,timeline);
                     out.printf("\nReport adicionado com sucesso\n");
                 }
                        
             }
+            */
             else if(optn>6 || optn<1) System.out.printf("\nInsira uma opção válida!\n");
         } while(optn!=6);
     }
@@ -189,7 +191,7 @@ public class Administrador
         out.println("   Nome: " +u.getNome());
         out.println("   Género: " +u.getGenero());
         out.println("   Morada: " +u.getMorada());
-        out.println("   Data de Nascimento: " +u.getDataNascimento().toString());
+        out.println("   Timeline de Nascimento: " +u.getTimelineNascimento().toString());
         out.println("   Amigos: " +u.getAmigos().toString());
     }
 }

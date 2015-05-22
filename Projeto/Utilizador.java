@@ -10,8 +10,8 @@ public class Utilizador
     private String nome;
     private char genero;
     private String morada;                                          
-    private Data data_nascimento;                                        
-    private TreeMap<Data, Cache> atividades;    //Lista das atividades em que o utilizador participou, cuja chave corresponde à data em que o mesmo participou    
+    private Timeline timeline_nascimento;    // O construtor recebe d/m/y                                   
+    private TreeMap<Timeline, Actividade> timeline;    //Lista das timeline em que o utilizador participou, cuja chave corresponde à timeline em que o mesmo participou    
     private HashMap<String, Integer> estatisticas;    //Número de caches encontradas pelo utilizador por cada tipo
     private HashMap<String, Utilizador> amigos=new HashMap<String, Utilizador>();     //Lista de amigos, cuja chave corresponde ao email de cada um      
     
@@ -24,19 +24,19 @@ public class Utilizador
         this.nome="N/A";
         this.genero='N';
         this.morada="N/A";
-        this.data_nascimento=new Data();
-        this.atividades=new TreeMap<Data, Cache>();
+        this.timeline_nascimento=new Timeline();
+        this.timeline=new TreeMap<Timeline, Actividade>();
         this.estatisticas=new HashMap<String, Integer>();
         this.amigos=new HashMap<String, Utilizador>();
     }
     
-    public Utilizador(String email, String password, String nome, char genero, String morada, Data data_nascimento, TreeMap<Data, Cache> atividades, HashMap<String, Integer> estatisticas, HashMap<String, Utilizador> amigos) {
+    public Utilizador(String email, String password, String nome, char genero, String morada, Timeline timeline_nascimento, TreeMap<Timeline, Actividade> timeline, HashMap<String, Integer> estatisticas, HashMap<String, Utilizador> amigos) {
         this.email=email;
         this.password=password;
         this.nome=nome;
         this.genero=genero;
-        this.data_nascimento=new Data(data_nascimento);
-        this.atividades=new TreeMap<Data, Cache>(atividades);
+        this.timeline_nascimento=new Timeline(timeline_nascimento);
+        this.timeline=new TreeMap<Timeline, Actividade>(timeline);
         this.estatisticas=new HashMap<String, Integer>(estatisticas);
         this.amigos=new HashMap<String, Utilizador>(amigos);
     }
@@ -47,8 +47,8 @@ public class Utilizador
         this.nome=u.getNome();
         this.genero=u.getGenero();
         this.morada=u.getMorada();
-        this.data_nascimento=u.getDataNascimento();
-        this.atividades=u.getAtividades();
+        this.timeline_nascimento=u.getTimelineNascimento();
+        this.timeline=u.getAtividades();
         this.estatisticas=u.getEstatisticas();
         this.amigos=u.getAmigos();
     }
@@ -76,12 +76,12 @@ public class Utilizador
         return this.morada;
     }
     
-    public Data getDataNascimento() {
-        return this.data_nascimento;
+    public Timeline getTimelineNascimento() {
+        return this.timeline_nascimento;
     }
     
-    public TreeMap<Data, Cache> getAtividades() {
-        return this.atividades;
+    public TreeMap<Timeline, Actividade> getAtividades() {
+        return this.timeline;
     }
     
     public HashMap<String, Integer> getEstatisticas() {
@@ -115,19 +115,19 @@ public class Utilizador
         this.morada=morada;
     }
     
-    public void setDataNascimento(Data data_nascimento) {
-        this.data_nascimento=data_nascimento.clone();
+    public void setTimelineNascimento(Timeline timeline_nascimento) {
+        this.timeline_nascimento=timeline_nascimento.clone();
     }
     
-    public void setAtividades(TreeMap<Data, Cache> atividades) {
-        TreeMap<Data, Cache> aux=new TreeMap<Data, Cache>(new DataComparator());
-        Set<Map.Entry<Data, Cache>> eset=atividades.entrySet();
-        Iterator<Map.Entry<Data, Cache>> it=eset.iterator();
+    public void setAtividades(TreeMap<Timeline, Actividade> timeline) {
+        TreeMap<Timeline, Actividade> aux=new TreeMap<Timeline, Actividade>(new TimelineComparator());
+        Set<Map.Entry<Timeline, Actividade>> eset=timeline.entrySet();
+        Iterator<Map.Entry<Timeline, Actividade>> it=eset.iterator();
         while(it.hasNext()) {
-            Map.Entry<Data, Cache> elem=it.next();
-            aux.put(elem.getKey().clone(), elem.getValue().clone());
+            Map.Entry<Timeline, Actividade> elem=it.next();
+            aux.put(elem.getKey().clone(), elem.getValue());
         }
-        this.atividades=aux;
+        this.timeline=aux;
     }
     
     public void setEstatisticas(HashMap<String, Integer> estatisticas) {
@@ -167,7 +167,7 @@ public class Utilizador
       if((obj == null) || (this.getClass() != obj.getClass())) return false;
       Utilizador c = (Utilizador) obj;
       return(this.email.equals(c.getEmail()) && this.password.equals(c.getPassword()) && this.nome.equals(c.getNome()) && this.genero==c.getGenero() 
-                 && this.morada.equals(c.getMorada()) && this.data_nascimento.equals(c.getDataNascimento()) && this.atividades.equals(c.getAtividades())
+                 && this.morada.equals(c.getMorada()) && this.timeline_nascimento.equals(c.getTimelineNascimento()) && this.timeline.equals(c.getAtividades())
                  && this.estatisticas.equals(c.getEstatisticas()) && this.amigos.equals(c.getAmigos()));
     }
     
@@ -175,7 +175,7 @@ public class Utilizador
      * toString
      */
     public String toString() {
-        return new String(this.email+ " " +this.password+ " " +this.nome+ " " +this.genero+ " " +this.morada+ " " +this.data_nascimento.toString()+ " " +this.printAmigos());
+        return new String(this.email+ " " +this.password+ " " +this.nome+ " " +this.genero+ " " +this.morada+ " " +this.timeline_nascimento.toString()+ " " +this.printAmigos());
     }
     
     /**
