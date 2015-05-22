@@ -126,5 +126,8 @@ public class testMC extends Cache
         }
         if(certas==3) out.printf("Parabéns concluiu as 3 perguntas com sucesso e com " + pontos + " pontos.\n");
     }
+    
+    
+    
 }
 

@@ -14,6 +14,9 @@ dependency12.type=UsesDependency
 dependency13.from=MultiCache
 dependency13.to=Hora
 dependency13.type=UsesDependency
+dependency14.from=MisteryCache
+dependency14.to=Utilizador
+dependency14.type=UsesDependency
 dependency2.from=Utilizador
 dependency2.to=Cache
 dependency2.type=UsesDependency
@@ -38,6 +41,7 @@ dependency8.type=UsesDependency
 dependency9.from=Administrador
 dependency9.to=Utilizador
 dependency9.type=UsesDependency
+<<<<<<< Updated upstream
 objectbench.height=76
 objectbench.width=1281
 package.editor.height=605
@@ -45,6 +49,15 @@ package.editor.width=1155
 package.editor.x=64
 package.editor.y=-4
 package.numDependencies=13
+=======
+objectbench.height=100
+objectbench.width=1232
+package.editor.height=546
+package.editor.width=1141
+package.editor.x=0
+package.editor.y=23
+package.numDependencies=14
+>>>>>>> Stashed changes
 package.numTargets=20
 package.showExtends=true
 package.showUses=true
@@ -53,25 +66,34 @@ readme.editor.height=773
 readme.editor.width=1303
 readme.editor.x=64
 readme.editor.y=-4
-target1.editor.height=700
-target1.editor.width=900
-target1.editor.x=105
-target1.editor.y=52
+target1.editor.height=709
+target1.editor.width=1280
+target1.editor.x=0
+target1.editor.y=23
 target1.height=50
-target1.name=geraOrienta\u00E7\u00F5es
+target1.name=MisteryCache
 target1.naviview.expanded=true
 target1.showInterface=false
 target1.type=ClassTarget
 target1.typeParameters=
+<<<<<<< Updated upstream
 target1.width=140
 target1.x=890
 target1.y=430
 target10.height=50
 target10.name=Data_Hora
+=======
+target1.width=120
+target1.x=600
+target1.y=270
+target10.height=50
+target10.name=ReadCSV
+>>>>>>> Stashed changes
 target10.showInterface=false
 target10.type=ClassTarget
 target10.typeParameters=
 target10.width=90
+<<<<<<< Updated upstream
 target10.x=610
 target10.y=490
 target11.editor.height=744
@@ -80,10 +102,21 @@ target11.editor.x=65
 target11.editor.y=24
 target11.height=50
 target11.name=Data
+=======
+target10.x=850
+target10.y=490
+target11.editor.height=700
+target11.editor.width=900
+target11.editor.x=353
+target11.editor.y=68
+target11.height=50
+target11.name=DataComparator
+>>>>>>> Stashed changes
 target11.naviview.expanded=true
 target11.showInterface=false
 target11.type=ClassTarget
 target11.typeParameters=
+<<<<<<< Updated upstream
 target11.width=80
 target11.x=80
 target11.y=450
@@ -93,10 +126,22 @@ target12.editor.x=106
 target12.editor.y=67
 target12.height=50
 target12.name=Virtual
+=======
+target11.width=140
+target11.x=290
+target11.y=510
+target12.editor.height=744
+target12.editor.width=1301
+target12.editor.x=65
+target12.editor.y=24
+target12.height=50
+target12.name=MultiCache
+>>>>>>> Stashed changes
 target12.naviview.expanded=true
 target12.showInterface=false
 target12.type=ClassTarget
 target12.typeParameters=
+<<<<<<< Updated upstream
 target12.width=80
 target12.x=740
 target12.y=270
@@ -106,13 +151,30 @@ target13.editor.x=106
 target13.editor.y=80
 target13.height=50
 target13.name=Coordenadas
+=======
+target12.width=110
+target12.x=820
+target12.y=130
+target13.editor.height=744
+target13.editor.width=1301
+target13.editor.x=65
+target13.editor.y=24
+target13.height=50
+target13.name=Hora
+>>>>>>> Stashed changes
 target13.naviview.expanded=true
 target13.showInterface=false
 target13.type=ClassTarget
 target13.typeParameters=
+<<<<<<< Updated upstream
 target13.width=120
 target13.x=100
 target13.y=20
+=======
+target13.width=80
+target13.x=100
+target13.y=90
+>>>>>>> Stashed changes
 target14.editor.height=700
 target14.editor.width=900
 target14.editor.x=106
@@ -126,6 +188,7 @@ target14.typeParameters=
 target14.width=110
 target14.x=820
 target14.y=210
+<<<<<<< Updated upstream
 target15.editor.height=700
 target15.editor.width=900
 target15.editor.x=105
@@ -145,11 +208,28 @@ target16.editor.x=65
 target16.editor.y=24
 target16.height=50
 target16.name=Administrador
+=======
+target15.height=50
+target15.name=CreateCSV
+target15.showInterface=false
+target15.type=ClassTarget
+target15.typeParameters=
+target15.width=100
+target15.x=890
+target15.y=370
+target16.editor.height=700
+target16.editor.width=900
+target16.editor.x=105
+target16.editor.y=32
+target16.height=50
+target16.name=geraLongitude
+>>>>>>> Stashed changes
 target16.naviview.expanded=true
 target16.showInterface=false
 target16.type=ClassTarget
 target16.typeParameters=
 target16.width=130
+<<<<<<< Updated upstream
 target16.x=50
 target16.y=260
 target17.editor.height=773
@@ -158,10 +238,21 @@ target17.editor.x=64
 target17.editor.y=-4
 target17.height=50
 target17.name=Utilizador
+=======
+target16.x=740
+target16.y=430
+target17.editor.height=700
+target17.editor.width=900
+target17.editor.x=106
+target17.editor.y=80
+target17.height=50
+target17.name=Coordenadas
+>>>>>>> Stashed changes
 target17.naviview.expanded=true
 target17.showInterface=false
 target17.type=ClassTarget
 target17.typeParameters=
+<<<<<<< Updated upstream
 target17.width=100
 target17.x=310
 target17.y=350
@@ -172,30 +263,56 @@ target18.editor.y=72
 target18.height=50
 target18.name=ReadTXT
 target18.naviview.expanded=true
+=======
+target17.width=120
+target17.x=100
+target17.y=20
+target18.height=50
+target18.name=Data_Hora
+>>>>>>> Stashed changes
 target18.showInterface=false
 target18.type=ClassTarget
 target18.typeParameters=
 target18.width=90
+<<<<<<< Updated upstream
 target18.x=730
+=======
+target18.x=610
+>>>>>>> Stashed changes
 target18.y=490
 target19.editor.height=744
 target19.editor.width=1301
 target19.editor.x=65
 target19.editor.y=24
 target19.height=50
+<<<<<<< Updated upstream
 target19.name=Hora
+=======
+target19.name=Cache
+>>>>>>> Stashed changes
 target19.naviview.expanded=true
 target19.showInterface=false
 target19.type=ClassTarget
 target19.typeParameters=
 target19.width=80
+<<<<<<< Updated upstream
 target19.x=100
 target19.y=90
+=======
+target19.x=510
+target19.y=150
+target2.editor.height=709
+target2.editor.width=1280
+target2.editor.x=0
+target2.editor.y=23
+>>>>>>> Stashed changes
 target2.height=50
-target2.name=ReadCSV
+target2.name=Administrador
+target2.naviview.expanded=true
 target2.showInterface=false
 target2.type=ClassTarget
 target2.typeParameters=
+<<<<<<< Updated upstream
 target2.width=90
 target2.x=850
 target2.y=490
@@ -211,15 +328,37 @@ target3.editor.height=744
 target3.editor.width=1301
 target3.editor.x=65
 target3.editor.y=24
+=======
+target2.width=130
+target2.x=50
+target2.y=260
+target20.editor.height=709
+target20.editor.width=1280
+target20.editor.x=0
+target20.editor.y=23
+target20.height=50
+target20.name=testMC
+target20.naviview.expanded=true
+target20.showInterface=false
+target20.type=ClassTarget
+target20.typeParameters=
+target20.width=80
+target20.x=640
+target20.y=0
+target3.editor.height=700
+target3.editor.width=900
+target3.editor.x=106
+target3.editor.y=32
+>>>>>>> Stashed changes
 target3.height=50
-target3.name=MultiCache
+target3.name=ReadTXT
 target3.naviview.expanded=true
 target3.showInterface=false
 target3.type=ClassTarget
 target3.typeParameters=
-target3.width=110
-target3.x=820
-target3.y=130
+target3.width=90
+target3.x=730
+target3.y=490
 target4.editor.height=700
 target4.editor.width=900
 target4.editor.x=105
@@ -233,55 +372,63 @@ target4.typeParameters=
 target4.width=120
 target4.x=600
 target4.y=430
+<<<<<<< Updated upstream
 target5.editor.height=773
 target5.editor.width=1303
 target5.editor.x=64
 target5.editor.y=-4
+=======
+target5.editor.height=700
+target5.editor.width=900
+target5.editor.x=106
+target5.editor.y=32
+>>>>>>> Stashed changes
 target5.height=50
-target5.name=MisteryCache
+target5.name=CreateTXT
 target5.naviview.expanded=true
 target5.showInterface=false
 target5.type=ClassTarget
 target5.typeParameters=
-target5.width=120
-target5.x=600
-target5.y=270
-target6.editor.height=744
-target6.editor.width=1301
-target6.editor.x=65
-target6.editor.y=24
+target5.width=100
+target5.x=770
+target5.y=370
+target6.editor.height=700
+target6.editor.width=900
+target6.editor.x=105
+target6.editor.y=52
 target6.height=50
-target6.name=Cache
+target6.name=geraOrienta\u00E7\u00F5es
 target6.naviview.expanded=true
 target6.showInterface=false
 target6.type=ClassTarget
 target6.typeParameters=
-target6.width=80
-target6.x=510
-target6.y=150
-target7.editor.height=700
-target7.editor.width=900
-target7.editor.x=353
-target7.editor.y=68
+target6.width=140
+target6.x=890
+target6.y=430
+target7.editor.height=744
+target7.editor.width=1301
+target7.editor.x=65
+target7.editor.y=24
 target7.height=50
-target7.name=DataComparator
+target7.name=Data
 target7.naviview.expanded=true
 target7.showInterface=false
 target7.type=ClassTarget
 target7.typeParameters=
-target7.width=140
-target7.x=290
-target7.y=510
+target7.width=80
+target7.x=80
+target7.y=450
 target8.editor.height=700
 target8.editor.width=900
 target8.editor.x=106
 target8.editor.y=67
 target8.height=50
-target8.name=CreateTXT
+target8.name=Virtual
 target8.naviview.expanded=true
 target8.showInterface=false
 target8.type=ClassTarget
 target8.typeParameters=
+<<<<<<< Updated upstream
 target8.width=100
 target8.x=770
 target8.y=370
@@ -291,10 +438,27 @@ target9.editor.x=124
 target9.editor.y=44
 target9.height=50
 target9.name=testMC
+=======
+target8.width=80
+target8.x=740
+target8.y=270
+target9.editor.height=773
+target9.editor.width=1303
+target9.editor.x=64
+target9.editor.y=-4
+target9.height=50
+target9.name=Utilizador
+>>>>>>> Stashed changes
 target9.naviview.expanded=true
 target9.showInterface=false
 target9.type=ClassTarget
 target9.typeParameters=
+<<<<<<< Updated upstream
 target9.width=80
 target9.x=410
 target9.y=250
+=======
+target9.width=100
+target9.x=310
+target9.y=350
+>>>>>>> Stashed changes
