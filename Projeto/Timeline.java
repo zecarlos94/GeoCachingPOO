@@ -1,5 +1,5 @@
 import java.util.*;
-import java.time.*; 
+import java.text.SimpleDateFormat;
 import static java.lang.System.*;
 /**
  * Escreva a descrição da classe Timeline aqui.
@@ -18,19 +18,22 @@ public class Timeline
    private int day;
    private int month;
    private int year;
+   
+   
   
    /**
     * Construtores
    */
    
    public Timeline() {
-       LocalDateTime a = LocalDateTime.now();
-       this.hora=a.getHour();;
-       this.minuto=a.getMinute();;
-       this.segundo=a.getSecond();
-       this.day=a.getDayOfMonth();
-       this.month=a.getMonthValue();
-       this.year=a.getYear();
+       SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MMM-dd HH:mm:ss");    
+       Calendar calendario = new GregorianCalendar();
+       this.hora=calendario.get(Calendar.HOUR_OF_DAY); // 24 horas
+       this.minuto=calendario.get(Calendar.MINUTE);
+       this.segundo=calendario.get(Calendar.SECOND);
+       this.day=calendario.get(Calendar.DAY_OF_MONTH); 
+       this.month=(calendario.get(Calendar.MONTH))+1; // Jan = 0, Dezembro = 11
+       this.year=calendario.get(Calendar.YEAR);
    }
    
    public Timeline(int hora, int minuto, int segundo,int day, int month, int year) {
