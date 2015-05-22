@@ -1,12 +1,5 @@
 import java.util.*;
-import java.time.LocalDate; 
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.Month;
-import java.time.format.DateTimeFormatter;
-import java.time.format.FormatStyle;
-import java.util.Locale;
-import java.util.StringTokenizer;
+import java.time.*; 
 import static java.lang.System.*;
 /**
  * Escreva a descrição da classe Timeline aqui.
@@ -25,19 +18,21 @@ public class Timeline
    private int day;
    private int month;
    private int year;
-    
+  
    /**
     * Construtores
-    */
+   */
+   
    public Timeline() {
-       this.hora=0;
-       this.minuto=0;
-       this.segundo=0;
-       this.day=1;
-       this.month=1;
-       this.year=2000;
+       LocalDateTime a = LocalDateTime.now();
+       this.hora=a.getHour();;
+       this.minuto=a.getMinute();;
+       this.segundo=a.getSecond();
+       this.day=a.getDayOfMonth();
+       this.month=a.getMonthValue();
+       this.year=a.getYear();
    }
-    
+   
    public Timeline(int hora, int minuto, int segundo,int day, int month, int year) {
        this.hora=hora;
        this.minuto=minuto;
@@ -139,55 +134,4 @@ public class Timeline
         return new String(this.hora+ ":" +this.minuto+ ":" +this.segundo+ " " +this.day+ "/" +this.month+ "/" +this.year);
     }
     
-  
-      /**
-     * Cria uma Data com as horas do sistema
-     */
-    
-    public void systemData()
-    {
-        /**22-05-2015 10:44*/
-        LocalDateTime a = LocalDateTime.now();
-        DateTimeFormatter fmt1 = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
-        String time = fmt1.format(a);
-        out.println(time);
-        String data="N/A";
-        String horas="N/A";
-        
-        StringTokenizer stringTokenizer = new StringTokenizer(time, " ");
-		while (stringTokenizer.hasMoreElements()) {
-		    data = stringTokenizer.nextElement().toString();
-		    horas = stringTokenizer.nextElement().toString();
-			StringBuilder sb = new StringBuilder();
-			sb.append("\nData: " + data);
-			sb.append("\nHoras: " + horas);
-			out.println(sb.toString());
-		   }
-        
-        StringTokenizer stringTokenizer1 = new StringTokenizer("22-05-2015", "-");
-		while (stringTokenizer1.hasMoreElements()) {
-		    Integer mes= Integer.parseInt(stringTokenizer1.nextElement().toString());
-		    Integer dia = Integer.parseInt(stringTokenizer1.nextElement().toString());
-		    Integer ano = Integer.parseInt(stringTokenizer1.nextElement().toString());
-			StringBuilder sb = new StringBuilder();
-			sb.append("\nDia: " + dia);
-			sb.append("\nMês: " + mes);
-			sb.append("\nAno: " + ano);
-			out.println(sb.toString());
-		   }
-		   
-		
-	    StringTokenizer stringTokenizers = new StringTokenizer(horas, ":");
-		while (stringTokenizers.hasMoreElements()) {
-		    Integer hora = Integer.parseInt(stringTokenizers.nextElement().toString());
-		    Integer minuto = Integer.parseInt(stringTokenizers.nextElement().toString());
-		    /*Integer segundo = Integer.parseInt(stringTokenizers.nextElement().toString());*/
-			StringBuilder sb = new StringBuilder();
-			sb.append("\nHora: " + hora);
-			sb.append("\nMinuto: " + minuto);
-			/*sb.append("\nSegundo: " + segundo);*/
-			out.println(sb.toString());
-		   }
-		
-    }
 }
