@@ -3,17 +3,17 @@ public class Coordenadas
     /**
      * Variáveis de Instância
      */
-    private String latitude; // mudar para double ( Parte inteira graus ,  resto minutos decimais)
-    private String longitude;
+    private Coordenada latitude; // mudar para double ( Parte inteira graus ,  resto minutos decimais)
+    private Coordenada longitude;
     
     public Coordenadas() {
-        this.latitude="N/A";
-        this.longitude="N/A";
+        this.latitude= new Coordenada();
+        this.longitude=new Coordenada();
     }
     
-    public Coordenadas(String latitude, String longitude) {
-        this.latitude=latitude;
-        this.longitude=longitude;
+    public Coordenadas(Coordenada latitude, Coordenada longitude) {
+        this.latitude= new Coordenada(latitude);
+        this.longitude= new Coordenada(longitude);
     }
     
     public Coordenadas(Coordenadas c) {
@@ -24,19 +24,19 @@ public class Coordenadas
     /**
      * Getters e Setters
      */
-    public String getLatitude() {
+    public Coordenada getLatitude() {
         return this.latitude;
     }
     
-    public String getLongitude() {
+    public Coordenada getLongitude() {
         return this.longitude;
     }
     
-    public void setLatitude(String latitude) {
+    public void setLatitude(Coordenada latitude) {
         this.latitude=latitude;
     }
     
-    public void setLongitude(String longitude) {
+    public void setLongitude(Coordenada longitude) {
         this.longitude=longitude;
     }
     
