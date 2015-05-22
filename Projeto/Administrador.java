@@ -14,7 +14,7 @@ public class Administrador
     
     public static void main(String args[]) {
         // Criaçao das estruturas principais
-        HashMap<String, Utilizador> utilizadores=new HashMap<String, Utilizador>();
+        Utilizadores utilizadores=new Utilizadores();
         
         
         Caches caches = new Caches();
@@ -44,14 +44,14 @@ public class Administrador
     /**
      * Acede à conta do utilizador
      */
-    public static void login(HashMap<String, Utilizador> utilizadores, Caches caches,CacheReports reports) {
+    public static void login(Utilizadores utilizadores, Caches caches,CacheReports reports) {
         Scanner sc=new Scanner(System.in); 
         Utilizador u;
         String dados;
         int cicle=0, i=0;
         out.printf("\nInsira o seu email: ");
         dados=sc.next();
-        if(utilizadores.containsKey(dados)) {
+        if(utilizadores.existe(dados)) {
             u=utilizadores.get(dados);
             do {
                 out.printf("Introduza a password: ");
@@ -70,7 +70,7 @@ public class Administrador
     /**
      * Cria um novo utilizador
      */
-    public static void signin(HashMap<String, Utilizador> utilizadores) {
+    public static void signin(Utilizadores utilizadores) {
         Scanner sc=new Scanner(System.in); 
         String dados;
         int cicle, dia, mes, ano;
@@ -78,7 +78,7 @@ public class Administrador
         do {
             out.printf("\nInsira o email: "); 
             dados=sc.next();
-            if(utilizadores.containsKey(dados)) {
+            if(utilizadores.existe(dados)) {
                 out.printf("O email já existe!");
                 cicle=1;
             }
@@ -103,7 +103,7 @@ public class Administrador
         } while(cicle==1);
         Data dataNasc=new Data(dia, mes, ano);
         u.setDataNascimento(dataNasc);
-        utilizadores.put(u.getEmail(), u.clone());
+        utilizadores.add(u);
         out.printf("\nConta criada com sucesso!\n");
     }
     
@@ -124,7 +124,7 @@ public class Administrador
     /**
      * Mexer na conta do utilizador
      */
-    public static void user(Utilizador u, HashMap<String, Utilizador> utilizadores, Caches caches,CacheReports reports) {
+    public static void user(Utilizador u, Utilizadores utilizadores, Caches caches,CacheReports reports) {
         Scanner sc=new Scanner(System.in); 
         int optn;
         String email;
@@ -137,7 +137,7 @@ public class Administrador
                 out.printf("\nInsira o email do amigo que deseja adicionar: "); email=sc.next();
                 if(u.getAmigos().containsKey(email)) out.printf("\nVocê já adicionou este amigo!\n");
                 else if(u.getEmail().equals(email)) out.printf("\nVocê não se pode adicionar como amigo!\n");
-                else if(utilizadores.containsKey(email)) {
+                else if(utilizadores.existe(email)) {
                     Utilizador friend=utilizadores.get(email).clone();
                     u.getAmigos().put(email, friend);
                     friend.getAmigos().put(u.getEmail(), u.clone());

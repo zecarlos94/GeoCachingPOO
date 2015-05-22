@@ -34,7 +34,7 @@ public class Caches
         Iterator<Map.Entry<Coordenadas,Cache>> it = caches.entrySet().iterator();
         while(it.hasNext()){
             Map.Entry<Coordenadas,Cache> elem = it.next();
-            resultado.put(elem.getKey(),elem.getValue());
+            resultado.put(elem.getKey(),elem.getValue().clone());
         }
         return resultado;
         
@@ -46,7 +46,7 @@ public class Caches
         Iterator<Map.Entry<Coordenadas,Cache>> it = caches.entrySet().iterator();
         while(it.hasNext()){
             Map.Entry<Coordenadas,Cache> elem = it.next();
-            resultado.put(elem.getKey(),elem.getValue());
+            resultado.put(elem.getKey(),elem.getValue().clone());
         }
         this.caches = resultado;
     }
@@ -56,7 +56,7 @@ public class Caches
      */
     public void add(Cache c)
     {
-        caches.put(c.getCoordenadas(),c);
+        caches.put(c.getCoordenadas(),c.clone());
     }
     /**
      *  Remove / Invalida uma cache
