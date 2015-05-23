@@ -10,6 +10,8 @@ public class Report
     private Coordenadas coordenadas;
     
     private String texto;
+    
+    private Timeline time;
 
     /**
      * Constructor for objects of class Report
@@ -18,18 +20,21 @@ public class Report
     {
        coordenadas = new Coordenadas();
        texto = "N/A";
+       time = new Timeline(); 
     }
 
-    public Report(Coordenadas coordenadas,String texto)
+    public Report(Timeline time , Coordenadas coordenadas,String texto)
     {
        this.coordenadas = coordenadas.clone();
        texto = texto;
+       this.time = time;
     }
     
     public Report(Report report)
     {
         coordenadas = report.getCoordenadas();
         texto = report.getTexto();
+        time = report.getTime();
     }
     
     public Coordenadas getCoordenadas()
@@ -40,6 +45,11 @@ public class Report
     public String getTexto()
     {
         return texto;
+    }
+    
+    public Timeline getTime()
+    {
+        return time;
     }
     
     public void setTexto(String texto)
@@ -62,7 +72,7 @@ public class Report
          if(this == obj) return true;  // é o próprio
        if((obj == null) || (this.getClass() != obj.getClass())) return false;
       Report report = (Report) obj;
-      return (this.coordenadas.equals(report.getCoordenadas()) && this.texto.equals(report.getTexto()));
+      return (this.coordenadas.equals(report.getCoordenadas()) && this.texto.equals(report.getTexto()) && this.time.equals(report.getTime()));
     }
     //falta toString
 }

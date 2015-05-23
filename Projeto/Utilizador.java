@@ -153,6 +153,19 @@ public class Utilizador
     }
     
     /**
+     *  Recebe os emails de todos os admins e verifica se faz parte da lista
+     * 
+     */
+    
+    public boolean isAdmin(String[] admins)
+    {
+        boolean res = false;
+        for( String admin : admins)
+            if( this.email.equals(admin)) res = true;
+        return true;
+    }
+    
+    /**
      * Clone
      */
     public Utilizador clone() {

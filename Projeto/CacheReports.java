@@ -53,22 +53,14 @@ public class CacheReports
      
      /*
       * Adiciona um report à respetiva Cache 
+      *     De notar que Report é constituídos por variáveis wrappers 
       */
      
-     public void addReport(Cache c,String texto,Timeline d)
+     public void add(Report r)
      {
-         Report report = new Report(c.getCoordenadas(),texto);
-         this.reports.put(d,report);
-      }
-      /*
-       *  Adiciona um report recebendo as coordenadas da cache 
-       */
-      public void addReport(Coordenadas c,String texto,Timeline d)
-      {
-          Report report = new Report(c,texto);
-          this.reports.put(d,report);
-      }
-      
+         this.reports.put(r.getTime(),r);
+     }
+
       public void removeReport(Timeline d)
       {
           reports.remove(d);
