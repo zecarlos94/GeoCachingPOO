@@ -67,5 +67,8 @@ public class ActividadeAmigo extends Actividade
         sb.append( acontecimento + " " + amigo + "\n");
         return sb.toString();
     }
+    
+    public ActividadeAmigo Clone()
+    {   return new ActividadeAmigo(this);}
 
 }

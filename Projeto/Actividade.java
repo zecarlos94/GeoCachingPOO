@@ -73,4 +73,6 @@ public abstract class Actividade
       return(this.time.equals(  ( (Actividade) obj).getTime())  );
     }
     
+    public abstract Actividade clone();
+    
 }

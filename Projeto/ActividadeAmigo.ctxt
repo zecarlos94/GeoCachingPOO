@@ -16,4 +16,6 @@ comment5.target=ActividadeAmigo\ clone()
 comment6.params=
 comment6.target=java.lang.String\ toString()
 comment6.text=\n\ \ Gera\ string\ com\ o\ seguinte\ formato\:\n\ \ \ \ \ \ Tempo\n\ \ \ \ \ \ \ \ \ \ Nome\ Acontecimento\ NomeDoAmigo\ \n\ \ \ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ \ \ Acontecimento\ \=\ "removeu"\ ||\ "adicionou"\ \ \n
-numComments=7
+comment7.params=
+comment7.target=ActividadeAmigo\ Clone()
+numComments=8

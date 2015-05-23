@@ -84,5 +84,10 @@ public class ActividadeCache extends Actividade
         sb.append( "\n");
         return sb.toString();
     }
+    
+    public ActividadeCache clone()
+    {
+        return new ActividadeCache(this);
+    }
 
 }

@@ -13,7 +13,7 @@ public class Utilizador
     private Timeline timeline_nascimento;    // O construtor recebe d/m/y                                   
     private TreeMap<Timeline, Actividade> timeline;    //Lista das timeline em que o utilizador participou, cuja chave corresponde à timeline em que o mesmo participou    
     private HashMap<String, Integer> estatisticas;    //Número de caches encontradas pelo utilizador por cada tipo
-    private HashMap<String, Utilizador> amigos=new HashMap<String, Utilizador>();     //Lista de amigos, cuja chave corresponde ao email de cada um      
+    private ArrayList<String> amigos;     //Lista com os emails dos amigos      
     
     /**
      * Construtores
@@ -27,10 +27,10 @@ public class Utilizador
         this.timeline_nascimento=new Timeline();
         this.timeline=new TreeMap<Timeline, Actividade>();
         this.estatisticas=new HashMap<String, Integer>();
-        this.amigos=new HashMap<String, Utilizador>();
+        this.amigos=new ArrayList<String>();
     }
     
-    public Utilizador(String email, String password, String nome, char genero, String morada, Timeline timeline_nascimento, TreeMap<Timeline, Actividade> timeline, HashMap<String, Integer> estatisticas, HashMap<String, Utilizador> amigos) {
+    public Utilizador(String email, String password, String nome, char genero, String morada, Timeline timeline_nascimento, TreeMap<Timeline, Actividade> timeline, HashMap<String, Integer> estatisticas, ArrayList<String> amigos) {
         this.email=email;
         this.password=password;
         this.nome=nome;
@@ -38,7 +38,7 @@ public class Utilizador
         this.timeline_nascimento=new Timeline(timeline_nascimento);
         this.timeline=new TreeMap<Timeline, Actividade>(timeline);
         this.estatisticas=new HashMap<String, Integer>(estatisticas);
-        this.amigos=new HashMap<String, Utilizador>(amigos);
+        this.amigos=new ArrayList<String>();
     }
     
     public Utilizador(Utilizador u) {
@@ -88,8 +88,8 @@ public class Utilizador
         return this.estatisticas;
     }
     
-    public HashMap<String, Utilizador> getAmigos() {
-        return this.amigos;
+    public ArrayList<String> getAmigos() {
+        return amigos;
     }
     
     /**
@@ -141,15 +141,8 @@ public class Utilizador
         this.estatisticas=aux;
     }
     
-    public void setAmigos(HashMap<String, Utilizador> amigos) {
-        HashMap<String, Utilizador> aux=new HashMap<String, Utilizador>();
-        Set<Map.Entry<String, Utilizador>> eset=amigos.entrySet();
-        Iterator<Map.Entry<String, Utilizador>> it=eset.iterator();
-        while(it.hasNext()) {
-            Map.Entry<String, Utilizador> elem=it.next();
-            aux.put(elem.getKey(), elem.getValue().clone());
-        }
-        this.amigos=aux;
+    public void setAmigos(ArrayList<String> amigos) {
+        this.amigos = amigos;
     }
     
     /**
@@ -188,30 +181,9 @@ public class Utilizador
      * toString
      */
     public String toString() {
-        return new String(this.email+ " " +this.password+ " " +this.nome+ " " +this.genero+ " " +this.morada+ " " +this.timeline_nascimento.toString()+ " " +this.printAmigos());
+        return new String(this.email+ " " +this.password+ " " +this.nome+ " " +this.genero+ " " +this.morada+ " " +this.timeline_nascimento.toString());
     }
     
-    /**
-     * Coloca numa String todos os emails dos amigos do utilizador
-     */
-    public String printAmigos() {
-        String newString=new String();
-        String aux=new String();
-        int i=0;
-        Set<String> kset=this.amigos.keySet();
-        Iterator<String> it=kset.iterator();
-        while(it.hasNext()) {
-            String email=it.next();
-            if(i==0) {
-                aux=new String(newString+email);
-                newString=aux;
-                i++;
-            }
-            else {
-                aux=new String(newString+ "," +email);
-                newString=aux;
-            }
-        }
-        return aux;
-    }
+
+    
 }
