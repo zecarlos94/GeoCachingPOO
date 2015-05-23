@@ -19,4 +19,6 @@ comment5.text=\n\ \ Menu\ do\ utilizador\n\ \ \n\ \ \ \ \ \ S\u00F3\ tem\ acesso
 comment6.params=u
 comment6.target=void\ infoUser(Utilizador)
 comment6.text=\n\ Esta\ fun\u00E7\u00E3o\ \u00E9\ desnecess\u00E1ria\ deve\ ser\ apenar\ out.printf(\ utilizador.toString());\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ A\ retirar/mudar\ para\ a\ classe\ utilizador\n
-numComments=7
+comment7.params=escala\ graus\ minutos\ segundos
+comment7.target=boolean\ validaCoord(java.lang.String,\ int,\ int,\ int)
+numComments=8

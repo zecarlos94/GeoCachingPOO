@@ -239,6 +239,34 @@ public class Main
                             infoUser(friend);
                         }
                         break;
+                 case 5:
+                    Coordenadas coordenadas;
+                    int i, graus, minutos, segundos;
+                    do {
+                        i=0;
+                        out.printf("Insira os valores referentes à latitude:\n");
+                        out.printf("    Graus: "); graus=sc.nextInt();
+                        out.printf("    Minutos: "); minutos=sc.nextInt();
+                        out.printf("    Segundos: "); segundos=sc.nextInt();
+                        if(!validaCoord("latitude", graus, minutos, segundos)) {
+                            i=1;
+                            out.printf("\nInsira coordenadas válidas!");
+                        }
+                    } while(i==1);
+                    Coordenada latitude=new Coordenada(graus, minutos, segundos);
+                    do {
+                        i=0;
+                        out.printf("Insira os valores referentes à latitude:\n");
+                        out.printf("    Graus: "); graus=sc.nextInt();
+                        out.printf("    Minutos: "); minutos=sc.nextInt();
+                        out.printf("    Segundos: "); segundos=sc.nextInt();
+                        if(!validaCoord("longitude", graus, minutos, segundos)) {
+                            i=1;
+                            out.printf("\nInsira coordenadas válidas!");
+                        }
+                    } while(i==1);
+                    Coordenada longitude=new Coordenada(graus, minutos, segundos);
+                    Coordenadas coord=new Coordenadas(latitude, longitude);
                               // nao funcional, faltam funçoes e situaçoes de erro
             /*
             else if(optn==5) {
@@ -280,5 +308,13 @@ public class Main
         out.println("   Morada: " +u.getMorada());
         out.println("   Timeline de Nascimento: " +u.getTimelineNascimento().toString());
         out.println("   Amigos: " +u.getAmigos().toString());
+    }
+    
+    public static boolean validaCoord(String escala, int graus, int minutos, int segundos) {
+        if(escala.equals("latitude") && (graus<0 || graus>90)) return false;
+        else if(graus<0 || graus>180) return false;
+        if(minutos<0 || minutos>59) return false;
+        if(segundos<0 || segundos>59) return false;
+        return true;
     }
 }
