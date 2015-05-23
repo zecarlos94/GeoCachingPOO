@@ -7,53 +7,56 @@
  */
 public class ActividadeCache extends Actividade
 {
-    private String ordem; // Acontecimento = "descobriu" || "removeu" || "adicionou"  
+    private String acontecimento; // Acontecimento = "descobriu" || "removeu" || "adicionou"  
     private Cache cache;
 
     /**
      * Constructor for objects of class ActividadeCache
      *  Usa a hora do sistema
      */
-    public ActividadeCache(String nome,Cache cache,String ordem)
+    public ActividadeCache(String nome,Cache cache,String acontecimento)
     {
         super(nome);
-        this.cache = new Cache(cache);
-        this.ordem = ordem;
+        if(cache instanceof MultiCache) this.cache = new MultiCache((MultiCache)cache);
+        if(cache instanceof MisteryCache) this.cache = new MisteryCache((MisteryCache)cache);
+        if(cache instanceof MicroCache) this.cache = new MicroCache((MicroCache)cache);
+        this.acontecimento = acontecimento;
         
     }
     
-    public ActividadeCache(Timeline time,String nome,Cache cache,String ordem)
+    public ActividadeCache(Timeline time,String nome,Cache cache,String acontecimento)
     {
         super(time,nome);
-        this.cache = new Cache(cache);
-        this.ordem = ordem;
+        if(cache instanceof MultiCache) this.cache = new MultiCache((MultiCache)cache);
+        if(cache instanceof MisteryCache) this.cache = new MisteryCache((MisteryCache)cache);
+        if(cache instanceof MicroCache) this.cache = new MicroCache((MicroCache)cache);
+        this.acontecimento = acontecimento;
     }
     
     public ActividadeCache( ActividadeCache c)
     {
         super(c);
         this.cache = c.getCache();
-        this.ordem = c.getOrdem();
+        this.acontecimento = c.getAcontecimento();
     }
     
     public Cache getCache()
     {
-        return cache.clone();
+        Cache clone = null;
+        if(cache instanceof MultiCache) clone = ((MultiCache)cache).clone();
+        if(cache instanceof MisteryCache) clone = ((MisteryCache)cache).clone();
+        if(cache instanceof MicroCache) clone = ((MicroCache)cache).clone();
+        return clone;
     }
-    
-    public String getOrdem()
+   
+    public String getAcontecimento()
     {
-        return ordem;
+        return acontecimento;
     }
-    
-    public void setCache(Cache cache)
+   
+    public void setOrdem(String acontecimento)
     {
-        this.cache = cache.clone();
-    }
-    
-    public void setOrdem(String ordem)
-    {
-        this.ordem =ordem;
+        this.acontecimento =acontecimento;
     }
     
     public ActividadeCache clone()
@@ -72,8 +75,11 @@ public class ActividadeCache extends Actividade
     {
         StringBuilder sb = new StringBuilder();
         sb.append( super.toString() + " "); 
-        sb.append( ordem + " ");
-        sb.append( "uma" + cache.getClass().getName() + "\n");
+        sb.append( acontecimento + " ");
+        sb.append( "uma" + cache.getClass().getName() );
+            if(acontecimento.equals("descobriu") && (  cache instanceof MisteryCache || cache instanceof MultiCache))
+                    sb.append(" e ganhou " + cache.getGeoCoins() + " GeoCoins");
+        sb.append( "\n");
         return sb.toString();
     }
 

@@ -45,6 +45,8 @@ public abstract class Actividade
         return this.nome;
     }
     
+    public abstract String getAcontecimento();
+    
     public void setTime(Timeline t)
     { this.time = t;}
     

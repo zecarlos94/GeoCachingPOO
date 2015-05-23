@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Cache
+public abstract class Cache
 {
     /**
      * Variáveis de Instância
@@ -21,13 +21,13 @@ public class Cache
     }
     */
    
-    public Cache() {
+    protected Cache() {
         this.livro_registos=new HashMap<String, Timeline>();
         this.timeline=new Timeline();
         this.coordenadas=new Coordenadas();
     }
     
-    public Cache(HashMap<String, Timeline> livro_registos, Timeline t, Coordenadas coordenadas) {
+    protected Cache(HashMap<String, Timeline> livro_registos, Timeline t, Coordenadas coordenadas) {
         this.livro_registos=new HashMap<String, Timeline>(livro_registos);
         this.timeline=new Timeline(t);
         this.coordenadas=new Coordenadas(coordenadas);
@@ -39,7 +39,7 @@ public class Cache
         this.coordenadas=new Coordenadas(coordenadas);
     }
     */
-    public Cache(Cache c) {
+    protected Cache(Cache c) {
         this.livro_registos=c.getLivroRegistos();
         this.timeline=getTimeline();
         this.coordenadas=c.getCoordenadas();
@@ -65,6 +65,11 @@ public class Cache
     public Coordenadas getCoordenadas() {
         return this.coordenadas;
     }
+    
+    /**
+     *  De notar que MicroCache nao contem geocoins, por isso retorna sempre 0
+     */
+    public abstract int getGeoCoins();
     
     /**
      * Setters
@@ -97,13 +102,7 @@ public class Cache
         this.coordenadas=new Coordenadas(coordenadas);
     }
     
-    /**
-     * Clone
-     */
-    public Cache clone() {
-        return new Cache(this);
-    }
-    
+
     /**
      * Equals
      */

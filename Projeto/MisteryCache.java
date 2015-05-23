@@ -22,11 +22,11 @@ public class MisteryCache extends Cache
     public MisteryCache(MisteryCache c){
             super(c);
             perguntasRespostas =c.getPerguntasRespostas();
-            geocoins=c.getGeocoins();
+            geocoins=c.getGeoCoins();
     }
     
     
-    public int getGeocoins(){
+    public int getGeoCoins(){
         return geocoins;
     }
     
@@ -57,7 +57,7 @@ public class MisteryCache extends Cache
       if(this == obj) return true;  // é o próprio
       if((obj == null) || (this.getClass() != obj.getClass())) return false;
       MisteryCache c = (MisteryCache) obj;
-      if( super.equals(obj) && this.geocoins == c.getGeocoins() && this.perguntasRespostas.equals(c.getPerguntasRespostas())) return true;   
+      if( super.equals(obj) && this.geocoins == c.getGeoCoins() && this.perguntasRespostas.equals(c.getPerguntasRespostas())) return true;   
       else return false;
     }
 }

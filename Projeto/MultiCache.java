@@ -20,10 +20,10 @@ public class MultiCache extends Cache
     public MultiCache(MultiCache c){
             super(c);
             checkpoints=c.getCheckpoints();
-            geocoins=c.getGeocoins();
+            geocoins=c.getGeoCoins();
     }
     
-    public int getGeocoins(){
+    public int getGeoCoins(){
         return geocoins;
     }
     
@@ -33,7 +33,7 @@ public class MultiCache extends Cache
         return r;
     }
     
-    public void setGeocoins(int coins){
+    public void setGeoCoins(int coins){
         this.geocoins=coins;
     }
     
@@ -72,7 +72,7 @@ public class MultiCache extends Cache
       if(this == obj) return true;  // é o próprio
       if((obj == null) || (this.getClass() != obj.getClass())) return false;
       MultiCache c = (MultiCache) obj;
-      if( super.equals(obj)  && this.geocoins == c.getGeocoins() && this.checkpoints.equals(c.getCheckpoints())) return true;   
+      if( super.equals(obj)  && this.geocoins == c.getGeoCoins() && this.checkpoints.equals(c.getCheckpoints())) return true;   
       else return false;
     }
     

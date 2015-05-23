@@ -1,5 +1,19 @@
 #BlueJ class context
-comment0.params=
-comment0.target=ActividadeAmigo()
-comment0.text=\n\ Constructor\ for\ objects\ of\ class\ ActividadeAmigo\n
-numComments=1
+comment0.params=nome\ amigo\ acontecimento
+comment0.target=ActividadeAmigo(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ ActividadeAmigo\n\ \n\ \ Recebe\ o\ nome\ do\ user,\ o\ nome\ do\ amigo\ e\ a\ a\u00E7\u00E3o(removeu\ ou\ adicionou)\ \n\ \n\ \ \ \ \ \ Cria\ a\ actividade\ com\ as\ horas\ do\ sistema\n\ \n
+comment1.params=time\ nome\ amigo\ acontecimento
+comment1.target=ActividadeAmigo(Timeline,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\n\ \ Igual\ ao\ anterior\ mas\ com\ horas\ predefinindas\ \ \n
+comment2.params=a
+comment2.target=ActividadeAmigo(ActividadeAmigo)
+comment3.params=
+comment3.target=java.lang.String\ getAmigo()
+comment4.params=
+comment4.target=java.lang.String\ getAcontecimento()
+comment5.params=
+comment5.target=ActividadeAmigo\ clone()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\n\ \ Gera\ string\ com\ o\ seguinte\ formato\:\n\ \ \ \ \ \ Tempo\n\ \ \ \ \ \ \ \ \ \ Nome\ Acontecimento\ NomeDoAmigo\ \n\ \ \ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ \ \ Acontecimento\ \=\ "removeu"\ ||\ "adicionou"\ \ \n
+numComments=7

@@ -1,2 +1,13 @@
 #BlueJ class context
-numComments=0
+comment0.params=
+comment0.target=MicroCache()
+comment1.params=livro_registos\ t\ coordenadas
+comment1.target=MicroCache(java.util.HashMap,\ Timeline,\ Coordenadas)
+comment2.params=mc
+comment2.target=MicroCache(MicroCache)
+comment3.params=
+comment3.target=int\ getGeoCoins()
+comment3.text=\n\ \ De\ notar\ que\ MicroCache\ nao\ contem\ geocoins,\ por\ isso\ retorna\ sempre\ 0\n
+comment4.params=
+comment4.target=MicroCache\ clone()
+numComments=5

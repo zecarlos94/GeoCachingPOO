@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class MicroCache extends Cache
 {
    public MicroCache()
@@ -15,5 +17,14 @@ public class MicroCache extends Cache
        super(mc);
    }
    
+    
+    /**
+     *  De notar que MicroCache nao contem geocoins, por isso retorna sempre 0
+     */
+   public int getGeoCoins()
+   {    return 0;}
+   
+   public MicroCache clone()
+   {    return new MicroCache(this);}
    
 }
