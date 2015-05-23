@@ -1,9 +1,11 @@
 
 /**
  * Write a description of class ActividadeCache here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ *
+ *  Tem como objectivo principal gerar notificaçoes das actividades dos utilizadores quando interagem com uma cache:
+ *          
+ *   As notificações cobertas por esta classe são adições/remoções/descobertas de caches
+ *   
  */
 public class ActividadeCache extends Actividade
 {

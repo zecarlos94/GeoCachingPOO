@@ -2,8 +2,10 @@
 /**
  * Write a description of class ActividadeAmigo here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ *  Tem como objectivo principal gerar notificaçoes das actividades dos utilizadores quando interagem com um amigo:
+ *          
+ *   As notificações cobertas por esta classe são adições/remoções de amigos
+ *   
  */
 public class ActividadeAmigo extends Actividade
 {

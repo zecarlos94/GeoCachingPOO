@@ -1,6 +1,10 @@
 
 /**
- * Abstract class Actividade - Serve como base para as actividades: adicionar cache,adicionar amigo,adicionar cache
+ * Abstract class Actividade - Serve como base para as actividades:
+ *  Tem como objectivo principal gerar notificaçoes das actividades dos utilizadores, tais como:
+ *          adições/remoções/descobertas de caches
+ *          adições/remoções de amigos
+ * Estas actividades serão apresentadas no perfil do utilizador
  * 
 
  */
