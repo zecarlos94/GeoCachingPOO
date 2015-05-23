@@ -87,9 +87,9 @@ public class Caches
     }
     
     
-    public Caches clone(Caches caches)
+    public Caches clone()
     {
-        return new Caches(caches);
+        return new Caches(this);
     }
     
     public boolean equals(Object obj)

@@ -14,6 +14,7 @@ public class Utilizador
     private TreeMap<Timeline, Actividade> timeline;    //Lista das timeline em que o utilizador participou, cuja chave corresponde à timeline em que o mesmo participou    
     private HashMap<String, Integer> estatisticas;    //Número de caches encontradas pelo utilizador por cada tipo
     private ArrayList<String> amigos;     //Lista com os emails dos amigos      
+    private Caches myCaches;
     
     /**
      * Construtores
@@ -28,9 +29,10 @@ public class Utilizador
         this.timeline=new TreeMap<Timeline, Actividade>();
         this.estatisticas=new HashMap<String, Integer>();
         this.amigos=new ArrayList<String>();
+        this.myCaches = new Caches();
     }
     
-    public Utilizador(String email, String password, String nome, char genero, String morada, Timeline timeline_nascimento, TreeMap<Timeline, Actividade> timeline, HashMap<String, Integer> estatisticas, ArrayList<String> amigos) {
+    public Utilizador(String email, String password, String nome, char genero, String morada, Timeline timeline_nascimento, TreeMap<Timeline, Actividade> timeline, HashMap<String, Integer> estatisticas, ArrayList<String> amigos, Caches caches) {
         this.email=email;
         this.password=password;
         this.nome=nome;
@@ -39,6 +41,7 @@ public class Utilizador
         this.timeline=new TreeMap<Timeline, Actividade>(timeline);
         this.estatisticas=new HashMap<String, Integer>(estatisticas);
         this.amigos=new ArrayList<String>();
+        this.myCaches = caches.clone();
     }
     
     public Utilizador(Utilizador u) {
@@ -51,6 +54,7 @@ public class Utilizador
         this.timeline=u.getAtividades();
         this.estatisticas=u.getEstatisticas();
         this.amigos=u.getAmigos();
+        this.myCaches = u.getMyCaches();
     }
     
     /**
@@ -91,6 +95,9 @@ public class Utilizador
     public ArrayList<String> getAmigos() {
         return amigos;
     }
+    
+    public Caches getMyCaches()
+    {   return this.myCaches.clone();}
     
     /**
      * Setters
@@ -159,6 +166,24 @@ public class Utilizador
     }
     
     /**
+     * Adiciona um amigo a lista de amigos
+     */
+    
+    public void addAmigo(String email)
+    {
+        this.amigos.add(email);
+    }
+    
+    /**
+     * Remove um amigo
+     */
+    public void removeAmigo(String email)
+    {
+        this.amigos.remove(email);
+    }
+     
+    
+    /**
      * Clone
      */
     public Utilizador clone() {
@@ -174,7 +199,7 @@ public class Utilizador
       Utilizador c = (Utilizador) obj;
       return(this.email.equals(c.getEmail()) && this.password.equals(c.getPassword()) && this.nome.equals(c.getNome()) && this.genero==c.getGenero() 
                  && this.morada.equals(c.getMorada()) && this.timeline_nascimento.equals(c.getTimelineNascimento()) && this.timeline.equals(c.getAtividades())
-                 && this.estatisticas.equals(c.getEstatisticas()) && this.amigos.equals(c.getAmigos()));
+                 && this.estatisticas.equals(c.getEstatisticas()) && this.amigos.equals(c.getAmigos())); // falta adicionar equals à classe Caches);
     }
     
     /**

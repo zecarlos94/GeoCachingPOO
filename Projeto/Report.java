@@ -30,6 +30,13 @@ public class Report
        this.time = time;
     }
     
+    public Report(Coordenadas coordenadas,String texto)
+    {
+       this.coordenadas = coordenadas.clone();
+       texto = texto;
+       this.time = new Timeline();
+    }
+    
     public Report(Report report)
     {
         coordenadas = report.getCoordenadas();

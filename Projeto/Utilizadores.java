@@ -55,6 +55,26 @@ public class Utilizadores
     {
         utilizadores.put(u.getEmail(),u.clone());
     }
+    
+    /**
+     * Adiciona como amigos os dois utilizadores, actualizando os respectivos perfis 
+     */
+    public void addAmizade(String email1,String email2)
+    {
+        utilizadores.get(email1).addAmigo(email2);
+        utilizadores.get(email2).addAmigo(email1);
+    }
+    
+    /**
+     * Remove o estatuto de amigos em ambos os perfis
+     */
+    public void removeAmizade(String email1,String email2)
+    {
+        utilizadores.get(email1).removeAmigo(email2);
+        utilizadores.get(email2).removeAmigo(email1);
+    }
+    
+    
     /**
      *  Remove um utilizador
      */

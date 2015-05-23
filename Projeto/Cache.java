@@ -5,7 +5,7 @@ public abstract class Cache
     /**
      * Variáveis de Instância
      */
-    /*protected HashMap<String, Data> livro_registos;*/
+
     protected HashMap<String, Timeline> livro_registos;
     protected Timeline timeline;
     protected Coordenadas coordenadas;
@@ -102,6 +102,7 @@ public abstract class Cache
         this.coordenadas=new Coordenadas(coordenadas);
     }
     
+    public abstract Cache clone();
 
     /**
      * Equals
