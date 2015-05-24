@@ -6,7 +6,7 @@
  *          adições/remoções de amigos
  * Estas actividades serão apresentadas no perfil do utilizador
  * 
-
+ *
  */
 public abstract class Actividade
 {
