@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=StatsUtilizador()
+comment1.params=c\ r\ d
+comment1.target=StatsUtilizador(java.lang.String[],\ java.lang.String[],\ int[][])
+comment2.params=cache\ geoCoins\ tempo
+comment2.target=void\ add(Cache,\ int,\ java.lang.String)
+comment2.text=\n\ \ Actualiza\ a\ informa\u00E7\u00E3o\ de\ descoberta\ de\ Cache\n\ \ \n\ \ \ \ \ \ Incrementa\ o\ numero\ de\ caches\ descobertas\ e\ o\ clima\ do\ tipo\ concreto\ de\ Cache\n\ \ \ \ \ \ Adiciona\ os\ geocoins\ \u00E0\ coluna\ dos\ GeoCoins\ Facturados\n
+comment3.params=clima
+comment3.target=boolean\ climaFavorito(java.lang.String)
+comment3.text=\n\ \ Verifica\ se\ \u00E9\ o\ clima\ que\ o\ utilizador\ tem\ melhor\ performance\ \n
+numComments=4

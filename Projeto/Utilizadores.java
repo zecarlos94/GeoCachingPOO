@@ -110,10 +110,10 @@ public class Utilizadores
      *  Gera e adiciona uma actividade de descoberta ao utilizador
      */
     
-    public void descobertaCache(String email,Cache cache)
+    public void descobertaCache(String email,Cache cache,int geocoins)
     {
         Utilizador utilizador = utilizadores.get(email);
-        utilizador.descobertaCache(cache);
+        utilizador.descobertaCache(cache,geocoins);
     }
    
     /**
