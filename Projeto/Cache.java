@@ -67,9 +67,14 @@ public abstract class Cache
     }
     
     /**
-     *  De notar que MicroCache nao contem geocoins, por isso retorna sempre 0
+     *  Devolve os geoCoins base das Caches
      */
     public abstract int getGeoCoins();
+    
+     /**
+     *  Devolve os geoCoins obtidos pelo utilizador na cache
+     */
+    public abstract int getGeoCoinsTotais();
     
     /**
      * Setters

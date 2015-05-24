@@ -34,7 +34,7 @@ public class MisteryCache extends Cache
      *  Devolve o numero de geocoins que o utilizador ganhou com esta cache
      *      Depende dos geocoins base (50-100) e do numero de respostas certas
      */
-    public int getGeoCoinsTotal(int respostasCertas)
+    public int getGeoCoinsTotais(int respostasCertas)
     {
         return geocoins + (geocoins/4) * respostasCertas;
     }

@@ -29,6 +29,12 @@ public class MicroCache extends Cache
    public int getGeoCoins()
    {    return geocoins;}
    
+   /**
+    * Os geoCoins da micro cache sao sempre os geoCoins base (50-100)
+    */
+   public int getGeoCoinsTotais()
+   {    return geocoins;}
+   
    public MicroCache clone()
    {    return new MicroCache(this);}
    
