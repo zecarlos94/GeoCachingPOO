@@ -53,17 +53,15 @@ public class Coordenadas
         int distance;
         
     }
-  
-   
-
-   public double ToRadians(double degrees) 
-   {
+ 
+    public double ToRadians(double degrees) 
+    {
        double radians = degrees * (3.1415926535897932385) / 180;
        return radians;
-  }
+    }
 
-  public double DirectDistance(double lat1, double lng1, double lat2, double lng2) 
-  {
+    public double DirectDistance(double lat1, double lng1, double lat2, double lng2) 
+    {
       double earthRadius = 3958.75;
       double dLat = ToRadians(lat2-lat1);
       double dLng = ToRadians(lng2-lng1);
@@ -74,7 +72,7 @@ public class Coordenadas
       double dist = earthRadius * c;
       double meterConversion = 1609.00;
       return dist * meterConversion;
-  }
+    }
     
     /**
      * Métodos auxiliares
@@ -97,5 +95,4 @@ public class Coordenadas
     public int hashCode() {
        return this.toString().hashCode();
    }
-    //fazer funçao de hash
 }

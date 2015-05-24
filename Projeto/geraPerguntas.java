@@ -107,8 +107,4 @@ public class geraPerguntas
         else if(pergunta==19) return "1985";
         else return "Pretas";
    }
-    
-   public void problema() {
-    
-   } 
 }

@@ -1,4 +1,4 @@
-arefas a Realizar
+Tarefas a Realizar
 
 -Apresentar opções extras para administradores
 	- Pedir lista para ver cache report

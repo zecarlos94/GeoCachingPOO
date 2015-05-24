@@ -53,11 +53,9 @@ public class Coordenada {
       sb.append(this.longitude+"\n");
       return sb.toString();
    }
-
    
    public Coordenada clone(){ 
       return new Coordenada(this);
-   }
-   
+   }   
 }
 

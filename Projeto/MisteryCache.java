@@ -68,4 +68,19 @@ public class MisteryCache extends Cache
       if( super.equals(obj) && this.geocoins == c.getGeoCoins() && this.perguntasRespostas.equals(c.getPerguntasRespostas())) return true;   
       else return false;
     }
+    
+    public int respostasCertas(ArrayList<ArrayList<String>> perguntasRespostas){
+        int certas=0;
+        String res="N/A";
+        Scanner sc=new Scanner(System.in);
+        ArrayList<ArrayList<String>> aux = new ArrayList<ArrayList<String>>();
+        for(ArrayList<String> par : perguntasRespostas){
+            for(String s : par)
+                System.out.println("A pergunta é: "+par.get(1)+"\n");
+                System.out.println("Escreva a sua resposta\n");
+                res=sc.next();
+                if(res.equals(par.get(2))){certas++;}
+        }
+        return certas;
+    }
 }
