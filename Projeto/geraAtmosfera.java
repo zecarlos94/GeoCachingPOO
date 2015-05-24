@@ -1,16 +1,19 @@
 
 import java.util.Random;
+
+public class geraAtmosfera {
 /**
  * Escreva a descrição da classe Random aqui.
  * 
  * @author (seu nome) 
  * @version (número de versão ou data)
  */
-public class geraAtmosfera
-{
-  public static String GeraAtmosfera() {
+  private String clima;
+
+  public geraAtmosfera() {
     Random r = new Random();
-    int month = GeraMes();
+    Timeline time = new Timeline();
+    int month = time.getMonth();
     String monthString="N/A";
     switch (month) {
             case 1:  monthString=geraInverno();
@@ -38,8 +41,11 @@ public class geraAtmosfera
             case 12:  monthString=geraInverno();
                      break;          
         }
-    return monthString;
+    this.clima = monthString;
  }
+ 
+ public String getClima()
+ {  return this.clima;}
  
  public static int GeraMes() {
     Random rn = new Random();
@@ -60,4 +66,5 @@ public class geraAtmosfera
     int i = rn.nextInt(2) + 1;
     return estados[i];
  }
+
 }

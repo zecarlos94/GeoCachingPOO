@@ -1,10 +1,12 @@
 #BlueJ class context
 comment0.params=
-comment0.target=java.lang.String\ GeraAtmosfera()
+comment0.target=geraAtmosfera()
 comment1.params=
-comment1.target=int\ GeraMes()
+comment1.target=java.lang.String\ getClima()
 comment2.params=
-comment2.target=java.lang.String\ geraInverno()
+comment2.target=int\ GeraMes()
 comment3.params=
-comment3.target=java.lang.String\ geraVerao()
-numComments=4
+comment3.target=java.lang.String\ geraInverno()
+comment4.params=
+comment4.target=java.lang.String\ geraVerao()
+numComments=5

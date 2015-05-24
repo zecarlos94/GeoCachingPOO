@@ -12,7 +12,7 @@ public class Utilizador
     private String morada;                                          
     private Timeline timeline_nascimento;    // O construtor recebe d/m/y                                   
     private TreeMap<Timeline, Actividade> actividades;    //Lista das timeline em que o utilizador participou, cuja chave corresponde à timeline em que o mesmo participou    
-    private HashMap<String, Integer> estatisticas;    //Número de caches encontradas pelo utilizador por cada tipo
+    private StatsUtilizador estatisticas;    
     private ArrayList<String> amigos;     //Lista com os emails dos amigos      
     private Caches myCaches;
     
@@ -27,19 +27,19 @@ public class Utilizador
         this.morada="N/A";
         this.timeline_nascimento=new Timeline();
         this.actividades=new TreeMap<Timeline, Actividade>();
-        this.estatisticas=new HashMap<String, Integer>();
+        this.estatisticas= new StatsUtilizador();
         this.amigos=new ArrayList<String>();
         this.myCaches = new Caches();
     }
     
-    public Utilizador(String email, String password, String nome, char genero, String morada, Timeline timeline_nascimento, TreeMap<Timeline, Actividade> actividades, HashMap<String, Integer> estatisticas, ArrayList<String> amigos, Caches caches) {
+    public Utilizador(String email, String password, String nome, char genero, String morada, Timeline timeline_nascimento, TreeMap<Timeline, Actividade> actividades, StatsUtilizador estatisticas, ArrayList<String> amigos, Caches caches) {
         this.email=email;
         this.password=password;
         this.nome=nome;
         this.genero=genero;
         this.timeline_nascimento=new Timeline(timeline_nascimento);
         this.actividades=new TreeMap<Timeline, Actividade>(new TimelineComparator());
-        this.estatisticas=new HashMap<String, Integer>(estatisticas);
+        this.estatisticas=estatisticas;
         this.amigos=new ArrayList<String>();
         this.myCaches = caches.clone();
     }
@@ -88,7 +88,7 @@ public class Utilizador
         return this.actividades;
     }
     
-    public HashMap<String, Integer> getEstatisticas() {
+    public StatsUtilizador getEstatisticas() {
         return this.estatisticas;
     }
     
@@ -137,15 +137,9 @@ public class Utilizador
         this.actividades=aux;
     }
     
-    public void setEstatisticas(HashMap<String, Integer> estatisticas) {
-        HashMap<String, Integer> aux=new HashMap<String, Integer>();
-        Set<Map.Entry<String, Integer>> eset=estatisticas.entrySet();
-        Iterator<Map.Entry<String, Integer>> it=eset.iterator();
-        while(it.hasNext()) {
-            Map.Entry<String, Integer> elem=it.next();
-            aux.put(elem.getKey(), elem.getValue());
-        }
-        this.estatisticas=aux;
+    
+    public void setEstatisticas(StatsUtilizador estatisticas) {
+        this.estatisticas=estatisticas;
     }
     
     public void setAmigos(ArrayList<String> amigos) {
@@ -198,11 +192,18 @@ public class Utilizador
     /**
      *  Gera a actividade de descoberta de Cache e actualiza as estatisticas
      */
-    // Falta actualizar estatisticas
-    public void descobertaCache(Cache cache)
+    
+    public void descobertaCache(Cache cache, int geoCoins)
     {
         Actividade actividade = new ActividadeCache(this.getNome(),cache.clone(),"descobriu");
         this.actividades.put(actividade.getTime(),actividade);
+        
+       
+        geraAtmosfera atmosfera = new geraAtmosfera(); // Gera clima de acordo com o mes do sistema
+        
+        estatisticas.add(cache.clone(),geoCoins, atmosfera.getClima());
+        
+        
     }
     /**
      *  Adiciona uma cache às Caches do utilizador e gera a respectiva actividade
