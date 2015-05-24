@@ -252,7 +252,7 @@ public class Main
     }
     
     public static boolean validaCoord(String escala, double x ,double y) {
-        if(escala.equals("latitude") && (x<0) return false;
+        if(escala.equals("latitude") && (x<0))return false;
         else if(x<0) return false;
         if(y<0) return false;
         return true;
@@ -308,7 +308,7 @@ public class Main
                         break;
                   case 6: 
                         Cache cache1 = new Cache();
-                        u.add(cache1);
+                        caches.add(cache1);
                         break;
                   case 7:
                         u.getMyCaches().toString();
