@@ -1,86 +1,63 @@
+import static java.lang.Math.abs;
 
-/**
- * Write a description of class Coordenada here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Coordenada
-{
-    // instance variables - replace the example below with your own
-    private int graus;
-    
-    private int minutos;
-    
-    private int segundos;
+public class Coordenada {
 
-    /**
-     * Constructor for objects of class Coordenada
-     */
-    public Coordenada()
-    {
-        graus = 0;
-        minutos = 0;
-        segundos = 0;
+   private double latitude;
+   private double longitude;
+
+   public Coordenada(){ 
+      latitude = 0; 
+      longitude = 0; 
+   }
+
+   public Coordenada(double clat, double clong){ 
+      latitude = clat; 
+      longitude = clong; 
+   }
+
+   public Coordenada(Coordenada p){
+      latitude = p.getLatitude();
+      longitude = p.getLongitude(); 
+   }
+
+   
+   public double getLatitude(){
+       return latitude; 
+   }
+   
+   public double getLongitude(){ 
+       return longitude; 
+   }
+   
+
+   public void setLatitude(double l){
+       this.latitude=l; 
+   }
+   
+   public void setLongitude(double l){ 
+       this.longitude=l; 
+   }
+   
+   public boolean equals(Object obj) {
+      if(this == obj) return true;  
+      if((obj == null) || (this.getClass() != obj.getClass())) return false;
+      Coordenada p = (Coordenada) obj;
+      return (latitude == p.getLatitude() && longitude == p.getLongitude());
     }
-    public Coordenada(int graus,int minutos,int segundos)
-    {
-        graus = graus;
-        minutos = minutos;
-        segundos = segundos;
-    }
-    public Coordenada(Coordenada c)
-    {
-        graus = c.getGraus();
-        minutos = c.getMinutos();
-        segundos = c.getSegundos();
-    }
-    
-    public int getGraus()
-    { return graus;}
-    
-    public int getMinutos()
-    {
-        return minutos;
-    }
-    
-    public int getSegundos()
-    { return segundos;}
-    
-    public void setGraus()
-    {
-       graus = graus;   
-    }
-    
-    public void setMinutos()
-    {
-        minutos = minutos;
-    }
-    
-    public void setSegundos()
-    {
-        segundos = segundos;
-    }
-    
-    public Coordenada clone()
-    {
-        return new Coordenada(this);
-    }
-    
-    public String toString()
-    {
-        return new String( graus + ":" + minutos + ":" + segundos);
-    }
-    
-    public boolean equals(Object obj)
-    {
-       if(this == obj) return true;  // é o próprio
-       if((obj == null) || (this.getClass() != obj.getClass())) return false;
-       Coordenada c = (Coordenada) obj;
-      return(this.graus == c.getGraus() && this.minutos == c.getMinutos() && this.segundos == c.getSegundos());
-        
-    }
-    
-    
-  
+   
+   public String toString() {
+      StringBuilder sb = new StringBuilder();
+      sb.append("A latitude é ");
+      sb.append(this.latitude+"\n");
+      sb.append("A longitude é ");
+      sb.append(this.longitude+"\n");
+      return sb.toString();
+   }
+
+   
+   public Coordenada clone(){ 
+      return new Coordenada(this);
+   }
+   
 }
+
