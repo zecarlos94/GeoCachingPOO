@@ -6,7 +6,7 @@ public class MisteryCache extends Cache
 {
     private ArrayList<ArrayList<String>> perguntasRespostas;
     private int geocoins; // geo coins minimos (50-100)
-    // A implementar, a cache vai dar    ->  geo-coins + (geo-coins/4) * (Numero de respostas certas)
+   
     
     public MisteryCache() {
            super();
@@ -30,7 +30,14 @@ public class MisteryCache extends Cache
     public int getGeoCoins(){
         return geocoins;
     }
-    
+    /**
+     *  Devolve o numero de geocoins que o utilizador ganhou com esta cache
+     *      Depende dos geocoins base (50-100) e do numero de respostas certas
+     */
+    public int getGeoCoinsTotal(int respostasCertas)
+    {
+        return geocoins + (geocoins/4) * respostasCertas;
+    }
     
     public ArrayList<ArrayList<String>> getPerguntasRespostas(){
         return perguntasRespostas;
