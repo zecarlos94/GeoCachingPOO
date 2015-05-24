@@ -5,12 +5,13 @@ import java.util.*;
 public class MisteryCache extends Cache
 {
     private ArrayList<ArrayList<String>> perguntasRespostas;
-    private int geocoins;
+    private int geocoins; // geo coins minimos (50-100)
+    // A implementar, a cache vai dar    ->  geo-coins + (geo-coins/4) * (Numero de respostas certas)
     
     public MisteryCache() {
            super();
            perguntasRespostas=new ArrayList<ArrayList<String>>();
-           geocoins=0;
+           geocoins=(new geraGeoCoins()).getGeoCoins();
     }
     
     public MisteryCache(HashMap<String,Timeline> livro_registos, Timeline timeline, Coordenadas coordenadas, ArrayList<ArrayList<String>> perguntasRespostas, int geocoins) {

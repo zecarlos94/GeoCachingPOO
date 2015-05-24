@@ -3,12 +3,12 @@ import java.util.*;
 public class MultiCache extends Cache
 {
     private ArrayList<Coordenadas> checkpoints;
-    private int geocoins;
+    private int geocoins; // esta variável representa os geoCoins minimos da cache e são sempre entre 50-100
     
     public MultiCache() {
            super();
            checkpoints=new ArrayList<Coordenadas>();
-           geocoins=0;
+           geocoins=(new geraGeoCoins()).getGeoCoins();;
     }
     
     public MultiCache(HashMap<String,Timeline> livro_registos, Timeline timeline, Coordenadas coordenadas, ArrayList<Coordenadas> checkpoints, int geocoins) {
@@ -22,9 +22,19 @@ public class MultiCache extends Cache
             checkpoints=c.getCheckpoints();
             geocoins=c.getGeoCoins();
     }
-    
+    /**
+     *  Devolve os geoCoins base
+     */
     public int getGeoCoins(){
         return geocoins;
+    }
+    
+    /**
+     *  Devolve o total de geoCoins fraturados pelo utilizador que depende dos geoCoins base e do numero de checkpoints
+     */
+    public int getGeoCoinsTotais()
+    {
+        return this.geocoins + ((this.geocoins / 2) * (checkpoints.size() - 1));
     }
     
     public ArrayList<Coordenadas> getCheckpoints(){
@@ -46,13 +56,13 @@ public class MultiCache extends Cache
      * Devolve as coordenadas do próximo checkpoint, se existir
      */
     public Coordenadas nextPoint(Coordenadas c) {
-        int done=1;	
+        int done=1; 
         Coordenadas r = null;
         Iterator<Coordenadas> it=this.checkpoints.iterator();
         while(it.hasNext()) {
             Coordenadas elem = it.next();
-	if(done==2) {r = new Coordenadas(elem); break;}		
-	if(c.equals(elem)) done = 2;
+    if(done==2) {r = new Coordenadas(elem); break;}     
+    if(c.equals(elem)) done = 2;
         }
         return r;
     }

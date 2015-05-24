@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.params=
 comment0.target=MicroCache()
-comment1.params=livro_registos\ t\ coordenadas
-comment1.target=MicroCache(java.util.HashMap,\ Timeline,\ Coordenadas)
+comment1.params=livro_registos\ t\ coordenadas\ gc
+comment1.target=MicroCache(java.util.HashMap,\ Timeline,\ Coordenadas,\ int)
 comment2.params=mc
 comment2.target=MicroCache(MicroCache)
 comment3.params=
