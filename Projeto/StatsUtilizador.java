@@ -18,11 +18,9 @@ public class StatsUtilizador
   
     public StatsUtilizador()
     {
-       
-        String[] columNames = {"Caches Descobertas","GeoCoins Facturados","Nublado","Chuvas Fracas","Chuvas Fortes","Frio","Sol","Quente"};
-        String[] rowNames = {"MisteryCache","MultiCache","MicroCache"};
-        int[][] data = new int[3][8];
- 
+        this.columNames = new String[] {"Caches Descobertas","GeoCoins Facturados","Nublado","Chuvas Fracas","Chuvas Fortes","Frio","Sol","Quente"};
+        this.rowNames = new String[] {"MisteryCache","MultiCache","MicroCache"};
+        this.data = new int[3][8];
     }
     
     public StatsUtilizador(String[] c,String[] r,int[][] d)
@@ -68,6 +66,18 @@ public class StatsUtilizador
         return melhorClima.equals(clima);
     }
     
-
+    public String toString() {
+      StringBuilder sb = new StringBuilder();
+      for( int i = 0; i < rowNames.length ; i++){
+         sb.append("RowNames: ");
+         sb.append(this.rowNames[i]+" \n\n");
+         for( int j = 0; j < columNames.length ; j++){
+             sb.append("ColumNames: ");
+             sb.append(this.columNames[j]+" \n");
+         }
+      }
+      System.out.println(sb.toString());
+      return sb.toString();
+    }
   
 }

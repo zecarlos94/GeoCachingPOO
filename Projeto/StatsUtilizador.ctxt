@@ -9,4 +9,6 @@ comment2.text=\n\ \ Actualiza\ a\ informa\u00E7\u00E3o\ de\ descoberta\ de\ Cach
 comment3.params=clima
 comment3.target=boolean\ climaFavorito(java.lang.String)
 comment3.text=\n\ \ Verifica\ se\ \u00E9\ o\ clima\ que\ o\ utilizador\ tem\ melhor\ performance\ \n
-numComments=4
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5
