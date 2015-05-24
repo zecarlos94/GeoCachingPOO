@@ -2,7 +2,7 @@
 import java.util.*;
 //import java.lang.*;
 
-public class MisteryCache extends Cache
+public class MisteryCache extends Cache 
 {
     private ArrayList<ArrayList<String>> perguntasRespostas;
     private int geocoins; // geo coins minimos (50-100)

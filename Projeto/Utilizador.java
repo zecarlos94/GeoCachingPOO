@@ -250,6 +250,20 @@ public class Utilizador
         return new String(this.email+ " " +this.password+ " " +this.nome+ " " +this.genero+ " " +this.morada+ " " +this.timeline_nascimento.toString());
     }
     
-
+   /**
+     * Devolve um ArrayList com as últimas 10 atividades do utilizador
+     */
+   public ArrayList<Actividade> ultimasAtividades() {
+        ArrayList<Actividade> last10=new ArrayList<Actividade>();
+        Timeline t=this.actividades.firstKey();
+        int i=0;
+        while(i<10 && t!=null) {
+            if(i>0) t=this.actividades.higherKey(t);
+            Actividade a=this.actividades.get(t);
+            last10.add(a);
+            i++;
+        }
+        return last10;
+   }
     
 }
