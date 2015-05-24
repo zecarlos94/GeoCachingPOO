@@ -71,8 +71,7 @@ public class Utilizadores
     }
     
     /**
-     * Adiciona como amigos os dois utilizadores, actualizando os respectivos perfis
-     * 
+     * Adiciona como amigos os dois utilizadores, actualizando a lista de amizades e activadades dos perfis dos mesmos
      *  
      */
     
@@ -88,27 +87,54 @@ public class Utilizadores
         utilizador2.addActividade(utilizador2.getNome(),adicionou);
         
     }
+      /**
+     *  Apaga o estatudo de amizade dos dois utilizadores, actualizando a lista de amizades e activadades dos perfis dos mesmos
+     *  
+     */
+    
+    public void removeAmizade(String email1,String email2)
+    {
+        Utilizador utilizador1 = utilizadores.get(email1);
+        Utilizador utilizador2 = utilizadores.get(email2);
+        
+        utilizador1.removeAmigo(email2);
+        utilizador2.removeAmigo(email1);
+        
+        utilizador1.addActividade(utilizador2.getNome(),removeu);
+        utilizador2.addActividade(utilizador2.getNome(),removeu);
+        
+    }
+    
     
     /**
      *  Gera e adiciona uma actividade de descoberta ao utilizador
      */
     
-    public void descobertaCache(Cache cache,String acontecimento)
+    public void descobertaCache(String email,Cache cache)
     {
-        
+        Utilizador utilizador = utilizadores.get(email);
+        utilizador.descobertaCache(cache);
     }
-    //public ActividadeAmigo(String nome,String amigo,String acontecimento) -> Actividade, basta fazer toString
-    //public ActividadeCache(String nome,Cache cache,String acontecimento) -> Actividade -> toString
    
-    
     /**
-     * Remove o estatuto de amigos em ambos os perfis
+     *  Adiciona uma cache à lista de caches do utilizador
      */
-    public void removeAmizade(String email1,String email2)
+    
+    public void addCache(String email, Cache cache)
     {
-        utilizadores.get(email1).removeAmigo(email2);
-        utilizadores.get(email2).removeAmigo(email1);
+        utilizadores.get(email).addCache(cache);
     }
+   
+    /**
+     *  Remove uma cache à lista de caches do utilizador
+     */
+    
+    public void removeCache(String email, Cache cache)
+    {
+        utilizadores.get(email).removeCache(cache);
+    }
+    
+
     
     
     /**

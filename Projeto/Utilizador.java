@@ -181,7 +181,7 @@ public class Utilizador
      */
     public void addActividade(String nomeAmigo, String acontecimento)
     {
-        ActividadeAmigo actividade = new ActividadeAmigo(this.getEmail(),nomeAmigo,acontecimento);
+        Actividade actividade = new ActividadeAmigo(this.getEmail(),nomeAmigo,acontecimento);
         this.actividades.put(actividade.getTime(),actividade);
     }
     
@@ -194,7 +194,35 @@ public class Utilizador
     {
         this.amigos.remove(email);
     }
+    
+    /**
+     *  Gera a actividade de descoberta de Cache e actualiza as estatisticas
+     */
+    // Falta actualizar estatisticas
+    public void descobertaCache(Cache cache)
+    {
+        Actividade actividade = new ActividadeCache(this.getNome(),cache.clone(),"descobriu");
+        this.actividades.put(actividade.getTime(),actividade);
+    }
+    /**
+     *  Adiciona uma cache às Caches do utilizador e gera a respectiva actividade
+     */
+    public void addCache(Cache cache)
+    {
+        Actividade actividade = new ActividadeCache(this.getNome(),cache.clone(),"adicionou");
+        this.actividades.put(actividade.getTime(),actividade);
+        this.myCaches.add(cache);
+    }
      
+    /**
+     *  Remove uma cache às Caches do utilizador e gera a respectiva actividade
+     */
+    public void removeCache(Cache cache)
+    {
+        Actividade actividade = new ActividadeCache(this.getNome(),cache.clone(),"removeu");
+        this.actividades.put(actividade.getTime(),actividade);
+        this.myCaches.remove(cache);
+    }
     
     /**
      * Clone
