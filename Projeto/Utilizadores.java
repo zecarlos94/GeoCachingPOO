@@ -5,6 +5,20 @@ import java.util.*;
  */
 public class Utilizadores
 {
+    /**
+     * Variaveis de classe para gerar Actividades
+     */
+    
+     
+        private String removeu ="removeu"; // Ambas são para quando um utilizador remover/adicionar um amigo ou uma cache 
+        private String adicionou ="adicionou"; 
+        private String descobriu ="descobriu"; // Serve para descobertas de caches
+            // Construtores uteis para gerar Actividades
+        //public ActividadeAmigo(String nome,String amigo,String acontecimento) -> Actividade, basta fazer toString
+        //public ActividadeCache(String nome,Cache cache,String acontecimento) -> Actividade -> toString
+        //Ambas usam a hora do sistema
+        
+    
     HashMap<String, Utilizador> utilizadores;
     /**
      * Constructor for objects of class Utilizadores
@@ -57,13 +71,35 @@ public class Utilizadores
     }
     
     /**
-     * Adiciona como amigos os dois utilizadores, actualizando os respectivos perfis 
+     * Adiciona como amigos os dois utilizadores, actualizando os respectivos perfis
+     * 
+     *  
      */
+    
     public void addAmizade(String email1,String email2)
     {
-        utilizadores.get(email1).addAmigo(email2);
-        utilizadores.get(email2).addAmigo(email1);
+        Utilizador utilizador1 = utilizadores.get(email1);
+        Utilizador utilizador2 = utilizadores.get(email2);
+        
+        utilizador1.addAmigo(email2);
+        utilizador2.addAmigo(email1);
+        
+        utilizador1.addActividade(utilizador2.getNome(),adicionou);
+        utilizador2.addActividade(utilizador2.getNome(),adicionou);
+        
     }
+    
+    /**
+     *  Gera e adiciona uma actividade de descoberta ao utilizador
+     */
+    
+    public void descobertaCache(Cache cache,String acontecimento)
+    {
+        
+    }
+    //public ActividadeAmigo(String nome,String amigo,String acontecimento) -> Actividade, basta fazer toString
+    //public ActividadeCache(String nome,Cache cache,String acontecimento) -> Actividade -> toString
+   
     
     /**
      * Remove o estatuto de amigos em ambos os perfis

@@ -11,7 +11,7 @@ public class Utilizador
     private char genero;
     private String morada;                                          
     private Timeline timeline_nascimento;    // O construtor recebe d/m/y                                   
-    private TreeMap<Timeline, Actividade> timeline;    //Lista das timeline em que o utilizador participou, cuja chave corresponde à timeline em que o mesmo participou    
+    private TreeMap<Timeline, Actividade> actividades;    //Lista das timeline em que o utilizador participou, cuja chave corresponde à timeline em que o mesmo participou    
     private HashMap<String, Integer> estatisticas;    //Número de caches encontradas pelo utilizador por cada tipo
     private ArrayList<String> amigos;     //Lista com os emails dos amigos      
     private Caches myCaches;
@@ -26,19 +26,19 @@ public class Utilizador
         this.genero='N';
         this.morada="N/A";
         this.timeline_nascimento=new Timeline();
-        this.timeline=new TreeMap<Timeline, Actividade>();
+        this.actividades=new TreeMap<Timeline, Actividade>();
         this.estatisticas=new HashMap<String, Integer>();
         this.amigos=new ArrayList<String>();
         this.myCaches = new Caches();
     }
     
-    public Utilizador(String email, String password, String nome, char genero, String morada, Timeline timeline_nascimento, TreeMap<Timeline, Actividade> timeline, HashMap<String, Integer> estatisticas, ArrayList<String> amigos, Caches caches) {
+    public Utilizador(String email, String password, String nome, char genero, String morada, Timeline timeline_nascimento, TreeMap<Timeline, Actividade> actividades, HashMap<String, Integer> estatisticas, ArrayList<String> amigos, Caches caches) {
         this.email=email;
         this.password=password;
         this.nome=nome;
         this.genero=genero;
         this.timeline_nascimento=new Timeline(timeline_nascimento);
-        this.timeline=new TreeMap<Timeline, Actividade>(timeline);
+        this.actividades=new TreeMap<Timeline, Actividade>(new TimelineComparator());
         this.estatisticas=new HashMap<String, Integer>(estatisticas);
         this.amigos=new ArrayList<String>();
         this.myCaches = caches.clone();
@@ -51,7 +51,7 @@ public class Utilizador
         this.genero=u.getGenero();
         this.morada=u.getMorada();
         this.timeline_nascimento=u.getTimelineNascimento();
-        this.timeline=u.getAtividades();
+        this.actividades=u.getAtividades();
         this.estatisticas=u.getEstatisticas();
         this.amigos=u.getAmigos();
         this.myCaches = u.getMyCaches();
@@ -85,7 +85,7 @@ public class Utilizador
     }
     
     public TreeMap<Timeline, Actividade> getAtividades() {
-        return this.timeline;
+        return this.actividades;
     }
     
     public HashMap<String, Integer> getEstatisticas() {
@@ -134,7 +134,7 @@ public class Utilizador
             Map.Entry<Timeline, Actividade> elem=it.next();
             aux.put(elem.getKey().clone(), elem.getValue());
         }
-        this.timeline=aux;
+        this.actividades=aux;
     }
     
     public void setEstatisticas(HashMap<String, Integer> estatisticas) {
@@ -167,12 +167,25 @@ public class Utilizador
     
     /**
      * Adiciona um amigo a lista de amigos
+     *  
      */
     
     public void addAmigo(String email)
     {
         this.amigos.add(email);
     }
+    
+    /**
+     *  Adiciona uma actividade ao perfil
+     *      
+     */
+    public void addActividade(String nomeAmigo, String acontecimento)
+    {
+        ActividadeAmigo actividade = new ActividadeAmigo(this.getEmail(),nomeAmigo,acontecimento);
+        this.actividades.put(actividade.getTime(),actividade);
+    }
+    
+    
     
     /**
      * Remove um amigo
@@ -198,7 +211,7 @@ public class Utilizador
       if((obj == null) || (this.getClass() != obj.getClass())) return false;
       Utilizador c = (Utilizador) obj;
       return(this.email.equals(c.getEmail()) && this.password.equals(c.getPassword()) && this.nome.equals(c.getNome()) && this.genero==c.getGenero() 
-                 && this.morada.equals(c.getMorada()) && this.timeline_nascimento.equals(c.getTimelineNascimento()) && this.timeline.equals(c.getAtividades())
+                 && this.morada.equals(c.getMorada()) && this.timeline_nascimento.equals(c.getTimelineNascimento()) && this.actividades.equals(c.getAtividades())
                  && this.estatisticas.equals(c.getEstatisticas()) && this.amigos.equals(c.getAmigos())); // falta adicionar equals à classe Caches);
     }
     

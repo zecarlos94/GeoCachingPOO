@@ -183,6 +183,9 @@ public class Main
         Scanner sc=new Scanner(System.in); 
         int optn;
         String email;
+        
+     
+        
                      /* 
                  *  Depois de validar os dados da Cache ou Report(n se verifica se as coordenadas existem)
                  *      Adicionar no main a cache ou o report às respectivas estruturas
