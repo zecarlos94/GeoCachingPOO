@@ -211,31 +211,30 @@ public class Main
      */
     public static Coordenadas scanCoordenadas() {
          Scanner sc=new Scanner(System.in); 
-         int i, graus, minutos, segundos;
+         int i;
+         double x1,y1;
          do {
              i=0;
              out.printf("Insira os valores referentes à latitude:\n");
-             out.printf("    Graus: "); graus=sc.nextInt();
-             out.printf("    Minutos: "); minutos=sc.nextInt();
-             out.printf("    Segundos: "); segundos=sc.nextInt();
-             if(!validaCoord("latitude", graus, minutos, segundos)) {
+             out.printf("    x: "); x1=sc.nextInt();
+             out.printf("    y: "); y1=sc.nextInt();
+             if(!validaCoord("latitude", x1, y1)) {
                   i=1;
                   out.printf("\nInsira coordenadas válidas!");
              }
          } while(i==1);
-         Coordenada latitude=new Coordenada(graus, minutos, segundos);
+         Coordenada latitude=new Coordenada(x1,y1);
          do {
              i=0;
              out.printf("Insira os valores referentes à longitude:\n");
-             out.printf("    Graus: "); graus=sc.nextInt();
-             out.printf("    Minutos: "); minutos=sc.nextInt();
-             out.printf("    Segundos: "); segundos=sc.nextInt();
-             if(!validaCoord("longitude", graus, minutos, segundos)) {
+             out.printf("    x: "); x1=sc.nextInt();
+             out.printf("    y: "); x2=sc.nextInt();
+             if(!validaCoord("longitude", x1, y1)) {
                   i=1;
                   out.printf("\nInsira coordenadas válidas!");
              }
          } while(i==1);
-         Coordenada longitude=new Coordenada(graus, minutos, segundos);
+         Coordenada longitude=new Coordenada(x1, y1);
          return new Coordenadas(latitude, longitude);
     }
     
@@ -252,15 +251,13 @@ public class Main
         out.printf("\nÚltimas 10 atividades: "); last10.toString();
     }
     
-
-    public static boolean validaCoord(String escala, int graus, int minutos, int segundos) {
-        if(escala.equals("latitude") && (graus<0 || graus>90)) return false;
-        else if(graus<0 || graus>180) return false;
-        if(minutos<0 || minutos>59) return false;
-        if(segundos<0 || segundos>59) return false;
+    public static boolean validaCoord(String escala, double x ,double y) {
+        if(escala.equals("latitude") && (x<0) return false;
+        else if(x<0) return false;
+        if(y<0) return false;
         return true;
     }
-    
+
     public static void menuAdmin(Utilizador u, Utilizadores utilizadores, Caches caches, CacheReports reports) {
         Scanner sc=new Scanner(System.in); 
         int optn;
@@ -310,6 +307,8 @@ public class Main
                         out.printf("\nReport adicionado com sucesso\n");
                         break;
                   case 6: 
+                        Cache cache1 = new Cache();
+                        u.add(cache1);
                         break;
                   case 7:
                         u.getMyCaches().toString();
