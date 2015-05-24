@@ -3,19 +3,24 @@ import java.lang.Math.*;
 public class Coordenadas
 {
     /**
+     *  Variável de classe para calcular distancia entre 2 pontos
+     */
+    double earthRadius = 3958.75;
+    
+    /**
      * Variáveis de Instância
      */
-    private Coordenada latitude; // mudar para double ( Parte inteira graus ,  resto minutos decimais)
-    private Coordenada longitude;
+    private double latitude; // mudar para double ( Parte inteira graus ,  resto minutos decimais)
+    private double longitude;
     
     public Coordenadas() {
-        this.latitude= new Coordenada();
-        this.longitude=new Coordenada();
+        this.latitude= 0;
+        this.longitude=0;
     }
     
-    public Coordenadas(Coordenada latitude, Coordenada longitude) {
-        this.latitude= new Coordenada(latitude);
-        this.longitude= new Coordenada(longitude);
+    public Coordenadas(double latitude, double longitude) {
+        this.latitude= latitude;
+        this.longitude= longitude;
     }
     
     public Coordenadas(Coordenadas c) {
@@ -26,19 +31,19 @@ public class Coordenadas
     /**
      * Getters e Setters
      */
-    public Coordenada getLatitude() {
+    public double getLatitude() {
         return this.latitude;
     }
     
-    public Coordenada getLongitude() {
+    public double getLongitude() {
         return this.longitude;
     }
     
-    public void setLatitude(Coordenada latitude) {
+    public void setLatitude(double latitude) {
         this.latitude=latitude;
     }
     
-    public void setLongitude(Coordenada longitude) {
+    public void setLongitude(double longitude) {
         this.longitude=longitude;
     }
     
@@ -49,9 +54,19 @@ public class Coordenadas
     /**
     *Calcular a distancia entre 2 coordenadas   
     */
-    public void CoorDistance(Coordenada a,Coordenada b) {
-        int distance;
-        
+    public double distance(Coordenadas b) {
+      double lat2 = b.getLatitude();
+      double lng2 = b.getLongitude();
+             
+      double dLat = ToRadians(lat2-this.latitude);
+      double dLng = ToRadians(lng2-this.longitude);
+      double a = Math.sin(dLat/2) * Math.sin(dLat/2) + 
+             Math.cos(ToRadians(this.latitude)) * Math.cos(ToRadians(lat2)) * 
+             Math.sin(dLng/2) * Math.sin(dLng/2);
+      double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+      double dist = earthRadius * c;
+      double meterConversion = 1609.00;
+      return dist * meterConversion;
     }
  
     public double ToRadians(double degrees) 
@@ -60,19 +75,7 @@ public class Coordenadas
        return radians;
     }
 
-    public double DirectDistance(double lat1, double lng1, double lat2, double lng2) 
-    {
-      double earthRadius = 3958.75;
-      double dLat = ToRadians(lat2-lat1);
-      double dLng = ToRadians(lng2-lng1);
-      double a = Math.sin(dLat/2) * Math.sin(dLat/2) + 
-             Math.cos(ToRadians(lat1)) * Math.cos(ToRadians(lat2)) * 
-             Math.sin(dLng/2) * Math.sin(dLng/2);
-      double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-      double dist = earthRadius * c;
-      double meterConversion = 1609.00;
-      return dist * meterConversion;
-    }
+
     
     /**
      * Métodos auxiliares
@@ -81,7 +84,7 @@ public class Coordenadas
       if(this == obj) return true;  // é o próprio
       if((obj == null) || (this.getClass() != obj.getClass())) return false;
       Coordenadas c = (Coordenadas) obj;
-      return(this.latitude.equals(c.getLatitude()) && this.longitude.equals(c.getLongitude()));
+      return(this.latitude == c.getLatitude() && this.longitude == c.getLongitude());
     }
    
     public String toString(){
