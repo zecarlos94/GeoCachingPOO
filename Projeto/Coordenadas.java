@@ -1,3 +1,5 @@
+import java.lang.Math.*;
+
 public class Coordenadas
 {
     /**
@@ -44,8 +46,35 @@ public class Coordenadas
      *  Fazer funçao de scan de coordenadas???
      */
     
+    /**
+    *Calcular a distancia entre 2 coordenadas   
+    */
+    public void CoorDistance(Coordenada a,Coordenada b) {
+        int distance;
+        
+    }
   
-    
+   
+
+   public double ToRadians(double degrees) 
+   {
+       double radians = degrees * (3.1415926535897932385) / 180;
+       return radians;
+  }
+
+  public double DirectDistance(double lat1, double lng1, double lat2, double lng2) 
+  {
+      double earthRadius = 3958.75;
+      double dLat = ToRadians(lat2-lat1);
+      double dLng = ToRadians(lng2-lng1);
+      double a = Math.sin(dLat/2) * Math.sin(dLat/2) + 
+             Math.cos(ToRadians(lat1)) * Math.cos(ToRadians(lat2)) * 
+             Math.sin(dLng/2) * Math.sin(dLng/2);
+      double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+      double dist = earthRadius * c;
+      double meterConversion = 1609.00;
+      return dist * meterConversion;
+  }
     
     /**
      * Métodos auxiliares
@@ -65,5 +94,8 @@ public class Coordenadas
       return new Coordenadas(this);
     }
     
+    public int hashCode() {
+       return this.toString().hashCode();
+   }
     //fazer funçao de hash
 }

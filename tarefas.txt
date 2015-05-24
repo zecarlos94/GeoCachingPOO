@@ -1,6 +1,4 @@
-
-
-	Tarefas a Realizar
+Tarefas a Realizar
 
 -Apresentar opções extras para administradores
 	- Pedir lista para ver cache report
@@ -16,9 +14,6 @@
 	- Remover cache (da lista de caches do utilizador)
 	
 -Coordenadas
-	-Calcular a distancia entre 2 coordenadas
 	-I/O Transformar String no formato coordenadas
 
--Gerar estado atmosférico conforme a data ( Sol Chuva nublado ...)
 
-- 
