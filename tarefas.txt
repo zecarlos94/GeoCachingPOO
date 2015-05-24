@@ -1,4 +1,4 @@
-Tarefas a Realizar
+arefas a Realizar
 
 -Apresentar opções extras para administradores
 	- Pedir lista para ver cache report
@@ -7,13 +7,18 @@ Tarefas a Realizar
 	- Opção para remover Cache ( inserir coordenadas)
 	- Opção criar evento (inserir Data de termino de inscrições)
 
--Adicionar as seguintes opçoes ao utilizador
-	- Add opção report cache (inserir coordenadas e string(texto do report))
-	- Opçao para apresentar caches do utilizador
-	- Add cache (c
-	- Remover cache (da lista de caches do utilizador)
+-Adicionar  opçoes ao utilizador
+
+-Adicionar funçao no main que recebe as perguntas e respostas da MisteryCache , faz a interaçao
+com o utilizador e devolve o numero de respostas certas
+
+-Unit tests das classes mais importantes
+
+- Exceptions
+
+- Estatisticas do utilizador
+
+- Gerar Evento
 	
--Coordenadas
-	-I/O Transformar String no formato coordenadas
 
 
