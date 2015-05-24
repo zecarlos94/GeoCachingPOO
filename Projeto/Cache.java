@@ -71,7 +71,10 @@ public abstract class Cache
      */
     public abstract int getGeoCoins();
     
-
+     /**
+     *  Devolve os geoCoins obtidos pelo utilizador na cache
+     */
+    public abstract int getGeoCoinsTotais();
     
     /**
      * Setters
