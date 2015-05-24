@@ -9,16 +9,17 @@ Tarefas a Realizar
 
 -Adicionar  opçoes ao utilizador
 
--Adicionar funçao no main que recebe as perguntas e respostas da MisteryCache , faz a interaçao
-com o utilizador e devolve o numero de respostas certas
-
--Unit tests das classes mais importantes
-
-- Exceptions
-
 - Estatisticas do utilizador
 
 - Gerar Evento
+
+
+-Adicionar funçao no main que recebe as perguntas e respostas da MisteryCache , faz a interaçao
+com o utilizador e devolve o numero de respostas certas(feito)
+
+-Unit tests das classes mais importantes(feito)
+
+- Exceptions(feito)
 	
 
 
