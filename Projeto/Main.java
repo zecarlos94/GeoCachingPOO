@@ -194,6 +194,11 @@ public class Main
                         break;
                   case 6: 
                         break;
+                  case 7:
+                        u.getMyCaches().toString();
+                        break;
+                  case 8:
+                        break;
                   default:
                         System.out.printf("\nInsira uma opção válida!\n");
                         break;
@@ -256,5 +261,75 @@ public class Main
         return true;
     }
     
-    public static void menuAdmin(Utilizador user, Utilizadores utilizadores, Caches caches, CacheReports reports) {;}
+    public static void menuAdmin(Utilizador u, Utilizadores utilizadores, Caches caches, CacheReports reports) {
+        Scanner sc=new Scanner(System.in); 
+        int optn;
+        String email;
+        do {
+            // fazer submenus, menu mycaches com (add remover ver)
+            out.printf("\nOpções de Conta:\n   1-Informações\n   2-Adicionar Amigo\n   3-Remover Amigo\n   4-Informação dos amigos\n");
+            out.printf("   5-Reportar Cache\n   6-Adicionar Cache\n   7-Ver as minhas caches\n   8- Remover uma das caches\n   9-Ver reports\n   10-Criar Evento\n   11-Sair\n");
+            optn=sc.nextInt();
+            switch(optn) {
+                case 1: 
+                        infoUser(u);
+                        break;
+                case 2:
+                         out.printf("\nInsira o email do amigo que deseja adicionar: "); email=sc.next();
+                         if(u.getAmigos().contains(email)) out.printf("\nVocê já adicionou este amigo!\n");
+                         else if(u.getEmail().equals(email)) out.printf("\nVocê não se pode adicionar como amigo!\n");
+                         else if(utilizadores.existe(email)) {
+                             utilizadores.addAmizade(u.getEmail(),email);
+                             out.printf("\nAmigo adicionado com sucesso!\n");
+                         }
+                         else out.printf("\nNão existe nenhum utilizador registado com esse email!\n");
+                         break;
+                 case 3: 
+                        out.printf("\nInsira o email do amigo que deseja remover: "); email=sc.next();
+                        if(!u.getAmigos().contains(email)) out.printf("\nNão existe nenhum amigo com este email, por isso não é possível remover!\n");
+                        else {
+                            utilizadores.removeAmizade(u.getEmail(),email);
+                            out.printf("\nAmigo removido!\n");
+                        }
+                        break;
+                 case 4: 
+                        out.printf("\nInsira o email do amigo cuja informação deseja ver: "); email=sc.next();
+                        if(!u.getAmigos().contains(email)) out.printf("\nNão existe nenhum amigo com este email!\n");
+                        else {
+                            Utilizador friend=utilizadores.get(email).clone();
+                            infoUser(friend);
+                        }
+                        break;
+                  case 5: 
+                        out.printf("\nInsira a latitude e a longitude da cache que deseja reportar:");
+                        Coordenadas coordenadas=scanCoordenadas();
+                        out.printf("\nDescreva a razão do seu report numa linha\n"); 
+                        String texto=sc.next(); 
+                        Report report=(Report) new Report(coordenadas, texto);      // Cria um report com as horas do sistema
+                        reports.add(report);
+                        out.printf("\nReport adicionado com sucesso\n");
+                        break;
+                  case 6: 
+                        break;
+                  case 7:
+                        u.getMyCaches().toString();
+                        break;
+                  case 8:
+                        out.printf("\nInsira a latitude e a longitude da cache que deseja remover:");
+                        Coordenadas coordenadas=scanCoordenadas();
+                        caches.getCaches().remove(coordenadas);
+                        break;
+                  case 9:
+                        reports.getReports().toString();
+                        break;
+                  case 10:
+                        break;
+                  case 11:
+                        break;
+                  default:
+                        System.out.printf("\nInsira uma opção válida!\n");
+                        break;
+            }
+        } while(optn!=11);
+    }
 }

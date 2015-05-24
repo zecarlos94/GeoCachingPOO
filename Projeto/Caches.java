@@ -99,4 +99,8 @@ public class Caches
       Caches c = (Caches) obj;
       return this.caches.equals(c.getCaches());
     }
+    
+    public String toString() {
+        return new String(this.caches.toString());
+    }
 }
