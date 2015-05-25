@@ -12,12 +12,12 @@ public class geraGeoCoins
     /**
      * Constructor for objects of class geraGeoCoins
      */
-    public geraGeoCoins()
+    public geraGeoCoins() throws NumberFormatException
     {
         Random r = new Random();
         geoCoins = r.nextInt(50) + 50; // entre 100 e 50
     }
 
-    public int getGeoCoins()
+    public int getGeoCoins() throws NumberFormatException
     { return geoCoins;}
 }

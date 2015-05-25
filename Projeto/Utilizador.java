@@ -32,7 +32,7 @@ public class Utilizador
         this.myCaches = new Caches();
     }
     
-    public Utilizador(String email, String password, String nome, char genero, String morada, Timeline timeline_nascimento, TreeMap<Timeline, Actividade> actividades, StatsUtilizador estatisticas, ArrayList<String> amigos, Caches caches) {
+    public Utilizador(String email, String password, String nome, char genero, String morada, Timeline timeline_nascimento, TreeMap<Timeline, Actividade> actividades, StatsUtilizador estatisticas, ArrayList<String> amigos, Caches caches) throws NumberFormatException {
         this.email=email;
         this.password=password;
         this.nome=nome;
@@ -44,7 +44,7 @@ public class Utilizador
         this.myCaches = caches.clone();
     }
     
-    public Utilizador(Utilizador u) {
+    public Utilizador(Utilizador u) throws NumberFormatException {
         this.email=u.getEmail();
         this.password=u.getPassword();
         this.nome=u.getNome();
@@ -122,11 +122,11 @@ public class Utilizador
         this.morada=morada;
     }
     
-    public void setTimelineNascimento(Timeline timeline_nascimento) {
+    public void setTimelineNascimento(Timeline timeline_nascimento) throws NumberFormatException {
         this.timeline_nascimento=timeline_nascimento.clone();
     }
     
-    public void setAtividades(TreeMap<Timeline, Actividade> timeline) {
+    public void setAtividades(TreeMap<Timeline, Actividade> timeline) throws NumberFormatException {
         TreeMap<Timeline, Actividade> aux=new TreeMap<Timeline, Actividade>(new TimelineComparator());
         Set<Map.Entry<Timeline, Actividade>> eset=timeline.entrySet();
         Iterator<Map.Entry<Timeline, Actividade>> it=eset.iterator();
@@ -193,7 +193,7 @@ public class Utilizador
      *  Gera a actividade de descoberta de Cache e actualiza as estatisticas
      */
     
-    public void descobertaCache(Cache cache, int geoCoins)
+    public void descobertaCache(Cache cache, int geoCoins) throws NumberFormatException
     {
         Actividade actividade = new ActividadeCache(this.getNome(),cache.clone(),"descobriu");
         this.actividades.put(actividade.getTime(),actividade);

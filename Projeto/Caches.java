@@ -82,7 +82,7 @@ public class Caches
         return caches.containsKey(c.getCoordenadas());
     }
     
-    public boolean existe(Coordenadas c)
+    public boolean existe(Coordenadas c) throws NumberFormatException
     {
         return caches.containsKey(c);
     }

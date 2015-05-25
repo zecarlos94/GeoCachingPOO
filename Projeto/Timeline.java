@@ -36,7 +36,7 @@ public class Timeline
        this.year=calendario.get(Calendar.YEAR);
    }
    
-   public Timeline(int hora, int minuto, int segundo,int day, int month, int year) {
+   public Timeline(int hora, int minuto, int segundo,int day, int month, int year) throws NumberFormatException {
        this.hora=hora;
        this.minuto=minuto;
        this.segundo=segundo;
@@ -45,7 +45,7 @@ public class Timeline
        this.year=year;
    }
     
-   public Timeline(Timeline t) {
+   public Timeline(Timeline t) throws NumberFormatException {
        this.hora=t.getHora();
        this.minuto=t.getMinuto();
        this.segundo=t.getSegundo();
@@ -56,7 +56,7 @@ public class Timeline
    /**
     *  Construtor específico para Datas de nascimento, variáveis hora minuto e segundo são ignoradas e deixadas a -1 com o propósito de distinguir tempos de datas
     */
-   public Timeline(int day, int month,int year)
+   public Timeline(int day, int month,int year) throws NumberFormatException
    {
         this.day=day;
        this.month=month;
@@ -106,19 +106,19 @@ public class Timeline
     /**
      * Setters
      */
-    public void setHora(int hora) {
+    public void setHora(int hora) throws NumberFormatException {
         this.hora=hora;
     }
     
-    public void setMinuto(int minuto) {
+    public void setMinuto(int minuto) throws NumberFormatException {
         this.minuto=minuto;
     }
     
-    public void setSegundo(int segundo) {
+    public void setSegundo(int segundo) throws NumberFormatException {
         this.segundo=segundo;
     }
     
-    public void setDay(int day) {
+    public void setDay(int day) throws NumberFormatException {
         //deve validar o dia
         if((this.month==1 || this.month==3 || this.month==5 || this.month==7 || this.month==8 || this.month==10 || this.month==12) && day>0 && day<=31) 
             this.day=day; 
@@ -127,12 +127,12 @@ public class Timeline
         if(this.month==2 && this.year%4!=0 && day>0 && day<=28) this.day=day;
     }
     
-    public void setMonth(int month) {
+    public void setMonth(int month) throws NumberFormatException {
         //deve validar o mês
         if(month>=1 && month<=12) this.month=month;
     }
     
-    public void setYear(int year) {
+    public void setYear(int year) throws NumberFormatException {
         this.year=year;
     }
     
@@ -160,7 +160,7 @@ public class Timeline
         return new String(this.hora+ ":" +this.minuto+ ":" +this.segundo+ " " +this.day+ "/" +this.month+ "/" +this.year);
     }
     
-    public void jumpTime(double horas) {
+    public void jumpTime(double horas) throws NumberFormatException {
         double aux=horas;
         int hora=(int) aux; this.hora=hora;
         aux-=hora; aux*=60;

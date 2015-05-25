@@ -11,19 +11,19 @@ public class MultiCache extends Cache
            geocoins=(new geraGeoCoins()).getGeoCoins();;
     }
     
-    public MultiCache(HashMap<String,Timeline> livro_registos, Timeline timeline, Coordenadas coordenadas, ArrayList<Coordenadas> checkpoints, int geocoins) {
+    public MultiCache(HashMap<String,Timeline> livro_registos, Timeline timeline, Coordenadas coordenadas, ArrayList<Coordenadas> checkpoints, int geocoins) throws NumberFormatException {
             super(livro_registos,timeline,coordenadas);
             setCheckpoints(checkpoints);
             this.geocoins=geocoins;
     }
     
-    public MultiCache(Coordenadas coordenadas,ArrayList<Coordenadas> checkpoints) {
+    public MultiCache(Coordenadas coordenadas,ArrayList<Coordenadas> checkpoints) throws NumberFormatException {
             super(coordenadas);
             setCheckpoints(checkpoints);
             this.geocoins=geocoins;
     }
 
-    public MultiCache(MultiCache c){
+    public MultiCache(MultiCache c) throws NumberFormatException {
             super(c);
             checkpoints=c.getCheckpoints();
             geocoins=c.getGeoCoins();
@@ -49,11 +49,11 @@ public class MultiCache extends Cache
         return r;
     }
     
-    public void setGeoCoins(int coins){
+    public void setGeoCoins(int coins) throws NumberFormatException {
         this.geocoins=coins;
     }
     
-    public void setCheckpoints(ArrayList<Coordenadas> pontos){
+    public void setCheckpoints(ArrayList<Coordenadas> pontos) throws NumberFormatException {
         this.checkpoints = new ArrayList<Coordenadas>();
         for(Coordenadas c : pontos) this.checkpoints.add(c.clone());
     }
@@ -61,7 +61,7 @@ public class MultiCache extends Cache
     /**
      * Devolve as coordenadas do próximo checkpoint, se existir
      */
-    public Coordenadas nextPoint(Coordenadas c) {
+    public Coordenadas nextPoint(Coordenadas c) throws NumberFormatException {
         int done=1; 
         Coordenadas r = null;
         Iterator<Coordenadas> it=this.checkpoints.iterator();
@@ -76,7 +76,7 @@ public class MultiCache extends Cache
     /**
      * Verifica se as coordenadas dadas são as da cache final
      */
-    public boolean checkMC(Coordenadas c) {
+    public boolean checkMC(Coordenadas c) throws NumberFormatException {
         return super.coordenadas.equals(c);
     }
 

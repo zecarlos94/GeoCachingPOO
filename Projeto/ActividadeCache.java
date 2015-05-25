@@ -26,7 +26,7 @@ public class ActividadeCache extends Actividade
         
     }
     
-    public ActividadeCache(Timeline time,String nome,Cache cache,String acontecimento)
+    public ActividadeCache(Timeline time,String nome,Cache cache,String acontecimento) throws NumberFormatException
     {
         super(time,nome);
         if(cache instanceof MultiCache) this.cache = new MultiCache((MultiCache)cache);

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=
+comment0.target=StringExisteException()
+comment0.text=\n\ COnstrutor\ para\ objetos\ da\ classe\ StringExisteException\n
+comment1.params=str
+comment1.target=StringExisteException(java.lang.String)
+numComments=2

@@ -36,7 +36,7 @@ public class StatsUtilizador
      *      Incrementa o numero de caches descobertas e o clima do tipo concreto de Cache
      *      Adiciona os geocoins à coluna dos GeoCoins Facturados
      */ 
-    public void add(Cache cache,int geoCoins,String tempo)
+    public void add(Cache cache,int geoCoins,String tempo) throws StringExisteException 
     {
         for( int i = 0; i < rowNames.length ; i++)
             if ( cache.getClass().getName().equals(rowNames[i]))
@@ -51,7 +51,7 @@ public class StatsUtilizador
     /**
      *  Verifica se é o clima que o utilizador tem melhor performance 
      */
-    public boolean climaFavorito(String clima)
+    public boolean climaFavorito(String clima) throws StringExisteException
     {
         String melhorClima = null;
         int max = -1;

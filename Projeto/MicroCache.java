@@ -10,18 +10,18 @@ public class MicroCache extends Cache
        geocoins=(new geraGeoCoins()).getGeoCoins();
    }
    
-   public MicroCache(HashMap<String, Timeline> livro_registos, Timeline t, Coordenadas coordenadas,int gc)
+   public MicroCache(HashMap<String, Timeline> livro_registos, Timeline t, Coordenadas coordenadas,int gc) throws NumberFormatException
    {
        super(livro_registos,t,coordenadas);
        geocoins=gc;
    }
    
-   public MicroCache(Coordenadas coordenadas)
+   public MicroCache(Coordenadas coordenadas) throws NumberFormatException
    {
        super(coordenadas);
    }
 
-   public MicroCache(MicroCache mc)
+   public MicroCache(MicroCache mc) throws NumberFormatException
    {
        super(mc);
        geocoins = mc.getGeoCoins();

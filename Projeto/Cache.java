@@ -27,13 +27,13 @@ public abstract class Cache
         this.coordenadas=new Coordenadas();
     }
     
-    protected Cache(HashMap<String, Timeline> livro_registos, Timeline t, Coordenadas coordenadas) {
+    protected Cache(HashMap<String, Timeline> livro_registos, Timeline t, Coordenadas coordenadas) throws NumberFormatException {
         this.livro_registos=new HashMap<String, Timeline>(livro_registos);
         this.timeline=new Timeline(t);
         this.coordenadas=new Coordenadas(coordenadas);
     }
 
-    protected Cache(Coordenadas coordenadas) {
+    protected Cache(Coordenadas coordenadas) throws NumberFormatException {
         this.livro_registos=new HashMap<String, Timeline>();
         this.timeline=new Timeline();
         this.coordenadas=new Coordenadas(coordenadas);
@@ -106,7 +106,7 @@ public abstract class Cache
         this.livro_registos=aux;
     }
    
-    public void setCoordenadas(Coordenadas coordenadas) {
+    public void setCoordenadas(Coordenadas coordenadas) throws NumberFormatException {
         this.coordenadas=new Coordenadas(coordenadas);
     }
     

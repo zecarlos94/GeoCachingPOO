@@ -23,14 +23,14 @@ public class Report
        time = new Timeline(); 
     }
 
-    public Report(Timeline time , Coordenadas coordenadas,String texto)
+    public Report(Timeline time , Coordenadas coordenadas,String texto) throws NumberFormatException
     {
        this.coordenadas = coordenadas.clone();
        texto = texto;
        this.time = time;
     }
     
-    public Report(Coordenadas coordenadas,String texto)
+    public Report(Coordenadas coordenadas,String texto) throws NumberFormatException
     {
        this.coordenadas = coordenadas.clone();
        texto = texto;
@@ -64,7 +64,7 @@ public class Report
         this.texto = texto;
     }
     
-    public void setCoordenadas(Coordenadas coordenadas)
+    public void setCoordenadas(Coordenadas coordenadas) throws NumberFormatException, StringExisteException
     {
         this.coordenadas = coordenadas.clone();
     }

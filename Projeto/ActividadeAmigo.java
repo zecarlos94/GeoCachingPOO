@@ -22,7 +22,7 @@ public class ActividadeAmigo extends Actividade
      *      Cria a actividade com as horas do sistema
      * 
      */
-    public ActividadeAmigo(String nome,String amigo,String acontecimento)
+    public ActividadeAmigo(String nome,String amigo,String acontecimento) throws NumberFormatException, StringExisteException
     {
         super(nome);
         this.amigo = amigo;
@@ -31,7 +31,7 @@ public class ActividadeAmigo extends Actividade
     /**
      *  Igual ao anterior mas com horas predefinindas  
      */
-    public ActividadeAmigo(Timeline time,String nome,String amigo,String acontecimento)
+    public ActividadeAmigo(Timeline time,String nome,String amigo,String acontecimento) throws NumberFormatException, StringExisteException
     {
         super(time,nome);
         this.amigo = amigo;

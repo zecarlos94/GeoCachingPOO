@@ -10,7 +10,7 @@ public class geraAtmosfera {
  */
   private String clima;
 
-  public geraAtmosfera() {
+  public geraAtmosfera() throws StringExisteException{
     Random r = new Random();
     Timeline time = new Timeline();
     int month = time.getMonth();
@@ -47,20 +47,20 @@ public class geraAtmosfera {
  public String getClima()
  {  return this.clima;}
  
- public static int GeraMes() {
+ public static int GeraMes() throws NumberFormatException {
     Random rn = new Random();
     int mes = rn.nextInt(11) + 1;
     return mes;
   } 
   
- public static String geraInverno() {
+ public static String geraInverno() throws StringExisteException { 
     String estados[] = {"Nublado","Chuvas Fracas","Chuvas Fortes","Frio"};
     Random rn = new Random();
     int i = rn.nextInt(3) + 1;
     return estados[i];
  }
  
- public static String geraVerao() {
+ public static String geraVerao() throws StringExisteException {
     String estados[] = {"Sol","Chuvas Fracas","Quente"};
     Random rn = new Random();
     int i = rn.nextInt(2) + 1;

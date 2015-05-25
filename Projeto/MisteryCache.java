@@ -14,19 +14,19 @@ public class MisteryCache extends Cache
            geocoins=(new geraGeoCoins()).getGeoCoins();
     }
     
-    public MisteryCache(HashMap<String,Timeline> livro_registos, Timeline timeline, Coordenadas coordenadas, ArrayList<ArrayList<String>> perguntasRespostas, int geocoins) {
+    public MisteryCache(HashMap<String,Timeline> livro_registos, Timeline timeline, Coordenadas coordenadas, ArrayList<ArrayList<String>> perguntasRespostas, int geocoins) throws NumberFormatException  {
             super(livro_registos,timeline,coordenadas);
             setPerguntasRespostas(perguntasRespostas);
             this.geocoins=geocoins;
     }
     
-    public MisteryCache(Coordenadas coordenadas, ArrayList<ArrayList<String>> perguntasRespostas) {
+    public MisteryCache(Coordenadas coordenadas, ArrayList<ArrayList<String>> perguntasRespostas) throws NumberFormatException {
             super(coordenadas);
             setPerguntasRespostas(perguntasRespostas);
             this.geocoins=geocoins;
     }
 
-    public MisteryCache(MisteryCache c){
+    public MisteryCache(MisteryCache c) throws NumberFormatException {
             super(c);
             perguntasRespostas =c.getPerguntasRespostas();
             geocoins=c.getGeoCoins();
@@ -40,7 +40,7 @@ public class MisteryCache extends Cache
      *  Devolve o numero de geocoins que o utilizador ganhou com esta cache
      *      Depende dos geocoins base (50-100) e do numero de respostas certas
      */
-    public int getGeoCoinsTotais(int respostasCertas)
+    public int getGeoCoinsTotais(int respostasCertas) throws NumberFormatException
     {
         return geocoins + (geocoins/4) * respostasCertas;
     }
@@ -49,11 +49,11 @@ public class MisteryCache extends Cache
         return perguntasRespostas;
     }
     
-    public void setGeocoins(int coins){
+    public void setGeocoins(int coins) throws NumberFormatException {
         this.geocoins=coins;
     }
     
-    public void setPerguntasRespostas(ArrayList<ArrayList<String>> perguntasRespostas){
+    public void setPerguntasRespostas(ArrayList<ArrayList<String>> perguntasRespostas) {
         this.perguntasRespostas = new ArrayList<ArrayList<String>>();
         for(ArrayList<String> par : perguntasRespostas){
             par = new ArrayList<String>(2);
@@ -75,7 +75,7 @@ public class MisteryCache extends Cache
       else return false;
     }
     
-    public int respostasCertas(ArrayList<ArrayList<String>> perguntasRespostas){
+    public int respostasCertas(ArrayList<ArrayList<String>> perguntasRespostas) {
         int certas=0;
         String res="N/A";
         Scanner sc=new Scanner(System.in);

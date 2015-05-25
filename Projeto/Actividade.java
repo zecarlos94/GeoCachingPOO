@@ -23,13 +23,13 @@ public abstract class Actividade
      *  Cria uma actividade com o nome do individuo que gerou a actividade com as horas do sistema 
      */
     
-    public Actividade(String nome)
+    public Actividade(String nome) throws StringExisteException
     {
         time = new Timeline();
         nome = nome;
     }
     
-    public Actividade(Timeline time,String nome)
+    public Actividade(Timeline time,String nome) throws NumberFormatException, StringExisteException
     {
         this.time = time;
         this.nome = nome;
@@ -51,10 +51,10 @@ public abstract class Actividade
     
     public abstract String getAcontecimento();
     
-    public void setTime(Timeline t)
+    public void setTime(Timeline t) throws NumberFormatException
     { this.time = t;}
     
-    public void setNome(String nome)
+    public void setNome(String nome) throws StringExisteException
     {
         this.nome = nome;
     }

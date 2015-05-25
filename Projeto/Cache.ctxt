@@ -4,27 +4,29 @@ comment0.target=Cache()
 comment0.text=\n\ \ \ \ public\ Cache()\ {\n\ \ \ \ \ \ \ \ this.livro_registos\=new\ HashMap<String,\ Data>();\n\ \ \ \ \ \ \ \ this.timeline\=new\ Timeline();\n\ \ \ \ \ \ \ \ this.coordenadas\=new\ Coordenadas();\n\ \ \ \ }\n
 comment1.params=livro_registos\ t\ coordenadas
 comment1.target=Cache(java.util.HashMap,\ Timeline,\ Coordenadas)
-comment10.params=obj
-comment10.target=boolean\ equals(java.lang.Object)
-comment10.text=\n\ Equals\n
-comment2.params=c
-comment2.target=Cache(Cache)
-comment2.text=\n\ \ \ \ public\ Cache(HashMap<String,\ Data>\ livro_registos,\ Data\ data,\ Hora\ hora,\ Coordenadas\ coordenadas)\ {\n\ \ \ \ \ \ \ \ this.livro_registos\=new\ HashMap<String,\ Data>(livro_registos);\n\ \ \ \ \ \ \ \ this.timeline\=new\ Timeline();\n\ \ \ \ \ \ \ \ this.coordenadas\=new\ Coordenadas(coordenadas);\n\ \ \ \ }\n
-comment3.params=
-comment3.target=java.util.HashMap\ getLivroRegistos()
-comment3.text=\n\ \ \ \ public\ HashMap<String,\ Data>\ getLivroRegistos()\ {\n\ \ \ \ \ \ \ \ return\ this.livro_registos;\n\ \ \ \ }\n
+comment10.params=
+comment10.target=Cache\ clone()
+comment11.params=obj
+comment11.target=boolean\ equals(java.lang.Object)
+comment11.text=\n\ Equals\n
+comment2.params=coordenadas
+comment2.target=Cache(Coordenadas)
+comment3.params=c
+comment3.target=Cache(Cache)
+comment3.text=\n\ \ \ \ public\ Cache(HashMap<String,\ Data>\ livro_registos,\ Data\ data,\ Hora\ hora,\ Coordenadas\ coordenadas)\ {\n\ \ \ \ \ \ \ \ this.livro_registos\=new\ HashMap<String,\ Data>(livro_registos);\n\ \ \ \ \ \ \ \ this.timeline\=new\ Timeline();\n\ \ \ \ \ \ \ \ this.coordenadas\=new\ Coordenadas(coordenadas);\n\ \ \ \ }\n
 comment4.params=
-comment4.target=Timeline\ getTimeline()
+comment4.target=java.util.HashMap\ getLivroRegistos()
+comment4.text=\n\ \ \ \ public\ HashMap<String,\ Data>\ getLivroRegistos()\ {\n\ \ \ \ \ \ \ \ return\ this.livro_registos;\n\ \ \ \ }\n
 comment5.params=
-comment5.target=Coordenadas\ getCoordenadas()
+comment5.target=Timeline\ getTimeline()
 comment6.params=
-comment6.target=int\ getGeoCoins()
-comment6.text=\n\ \ Devolve\ os\ geoCoins\ base\ das\ Caches\n
-comment7.params=livro_registos
-comment7.target=void\ setLivroRegistos(java.util.HashMap)
-comment7.text=\n\ \ \ \ public\ void\ setLivroRegistos(HashMap<String,\ Data>\ livro_registos)\ {\n\ \ \ \ \ \ \ \ HashMap<String,\ Data>\ aux\=new\ HashMap<String,\ Data>();\n\ \ \ \ \ \ \ \ Set<Map.Entry<String,\ Data>>\ eset\=livro_registos.entrySet();\n\ \ \ \ \ \ \ \ Iterator<Map.Entry<String,\ Data>>\ it\=eset.iterator();\n\ \ \ \ \ \ \ \ while(it.hasNext())\ {\n\ \ \ \ \ \ \ \ \ \ \ \ Map.Entry<String,\ Data>\ elem\=it.next();\n\ \ \ \ \ \ \ \ \ \ \ \ aux.put(elem.getKey(),\ elem.getValue().clone());\n\ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ this.livro_registos\=aux;\n\ \ \ \ }\n
-comment8.params=coordenadas
-comment8.target=void\ setCoordenadas(Coordenadas)
-comment9.params=
-comment9.target=Cache\ clone()
-numComments=11
+comment6.target=Coordenadas\ getCoordenadas()
+comment7.params=
+comment7.target=int\ getGeoCoins()
+comment7.text=\n\ \ Devolve\ os\ geoCoins\ base\ das\ Caches\n
+comment8.params=livro_registos
+comment8.target=void\ setLivroRegistos(java.util.HashMap)
+comment8.text=\n\ \ \ \ public\ void\ setLivroRegistos(HashMap<String,\ Data>\ livro_registos)\ {\n\ \ \ \ \ \ \ \ HashMap<String,\ Data>\ aux\=new\ HashMap<String,\ Data>();\n\ \ \ \ \ \ \ \ Set<Map.Entry<String,\ Data>>\ eset\=livro_registos.entrySet();\n\ \ \ \ \ \ \ \ Iterator<Map.Entry<String,\ Data>>\ it\=eset.iterator();\n\ \ \ \ \ \ \ \ while(it.hasNext())\ {\n\ \ \ \ \ \ \ \ \ \ \ \ Map.Entry<String,\ Data>\ elem\=it.next();\n\ \ \ \ \ \ \ \ \ \ \ \ aux.put(elem.getKey(),\ elem.getValue().clone());\n\ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ this.livro_registos\=aux;\n\ \ \ \ }\n
+comment9.params=coordenadas
+comment9.target=void\ setCoordenadas(Coordenadas)
+numComments=12

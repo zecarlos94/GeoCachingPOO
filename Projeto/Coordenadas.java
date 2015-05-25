@@ -19,7 +19,7 @@ public class Coordenadas
         this.longitude=0;
     }
     
-    public Coordenadas(double latitude, double longitude) {
+    public Coordenadas(double latitude, double longitude) throws NumberFormatException {
         this.latitude= latitude;
         this.longitude= longitude;
     }
@@ -40,11 +40,11 @@ public class Coordenadas
         return this.longitude;
     }
     
-    public void setLatitude(double latitude) {
+    public void setLatitude(double latitude) throws NumberFormatException {
         this.latitude=latitude;
     }
     
-    public void setLongitude(double longitude) {
+    public void setLongitude(double longitude) throws NumberFormatException {
         this.longitude=longitude;
     }
     
@@ -55,7 +55,7 @@ public class Coordenadas
     /**
     *Calcular a distancia entre 2 coordenadas   
     */
-    public double distance(Coordenadas b) {
+    public double distance(Coordenadas b) throws NumberFormatException {
       double lat2 = b.getLatitude();
       double lng2 = b.getLongitude();
              
@@ -70,8 +70,7 @@ public class Coordenadas
       return dist * meterConversion;
     }
  
-    public double ToRadians(double degrees) 
-    {
+    public double ToRadians(double degrees) throws NumberFormatException {
        double radians = degrees * (3.1415926535897932385) / 180;
        return radians;
     }
@@ -80,7 +79,7 @@ public class Coordenadas
      * Calcula o bearing entre 2 Coordenadas
      * 
      */
-    public double bearing(double lat1, double lon1, double lat2, double lon2){
+    public double bearing(double lat1, double lon1, double lat2, double lon2) throws NumberFormatException {
         double longitude1 = lon1;
         double longitude2 = lon2;
         double latitude1 = Math.toRadians(lat1);
@@ -94,7 +93,7 @@ public class Coordenadas
     /*
      * Calcula as Coordenadas de Destino
     */
-    public Coordenadas getDestination(double distance, double bearing) {
+    public Coordenadas getDestination(double distance, double bearing) throws NumberFormatException {
 		double d = distance / earthRadius;
 		double lat1 = Math.toRadians(this.latitude);
 		double lon1 = Math.toRadians(this.longitude);
