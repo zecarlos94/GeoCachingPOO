@@ -337,17 +337,25 @@ public class Main
         Scanner cs = new Scanner(System.in);
         out.printf("\nInsira a cache que pretende criar: ");
         String escolha = cs.next();
+        Cache a=null;
         if(escolha.equals("MicroCache")){
-            MicroCache cache1 = new MicroCache();
-            return cache1;
+            out.printf("\nInsira a latitude e a longitude da cache que deseja remover:");
+            Coordenadas crd=scanCoordenadas();
+            MicroCache cache1 = new MicroCache(crd);
+            a=cache1;
         }
         else if(escolha.equals("MicroCache")){
-            MisteryCache cache1 = new MisteryCache();
-            return cache1;
+            out.printf("\nInsira a latitude e a longitude da cache que deseja remover:");
+            Coordenadas crd=scanCoordenadas();
+            MisteryCache cache1 = new MisteryCache(crd);
+            a=cache1;
         }
         else if(escolha.equals("MultiCache")){
-            MultiCache cache1 = new MultiCache();
-            return cache1;
+            out.printf("\nInsira a latitude e a longitude da cache que deseja remover:");
+            Coordenadas crd=scanCoordenadas();
+            MultiCache cache1 = new MultiCache(crd);
+            a=cache1;
         }    
+        return a;
     }
 }

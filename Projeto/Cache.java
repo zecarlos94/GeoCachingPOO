@@ -32,6 +32,12 @@ public abstract class Cache
         this.timeline=new Timeline(t);
         this.coordenadas=new Coordenadas(coordenadas);
     }
+
+    protected Cache(Coordenadas coordenadas) {
+        this.livro_registos=new HashMap<String, Timeline>();
+        this.timeline=new Timeline();
+        this.coordenadas=new Coordenadas(coordenadas);
+    }
     /*
     public Cache(HashMap<String, Data> livro_registos, Data data, Hora hora, Coordenadas coordenadas) {
         this.livro_registos=new HashMap<String, Data>(livro_registos);

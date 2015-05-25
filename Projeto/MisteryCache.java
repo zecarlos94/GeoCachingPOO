@@ -20,6 +20,12 @@ public class MisteryCache extends Cache
             this.geocoins=geocoins;
     }
     
+    public MisteryCache(Coordenadas coordenadas, ArrayList<ArrayList<String>> perguntasRespostas) {
+            super(coordenadas);
+            setPerguntasRespostas(perguntasRespostas);
+            this.geocoins=geocoins;
+    }
+
     public MisteryCache(MisteryCache c){
             super(c);
             perguntasRespostas =c.getPerguntasRespostas();

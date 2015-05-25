@@ -17,6 +17,12 @@ public class MultiCache extends Cache
             this.geocoins=geocoins;
     }
     
+    public MultiCache(Coordenadas coordenadas,ArrayList<Coordenadas> checkpoints) {
+            super(coordenadas);
+            setCheckpoints(checkpoints);
+            this.geocoins=geocoins;
+    }
+
     public MultiCache(MultiCache c){
             super(c);
             checkpoints=c.getCheckpoints();

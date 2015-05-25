@@ -16,6 +16,11 @@ public class MicroCache extends Cache
        geocoins=gc;
    }
    
+   public MicroCache(Coordenadas coordenadas)
+   {
+       super(coordenadas);
+   }
+
    public MicroCache(MicroCache mc)
    {
        super(mc);
