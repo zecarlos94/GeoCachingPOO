@@ -193,8 +193,9 @@ public class Main
                         out.printf("\nReport adicionado com sucesso\n");
                         break;
                   case 6: 
-                        /*Cache cache1 = new Cache();
-                        caches.add(cache1);*/
+                        Cache ce;
+                        ce=criaCache();
+                        systemCaches.add(ce);
                         break;
                   case 7:
                         u.getMyCaches().toString();
@@ -306,8 +307,9 @@ public class Main
                         out.printf("\nReport adicionado com sucesso\n");
                         break;
                   case 6: 
-                        /*Cache cache1 = new Cache();
-                        caches.add(cache1);*/
+                        Cache ce;
+                        ce=criaCache();
+                        caches.add(ce);
                         break;
                   case 7:
                         u.getMyCaches().toString();
@@ -329,5 +331,23 @@ public class Main
                         break;
             }
         } while(optn!=11);
+    }
+    
+    public static Cache criaCache(){
+        Scanner cs = new Scanner(System.in);
+        out.printf("\nInsira a cache que pretende criar: ");
+        String escolha = cs.next();
+        if(escolha.equals("MicroCache")){
+            MicroCache cache1 = new MicroCache();
+            return cache1;
+        }
+        else if(escolha.equals("MicroCache")){
+            MisteryCache cache1 = new MisteryCache();
+            return cache1;
+        }
+        else if(escolha.equals("MultiCache")){
+            MultiCache cache1 = new MultiCache();
+            return cache1;
+        }    
     }
 }
