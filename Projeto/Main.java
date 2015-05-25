@@ -364,24 +364,31 @@ public class Main
     
     public static ArrayList<ArrayList<String>> criaPerguntasRespostas(){
         Scanner pr=new Scanner(System.in);
-        int i=0;
-        ArrayList<ArrayList<String>> prsp = new ArrayList<ArrayList<String>>();
-        for(ArrayList<String> par : prsp){
-            par = new ArrayList<String>(2);
-            for(String s : par){
-                if(i==0){out.printf("\nInsira a pergunta:");i=1;}
-                if(i==1){out.printf("\nInsira a resposta:");}
-                s=pr.next();
-                par.add(s);
-            }
-            prsp.add(par);
+        out.printf("\nInsira o número de perguntas que pretende criar:");
+        int quantos=0,c,l,j=0;
+        String s;
+        quantos=pr.nextInt();
+        ArrayList<String> par;
+        ArrayList<ArrayList<String>> prsp = new ArrayList<ArrayList<String>>(quantos);
+        for(l=0;l<quantos;l++){
+          par=new ArrayList<String>(2);
+          for(c=0;c<2;c++){
+             if(j==0){out.printf("\nInsira a pergunta:");j=1;}
+             if(j==1){out.printf("\nInsira a resposta:");}
+             s=pr.next();
+             par.add(s);
+          }
         }
         return prsp;
     }
     
     public static ArrayList<Coordenadas> criaCheckpoints(){
-        ArrayList<Coordenadas> checkps = new ArrayList<Coordenadas>();
-        for(Coordenadas c : checkps){
+        Scanner a = new Scanner(System.in);
+        out.printf("\nInsira o número de checkpoints que pretende criar:");
+        int quantos=0,i;
+        quantos=a.nextInt();
+        ArrayList<Coordenadas> checkps = new ArrayList<Coordenadas>(quantos);
+        for(i=0;i<quantos;i++){
             out.printf("\nInsira a latitude e a longitude da cache que deseja remover:");
             Coordenadas cd=scanCoordenadas();
             checkps.add(cd.clone());
