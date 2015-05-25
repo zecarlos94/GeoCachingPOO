@@ -12,6 +12,7 @@ public class Coordenadas
      */
     private double latitude; /* mudar para double ( Parte inteira graus ,  resto minutos decimais)*/
     private double longitude;
+    /*throws NumberFormatException*/
     
     public Coordenadas() {
         this.latitude= 0;
@@ -75,7 +76,38 @@ public class Coordenadas
        return radians;
     }
 
+    /*
+     * Calcula o bearing entre 2 Coordenadas
+     * 
+     */
+    public double bearing(double lat1, double lon1, double lat2, double lon2){
+        double longitude1 = lon1;
+        double longitude2 = lon2;
+        double latitude1 = Math.toRadians(lat1);
+        double latitude2 = Math.toRadians(lat2);
+        double longDiff= Math.toRadians(longitude2-longitude1);
+        double y= Math.sin(longDiff)*Math.cos(latitude2);
+        double x=Math.cos(latitude1)*Math.sin(latitude2)-Math.sin(latitude1)*Math.cos(latitude2)*Math.cos(longDiff);
+        return (Math.toDegrees(Math.atan2(y, x))+360)%360;
+    }
+    
+    /*
+     * Calcula as Coordenadas de Destino
+    */
+    public Coordenadas getDestination(double distance, double bearing) {
+		double d = distance / earthRadius;
+		double lat1 = Math.toRadians(this.latitude);
+		double lon1 = Math.toRadians(this.longitude);
+		double lat = Math.asin((Math.sin(lat1) * Math.cos(d))
+				+ (Math.cos(lat1) * Math.sin(d) * Math.cos(Math
+						.toRadians(bearing))));
 
+		double lon = lon1
+				+ Math.atan2(Math.sin(Math.toRadians(bearing)) * Math.sin(d)
+						* Math.cos(lat1),
+						Math.cos(d) - Math.sin(lat1) * Math.sin(lat));
+		return new Coordenadas(Math.toDegrees(lat),Math.toDegrees(lon));
+	}
     
     /**
      * Métodos auxiliares
