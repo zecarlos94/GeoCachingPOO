@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=e\ filename
+comment0.target=void\ guardaBinario(GeoCaching,\ java.lang.String)
+comment1.params=filename
+comment1.target=GeoCaching\ leBinario(java.lang.String)
+numComments=2

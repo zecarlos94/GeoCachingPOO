@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=
+comment0.target=UtilizadorNaoExisteException()
+comment0.text=\n\ COnstrutor\ para\ objetos\ da\ classe\ UtilizadorNaoExisteException\n
+comment1.params=str
+comment1.target=UtilizadorNaoExisteException(java.lang.String)
+numComments=2
