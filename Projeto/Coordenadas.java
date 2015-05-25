@@ -10,7 +10,7 @@ public class Coordenadas
     /**
      * Variáveis de Instância
      */
-    private double latitude; // mudar para double ( Parte inteira graus ,  resto minutos decimais)
+    private double latitude; /* mudar para double ( Parte inteira graus ,  resto minutos decimais)*/
     private double longitude;
     
     public Coordenadas() {

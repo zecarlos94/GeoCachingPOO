@@ -193,11 +193,17 @@ public class Main
                         out.printf("\nReport adicionado com sucesso\n");
                         break;
                   case 6: 
+                        /*Cache cache1 = new Cache();
+                        caches.add(cache1);*/
                         break;
                   case 7:
                         u.getMyCaches().toString();
                         break;
                   case 8:
+                        out.printf("\nInsira as coordenadas da  cache que deseja remover:");
+                        Coordenadas c=scanCoordenadas();
+                        systemCaches.remove(c);
+                        out.printf("\nCache removida com sucesso\n");
                         break;
                   default:
                         System.out.printf("\nInsira uma opção válida!\n");
@@ -212,30 +218,24 @@ public class Main
     public static Coordenadas scanCoordenadas() {
          Scanner sc=new Scanner(System.in); 
          int i;
-         double x1,y1;
+         double x,y;
          do {
              i=0;
              out.printf("Insira os valores referentes à latitude:\n");
-             out.printf("    x: "); x1=sc.nextInt();
-             out.printf("    y: "); y1=sc.nextInt();
-             if(!validaCoord("latitude", x1, y1)) {
-                  i=1;
-                  out.printf("\nInsira coordenadas válidas!");
-             }
-         } while(i==1);
-         Coordenada latitude=new Coordenada(x1,y1);
-         do {
-             i=0;
+             out.printf("    latitude: "); x=sc.nextInt();
              out.printf("Insira os valores referentes à longitude:\n");
-             out.printf("    x: "); x1=sc.nextInt();
-             out.printf("    y: "); x2=sc.nextInt();
-             if(!validaCoord("longitude", x1, y1)) {
+             out.printf("    longitude: "); y=sc.nextInt();
+             if(!validaCoord("latitude", x)){
+                  i=1;
+                  out.printf("\nInsira coordenadas válidas!");
+             }
+             if(!validaCoord("longitude", y)) {
                   i=1;
                   out.printf("\nInsira coordenadas válidas!");
              }
          } while(i==1);
-         Coordenada longitude=new Coordenada(x1, y1);
-         return new Coordenadas(latitude, longitude);
+         Coordenadas novo = new Coordenadas(x,y);
+         return novo;
     }
     
     public static void infoUser(Utilizador u) {
@@ -251,10 +251,9 @@ public class Main
         out.printf("\nÚltimas 10 atividades: "); last10.toString();
     }
     
-    public static boolean validaCoord(String escala, double x ,double y) {
+    public static boolean validaCoord(String escala, double x) {
         if(escala.equals("latitude") && (x<0))return false;
         else if(x<0) return false;
-        if(y<0) return false;
         return true;
     }
 
@@ -307,16 +306,16 @@ public class Main
                         out.printf("\nReport adicionado com sucesso\n");
                         break;
                   case 6: 
-                        Cache cache1 = new Cache();
-                        caches.add(cache1);
+                        /*Cache cache1 = new Cache();
+                        caches.add(cache1);*/
                         break;
                   case 7:
                         u.getMyCaches().toString();
                         break;
                   case 8:
                         out.printf("\nInsira a latitude e a longitude da cache que deseja remover:");
-                        Coordenadas coordenadas=scanCoordenadas();
-                        caches.getCaches().remove(coordenadas);
+                        Coordenadas coord=scanCoordenadas();
+                        caches.getCaches().remove(coord);
                         break;
                   case 9:
                         reports.getReports().toString();
