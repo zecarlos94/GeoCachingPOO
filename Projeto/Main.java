@@ -365,19 +365,16 @@ public class Main
     public static ArrayList<ArrayList<String>> criaPerguntasRespostas(){
         Scanner pr=new Scanner(System.in);
         out.printf("\nInsira o número de perguntas que pretende criar:");
-        int quantos=0,c,l,j=0;
-        String s;
+        int quantos=0,l,j=0;
+        String s="N/A";
         quantos=pr.nextInt();
         ArrayList<String> par;
         ArrayList<ArrayList<String>> prsp = new ArrayList<ArrayList<String>>(quantos);
         for(l=0;l<quantos;l++){
           par=new ArrayList<String>(2);
-          for(c=0;c<2;c++){
-             if(j==0){out.printf("\nInsira a pergunta:");j=1;}
-             if(j==1){out.printf("\nInsira a resposta:");}
-             s=pr.next();
-             par.add(s);
-          }
+          if(j==0){out.printf("\nInsira a pergunta:");s=pr.next();j=1;}
+          if(j==1){out.printf("\nInsira a resposta:");s=pr.next();j=0;}
+          par.add(s);
         }
         return prsp;
     }
