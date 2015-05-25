@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=
+comment0.target=CoordenadaNaoExisteException()
+comment0.text=\n\ COnstrutor\ para\ objetos\ da\ classe\ CoordenadaNaoExisteException\n
+comment1.params=x
+comment1.target=CoordenadaNaoExisteException(double)
+numComments=2

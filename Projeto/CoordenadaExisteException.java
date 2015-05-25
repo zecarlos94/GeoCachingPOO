@@ -11,6 +11,6 @@ public class CoordenadaExisteException extends Exception
 
     public CoordenadaExisteException(double x)
     {
-       super(x);
+       
     }
 }

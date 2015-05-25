@@ -10,6 +10,14 @@ public class CoordenadaNaoExisteException extends Exception
 
     public CoordenadaNaoExisteException(double x)
     {
-       super(x);
+        String str=null;
+        try {
+            x = Double.parseDouble(str);
+            System.out.println( "O número é " + x );
+        }
+        catch ( NumberFormatException e ) {
+            System.out.println( "Número ilegal" );
+            x = Double.NaN;
+        }
     }
 }
