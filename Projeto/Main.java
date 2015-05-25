@@ -344,18 +344,48 @@ public class Main
             MicroCache cache1 = new MicroCache(crd);
             a=cache1;
         }
-        else if(escolha.equals("MicroCache")){
+        else if(escolha.equals("MisteryCache")){
             out.printf("\nInsira a latitude e a longitude da cache que deseja remover:");
             Coordenadas crd=scanCoordenadas();
-            MisteryCache cache1 = new MisteryCache(crd);
+            ArrayList<ArrayList<String>> p = criaPerguntasRespostas();
+            MisteryCache cache1 = new MisteryCache(crd,p);
             a=cache1;
         }
         else if(escolha.equals("MultiCache")){
             out.printf("\nInsira a latitude e a longitude da cache que deseja remover:");
             Coordenadas crd=scanCoordenadas();
-            MultiCache cache1 = new MultiCache(crd);
+            ArrayList<Coordenadas> check = criaCheckpoints();
+            MultiCache cache1 = new MultiCache(crd,check);
             a=cache1;
         }    
         return a;
+    }
+    
+    
+    public static ArrayList<ArrayList<String>> criaPerguntasRespostas(){
+        Scanner pr=new Scanner(System.in);
+        int i=0;
+        ArrayList<ArrayList<String>> prsp = new ArrayList<ArrayList<String>>();
+        for(ArrayList<String> par : prsp){
+            par = new ArrayList<String>(2);
+            for(String s : par){
+                if(i==0){out.printf("\nInsira a pergunta:");i=1;}
+                if(i==1){out.printf("\nInsira a resposta:");}
+                s=pr.next();
+                par.add(s);
+            }
+            prsp.add(par);
+        }
+        return prsp;
+    }
+    
+    public static ArrayList<Coordenadas> criaCheckpoints(){
+        ArrayList<Coordenadas> checkps = new ArrayList<Coordenadas>();
+        for(Coordenadas c : checkps){
+            out.printf("\nInsira a latitude e a longitude da cache que deseja remover:");
+            Coordenadas cd=scanCoordenadas();
+            checkps.add(cd.clone());
+        }
+        return checkps;
     }
 }
