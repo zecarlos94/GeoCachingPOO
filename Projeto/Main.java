@@ -13,14 +13,11 @@ public class Main
     
     
     public static void main(String args[]) {
-        Utilizadores utilizadores=new Utilizadores();
-        String[] admins={"Gustavo","Zé","Tiago"};           // Estes nomes são comparados com os emails dos users em isAdmin();
-        Caches caches=new Caches();
-        CacheReports reports=new CacheReports();
-        Utilizador user= menuInicial(utilizadores, admins);
+        GeoCaching c=new GeoCaching();
+        Utilizador user= menuInicial(c.getUtilizadores(), c.getAdmins());
         if(user==null) out.printf("\nSaiu da aplicação! Adeus!\n");     // se o utilizador nao criar conta nem aceder à sua, então fechou a aplicação
-        else if(user.isAdmin(admins)) menuAdmin(user,utilizadores,caches,reports);
-        else menuUser(user,utilizadores, caches, reports);
+        else if(user.isAdmin(c.getAdmins())) menuAdmin(user, c.getUtilizadores(), c.getCaches(), c.getReports());
+        else menuUser(user, c.getUtilizadores(), c.getCaches(), c.getReports());
         out.printf("\nSaiu da aplicação! Adeus!\n");
     }
     
@@ -29,7 +26,7 @@ public class Main
      *  Se nenhuma das ações se verifica, significa que o utilizador decidiu sair da aplicação e devolve null.
      *  Recebe a estrutura de dados com todos os utilizadores para verificar a autencidade do login ou para adicionar a sua caso decida criar.
      */
-    public static Utilizador menuInicial(Utilizadores utilizadores, String[] admins) {
+    public static Utilizador menuInicial(Utilizadores utilizadores, ArrayList<String> admins) {
         Utilizador user = null;
         Scanner sc=new Scanner(System.in); 
         int opção=0;
@@ -51,7 +48,7 @@ public class Main
     /**
      * Acede à conta do utilizador, devolvendo a mesma
      */
-    public static Utilizador login(Utilizadores utilizadores, String[] admins) {
+    public static Utilizador login(Utilizadores utilizadores, ArrayList<String> admins) {
         Scanner sc=new Scanner(System.in); 
         Utilizador u = null;
         String dados;
@@ -333,7 +330,7 @@ public class Main
         } while(optn!=11);
     }
     
-    public static Cache criaCache(){
+    public static Cache criaCache() {
         Scanner cs = new Scanner(System.in);
         out.printf("\nInsira a cache que pretende criar: ");
         String escolha = cs.next();
@@ -360,7 +357,6 @@ public class Main
         }    
         return a;
     }
-    
     
     public static ArrayList<ArrayList<String>> criaPerguntasRespostas(){
         Scanner pr=new Scanner(System.in);
@@ -392,4 +388,6 @@ public class Main
         }
         return checkps;
     }
+    
+    
 }

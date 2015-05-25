@@ -160,4 +160,13 @@ public class Timeline
         return new String(this.hora+ ":" +this.minuto+ ":" +this.segundo+ " " +this.day+ "/" +this.month+ "/" +this.year);
     }
     
+    public void jumpTime(double horas) {
+        double aux=horas;
+        int hora=(int) aux; this.hora=hora;
+        aux-=hora; aux*=60;
+        int minuto=(int) aux; this.minuto=minuto;
+        aux-=minuto; aux*=60;
+        int segundo=(int) aux; this.segundo=segundo; 
+    }
+    
 }

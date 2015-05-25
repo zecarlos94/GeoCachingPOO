@@ -10,6 +10,7 @@ public class Caches
 {
     // instance variables - replace the example below with your ow
     private HashMap<Coordenadas,Cache> caches;
+    
      /**
      * Constructor for objects of class Caches
      */
@@ -103,4 +104,19 @@ public class Caches
     public String toString() {
         return new String(this.caches.toString());
     }
+    
+    /**public Cache cacheMaisPerto(Coordenadas coord) {
+        Cache aux=new Cache();
+        double dist=0;
+        Iterator<Map.Entry<Coordenadas,Cache>> it = caches.entrySet().iterator();
+        while(it.hasNext()) {
+            Map.Entry<Coordenadas,Cache> elem=it.next();
+            double distancia=elem.getKey().clone().distance(coord.clone());
+            if(distancia<dist) {
+                dist=distancia;
+                aux=elem.getValue().clone();
+            }
+        }
+        return aux;
+    }*/
 }
