@@ -79,10 +79,10 @@ public class Coordenadas
      * Calcula o bearing entre 2 Coordenadas
      * 
      */
-    public double bearing(double lat1, double lon1, double lat2, double lon2) throws NumberFormatException {
-        double longitude1 = lon1;
+    public double bearing(double lat2, double lon2) throws NumberFormatException {
+        double longitude1 = this.longitude;
         double longitude2 = lon2;
-        double latitude1 = Math.toRadians(lat1);
+        double latitude1 = Math.toRadians(this.latitude);
         double latitude2 = Math.toRadians(lat2);
         double longDiff= Math.toRadians(longitude2-longitude1);
         double y= Math.sin(longDiff)*Math.cos(latitude2);
@@ -91,22 +91,32 @@ public class Coordenadas
     }
     
     /*
-     * Calcula as Coordenadas de Destino
+     * Calcula as Coordenadas de Destino através das coordenadas inicias da classe, da distancia percorrida e da direçao/bearing
     */
     public Coordenadas getDestination(double distance, double bearing) throws NumberFormatException {
-		double d = distance / earthRadius;
-		double lat1 = Math.toRadians(this.latitude);
-		double lon1 = Math.toRadians(this.longitude);
-		double lat = Math.asin((Math.sin(lat1) * Math.cos(d))
-				+ (Math.cos(lat1) * Math.sin(d) * Math.cos(Math
-						.toRadians(bearing))));
+        double d = distance / earthRadius;
+        double lat1 = Math.toRadians(this.latitude);
+        double lon1 = Math.toRadians(this.longitude);
+        double lat = Math.asin((Math.sin(lat1) * Math.cos(d))
+                + (Math.cos(lat1) * Math.sin(d) * Math.cos(Math
+                        .toRadians(bearing))));
 
-		double lon = lon1
-				+ Math.atan2(Math.sin(Math.toRadians(bearing)) * Math.sin(d)
-						* Math.cos(lat1),
-						Math.cos(d) - Math.sin(lat1) * Math.sin(lat));
-		return new Coordenadas(Math.toDegrees(lat),Math.toDegrees(lon));
-	}
+        double lon = lon1
+                + Math.atan2(Math.sin(Math.toRadians(bearing)) * Math.sin(d)
+                        * Math.cos(lat1),
+                        Math.cos(d) - Math.sin( lat1) * Math.sin(lat));
+        return new Coordenadas(Math.toDegrees(lat),Math.toDegrees(lon));
+    }
+    /*
+     *  Calcula a nova posiçao dadas duas coordenadas, das quais calcula a direçao, e uma distancia de deslocacmento
+     */
+    
+    public Coordenadas deslocamento(Coordenadas destino, double distance) throws NumberFormatException
+    {
+        double bearing = this.bearing(destino.getLatitude(),destino.getLongitude());
+        return this.getDestination(distance,bearing);
+    }
+    
     
     /**
      * Métodos auxiliares

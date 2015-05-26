@@ -8,7 +8,7 @@ public class MultiCache extends Cache
     public MultiCache() {
            super();
            checkpoints=new ArrayList<Coordenadas>();
-           geocoins=(new geraGeoCoins()).getGeoCoins();;
+           geocoins=(new geraGeoCoins()).getGeoCoins();
     }
     
     public MultiCache(HashMap<String,Timeline> livro_registos, Timeline timeline, Coordenadas coordenadas, ArrayList<Coordenadas> checkpoints, int geocoins) throws NumberFormatException {

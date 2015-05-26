@@ -49,6 +49,10 @@ public class MisteryCache extends Cache
         return perguntasRespostas;
     }
     
+    public int getNumeroPerguntas(){
+        return this.perguntasRespostas.size();
+    }
+    
     public void setGeocoins(int coins) throws NumberFormatException {
         this.geocoins=coins;
     }

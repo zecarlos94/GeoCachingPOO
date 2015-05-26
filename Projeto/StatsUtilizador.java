@@ -29,6 +29,17 @@ public class StatsUtilizador
         this.rowNames = r;
         this.data = d;
     }
+    /**
+     *  Recebe como argumento o nome da Cache e retorna o numero de Caches desse tipo que o utilizador ja encontrou
+     */
+    
+    public int getCachesTipo(String nomeCache)
+    {
+        int numero = 0;
+        for(int i = 0; i < rowNames.length ; i++)
+            if(nomeCache.equals(rowNames[i])) numero = this.data[i][0];
+        return numero;
+    }
     
     /**
      *  Actualiza a informação de descoberta de Cache
