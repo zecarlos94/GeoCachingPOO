@@ -10,17 +10,14 @@ import java.util.*;
  */
 public class Evento
 {
- 
-    
-    /**
-     *  Variáveis de instancia;
-     */
-    
-    int limite; // Numero máximo de participantes
+
+  
 
       /**
      *  Variáveis de instancia 
      */
+    
+    int limite; // Numero máximo de participantes
     
     // Contem os resultados gerados pelo Evento
     ArrayList<Descoberta> descobertas = new ArrayList<Descoberta>();
@@ -100,10 +97,11 @@ public class Evento
                        // boost de (4 a 8)km/h por cada multiCache que encontrou no passado
                        // + (2 a 4) km/h por cada (misteryCache + microCache) 
                        double boostVelocidade = variaveisU.getMultiCache() * ( random.nextInt(4) + 4) + (variaveisU.getMicroCache() + variaveisU.getMisteryCache()) * (random.nextInt(2)+ 2);
-                                                                    
-                                                                                                  
-                       
+      
                        tempoUtilizador = (velocidadeUtilizador + boostVelocidade) / distancia ;
+                       
+                       // Guarda a velocidade com que se deslocou para depois calcular a nova posiçao do utilizador
+                       velocidades.put(utilizador.getEmail(),boostVelocidade);
                          
                         
                     }
@@ -122,6 +120,9 @@ public class Evento
                         double boostVelocidade = totalCaches * (random.nextInt(2) + 2);
                         
                         tempoUtilizador = (velocidadeUtilizador + boostVelocidade) / distancia ;
+                        
+                        // Guarda a velocidade com que se deslocou para depois calcular a nova posiçao do utilizador
+                        velocidades.put(utilizador.getEmail(),boostVelocidade);
                     
                     
                     }
@@ -153,8 +154,8 @@ public class Evento
                     // Cálculo da distancia percorrida
                     double distanciaPercorrida = (velocidade * melhorTempo);
                     
-                    // Reduz o deslocamento do utilizador em 0 a 40% da distanciaPercorrida uma vez que é irrealista mover-se em linha reta
-                    double deslocamento = distanciaPercorrida - distanciaPercorrida * ( random.nextDouble()*0.4 );
+                    // Reduz o deslocamento do utilizador em 0 a 20% da distanciaPercorrida uma vez que é irrealista mover-se em linha reta
+                    double deslocamento = distanciaPercorrida - distanciaPercorrida * ( random.nextDouble()*0.2 );
                     
                     // Coordenadas de destino servem para calcular a direçao do utilizador
                     Coordenadas destino = caches.cacheMaisPerto( variaveisU.getLocalizacao() ).getCoordenadas();

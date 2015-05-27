@@ -50,7 +50,7 @@ public class Descoberta
     public String toString(){
         StringBuilder sb = new StringBuilder();
         sb.append(time.toString() + ":" + "O utilizador " + utilizador + "descobriu uma " + cacheName + "e fez " + pontos + " pontos!");
-        return sb.toString;
+        return sb.toString();
     }
 
 }

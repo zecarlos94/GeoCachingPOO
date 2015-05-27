@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=utilizadores\ caches
+comment0.target=void\ simulateEvento(Utilizadores,\ Caches)
+comment0.text=\n\ \ Inicia\ o\ evento\ com\ as\ Caches\ existentes\ e\ Utilizadores\ disponiveis\n\ \ \n
+comment1.params=vencedorRonda\ cacheIdentificada\ tempo
+comment1.target=void\ add(Utilizador,\ Cache,\ Timeline)
+comment1.text=\n\ \ Informa\u00E7\u00E3o\ a\ guardar\n\ \ \ \ \ \ --\ Tempo\ de\ descoberta\ da\ Cache\ --\ Email\ do\ utilizador\ \ --\ Pontos\ obtidos\ --\ Tipo\ de\ Cache\ \n
+numComments=2
