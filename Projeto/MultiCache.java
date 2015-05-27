@@ -59,16 +59,33 @@ public class MultiCache extends Cache
     }
     
     /**
+     *  Calcula a distancia percorrida do trajeto das coordenadas recebidas ate a cache final, passando por todos os checkpoints
+     */
+    
+    public double distanciaPercorrida(Coordenadas coordenadasIniciais)
+    {
+        double distancia = 0;
+        Coordenadas cAnteriores = coordenadasIniciais;
+        for(Coordenadas c : this.checkpoints){
+            distancia+= cAnteriores.distance(c);
+            cAnteriores = c;
+        }
+        distancia+= cAnteriores.distance(super.coordenadas);
+        return distancia;
+        
+    }
+    
+    /**
      * Devolve as coordenadas do próximo checkpoint, se existir
      */
     public Coordenadas nextPoint(Coordenadas c) throws NumberFormatException {
-        int done=1; 
+        boolean done=false; 
         Coordenadas r = null;
         Iterator<Coordenadas> it=this.checkpoints.iterator();
         while(it.hasNext()) {
             Coordenadas elem = it.next();
-    if(done==2) {r = new Coordenadas(elem); break;}     
-    if(c.equals(elem)) done = 2;
+            if(done) {r = new Coordenadas(elem); break;}     
+            if(c.equals(elem)) done = true;
         }
         return r;
     }

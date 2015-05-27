@@ -52,6 +52,8 @@ public class Caches
         this.caches = resultado;
     }
     
+    public int size() { return this.caches.size();}
+    
     /**
      *  Adiciona uma cache
      */
@@ -105,18 +107,21 @@ public class Caches
         return new String(this.caches.toString());
     }
     
-    /**public Cache cacheMaisPerto(Coordenadas coord) {
-        Cache aux=new Cache();
-        double dist=0;
+    public Cache cacheMaisPerto(Coordenadas coord) {
+        Cache aux = null;
+        
+        double dist = Double.MAX_VALUE;
+        
         Iterator<Map.Entry<Coordenadas,Cache>> it = caches.entrySet().iterator();
+        
         while(it.hasNext()) {
             Map.Entry<Coordenadas,Cache> elem=it.next();
-            double distancia=elem.getKey().clone().distance(coord.clone());
+            double distancia = elem.getKey().distance(coord);
             if(distancia<dist) {
                 dist=distancia;
                 aux=elem.getValue().clone();
             }
         }
         return aux;
-    }*/
+    }
 }

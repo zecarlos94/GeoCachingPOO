@@ -1,6 +1,4 @@
-     import java.lang.Object;
-     import javax.swing.table.AbstractTableModel;
-     import javax.swing.table.DefaultTableModel;
+
      
 /**
  * Write a description of class StatsUtilizador here.
@@ -58,11 +56,13 @@ public class StatsUtilizador
                         if( tempo.equals(columNames[j])) data[i][j]++;
                     }
     }
+
+    
     
     /**
      *  Verifica se é o clima que o utilizador tem melhor performance 
      */
-    public boolean climaFavorito(String clima) throws StringExisteException
+    public boolean climaFavorito(String clima)
     {
         String melhorClima = null;
         int max = -1;
@@ -75,6 +75,37 @@ public class StatsUtilizador
                             max = this.data[i][j];
                         }
         return melhorClima.equals(clima);
+    }
+    
+    /**
+     *  Verifica se é o clima com pior performance
+     */
+    public boolean climaPior(String clima) 
+    {
+        String piorClima = null;
+        int min = Integer.MAX_VALUE;
+        
+        for( int i = 0; i < rowNames.length ; i++)
+                for( int j = 0; j < columNames.length ; j++)
+                    if( j > 2  && this.data[i][j] < min) 
+                        {
+                            piorClima = this.columNames[j];
+                            min = this.data[i][j];
+                        }
+        return piorClima.equals(clima);
+    }
+    
+    /**
+     *  Retorna o numero de caches obtidas num dado clima
+     */
+    
+    public int numeroCachesClima(String clima)
+    {
+        int count = 0;
+        for( int i = 0; i < rowNames.length ; i++)
+                for( int j = 0; j < columNames.length ; j++)
+                    if( j > 2  && clima.equals(columNames[j]))  count+=this.data[i][j];
+        return count;
     }
     
     public String toString() {
