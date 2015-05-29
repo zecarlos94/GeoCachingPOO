@@ -52,6 +52,9 @@ public class Evento
         // Contem as velocidades com que se deslocaram os Utilizadores na ultima ronda
         HashMap<String,Double> velocidades = new HashMap<String,Double>();
         
+        //Guarda o factor de aumento de distancia percorrida do ultimo ciclo 
+        HashMap<String,Double> factoresAumento = new HashMap<String,Double>();
+        
         // Contem o ultimo checkPoint que o utilizador já ultrapassou na MultiCache caso se verifique
        // Não implementado HashMap<String,Coordenadas> checkPoints = new HashMap<String,Coordenadas>();
     
@@ -79,6 +82,13 @@ public class Evento
                 VariaveisUtilizador variaveisU = it2.next().getValue();
                 Utilizador utilizador = utilizadores.get(it2.next().getKey()); // user
                 
+                // Aumenta a distancia percorrida em 0 a 40%, uma vez que a anterior foi calculada em linha reta 
+                double aumentoDistancia = 0.4 * random.nextDouble();
+                
+                // Variável a guardar em velocidades
+                double velocidade = 0;
+                
+                
                 double tempoUtilizador; // Tempo hipotetico que o utilizador demoraria a encontrar a cache mais perto se ninguem encontrasse primeiro
                 Cache CacheMaisPerto = caches_disponiveis.cacheMaisPerto(variaveisU.getLocalizacao()); 
           
@@ -91,17 +101,17 @@ public class Evento
                        
                        double distancia = ((MultiCache)CacheMaisPerto).distanciaPercorrida( variaveisU.getLocalizacao() ); // Devolve a distancia mínima para passar todos os checkpoints 
                        
-                       distancia = distancia + 0.2*random.nextDouble()*distancia; // Aumenta a distancia percorrida em 0 a 20%, uma vez que a anterior foi calculada em linha reta 
+                       distancia = distancia + aumentoDistancia*distancia; 
                   
                        
                        // boost de (4 a 8)km/h por cada multiCache que encontrou no passado
                        // + (2 a 4) km/h por cada (misteryCache + microCache) 
                        double boostVelocidade = variaveisU.getMultiCache() * ( random.nextInt(4) + 4) + (variaveisU.getMicroCache() + variaveisU.getMisteryCache()) * (random.nextInt(2)+ 2);
       
-                       tempoUtilizador = (velocidadeUtilizador + boostVelocidade) / distancia ;
+                       velocidade = velocidadeUtilizador + boostVelocidade;
                        
-                       // Guarda a velocidade com que se deslocou para depois calcular a nova posiçao do utilizador
-                       velocidades.put(utilizador.getEmail(),boostVelocidade);
+                       tempoUtilizador = velocidade / distancia ;
+                       
                          
                         
                     }
@@ -112,20 +122,28 @@ public class Evento
                         
                         double distancia = CacheMaisPerto.getCoordenadas().distance( variaveisU.getLocalizacao());
                         
-                        distancia = distancia + 0.2*random.nextDouble()*distancia; // Aumenta distancia em 0 a 20%
+                        distancia = distancia + aumentoDistancia*distancia; // Aumenta distancia em 0 a 20%
                         
                         int totalCaches = variaveisU.getCaches(); // total de caches descobertas pelo utilizador antes de entrar para o evento
                         
                         //boost de (2 a 4) km/h por cada cache que encontrou pre-Evento
                         double boostVelocidade = totalCaches * (random.nextInt(2) + 2);
                         
+                        velocidade = velocidadeUtilizador + boostVelocidade;
+                        
                         tempoUtilizador = (velocidadeUtilizador + boostVelocidade) / distancia ;
                         
-                        // Guarda a velocidade com que se deslocou para depois calcular a nova posiçao do utilizador
-                        velocidades.put(utilizador.getEmail(),boostVelocidade);
+                       
                     
                     
                     }
+                    
+                    // Guarda o factor de aumento de distancia do participante nesta ronda
+                    factoresAumento.put(utilizador.getEmail(),aumentoDistancia);
+                    
+                     // Guarda a velocidade com que se deslocou para depois calcular a nova posiçao do utilizador
+                     velocidades.put(utilizador.getEmail(),velocidade);
+                    
               
                 if( tempoUtilizador > melhorTempo)
                     {
@@ -148,14 +166,16 @@ public class Evento
                     String email = it3.next().getKey();
                     VariaveisUtilizador variaveisU = variaveisUtilizadores.get( email );
                     
+                    double aumentoDistancia = factoresAumento.get(email);
+                    
                     // Obtém a velocidade com que utilizador se deslocou nas passadas x horas
                     double velocidade = velocidades.get( email );
                     
                     // Cálculo da distancia percorrida
                     double distanciaPercorrida = (velocidade * melhorTempo);
                     
-                    // Reduz o deslocamento do utilizador em 0 a 20% da distanciaPercorrida uma vez que é irrealista mover-se em linha reta
-                    double deslocamento = distanciaPercorrida - distanciaPercorrida * ( random.nextDouble()*0.2 );
+                    // Reduz o deslocamento do utilizador em 0 a 40% da distanciaPercorrida uma vez que é irrealista mover-se em linha reta
+                    double deslocamento = distanciaPercorrida - distanciaPercorrida * aumentoDistancia;
                     
                     // Coordenadas de destino servem para calcular a direçao do utilizador
                     Coordenadas destino = caches.cacheMaisPerto( variaveisU.getLocalizacao() ).getCoordenadas();
