@@ -45,7 +45,7 @@ public class StatsUtilizador
      *      Incrementa o numero de caches descobertas e o clima do tipo concreto de Cache
      *      Adiciona os geocoins à coluna dos GeoCoins Facturados
      */ 
-    public void add(Cache cache,int geoCoins,String tempo) throws StringExisteException 
+    public void add(Cache cache,int geoCoins,String tempo) 
     {
         for( int i = 0; i < rowNames.length ; i++)
             if ( cache.getClass().getName().equals(rowNames[i]))

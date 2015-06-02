@@ -151,7 +151,7 @@ public class Utilizador
      * 
      */
     
-    public boolean isAdmin(String[] admins)
+    public boolean isAdmin(ArrayList<String> admins)
     {
         boolean res = false;
         for( String admin : admins)
@@ -193,7 +193,7 @@ public class Utilizador
      *  Gera a actividade de descoberta de Cache e actualiza as estatisticas
      */
     
-    public void descobertaCache(Cache cache, int geoCoins) throws NumberFormatException
+    public void descobertaCache(Cache cache, int geoCoins) 
     {
         Actividade actividade = new ActividadeCache(this.getNome(),cache.clone(),"descobriu");
         this.actividades.put(actividade.getTime(),actividade);

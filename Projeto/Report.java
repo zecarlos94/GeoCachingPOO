@@ -64,7 +64,7 @@ public class Report
         this.texto = texto;
     }
     
-    public void setCoordenadas(Coordenadas coordenadas) throws NumberFormatException, StringExisteException
+    public void setCoordenadas(Coordenadas coordenadas) throws NumberFormatException
     {
         this.coordenadas = coordenadas.clone();
     }

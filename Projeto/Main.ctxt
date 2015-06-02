@@ -2,7 +2,7 @@
 comment0.params=args
 comment0.target=void\ main(java.lang.String[])
 comment1.params=utilizadores\ admins
-comment1.target=Utilizador\ menuInicial(Utilizadores,\ java.lang.String[])
+comment1.target=Utilizador\ menuInicial(Utilizadores,\ java.util.ArrayList)
 comment1.text=\n\ \ Menu\ inicial,\ devolve\ a\ conta\ do\ utilizador\ caso\ tenha\ feito\ login\ ou\ criado\ uma.\n\ \ Se\ nenhuma\ das\ a\u00E7\u00F5es\ se\ verifica,\ significa\ que\ o\ utilizador\ decidiu\ sair\ da\ aplica\u00E7\u00E3o\ e\ devolve\ null.\n\ \ Recebe\ a\ estrutura\ de\ dados\ com\ todos\ os\ utilizadores\ para\ verificar\ a\ autencidade\ do\ login\ ou\ para\ adicionar\ a\ sua\ caso\ decida\ criar.\n
 comment10.params=
 comment10.target=Cache\ criaCache()
@@ -11,7 +11,7 @@ comment11.target=java.util.ArrayList\ criaPerguntasRespostas()
 comment12.params=
 comment12.target=java.util.ArrayList\ criaCheckpoints()
 comment2.params=utilizadores\ admins
-comment2.target=Utilizador\ login(Utilizadores,\ java.lang.String[])
+comment2.target=Utilizador\ login(Utilizadores,\ java.util.ArrayList)
 comment2.text=\n\ Acede\ \u00E0\ conta\ do\ utilizador,\ devolvendo\ a\ mesma\n
 comment3.params=utilizadores
 comment3.target=Utilizador\ signin(Utilizadores)

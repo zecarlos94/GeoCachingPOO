@@ -79,12 +79,12 @@ public class Caches
     /**
      *  Verifica se a cache existe
      */
-    public boolean existe(Cache c)
+    public boolean existe(Cache c) 
     {
         return caches.containsKey(c.getCoordenadas());
     }
     
-    public boolean existe(Coordenadas c) throws NumberFormatException
+    public boolean existe(Coordenadas c) 
     {
         return caches.containsKey(c);
     }

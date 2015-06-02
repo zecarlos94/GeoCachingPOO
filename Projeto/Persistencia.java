@@ -13,7 +13,7 @@ public class Persistencia implements Serializable{
     oos.close();
  }
  
- public static GeoCaching leBinario(String filename) throws IOException, ClassNotFoundException{
+ public static GeoCaching leBinario(String filename) throws IOException, ClassNotFoundException {
     ObjectInputStream ois = new ObjectInputStream (new FileInputStream(filename));
     GeoCaching e = (GeoCaching) ois.readObject();
     ois.close();

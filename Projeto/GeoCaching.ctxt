@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=GeoCaching()
+comment1.params=users\ caches\ reports
+comment1.target=GeoCaching(Utilizadores,\ Caches,\ CacheReports)
+comment10.params=obj
+comment10.target=boolean\ equals(java.lang.Object)
+comment11.params=
+comment11.target=GeoCaching\ clone()
+comment2.params=gc
+comment2.target=GeoCaching(GeoCaching)
+comment3.params=
+comment3.target=Utilizadores\ getUtilizadores()
+comment4.params=
+comment4.target=java.util.ArrayList\ getAdmins()
+comment5.params=
+comment5.target=Caches\ getCaches()
+comment6.params=
+comment6.target=CacheReports\ getReports()
+comment7.params=u
+comment7.target=void\ setUtilizadores(Utilizadores)
+comment8.params=c
+comment8.target=void\ setCaches(Caches)
+comment9.params=reports
+comment9.target=void\ setReports(CacheReports)
+numComments=12

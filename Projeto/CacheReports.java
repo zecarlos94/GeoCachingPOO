@@ -61,7 +61,7 @@ public class CacheReports
          this.reports.put(r.getTime(),r);
      }
 
-      public void removeReport(Timeline d) throws NumberFormatException
+      public void removeReport(Timeline d) 
       {
           reports.remove(d);
        }
