@@ -163,14 +163,17 @@ public class Main
                 case 1: 
                         infoUser(u);
                         break;
+                
                 case 2:
                          out.printf("\nInsira o email do amigo que deseja adicionar: "); emailAmigo =sc.next();
-                         if(u.getAmigos().contains(emailAmigo)) out.printf("\nVocê já adicionou este amigo!\n");
-                         else if(u.getEmail().equals(emailAmigo)) out.printf("\nVocê não se pode adicionar como amigo!\n");
+                         
+                         if(u.getEmail().equals(emailAmigo)) out.printf("\nVocê não se pode adicionar como amigo!\n");
                          else if(c.contaExiste(emailAmigo)) {
-                             c.addAmizade(u.getEmail(),emailAmigo);
+                             try{
                              c.addAmizade(emailAmigo,u.getEmail());
                              out.printf("\nAmigo adicionado com sucesso!\n");
+                            }
+                            catch(AmizadeExisteException e) {out.printf("\nVocê já adicionou este amigo!\n");}
                          }
                          else out.printf("\nNão existe nenhum utilizador registado com esse email!\n");
                          break;

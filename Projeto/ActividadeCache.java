@@ -79,8 +79,8 @@ public class ActividadeCache extends Actividade
         sb.append( super.toString() + " "); 
         sb.append( acontecimento + " ");
         sb.append( "uma" + cache.getClass().getName() );
-            if(acontecimento.equals("descobriu") && (  cache instanceof MisteryCache || cache instanceof MultiCache))
-                    sb.append(" e ganhou " + cache.getGeoCoins() + " GeoCoins");
+            if(acontecimento.equals("descobriu") && (  cache instanceof Tesouro))
+                    sb.append(" e ganhou " + ((Tesouro)cache).getGeoCoins() + " GeoCoins");
         sb.append( "\n");
         return sb.toString();
     }

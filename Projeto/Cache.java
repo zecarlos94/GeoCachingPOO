@@ -72,10 +72,7 @@ public abstract class Cache
         return this.coordenadas;
     }
     
-    /**
-     *  Devolve os geoCoins base das Caches
-     */
-    public abstract int getGeoCoins();
+
     
 
     
