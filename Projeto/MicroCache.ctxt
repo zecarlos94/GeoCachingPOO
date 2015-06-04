@@ -9,4 +9,6 @@ comment3.params=mc
 comment3.target=MicroCache(MicroCache)
 comment4.params=
 comment4.target=MicroCache\ clone()
-numComments=5
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class MultiCache extends Cache implements Tesouro
+public class MultiCache extends Cache implements Tesouro 
 {
     private ArrayList<Coordenadas> checkpoints;
     private int geocoins; // esta variável representa os geoCoins minimos da cache e são sempre entre 50-100
@@ -107,6 +107,11 @@ public class MultiCache extends Cache implements Tesouro
       MultiCache c = (MultiCache) obj;
       if( super.equals(obj)  && this.geocoins == c.getGeoCoins() && this.checkpoints.equals(c.getCheckpoints())) return true;   
       else return false;
+    }
+    
+    public String toString() {
+        return "MultiCache: " +this.getLivroRegistos().toString()+ " / " +this.getTimeline().toString()+ " / " +this.getCoordenadas().toString()+ " / " +this.getCheckpoints().toString()+
+                    " / " +this.geocoins;
     }
     
 }

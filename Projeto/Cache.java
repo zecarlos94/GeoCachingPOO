@@ -118,4 +118,6 @@ public abstract class Cache
       Cache c = (Cache) obj;
       return(this.livro_registos.equals(c.getLivroRegistos()) && this.timeline.equals(c.getTimeline()) && this.coordenadas.equals(c.getCoordenadas()));
     }
+    
+    public abstract String toString();
 }

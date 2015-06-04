@@ -26,7 +26,12 @@ public class MicroCache extends Cache
    }
    
     
-   public MicroCache clone()
-   {    return new MicroCache(this);}
+   public MicroCache clone() {    
+       return new MicroCache(this);
+   }
+   
+   public String toString() {
+        return "MultiCache: " +this.getLivroRegistos().toString()+ " / " +this.getTimeline().toString()+ " / " +this.getCoordenadas().toString();
+    }
    
 }
