@@ -344,14 +344,16 @@ public class Main
         int quantos=0,l,j=0;
         String s="N/A";
         quantos=pr.nextInt();
-        ArrayList<String> par;
+        ArrayList<String> par=null;
         ArrayList<ArrayList<String>> prsp = new ArrayList<ArrayList<String>>(quantos);
         for(l=0;l<quantos;l++){
           par=new ArrayList<String>(2);
           if(j==0){out.printf("\nInsira a pergunta:");s=pr.next();j=1;}
+          par.add(s);
           if(j==1){out.printf("\nInsira a resposta:");s=pr.next();j=0;}
           par.add(s);
         }
+        prsp.add(par);
         return prsp;
     }
     

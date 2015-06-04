@@ -11,18 +11,20 @@ public class geraMysteryCache
    Random rn = new Random();
    int quantos=0,l,j=0;
    String s="N/A";
-   int optn=rn.nextInt(20);
+   int optn=rn.nextInt(20)+1;
    quantos=rn.nextInt(20);
-    ArrayList<String> par;
+    ArrayList<String> par=null;
     ArrayList<ArrayList<String>> pR = new ArrayList<ArrayList<String>>(quantos);
     for(l=0;l<quantos;l++){
        par=new ArrayList<String>(2);
        if(j==0){s=perguntas(optn);j=1;}
+       par.add(s);
        if(j==1){s=respostas(optn);j=0;}
        par.add(s);
-    return pR;
+       optn=rn.nextInt(20)+1;
    }
-   return null;
+   pR.add(par);
+   return pR;
  }
  
  public static String perguntas(int opção) {
