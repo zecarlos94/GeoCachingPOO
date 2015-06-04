@@ -1,9 +1,9 @@
 import java.util.*;
-
+import java.io.*;
 /**
  * Classe que contém todas as estruturas contidas na aplicação
  */
-public class GeoCaching
+public class GeoCaching implements Serializable
 {
     Utilizadores utilizadores;
     ArrayList<String> admins;           // Estes nomes são comparados com os emails dos users em isAdmin();

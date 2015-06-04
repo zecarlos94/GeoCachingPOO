@@ -29,7 +29,7 @@ public class GeoCachingApp {
                 case 2: user = signin(c.getUtilizadores());
                         break;
             }
-
+            if(user==null) break;
             if(user.isAdmin(c.getAdmins())){
                     do {
                             Utilizador u = user;
@@ -152,17 +152,14 @@ public class GeoCachingApp {
                             }
                         } while (menuser.getOpcao()!=0);
             }
-
         } while (menuinicial.getOpcao()!=0);
         try {
-            gravaObj(geo,"estado.geoemp");
+            gravaObj(geo,"estado.geo");
         }
         catch (IOException e) {
             System.out.println("Não consegui gravar os dados!");
         }
         System.out.println("Até breve!...");
-      
- 
     }
 
     
@@ -189,7 +186,7 @@ public class GeoCachingApp {
     
     private static void carregarDados() {
         try {
-            geo = leObj("estado.geoemp");
+            geo = leObj("estado.geo");
         }
         catch (IOException e) {
             geo = new GeoCaching();
@@ -400,7 +397,7 @@ public class GeoCachingApp {
     public static void gravaObj(GeoCaching e,String filename) throws IOException{
     FileOutputStream fos = new FileOutputStream(filename);
     ObjectOutputStream oos = new ObjectOutputStream(fos);
-    oos.writeObject(e);/*empresaPOO*/
+    oos.writeObject(e);
     oos.close();
    }
  
