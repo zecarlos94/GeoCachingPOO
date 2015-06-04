@@ -31,7 +31,7 @@ public class MicroCache extends Cache
    }
    
    public String toString() {
-        return "MultiCache: " +this.getLivroRegistos().toString()+ " / " +this.getTimeline().toString()+ " / " +this.getCoordenadas().toString();
+        return "MicroCache: " +this.getLivroRegistos().toString()+ " / " +this.getTimeline().toString()+ " / " +this.getCoordenadas().toString();
     }
    
 }
