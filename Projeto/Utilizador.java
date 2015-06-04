@@ -38,6 +38,7 @@ public class Utilizador
         this.email=email;
         this.password=password;
         this.nome=nome;
+         this.morada=morada;
         this.genero=genero;
         this.timeline_nascimento=new Timeline(timeline_nascimento);
          this.estatisticas= new StatsUtilizador();
@@ -51,6 +52,7 @@ public class Utilizador
         this.email=email;
         this.password=password;
         this.nome=nome;
+         this.morada=morada;
         this.genero=genero;
         this.timeline_nascimento=new Timeline(timeline_nascimento);
         this.actividades=new TreeMap<Timeline, Actividade>(new TimelineComparator());
