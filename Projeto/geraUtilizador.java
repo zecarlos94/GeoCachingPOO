@@ -27,12 +27,19 @@ public class geraUtilizador
     return estados[i];
  }
  
- public static String geraNomes() {
+ public static String geraNomesMas() {
     String estados[] = {"Manuel","João","José","Carlos","Gustavo","Tiago","Ricardo","António","Rui",
-    "Diogo","André","Luís","Joana","Daniela","Rita","Beatriz","Ana","Cristina","Vanessa","Sara",
+    "Diogo","André","Luís"};
+    Random rn = new Random();
+    int i = rn.nextInt(12) + 1;
+    return estados[i];
+ }
+ 
+ public static String geraNomesFem() {
+    String estados[] = {"Joana","Daniela","Rita","Beatriz","Ana","Cristina","Vanessa","Sara",
     "Bruna","Paula","Sofia","Erica","Maria","Rosa","Olga","Matilde","Leonor","Francisca","Teresa"};
     Random rn = new Random();
-    int i = rn.nextInt(31) + 1;
+    int i = rn.nextInt(19) + 1;
     return estados[i];
  }
  
