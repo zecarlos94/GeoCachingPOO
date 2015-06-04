@@ -12,8 +12,30 @@ public class geraUtilizador
   private String Nome;
   private String Password;
   private String Morada;
+  private char Genero;
   
-  public static char GeraGenero() {
+  public static Utilizador geraUser() { 
+      Timeline t = new Timeline();
+      String password = geraPasswords();
+      String morada = geraMorada();
+      char genero = geraGenero();
+      String email; 
+      String nome;
+      String aux = genero+" ";
+      if(aux.equals("M")){
+        email = geraEmailMas();
+        nome = geraNomesMas();
+      }else{
+        email = geraEmailFem();
+        nome = geraNomesFem();
+        }
+        
+    Utilizador res = new Utilizador(email,password,nome,genero,morada,t);
+    return res;
+}
+ 
+ 
+  public static char geraGenero() {
     final String alphabet = "MF";
     final int N = alphabet.length();
     Random r = new Random();
@@ -31,7 +53,7 @@ public class geraUtilizador
     String estados[] = {"Manuel","João","José","Carlos","Gustavo","Tiago","Ricardo","António","Rui",
     "Diogo","André","Luís"};
     Random rn = new Random();
-    int i = rn.nextInt(12) + 1;
+    int i = rn.nextInt(11) + 1;
     return estados[i];
  }
  
@@ -39,16 +61,31 @@ public class geraUtilizador
     String estados[] = {"Joana","Daniela","Rita","Beatriz","Ana","Cristina","Vanessa","Sara",
     "Bruna","Paula","Sofia","Erica","Maria","Rosa","Olga","Matilde","Leonor","Francisca","Teresa"};
     Random rn = new Random();
-    int i = rn.nextInt(19) + 1;
+    int i = rn.nextInt(18) + 1;
     return estados[i];
  }
  
- public static String geraEmail() {
+ public static String geraEmailMas() {
     String estados[] = {"Manuel","João","José","Carlos","Gustavo","Tiago","Ricardo","António","Rui",
-    "Diogo","André","Luís","Joana","Daniela","Rita","Beatriz","Ana","Cristina","Vanessa","Sara",
+    "Diogo","André","Luís"};
+    Random rn = new Random();
+    int i = rn.nextInt(11) + 1;
+    return estados[i];
+ }
+ 
+  public static String geraEmailFem() {
+    String estados[] = {"Joana","Daniela","Rita","Beatriz","Ana","Cristina","Vanessa","Sara",
     "Bruna","Paula","Sofia","Erica","Maria","Rosa","Olga","Matilde","Leonor","Francisca","Teresa"};
     Random rn = new Random();
-    int i = rn.nextInt(31) + 1;
+    int i = rn.nextInt(18) + 1;
+    return estados[i];
+ }
+ 
+ public static String geraMorada() {
+    String estados[] = {"Rua Braga","Rua Porto","Rua Gaia","Rua Maia","Rua Coimbra","Rua Viana","Rua Lisboa","Rua Algarve",
+    "Rua Viseu","Rua Aveiro"};
+    Random rn = new Random();
+    int i = rn.nextInt(9) + 1;
     return estados[i];
  }
  
