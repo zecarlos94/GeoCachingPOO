@@ -33,7 +33,7 @@ public class Evento
      *  
      */
     
-    public void simulateEvento(Utilizadores utilizadores, Caches caches)
+    public Evento(Utilizadores utilizadores, Caches caches)
     {
         String clima = (new geraAtmosfera()).getClima();
         
@@ -220,6 +220,47 @@ public class Evento
         Descoberta descoberta = new Descoberta(vencedorRonda,cacheIdentificada,tempo);
         
         this.descobertas.add(descoberta);
+    }
+ 
+    public String vencedor()
+    {
+        String vencedor = null;
+        int mPontos = -1;
+        for(Descoberta elem : this.descobertas)
+        {
+            int pontos = elem.getPontos();
+            if(pontos > mPontos){
+                    mPontos = pontos;
+                    vencedor = elem.getEmail();
+            }
+        }
+        StringBuilder sb = new StringBuilder();
+        sb.append("O vencedor é "+vencedor + " com um total impressionante de "+mPontos +" pontos\n");
+        return sb.toString(); 
+    }
+    
+    public String toString()
+    {
+        StringBuilder sb = new StringBuilder();
+        for(Descoberta elem : this.descobertas)
+            sb.append(elem+"\n");
+        sb.append(vencedor());
+        return sb.toString();
+    }
+    
+    /**
+     *  toString usado para mostrar aos utilizadores o decorrer do evento, ou seja, quando o mesmo ainda não acabou
+     */
+    public String toString(Timeline time)
+    {
+        StringBuilder sb = new StringBuilder();
+        Iterator<Descoberta> it = descobertas.iterator();
+        Comparator<Timeline> ct = new TimelineComparator();
+        while(it.hasNext()){
+            Descoberta elem = it.next();
+            if(ct.compare( elem.getTime(),time) <= 0 ) sb.append(elem+"\n");
+        }
+        return sb.toString();   
     }
     
     /**

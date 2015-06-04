@@ -50,7 +50,7 @@ public class Utilizadores
         
     }
     
-    public Iterator iterator()
+    public Iterator<Map.Entry<String,Utilizador>> iterator()
     {   return this.utilizadores.entrySet().iterator(); }
     
     public void setUtilizadores(HashMap<String,Utilizador> utilizadores)

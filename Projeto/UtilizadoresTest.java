@@ -2,6 +2,7 @@ import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import java.util.*;
 /**
  * A classe de teste UtilizadoresUnity.
  *
@@ -17,13 +18,14 @@ public class UtilizadoresTest
     private ArrayList<String> amgs;    
     private Caches mc;
     
-   
-    tn=new Timeline();
-    act=new TreeMap<Timeline, Actividade>();
-    stat=new HashMap<String, Integer>();
-    amgs=new ArrayList<String>();
-    mc = new Caches();
-    
+/*
+    Timeline tn2=new Timeline();
+    TreeMap<Timeline, Actividade> act=new TreeMap<Timeline, Actividade>();
+    HashMap<String, Integer> stat=new HashMap<String, Integer>();
+    ArrayList<String> amgs=new ArrayList<String>();
+    Caches mc = new Caches();
+    Utilizadores u = new Utilizadores();
+  */ 
     public UtilizadoresTest()
     {
     }
@@ -31,7 +33,7 @@ public class UtilizadoresTest
     @Before
     public void setUp()
     {
-        u = new Utilizadores();
+        
         Utilizador a = new Utilizador("POO@uminho.pt","123456","Grupo 46",'M',"Rua em Gualtar",tn,act,stat,amgs,mc);
         Utilizador b = new Utilizador("poo@uminho.pt","789012","Grupo 45",'F',"Rua em Frossos",tn,act,stat,amgs,mc);
         Utilizador c = new Utilizador("um@uminho.pt","999999","Grupo 12",'M',"Rua em Azurem",tn,act,stat,amgs,mc);
@@ -96,7 +98,7 @@ public class UtilizadoresTest
         Utilizador u1 = new Utilizador();
         assertNull(u.get(u1.getEmail()));
         u.add(u1);
-        Utilizador u2 = u.get(u1.getEmail())
+        Utilizador u2 = u.get(u1.getEmail());
         assertNotNull(u2);
     }
 

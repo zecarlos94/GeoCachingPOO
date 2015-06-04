@@ -9,15 +9,27 @@ import java.io.File;
 
 public class Main
 {
-    //private HashMap<String, Cache> caches;
+    private Main() {}
     
+    private static GeoCaching c=new GeoCaching();
     
     public static void main(String args[]) {
-        GeoCaching c=new GeoCaching();
-        Utilizador user= menuInicial(c.getUtilizadores(), c.getAdmins());
+
+        String user = menuInicial();
+        
         if(user==null) out.printf("\nSaiu da aplicação! Adeus!\n");     // se o utilizador nao criar conta nem aceder à sua, então fechou a aplicação
-        else if(user.isAdmin(c.getAdmins())) menuAdmin(user, c.getUtilizadores(), c.getCaches(), c.getReports());
-        else menuUser(user, c.getUtilizadores(), c.getCaches(), c.getReports());
+        else if(c.isAdmin( user )) {
+                                                Scanner sc=new Scanner(System.in); 
+                                                out.println("1- Aceder ao menu de utilizador\n 2- Aceder ao menu de admin\n 3 - Sair");
+                                                int optn = sc.nextInt();
+                                                do{
+                                                        switch (optn){
+                                                            case 1: menuUser(user);break;
+                                                            case 2: menuAdmin(user);break;
+                                                            default:break;}
+                                                }while(optn!=3);
+                                            }
+        else menuUser(user);
         out.printf("\nSaiu da aplicação! Adeus!\n");
     }
     
@@ -26,8 +38,8 @@ public class Main
      *  Se nenhuma das ações se verifica, significa que o utilizador decidiu sair da aplicação e devolve null.
      *  Recebe a estrutura de dados com todos os utilizadores para verificar a autencidade do login ou para adicionar a sua caso decida criar.
      */
-    public static Utilizador menuInicial(Utilizadores utilizadores, ArrayList<String> admins) {
-        Utilizador user = null;
+    public static String menuInicial() {
+        String user = null;
         Scanner sc=new Scanner(System.in); 
         int opção=0;
         out.printf("Bem-vindo à aplicação de GeoCaching!\n");
@@ -38,71 +50,69 @@ public class Main
                 out.printf("\nTem a certeza que deseja sair?\n   1-Sim\n   2-Não\n\n");
                 opção=sc.nextInt();
             }
-            else if(opção==2) user = login(utilizadores,admins);
-            else if(opção==3) user = signin(utilizadores);
+            else if(opção==2) user = login();
+            else if(opção==3) user = signin();
             else out.printf("Introduza uma opção válida!\n\n");
         } while(opção!=1);
         return user;
     }
     
     /**
-     * Acede à conta do utilizador, devolvendo a mesma
+     * Acede à conta do utilizador, devolvendo o seu email caso o login seja bem sucedido
      */
-    public static Utilizador login(Utilizadores utilizadores, ArrayList<String> admins) {
-        Scanner sc=new Scanner(System.in); 
-        Utilizador u = null;
-        String dados;
+    public static String login() {
+        Scanner sc=new Scanner(System.in);     
         int cicle=0, i=0;
+        
         out.printf("\nInsira o seu email: ");
-        dados=sc.next();
-        boolean isAdmin = false;
-        for(String adminName : admins) if(adminName.equals(dados)) isAdmin=true;         // Temporario estas verificaçoes de admins visto que n temos estados guardados
-        if(utilizadores.existe(dados) && !isAdmin) {
-            u=utilizadores.get(dados);
+        String email =sc.next();
+   
+        if(c.contaExiste(email)) {
+      
             do {
                 out.printf("Introduza a password: ");
-                dados=sc.next();
-                if(u.getPassword().equals(dados)) break;        // login bem sucedido return u;
+                String pw =sc.next();
+                if(c.passwordCerta(email,pw)) break;        // login bem sucedido return u;
                 else {
                     out.printf("\nPassword Incorreta!\n");
                     cicle=1; i++;
                 }
             } while(cicle==1 && i<3);
             if(i==3) {
-                u=null ;      // Acesso negado uma vez que falhou as tentativas todas, de volta ao menu principal
+                email =null ;      // Acesso negado uma vez que falhou as tentativas todas, de volta ao menu principal
                 out.printf("\n\nEsgotou o limite de tentativas!\n\n");
             }
         }
-        else out.printf("\nNão existe nenhum utilizador com o email dado!\n");
-        return u;
+        else {out.printf("\nNão existe nenhum utilizador com o email dado!\n"); return null;} 
+        return email;
     }
     
     /**
      * Cria um novo utilizador
      */
-    public static Utilizador signin(Utilizadores utilizadores) {
+    public static String signin() {
         Scanner sc=new Scanner(System.in); 
-        String dados;
+        String email;
         int cicle, dia, mes, ano;
-        Utilizador u=new Utilizador();
         do {
             out.printf("\nInsira o email: "); 
-            dados=sc.next();
-            if(utilizadores.existe(dados)) {
+            email =sc.next();
+            if(c.contaExiste(email)) {
                 out.printf("O email já existe!");
                 cicle=1;
             }
             else cicle=0;
         } while(cicle==1);
-        u.setEmail(dados);
+        
         out.printf("Insira a password: "); 
-        dados=sc.next(); u.setPassword(dados);
+        String password =sc.next();
         out.printf("Insira o nome: "); 
-        dados=sc.next(); u.setNome(dados);
+        String nome =sc.next();
         out.printf("Insira o género: ");
-        dados=sc.next(); u.setGenero(dados.charAt(0));
+        String genero =sc.next(); 
         out.printf("Insira a morada: "); 
-        dados=sc.next(); u.setMorada(dados);
+        String morada =sc.next(); 
+        
         do {
             out.printf("Insira a timeline de nascimento:\n");
             out.printf("   Dia: "); dia=sc.nextInt();
@@ -111,11 +121,12 @@ public class Main
             if(!validate(dia, mes, ano)) cicle=1;
             else cicle=0;
         } while(cicle==1);
-        Timeline timelineNasc=new Timeline(dia, mes, ano);
-        u.setTimelineNascimento(timelineNasc);
-        utilizadores.add(u);
+        Timeline timeline_nascimento =new Timeline(dia, mes, ano);
+        Utilizador novoUser = new Utilizador(email,password,nome, genero.charAt(0), morada, timeline_nascimento);
+        c.addUtilizador(novoUser);
+       
         out.printf("\nConta criada com sucesso!\n");
-        return u;
+        return email;
     }
     
      /**
@@ -137,47 +148,48 @@ public class Main
      *  Só tem acesso aos seus dados e aos dados dos outros utilizadores.
      *  Nota: não deixar o utilizador remover/adicionar livremente em SystemCaches nem em Utilizadores e também nao pode remover reports
      *  O utilizador tem uma variável nova chamada myCaches com as caches que ele criou
-     *  Acrescentar funçoes noutras classes em vez de spamar codigo aqui ... Tudas as funçoes que nao sejam I/O devem ser feitas nas respectivas classes
-     *  Depois de validar os dados da Cache ou Report(n se verifica se as coordenadas existem)
      *  Adicionar no main a cache ou o report às respectivas estruturas
      */
-    public static void menuUser(Utilizador u, Utilizadores utilizadores, Caches systemCaches, CacheReports reports) {
+    public static void menuUser(String email) {
         Scanner sc=new Scanner(System.in); 
         int optn;
-        String email;
+        Utilizador u = c.getUtilizador(email);
+        String emailAmigo;
         do {
+            /* Falta opçoes de editar conta */
             // fazer submenus, menu mycaches com (add remover ver)
+            if(c.getInscricoesAbertas() ) out.printf("Inscrições abertas para o evento , 9 - Para registar\n"); 
             out.printf("\nOpções de Conta:\n   1-Informações\n   2-Adicionar Amigo\n   3-Remover Amigo\n   4-Informação dos amigos\n");
-            out.printf("   5-Reportar Cache\n   6-Adicionar Cache\n   7-Ver as minhas caches\n   8- Remover uma das minhas caches\n   9-Sair");
+            out.printf("   5-Reportar Cache\n   6-Adicionar Cache\n   7-Ver as minhas caches\n   8- Remover uma das minhas caches\n   0-Sair");
             optn=sc.nextInt();
             switch(optn) {
                 case 1: 
                         infoUser(u);
                         break;
                 case 2:
-                         out.printf("\nInsira o email do amigo que deseja adicionar: "); email=sc.next();
-                         if(u.getAmigos().contains(email)) out.printf("\nVocê já adicionou este amigo!\n");
-                         else if(u.getEmail().equals(email)) out.printf("\nVocê não se pode adicionar como amigo!\n");
-                         else if(utilizadores.existe(email)) {
-                             utilizadores.addAmizade(u.getEmail(),email);
+                         out.printf("\nInsira o email do amigo que deseja adicionar: "); emailAmigo =sc.next();
+                         if(u.getAmigos().contains(emailAmigo)) out.printf("\nVocê já adicionou este amigo!\n");
+                         else if(u.getEmail().equals(emailAmigo)) out.printf("\nVocê não se pode adicionar como amigo!\n");
+                         else if(c.contaExiste(emailAmigo)) {
+                             c.addAmizade(u.getEmail(),emailAmigo);
                              out.printf("\nAmigo adicionado com sucesso!\n");
                          }
                          else out.printf("\nNão existe nenhum utilizador registado com esse email!\n");
                          break;
                  case 3: 
-                        out.printf("\nInsira o email do amigo que deseja remover: "); email=sc.next();
-                        if(!u.getAmigos().contains(email)) out.printf("\nNão existe nenhum amigo com este email, por isso não é possível remover!\n");
+                        out.printf("\nInsira o email do amigo que deseja remover: "); emailAmigo=sc.next();
+                        if(!u.getAmigos().contains(emailAmigo)) out.printf("\nNão existe nenhum amigo com este email, por isso não é possível remover!\n");
                         else {
-                            utilizadores.removeAmizade(u.getEmail(),email);
+                            c.removeAmizade(u.getEmail(),emailAmigo);
                             out.printf("\nAmigo removido!\n");
                         }
                         break;
                  case 4: 
-                        out.printf("\nInsira o email do amigo cuja informação deseja ver: "); email=sc.next();
-                        if(!u.getAmigos().contains(email)) out.printf("\nNão existe nenhum amigo com este email!\n");
+                        out.printf("\nInsira o email do amigo cuja informação deseja ver: "); emailAmigo=sc.next();
+                        if(!u.getAmigos().contains(emailAmigo)) out.printf("\nNão existe nenhum amigo com este email!\n");
                         else {
-                            Utilizador friend=utilizadores.get(email).clone();
-                            infoUser(friend);
+                            Utilizador amigo =c.getUtilizador(emailAmigo);
+                            infoUser(amigo);
                         }
                         break;
                   case 5: 
@@ -186,28 +198,39 @@ public class Main
                         out.printf("\nDescreva a razão do seu report numa linha\n"); 
                         String texto=sc.next(); 
                         Report report=(Report) new Report(coordenadas, texto);      // Cria um report com as horas do sistema
-                        reports.add(report);
+                        c.addReport(report);
                         out.printf("\nReport adicionado com sucesso\n");
                         break;
                   case 6: 
                         Cache ce;
                         ce=criaCache();
-                        systemCaches.add(ce);
+                        c.addCache(ce);
                         break;
                   case 7:
                         u.getMyCaches().toString();
                         break;
                   case 8:
                         out.printf("\nInsira as coordenadas da  cache que deseja remover:");
-                        Coordenadas c=scanCoordenadas();
-                        systemCaches.remove(c);
+                        Coordenadas coord=scanCoordenadas();
+                        if(u.getMyCaches().existe(coord)){
+                        c.removeCache(coord);
                         out.printf("\nCache removida com sucesso\n");
+                    } else out.printf("\nEssa cache não lhe pertence\n");
                         break;
+                  case 9:
+                         if(c.getInscricoesAbertas())
+                         {
+                             try{
+                             c.registarEvento(u.getEmail());
+                            }
+                            catch(EventoCheioException e ) { out.printf(" Desculpe mas o evento já excedeu o limite de participantes\n");  }
+                         }
+                            
                   default:
                         System.out.printf("\nInsira uma opção válida!\n");
                         break;
             }
-        } while(optn!=9);
+        } while(optn!=0);
     }
     
     /**
@@ -254,80 +277,36 @@ public class Main
         else if(x<0) return false;
         return true;
     }
+    
 
-    public static void menuAdmin(Utilizador u, Utilizadores utilizadores, Caches caches, CacheReports reports) {
+    public static void menuAdmin(String email) {
         Scanner sc=new Scanner(System.in); 
         int optn;
-        String email;
+        Utilizador u = c.getUtilizador(email);
         do {
             // fazer submenus, menu mycaches com (add remover ver)
-            out.printf("\nOpções de Conta:\n   1-Informações\n   2-Adicionar Amigo\n   3-Remover Amigo\n   4-Informação dos amigos\n");
-            out.printf("   5-Reportar Cache\n   6-Adicionar Cache\n   7-Ver as minhas caches\n   8- Remover uma das caches\n   9-Ver reports\n   10-Criar Evento\n   11-Sair\n");
+            out.printf("\nOpções de Administrador:\n 1 - Ver reports \n 2 - Remover uma cache\n 3 - Abrir inscrições de evento\n 0 - Sair");
             optn=sc.nextInt();
             switch(optn) {
                 case 1: 
-                        infoUser(u);
+                        c.getReports().toString();
                         break;
                 case 2:
-                         out.printf("\nInsira o email do amigo que deseja adicionar: "); email=sc.next();
-                         if(u.getAmigos().contains(email)) out.printf("\nVocê já adicionou este amigo!\n");
-                         else if(u.getEmail().equals(email)) out.printf("\nVocê não se pode adicionar como amigo!\n");
-                         else if(utilizadores.existe(email)) {
-                             utilizadores.addAmizade(u.getEmail(),email);
-                             out.printf("\nAmigo adicionado com sucesso!\n");
-                         }
-                         else out.printf("\nNão existe nenhum utilizador registado com esse email!\n");
-                         break;
-                 case 3: 
-                        out.printf("\nInsira o email do amigo que deseja remover: "); email=sc.next();
-                        if(!u.getAmigos().contains(email)) out.printf("\nNão existe nenhum amigo com este email, por isso não é possível remover!\n");
-                        else {
-                            utilizadores.removeAmizade(u.getEmail(),email);
-                            out.printf("\nAmigo removido!\n");
-                        }
-                        break;
-                 case 4: 
-                        out.printf("\nInsira o email do amigo cuja informação deseja ver: "); email=sc.next();
-                        if(!u.getAmigos().contains(email)) out.printf("\nNão existe nenhum amigo com este email!\n");
-                        else {
-                            Utilizador friend=utilizadores.get(email).clone();
-                            infoUser(friend);
-                        }
-                        break;
-                  case 5: 
-                        out.printf("\nInsira a latitude e a longitude da cache que deseja reportar:");
-                        Coordenadas coordenadas=scanCoordenadas();
-                        out.printf("\nDescreva a razão do seu report numa linha\n"); 
-                        String texto=sc.next(); 
-                        Report report=(Report) new Report(coordenadas, texto);      // Cria um report com as horas do sistema
-                        reports.add(report);
-                        out.printf("\nReport adicionado com sucesso\n");
-                        break;
-                  case 6: 
-                        Cache ce;
-                        ce=criaCache();
-                        caches.add(ce);
-                        break;
-                  case 7:
-                        u.getMyCaches().toString();
-                        break;
-                  case 8:
                         out.printf("\nInsira a latitude e a longitude da cache que deseja remover:");
                         Coordenadas coord=scanCoordenadas();
-                        caches.getCaches().remove(coord);
+                        c.removeCache(coord);
                         break;
-                  case 9:
-                        reports.getReports().toString();
-                        break;
-                  case 10:
-                        break;
-                  case 11:
-                        break;
-                  default:
+                case 3:
+                  // por completar
+                        out.printf("\nInsira o limite de participantes\n");
+                        int l = sc.nextInt(); c.setLimiteParticipantes(l);
+
+                      break;
+                default:
                         System.out.printf("\nInsira uma opção válida!\n");
                         break;
             }
-        } while(optn!=11);
+        } while(optn!=0);
     }
     
     public static Cache criaCache() {

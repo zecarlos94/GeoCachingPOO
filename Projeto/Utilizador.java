@@ -31,7 +31,22 @@ public class Utilizador
         this.amigos=new ArrayList<String>();
         this.myCaches = new Caches();
     }
+    /**
+     *  Construtor usado para criar conta de utilizador
+     */
+    public Utilizador(String email, String password, String nome, char genero, String morada, Timeline timeline_nascimento){
+        this.email=email;
+        this.password=password;
+        this.nome=nome;
+        this.genero=genero;
+        this.timeline_nascimento=new Timeline(timeline_nascimento);
+         this.estatisticas= new StatsUtilizador();
+        this.amigos=new ArrayList<String>();
+        this.myCaches = new Caches();
+        this.actividades=new TreeMap<Timeline, Actividade>(new TimelineComparator());
+    }
     
+   
     public Utilizador(String email, String password, String nome, char genero, String morada, Timeline timeline_nascimento, TreeMap<Timeline, Actividade> actividades, StatsUtilizador estatisticas, ArrayList<String> amigos, Caches caches) throws NumberFormatException {
         this.email=email;
         this.password=password;
