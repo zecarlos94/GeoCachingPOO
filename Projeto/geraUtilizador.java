@@ -8,32 +8,40 @@ import java.util.Random;
  */
 public class geraUtilizador
 {
+    /*
   private String Email;
   private String Nome;
   private String Password;
   private String Morada;
   private char Genero;
-  
-  public static Utilizador geraUser() { 
+  */
+ private Utilizador utilizador;
+ 
+  public geraUtilizador() { 
       Timeline t = new Timeline();
-      String password = geraPasswords();
+      String password = new String("pw");
       String morada = geraMorada();
       char genero = geraGenero();
       String email; 
       String nome;
       String aux = genero+" ";
       if(aux.equals("M")){
-        email = geraEmailMas();
-        nome = geraNomesMas();
+         nome = geraNomesMas();
+        
       }else{
-        email = geraEmailFem();
         nome = geraNomesFem();
         }
         
-    Utilizador res = new Utilizador(email,password,nome,genero,morada,t);
-    return res;
+       email = geraEmail(nome);
+        
+       this.utilizador = new Utilizador(email,password,nome,genero,morada,t);
+      
 }
- 
+
+public Utilizador getUtilizador(){
+        return this.utilizador;
+}
+
  
   public static char geraGenero() {
     final String alphabet = "MF";
@@ -41,19 +49,19 @@ public class geraUtilizador
     Random r = new Random();
     return alphabet.charAt(r.nextInt(N));
  }
- 
+ /*
  public static String geraPasswords() { 
     String estados[] = {"123456"};
     Random rn = new Random();
     int i = 0;
     return estados[i];
  }
- 
+ */
  public static String geraNomesMas() {
     String estados[] = {"Manuel","João","José","Carlos","Gustavo","Tiago","Ricardo","António","Rui",
     "Diogo","André","Luís"};
     Random rn = new Random();
-    int i = rn.nextInt(11) + 1;
+    int i = rn.nextInt(12);
     return estados[i];
  }
  
@@ -61,45 +69,26 @@ public class geraUtilizador
     String estados[] = {"Joana","Daniela","Rita","Beatriz","Ana","Cristina","Vanessa","Sara",
     "Bruna","Paula","Sofia","Erica","Maria","Rosa","Olga","Matilde","Leonor","Francisca","Teresa"};
     Random rn = new Random();
-    int i = rn.nextInt(18) + 1;
+    int i = rn.nextInt(19);
     return estados[i];
  }
  
- public static String geraEmailMas() {
-    String estados[] = {"Manuel","João","José","Carlos","Gustavo","Tiago","Ricardo","António","Rui",
-    "Diogo","André","Luís"};
+ public static String geraEmail(String nome) {
     Random rn = new Random();
-    int i = rn.nextInt(11) + 1;
-    return estados[i];
- }
- 
-  public static String geraEmailFem() {
-    String estados[] = {"Joana","Daniela","Rita","Beatriz","Ana","Cristina","Vanessa","Sara",
-    "Bruna","Paula","Sofia","Erica","Maria","Rosa","Olga","Matilde","Leonor","Francisca","Teresa"};
-    Random rn = new Random();
-    int i = rn.nextInt(18) + 1;
-    return estados[i];
+    StringBuilder sb = new StringBuilder();
+    int n = rn.nextInt(2000);
+    sb.append(nome + n + "@hotmail.com");
+    return sb.toString();
  }
  
  public static String geraMorada() {
     String estados[] = {"Rua Braga","Rua Porto","Rua Gaia","Rua Maia","Rua Coimbra","Rua Viana","Rua Lisboa","Rua Algarve",
     "Rua Viseu","Rua Aveiro"};
     Random rn = new Random();
-    int i = rn.nextInt(9) + 1;
+    int i = rn.nextInt(10);
     return estados[i];
  }
  
- public String getMorada()
- {  return this.Morada;}
- 
-  public String getEmail()
- {  return this.Email;}
- 
-  public String getNome()
- {  return this.Nome;}
- 
-  public String getPass()
- {  return this.Password;}
  
  
   /*

@@ -165,7 +165,12 @@ public class Utilizadores
     {
         return utilizadores.containsKey(email);
     }
-    
+    /**
+     *  Devolve o numero de utilizadores
+     */
+    public int size(){
+          return this.utilizadores.size();
+    }
     
     public Utilizadores clone()
     {
