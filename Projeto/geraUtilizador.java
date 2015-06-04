@@ -1,4 +1,4 @@
-import java.util.Random;
+import java.util.*;
  
  public class geraUtilizador
 {
@@ -57,7 +57,20 @@ import java.util.Random;
     return estados[i];
  }
  
- 
+ public static Timeline geraData() {
+     int dia;
+     int anos[]={1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997};
+     Random rn = new Random();
+     int ano=rn.nextInt(17)+1; 
+     int mes=rn.nextInt(12)+1; 
+     if(mes==1 || mes==3 || mes==5 || mes==7 || mes==8 || mes==10 || mes==12) dia=rn.nextInt(31)+1;
+     else if(mes==2) {
+         if(ano%4==0) dia=rn.nextInt(29)+1;
+         else dia=rn.nextInt(28)+1;
+     }
+     else dia=rn.nextInt(30)+1;
+     return new Timeline(dia, mes, anos[ano]);
+ }
  
   
  public static String geraEmail(String nome) {
