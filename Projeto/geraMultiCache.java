@@ -25,10 +25,15 @@ public class geraMultiCache
         quantos=rn.nextInt(3);
         Coordenadas cd=geraCoordenadas();
         ArrayList<Coordenadas> checkps = new ArrayList<Coordenadas>(quantos);
+        double latitude_aux=0;
+        double longitude_aux=0;
+        double factor=0.0001;
         for(i=0;i<quantos;i++){
-            cd+=0.0001;
+            latitude_aux = cd.getLatitude() + factor;
+            longitude_aux = cd.getLongitude() + factor;
+            cd.setLatitude(latitude_aux);
+            cd.setLongitude(longitude_aux);
             checkps.add(cd.clone());
-            
         }
         return checkps;
     }  
