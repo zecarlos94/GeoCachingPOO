@@ -4,7 +4,7 @@ public class geraMultiCache
 {
 
  public static Coordenadas geraCoordenadas() {
- 	return new Coordenadas(geraLatitude,geraLongitude);
+ 	return new Coordenadas(geraLatitude(),geraLongitude());
  }
 
  public static Double geraLatitude() {

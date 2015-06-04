@@ -5,7 +5,7 @@ import java.util.*;
  * @author (seu nome) 
  * @version (número de versão ou data)
  */
-public class geraCaches
+public class geraMysteryCache
 {
  public static ArrayList<ArrayList<String>> geraMysteryCache() {
    Random rn = new Random();
