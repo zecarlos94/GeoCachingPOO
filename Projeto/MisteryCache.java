@@ -92,4 +92,9 @@ public class MisteryCache extends Cache implements Tesouro{
         }
         return certas;
     }
+    
+    public String toString() {
+        return "MultiCache: " +this.getLivroRegistos().toString()+ " / " +this.getTimeline().toString()+ " / " +this.getCoordenadas().toString()+ " / " +this.perguntasRespostas.toString()+
+                    " / " +this.geocoins;
+    }
 }
