@@ -78,22 +78,17 @@ public class Utilizadores
      *  
      */
     
-    public void addAmizade(String email1,String email2) throws AmizadeExisteException
+    public void addAmizade(String email1,String email2)
     {
         Utilizador utilizador1 = utilizadores.get(email1);
         Utilizador utilizador2 = utilizadores.get(email2);
-        
-        if (utilizador1.getAmigos().contains(email2))
-            throw new AmizadeExisteException();
-           
-        else{
         
         utilizador1.addAmigo(email2);
         utilizador2.addAmigo(email1);
         
         utilizador1.addActividade(utilizador2.getNome(),adicionou);
         utilizador2.addActividade(utilizador2.getNome(),adicionou);
-       }
+        
     }
       /**
      *  Apaga o estatudo de amizade dos dois utilizadores, actualizando a lista de amizades e activadades dos perfis dos mesmos
@@ -170,12 +165,7 @@ public class Utilizadores
     {
         return utilizadores.containsKey(email);
     }
-    /**
-     *  Devolve o numero de utilizadores
-     */
-    public int size(){
-          return this.utilizadores.size();
-    }
+    
     
     public Utilizadores clone()
     {

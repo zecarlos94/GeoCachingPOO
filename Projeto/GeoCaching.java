@@ -118,7 +118,7 @@ public class GeoCaching implements Serializable
         return utilizadores.get(email);
     }
     // Adiciona uma amizada nos dois perfis
-    public void addAmizade(String email1,String email2) throws AmizadeExisteException {
+    public void addAmizade(String email1,String email2){
         this.utilizadores.addAmizade(email1,email2);   
     }
     public void removeAmizade(String email1,String email2){

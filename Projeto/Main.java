@@ -1,11 +1,6 @@
 import java.util.*;
 import static java.lang.System.*;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.File;
+import java.io.*;
 
 public class Main
 {
@@ -13,23 +8,25 @@ public class Main
     
     private static GeoCaching c=new GeoCaching();
     
-    public static void main(String args[]) {
-
-        String user = menuInicial();
+    public static void main(String args[]) throws IOException, ClassNotFoundException {
+        Scanner sc=new Scanner(System.in); 
+        int optn;
+        out.printf("Bem-vindo à aplicação de GeoCaching!");
+        out.printf("\n\n1- Carregar estado guardado anteriormente\n2 - Iniciar aplicação sem estado carregado\n");
+        optn = sc.nextInt();
+        if(optn==1) {
+            out.printf("\nInsira o nome do ficheiro: "); String nome=sc.next();
+            c=loadState(nome);
+        }
         
-        if(user==null) out.printf("\nSaiu da aplicação! Adeus!\n");     // se o utilizador nao criar conta nem aceder à sua, então fechou a aplicação
-        else if(c.isAdmin( user )) {
-                                                Scanner sc=new Scanner(System.in); 
-                                                out.println("1- Aceder ao menu de utilizador\n 2- Aceder ao menu de admin\n 3 - Sair");
-                                                int optn = sc.nextInt();
-                                                do{
-                                                        switch (optn){
-                                                            case 1: menuUser(user);break;
-                                                            case 2: menuAdmin(user);break;
-                                                            default:break;}
-                                                }while(optn!=3);
-                                            }
-        else menuUser(user);
+        menuInicial(); // Acede ao menu
+        
+        out.printf("\nDeseja gravar o estado em ficheiro binário?\n   1 - Sim\n   2 - Não\n");
+        optn=sc.nextInt();
+        if(optn==1) {
+            out.printf("\nInsira o nome do ficheiro: "); String nome=sc.next();
+            saveState(c, nome);
+        }
         out.printf("\nSaiu da aplicação! Adeus!\n");
     }
     
@@ -38,11 +35,9 @@ public class Main
      *  Se nenhuma das ações se verifica, significa que o utilizador decidiu sair da aplicação e devolve null.
      *  Recebe a estrutura de dados com todos os utilizadores para verificar a autencidade do login ou para adicionar a sua caso decida criar.
      */
-    public static String menuInicial() {
-        String user = null;
+    public static void menuInicial() {
         Scanner sc=new Scanner(System.in); 
         int opção=0;
-        out.printf("Bem-vindo à aplicação de GeoCaching!\n");
         do {
             out.printf("\nInsira uma opção:\n   1-Sair\n   2-Aceder à conta\n   3-Criar nova conta\n\n");
             opção=sc.nextInt();
@@ -50,29 +45,32 @@ public class Main
                 out.printf("\nTem a certeza que deseja sair?\n   1-Sim\n   2-Não\n\n");
                 opção=sc.nextInt();
             }
-            else if(opção==2) user = login();
-            else if(opção==3) user = signin();
+            else if(opção==2) login();
+            else if(opção==3) signin();
             else out.printf("Introduza uma opção válida!\n\n");
         } while(opção!=1);
-        return user;
     }
     
     /**
      * Acede à conta do utilizador, devolvendo o seu email caso o login seja bem sucedido
      */
-    public static String login() {
+    public static void login() {
         Scanner sc=new Scanner(System.in);     
         int cicle=0, i=0;
         
         out.printf("\nInsira o seu email: ");
-        String email =sc.next();
+        String email=sc.next();
    
         if(c.contaExiste(email)) {
       
             do {
                 out.printf("Introduza a password: ");
                 String pw =sc.next();
-                if(c.passwordCerta(email,pw)) break;        // login bem sucedido return u;
+                if(c.passwordCerta(email,pw)) {
+                   if(c.isAdmin(email)) menuAdmin(email);
+                   else menuUser(email);
+                   break;
+                }
                 else {
                     out.printf("\nPassword Incorreta!\n");
                     cicle=1; i++;
@@ -83,8 +81,7 @@ public class Main
                 out.printf("\n\nEsgotou o limite de tentativas!\n\n");
             }
         }
-        else {out.printf("\nNão existe nenhum utilizador com o email dado!\n"); return null;} 
-        return email;
+        else out.printf("\nNão existe nenhum utilizador com o email dado!\n"); 
     }
     
     /**
@@ -168,15 +165,12 @@ public class Main
                         break;
                 case 2:
                          out.printf("\nInsira o email do amigo que deseja adicionar: "); emailAmigo =sc.next();
-                      
-                         if(u.getEmail().equals(emailAmigo)) out.printf("\nVocê não se pode adicionar como amigo!\n");
+                         if(u.getAmigos().contains(emailAmigo)) out.printf("\nVocê já adicionou este amigo!\n");
+                         else if(u.getEmail().equals(emailAmigo)) out.printf("\nVocê não se pode adicionar como amigo!\n");
                          else if(c.contaExiste(emailAmigo)) {
-                             
-                             try{
                              c.addAmizade(u.getEmail(),emailAmigo);
+                             c.addAmizade(emailAmigo,u.getEmail());
                              out.printf("\nAmigo adicionado com sucesso!\n");
-                            }
-                            catch(AmizadeExisteException e) {out.printf("\nVocê já adicionou este amigo!\n");}
                          }
                          else out.printf("\nNão existe nenhum utilizador registado com esse email!\n");
                          break;
@@ -372,5 +366,21 @@ public class Main
         return checkps;
     }
     
+    /**
+     * Funções que guardam e lêem estados em ficheiros binários
+     */
+    public static GeoCaching loadState(String filename) throws IOException, ClassNotFoundException {
+        ObjectInputStream ois = new ObjectInputStream (new FileInputStream(filename));
+        GeoCaching e = (GeoCaching) ois.readObject();
+        ois.close();
+        return e;
+    }
+    
+    public static void saveState(GeoCaching e,String filename) throws IOException{
+        FileOutputStream fos = new FileOutputStream(filename);
+        ObjectOutputStream oos = new ObjectOutputStream(fos);
+        oos.writeObject(e);
+        oos.close();
+    }
     
 }
