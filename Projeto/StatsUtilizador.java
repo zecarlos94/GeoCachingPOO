@@ -1,4 +1,4 @@
-
+import java.io.*;
      
 /**
  * Write a description of class StatsUtilizador here.
@@ -6,7 +6,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class StatsUtilizador
+public class StatsUtilizador implements Serializable
 {
     
     String[] columNames;

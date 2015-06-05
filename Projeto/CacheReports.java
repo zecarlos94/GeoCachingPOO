@@ -1,10 +1,11 @@
 import java.util.*;
+import java.io.*;
 
 /**
  *  Contem todos os reports ordenados por timeline.
  *
  */
-public class CacheReports
+public class CacheReports implements Serializable
 {
     // instance variables - replace the example below with your own
     private TreeMap<Timeline,Report> reports;
