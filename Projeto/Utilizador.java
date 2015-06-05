@@ -261,12 +261,13 @@ public class Utilizador
                  && this.estatisticas.equals(c.getEstatisticas()) && this.amigos.equals(c.getAmigos())); // falta adicionar equals à classe Caches);
     }
     
-    /**
+   /**
      * toString
      */
-    public String toString() {
-        return new String(this.email+ " " +this.password+ " " +this.nome+ " " +this.genero+ " " +this.morada+ " " +this.timeline_nascimento.toString());
-    }
+   public String toString() {
+        return "Utilizador: " +this.email+ " / " +this.password+ " / " +this.nome+ " / " +this.genero+ " / " +this.morada+ " / " +this.timeline_nascimento.toString()+ " / "
+                    +this.actividades.toString()+ " / " +this.estatisticas.toString()+ " / " +this.amigos.toString()+ " / " +this.myCaches.toString();
+   }
     
    /**
      * Devolve um ArrayList com as últimas 10 atividades do utilizador
