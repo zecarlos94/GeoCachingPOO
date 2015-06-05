@@ -26,37 +26,37 @@ public class Report implements Serializable
     public Report(Timeline time , Coordenadas coordenadas,String texto) throws NumberFormatException
     {
        this.coordenadas = coordenadas.clone();
-       texto = texto;
-       this.time = time;
+       this.texto = texto;
+       this.time = time.clone();
     }
     
     public Report(Coordenadas coordenadas,String texto) throws NumberFormatException
     {
        this.coordenadas = coordenadas.clone();
-       texto = texto;
+       this.texto = texto;
        this.time = new Timeline();
     }
     
     public Report(Report report)
     {
-        coordenadas = report.getCoordenadas();
-        texto = report.getTexto();
-        time = report.getTime();
+        this.coordenadas = report.getCoordenadas();
+        this.texto = report.getTexto();
+        this.time = report.getTime();
     }
     
     public Coordenadas getCoordenadas()
     {
-        return coordenadas.clone();
+        return this.coordenadas.clone();
     }
     
     public String getTexto()
     {
-        return texto;
+        return this.texto;
     }
     
     public Timeline getTime()
     {
-        return time;
+        return this.time;
     }
     
     public void setTexto(String texto)

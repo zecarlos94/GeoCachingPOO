@@ -23,7 +23,7 @@ public class Main
         optn=sc.nextInt();
         if(optn==1) {
             out.printf("\nInsira o nome do ficheiro: "); String nome=sc.next();
-            saveState(c, nome);
+            saveState(nome);
         }
         out.printf("\nSaiu da aplicação! Adeus!\n");
     }
@@ -383,7 +383,7 @@ public class Main
     
     public static void saveState(String filename) throws IOException{
         GeraEstado g=new GeraEstado();
-        GeoCaching e=new GeoCaching(g.getUtilizadores(), g.getCaches(), g.getReports());
+        GeoCaching e=new GeoCaching(g.getUtilizadores(), g.getCaches(), g.getCacheReports());
         FileOutputStream fos = new FileOutputStream(filename);
         ObjectOutputStream oos = new ObjectOutputStream(fos);
         oos.writeObject(e);

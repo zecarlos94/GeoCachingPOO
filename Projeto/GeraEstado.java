@@ -188,12 +188,15 @@ public class GeraEstado
          int i=0;
          boolean over = false;
          Iterator<Map.Entry<Coordenadas,Cache>> it = this.caches.iterator();
-         while(it.hasNext() && !over )
+         while(it.hasNext())
          {
             Map.Entry<Coordenadas,Cache> elem = it.next();
-            Report report = new Report(elem.getKey() ,"Esta cache está a ser abusada sevaramente");
+            Report report = new Report(elem.getKey().clone() ,"Esta cache está a ser abusada sevaramente");
             this.reports.add(report);
-            if(i==5) over = true;
+            if(i==5) {
+                over = true;
+                break;
+            }
             i++;
         }
             

@@ -63,7 +63,7 @@ public class CacheReports
 
       public void removeReport(Timeline d) 
       {
-          reports.remove(d);
+          this.reports.remove(d);
        }
     
      public CacheReports clone()
@@ -80,4 +80,7 @@ public class CacheReports
     }
     //falta tostring
     
+    public Iterator<Map.Entry<Timeline, Report>> iterator() {
+        return this.reports.entrySet().iterator();
+    }
 }
