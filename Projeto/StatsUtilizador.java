@@ -109,17 +109,17 @@ public class StatsUtilizador
     }
     
     public String toString() {
-      StringBuilder sb = new StringBuilder();
-      for( int i = 0; i < rowNames.length ; i++){
-         sb.append("RowNames: ");
-         sb.append(this.rowNames[i]+" \n\n");
-         for( int j = 0; j < columNames.length ; j++){
-             sb.append("ColumNames: ");
-             sb.append(this.columNames[j]+" \n");
-         }
-      }
-      System.out.println(sb.toString());
-      return sb.toString();
+        StringBuilder sb = new StringBuilder();
+        sb.append("\t\t");
+        for( int j = 0;  j < columNames.length ; j++){
+            sb.append(this.columNames[j]+"\t");
+        }
+        sb.append("\n");
+        for( int i = 0; i < rowNames.length ; i++){
+            sb.append(this.rowNames[i]+"\n");
+        }
+        
+        System.out.println(sb.toString());
+        return sb.toString();
     }
-  
 }
