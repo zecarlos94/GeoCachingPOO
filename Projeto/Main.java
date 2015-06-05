@@ -227,7 +227,7 @@ public class Main
                             catch(EventoCheioException e ) { out.printf(" Desculpe mas o evento já excedeu o limite de participantes\n");  }
                          }
                   case 10:
-                         descobrirCache();
+                         descobrirCache(u.getEmail());
                          break;
                   default:
                         System.out.printf("\nInsira uma opção válida!\n");
@@ -390,7 +390,7 @@ public class Main
         oos.close();
     }
     
-    public static int descobrirCache(){
+    public static int descobrirCache(String email){
         out.printf("\nInsira a latitude e a longitude da cache que deseja descobrir:");
         Coordenadas crds=scanCoordenadas();
         Cache aux = getCache(crds);
