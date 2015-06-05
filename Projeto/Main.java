@@ -157,7 +157,7 @@ public class Main
             // fazer submenus, menu mycaches com (add remover ver)
             if(c.getInscricoesAbertas() ) out.printf("Inscrições abertas para o evento , 9 - Para registar\n"); 
             out.printf("\nOpções de Conta:\n   1-Informações\n   2-Adicionar Amigo\n   3-Remover Amigo\n   4-Informação dos amigos\n");
-            out.printf("   5-Reportar Cache\n   6-Adicionar Cache\n   7-Ver as minhas caches\n   8- Remover uma das minhas caches\n   0-Sair");
+            out.printf("   5-Reportar Cache\n   6-Adicionar Cache\n   7-Ver as minhas caches\n   8- Remover uma das minhas caches\n   9- Registar-se num Evento\n   10- Descobrir uma cache\n   0-Sair");
             optn=sc.nextInt();
             switch(optn) {
                 case 1: 
@@ -226,7 +226,9 @@ public class Main
                             }
                             catch(EventoCheioException e ) { out.printf(" Desculpe mas o evento já excedeu o limite de participantes\n");  }
                          }
-                            
+                  case 10:
+                         descobrirCache();
+                         break;
                   default:
                         System.out.printf("\nInsira uma opção válida!\n");
                         break;
@@ -388,4 +390,20 @@ public class Main
         oos.close();
     }
     
+    public static int descobrirCache(){
+        out.printf("\nInsira a latitude e a longitude da cache que deseja descobrir:");
+        Coordenadas crds=scanCoordenadas();
+        Cache aux = getCache(crds);
+        int res;
+        if(aux instanceof MultiCache){
+            res=getGeoCoinsTotais();
+        
+        }else if(aux instanceof MisteryCache){
+            ArrayList<ArrayList<String>> prespaleatorio = geraMysteryCache();
+            res=getGeoCoinsTotais(respostasCertas(prespaleatorio));
+        }else if(aux instanceof MicroCache){
+            res=0;/*GeoCoins são 0*/
+            
+        }else res=0;
+    }
 }

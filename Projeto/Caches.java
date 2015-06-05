@@ -126,4 +126,8 @@ public class Caches
         }
         return aux;
     }
+    
+    public Cache getCache(Coordenadas c){
+        return this.caches.get(c).clone();
+    }
 }
