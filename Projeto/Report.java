@@ -32,7 +32,7 @@ public class Report implements Serializable
     
     public Report(Coordenadas coordenadas,String texto) throws NumberFormatException
     {
-       this.coordenadas = coordenadas.clone();
+       this.coordenadas = coordenadas;
        this.texto = texto;
        this.time = new Timeline();
     }

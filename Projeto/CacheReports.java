@@ -14,7 +14,7 @@ public class CacheReports
      */
     public CacheReports()
     {
-        reports = new TreeMap<Timeline,Report>();
+        reports = new TreeMap<Timeline,Report>(new TimelineComparator());
     }
     
     public CacheReports(TreeMap<Timeline,Report> reports)

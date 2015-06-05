@@ -76,7 +76,7 @@ public class GeraEstado
         
         
          geraDescobertas();
-          
+         this.reports = new CacheReports();
          geraReports();
          
          EscreveTXT escreve = new EscreveTXT();
@@ -191,7 +191,7 @@ public class GeraEstado
          while(it.hasNext())
          {
             Map.Entry<Coordenadas,Cache> elem = it.next();
-            Report report = new Report(elem.getKey().clone() ,"Esta cache está a ser abusada sevaramente");
+            Report report = new Report(elem.getKey() ,"Esta cache está a ser abusada sevaramente");
             this.reports.add(report);
             if(i==5) {
                 over = true;
