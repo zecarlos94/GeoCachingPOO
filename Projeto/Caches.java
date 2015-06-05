@@ -55,6 +55,12 @@ public class Caches
     public int size() { return this.caches.size();}
     
     public Iterator<Map.Entry<Coordenadas,Cache>> iterator()   {   return this.caches.entrySet().iterator();}
+    /**
+     *  Adiciona um registo a uma cache
+     */
+    public void addRegisto(Coordenadas c,String email,Timeline time){
+        this.caches.get(c).addLivroRegistos(email,time);
+    }
     
     /**
      *  Adiciona uma cache

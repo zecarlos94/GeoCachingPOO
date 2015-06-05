@@ -11,7 +11,7 @@ public class ActividadeCache extends Actividade
 {
     private String acontecimento; // Acontecimento = "descobriu" || "removeu" || "adicionou"  
     private Cache cache;
-
+    private int geocoins;
     /**
      * Constructor for objects of class ActividadeCache
      *  Usa a hora do sistema
@@ -26,13 +26,14 @@ public class ActividadeCache extends Actividade
         
     }
     
-    public ActividadeCache(Timeline time,String nome,Cache cache,String acontecimento)
+    public ActividadeCache(Timeline time,String nome,Cache cache,String acontecimento, int geocoins)
     {
         super(time,nome);
         if(cache instanceof MultiCache) this.cache = new MultiCache((MultiCache)cache);
         if(cache instanceof MisteryCache) this.cache = new MisteryCache((MisteryCache)cache);
         if(cache instanceof MicroCache) this.cache = new MicroCache((MicroCache)cache);
         this.acontecimento = acontecimento;
+        this.geocoins = geocoins;
     }
     
     public ActividadeCache( ActividadeCache c)
@@ -78,9 +79,9 @@ public class ActividadeCache extends Actividade
         StringBuilder sb = new StringBuilder();
         sb.append( super.toString() + " "); 
         sb.append( acontecimento + " ");
-        sb.append( "uma" + cache.getClass().getName() );
+        sb.append( "uma " + cache.getClass().getName() );
             if(acontecimento.equals("descobriu") && (  cache instanceof Tesouro))
-                    sb.append(" e ganhou " + ((Tesouro)cache).getGeoCoins() + " GeoCoins");
+                    sb.append(" e ganhou " + this.geocoins + " geo-coins");
         sb.append( "\n");
         return sb.toString();
     }

@@ -111,8 +111,5 @@ public class MisteryCache extends Cache implements Tesouro{
     
         return sb.toString();
     }
-    
-    public void addLivroRegistos(String email, Timeline t) {
-       this.livro_registos.put(email, t.clone());
-    }
+
 }

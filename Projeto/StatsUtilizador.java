@@ -116,10 +116,12 @@ public class StatsUtilizador
         }
         sb.append("\n");
         for( int i = 0; i < rowNames.length ; i++){
-            sb.append(this.rowNames[i]+"\n");
+            sb.append(this.rowNames[i]+"");
+            for( int d = 0; d < columNames.length; d++)
+                if(d==0) sb.append( "\t\t" + this.data[i][d] + "\t \t"); else if(d<4)  sb.append( "\t" + this.data[i][d] + "\t "); else sb.append( "\t" + this.data[i][d] );
+            sb.append("\n");
         }
         
-        System.out.println(sb.toString());
         return sb.toString();
     }
 }

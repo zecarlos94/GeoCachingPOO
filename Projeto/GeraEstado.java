@@ -50,7 +50,6 @@ public class GeraEstado
                 coord = new Coordenadas(latitude,longitude);
       
                 }while( caches.existe(coord) );
-                // System.out.println("Coordenada Aceite");
                 Cache cache = null;
                 switch (opt)
                 {
@@ -64,15 +63,13 @@ public class GeraEstado
                     case 2:
                                 geraMysteryCache geradorPR = new geraMysteryCache();
                                 cache = new MisteryCache(coord,geradorPR.geraMysteryCache());
-                                System.out.printf("\n%s\n",cache.toString());
+                         
                                 break;
                 }
                 caches.add(cache);
             }
             
-         System.out.println("Caches geradas");
-            
-         System.out.printf("Numero de caches = %d",caches.size());
+         System.out.println("Caches geradas");            
         
          geraAmizades();
          
@@ -81,14 +78,14 @@ public class GeraEstado
          geraDescobertas();
           
          System.out.println("Descobertas geradas");
-         /*
+         
          EscreveTXT escreve = new EscreveTXT();
          try{
          
          escreve.escreveUsers(this.utilizadores,"utilizadores.txt");
          escreve.escreveCaches(this.caches,"caches.txt");
         }catch(IOException e) {System.out.println("IOException"); }
-    */
+    
     }
     
     public void geraAmizades()
@@ -136,24 +133,28 @@ public class GeraEstado
           
           Iterator<Map.Entry<Coordenadas,Cache>> it2 = this.caches.iterator();
           while(it2.hasNext()){
-                cachesCollection.add( it2.next().getValue().clone() );
+                cachesCollection.add( it2.next().getValue() );
             }
             
+
           Iterator<Map.Entry<String,Utilizador>> it = this.utilizadores.iterator();
-          while(it2.hasNext())
+          while(it.hasNext())
           {
             String email = it.next().getKey();
             int nDescobertas; // 50 % de ser ativo e ter entre 0 a 40 caches descobertas
             if(random.nextInt(2) == 0) nDescobertas = random.nextInt(40);
             else nDescobertas = random.nextInt(7);
             int count = 0;
+
             while(count < nDescobertas)
             {
                 int i = random.nextInt(numeroCaches);
                 Cache cache = cachesCollection.get(i);
                 int geocoins = 0;
+                
                 if(!cache.existe(email))
                     {
+                     
                         if(cache instanceof MicroCache )
                             {
                                 this.utilizadores.descobertaCache(email,cache,0);
@@ -171,8 +172,8 @@ public class GeraEstado
                                 this.utilizadores.descobertaCache(email,cache,geocoins);
                                 
                             }
-                         utilizadores.descobertaCache(email,cache,geocoins);
-                         // caches.add(cache.getCoordenadas(),email)
+                     
+                         this.caches.addRegisto(cache.getCoordenadas(),email,(new Timeline()));
                          count++;
                     }
                 

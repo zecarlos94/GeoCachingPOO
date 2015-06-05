@@ -213,7 +213,7 @@ public class Utilizador
     
     public void descobertaCache(Cache cache, int geoCoins) 
     {
-        Actividade actividade = new ActividadeCache(this.getNome(),cache.clone(),"descobriu");
+        Actividade actividade = new ActividadeCache(new Timeline(),this.getNome(),cache.clone(),"descobriu",geoCoins);
         this.actividades.put(actividade.getTime(),actividade);
         
        

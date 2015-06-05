@@ -48,7 +48,7 @@ public abstract class Cache
     */
     protected Cache(Cache c) {
         this.livro_registos=c.getLivroRegistos();
-        this.timeline=getTimeline();
+        this.timeline=c.getTimeline();
         this.coordenadas=c.getCoordenadas();
     }
     
@@ -129,16 +129,21 @@ public abstract class Cache
     public String toString(){
         StringBuilder sb = new StringBuilder();
         sb.append("Coordenadas:"+coordenadas.toString() +"\n");
-        if(timeline!= null) sb.append("Horas de criação:" + this.timeline.toString() + "\n" );
+        sb.append("Horas de criação:" + this.timeline.toString() + "\n" );
         sb.append("Livro de registos\n");
         Iterator<Map.Entry<String,Timeline>> it = this.livro_registos.entrySet().iterator();
         while(it.hasNext())
         {
-            sb.append("Horas:"+ it.next().getValue() + "Utilizador:"+ it.next().getKey() + "\n");
+            String email = it.next().getKey();
+            Timeline time = it.next().getValue();
+            if(email!=null && time!=null) sb.append("Horas:"+ time.toString() + "Utilizador:"+ email + "\n");
         }
         return sb.toString();
     }
     
-    public abstract void addLivroRegistos(String email, Timeline t);
+    public void addLivroRegistos(String email, Timeline t) {
+       this.livro_registos.put(email, t);
+    }
+  
     
 }
