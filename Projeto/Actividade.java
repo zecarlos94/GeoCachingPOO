@@ -1,3 +1,4 @@
+import java.io.*;
 
 /**
  * Abstract class Actividade - Serve como base para as actividades:
@@ -8,7 +9,7 @@
  * 
  *
  */
-public abstract class Actividade
+public abstract class Actividade implements Serializable
 {
     protected Timeline time; // Hora em que se deu a actividade
     protected String nome; // Nome do user que gerou a actividade

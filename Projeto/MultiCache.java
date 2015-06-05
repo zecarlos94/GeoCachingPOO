@@ -1,6 +1,7 @@
 import java.util.*;
+import java.io.*;
 
-public class MultiCache extends Cache implements Tesouro 
+public class MultiCache extends Cache implements Tesouro, Serializable
 {
     private ArrayList<Coordenadas> checkpoints;
     private int geocoins; // esta variável representa os geoCoins minimos da cache e são sempre entre 50-100

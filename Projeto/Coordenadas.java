@@ -1,6 +1,7 @@
 import java.lang.Math.*;
+import java.io.*;
 
-public class Coordenadas
+public class Coordenadas implements Serializable
 {
     /**
      *  Variável de classe para calcular distancia entre 2 pontos

@@ -1,11 +1,11 @@
-
+import java.io.*;
 /**
  *  Um report e constituido por uma string com a informaçao do queixoso e  coordenadas que servem como chave da cache
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Report
+public class Report implements Serializable
 {
     private Coordenadas coordenadas;
     

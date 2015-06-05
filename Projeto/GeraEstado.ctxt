@@ -7,4 +7,6 @@ comment2.params=
 comment2.target=void\ geraDescobertas()
 comment3.params=
 comment3.target=Utilizadores\ getUtilizadores()
-numComments=4
+comment4.params=
+comment4.target=Caches\ getCaches()
+numComments=5

@@ -4,8 +4,6 @@ import java.io.*;
 
 public class Main
 {
-    private Main() {}
-    
     private static GeoCaching c=new GeoCaching();
     
     public static void main(String args[]) throws IOException, ClassNotFoundException {
@@ -383,7 +381,9 @@ public class Main
         return e;
     }
     
-    public static void saveState(GeoCaching e,String filename) throws IOException{
+    public static void saveState(String filename) throws IOException{
+        GeraEstado g=new GeraEstado();
+        GeoCaching e=new GeoCaching(g.getUtilizadores(), g.getCaches(), g.getReports());
         FileOutputStream fos = new FileOutputStream(filename);
         ObjectOutputStream oos = new ObjectOutputStream(fos);
         oos.writeObject(e);

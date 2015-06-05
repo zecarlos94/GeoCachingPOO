@@ -1,8 +1,9 @@
 import java.util.*;
+import java.io.*;
 /**
  *  Classe utilizada para armazenar a informção de descoberta de Cache num evento e para gerar a pontuaçao da mesma.
  */
-public class Descoberta
+public class Descoberta implements Serializable
 {
     // tempo em que se deu a descoberta da Cache
     private Timeline time;

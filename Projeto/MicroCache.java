@@ -1,6 +1,7 @@
 import java.util.*;
+import java.io.*;
 
-public class MicroCache extends Cache
+public class MicroCache extends Cache implements Serializable
 {
     
    public MicroCache()

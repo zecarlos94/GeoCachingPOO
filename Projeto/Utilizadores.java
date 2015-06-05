@@ -1,9 +1,11 @@
 import java.util.*;
+import java.io.*;
+
 /**
  *  Estrutura com todos os Utilizadores
  *
  */
-public class Utilizadores
+public class Utilizadores implements Serializable
 {
     /**
      * Variaveis de classe para gerar Actividades

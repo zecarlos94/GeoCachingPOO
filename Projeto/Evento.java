@@ -1,5 +1,6 @@
 import java.lang.Double; // MAX_VALUE
 import java.util.*;
+import java.io.*;
 
 
 /**
@@ -8,7 +9,7 @@ import java.util.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Evento
+public class Evento implements Serializable
 {
 
   

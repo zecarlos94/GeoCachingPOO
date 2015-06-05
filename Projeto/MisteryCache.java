@@ -1,8 +1,8 @@
-
+import java.io.*;
 import java.util.*;
 //import java.lang.*;
 
-public class MisteryCache extends Cache implements Tesouro{
+public class MisteryCache extends Cache implements Tesouro, Serializable {
     private ArrayList<ArrayList<String>> perguntasRespostas;
     private int geocoins; // geo coins minimos (50-100)
    

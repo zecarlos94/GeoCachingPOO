@@ -1,4 +1,6 @@
 import java.util.*;
+import java.io.*;
+
 /**
  * Classe caches contem a informação de todas as caches activas 
  *  A chave usada é as coordenadas da cache
@@ -6,7 +8,7 @@ import java.util.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Caches
+public class Caches implements Serializable
 {
     // instance variables - replace the example below with your ow
     private HashMap<Coordenadas,Cache> caches;

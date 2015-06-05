@@ -1,6 +1,7 @@
 import java.util.*;
+import java.io.*;
 
-public abstract class Cache
+public abstract class Cache implements Serializable
 {
     /**
      * Variáveis de Instância
@@ -137,9 +138,8 @@ public abstract class Cache
         Iterator<Map.Entry<Timeline,String>> it = this.livro_registos.entrySet().iterator();
         while(it.hasNext())
         {
-            String email = it.next().getValue();
-            Timeline time = it.next().getKey();
-            sb.append("Horas:"+ time.toString() + "Utilizador:"+ email + "\n");
+            Map.Entry<Timeline,String> elem=it.next();
+            sb.append("Horas:"+ elem.getKey().toString() + "Utilizador:"+ elem.getValue() + "\n");
         }
         return sb.toString();
     }

@@ -188,5 +188,9 @@ public class GeraEstado
         return this.utilizadores.clone();
     }
     
+    public Caches getCaches() {
+        return this.caches.clone();
+    }
+    
 }
 

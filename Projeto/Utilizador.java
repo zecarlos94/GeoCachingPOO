@@ -1,6 +1,7 @@
 import java.util.*;
+import java.io.*;
 
-public class Utilizador
+public class Utilizador implements Serializable
 {
     /**
      * Variáveis de Instância

@@ -1,0 +1,1724 @@
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.049537385154409974, Longitude: 0.37529128951881197
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo578@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José377@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel74@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui1459@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:João1892@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1755@hotmail.com
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.31307565557801387, Longitude: 0.28734989052572224
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rita1798@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel44@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Bruna117@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo689@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos296@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1820@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo1607@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Tesouro máximo:163
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 3.5093262373386835E-4, Longitude: 0.35790219700266257
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rita1798@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Leonor97@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel44@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1506@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1820@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui1459@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui640@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1701@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Tesouro máximo:170
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.5926980748350857, Longitude: 0.10447730869014704
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Rita1798@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:João624@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José377@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel74@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.170674482944432, Longitude: 0.6673251783888826
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1755@hotmail.com
+Tesouro máximo:114
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.554837651577275, Longitude: 0.9143991441634796
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Paula737@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1506@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1820@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1701@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Coordenadas dos check points
+Latitude: 0.554937651577275, Longitude: 0.9144991441634795
+Tesouro máximo:73
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.33337075196675714, Longitude: 0.4414461787934232
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Luís1927@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Leonor97@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo862@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José377@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo1605@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Tesouro máximo:136
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.29151046405638426, Longitude: 0.052444337646883055
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1927@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa949@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel74@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Tesouro máximo:98
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.31316976434950317, Longitude: 0.5351446901516786
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo204@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:João1892@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia1149@hotmail.com
+Coordenadas dos check points
+Latitude: 0.31326976434950315, Longitude: 0.5352446901516786
+Latitude: 0.31336976434950314, Longitude: 0.5353446901516786
+Latitude: 0.31346976434950313, Longitude: 0.5354446901516786
+Tesouro máximo:109
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.4614747459806001, Longitude: 0.4732253679662408
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1927@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca205@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rita968@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui640@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.933476223800745, Longitude: 0.777903286918757
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Leonor97@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel44@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Bruna117@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo578@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José377@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.21013648618238057, Longitude: 0.20132385923955887
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel74@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Tesouro máximo:110
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.8904870983765436, Longitude: 0.3379037870434083
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:José1451@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ricardo715@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel44@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Bruna1891@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos588@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Coordenadas dos check points
+Latitude: 0.8905870983765436, Longitude: 0.3380037870434083
+Latitude: 0.8906870983765436, Longitude: 0.33810378704340827
+Tesouro máximo:114
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.9665614896860811, Longitude: 0.18236640056890985
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ricardo715@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Daniela507@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel74@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.8558891774827161, Longitude: 0.746634137558118
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1506@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa825@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia1149@hotmail.com
+Tesouro máximo:141
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.9781306648522939, Longitude: 0.8309370654228064
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:João1892@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1483@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.22951121762268278, Longitude: 0.5347014189015719
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rita1798@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Leonor97@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.7474146366167557, Longitude: 0.983274778923894
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Leonor97@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1691@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui1459@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana1250@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui640@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia1149@hotmail.com
+Coordenadas dos check points
+Latitude: 0.7475146366167557, Longitude: 0.983374778923894
+Latitude: 0.7476146366167556, Longitude: 0.983474778923894
+Tesouro máximo:106
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.9797948710499566, Longitude: 0.3134167177803747
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1927@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga535@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José199@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui1459@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Coordenadas dos check points
+Latitude: 0.9798948710499565, Longitude: 0.3135167177803747
+Latitude: 0.9799948710499565, Longitude: 0.3136167177803747
+Tesouro máximo:145
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.27020111000888447, Longitude: 0.813669410047639
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1927@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa949@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos296@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel74@hotmail.com
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.2166574853476827, Longitude: 0.8504633125414246
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1506@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José377@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia1597@hotmail.com
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.5869308232160824, Longitude: 0.7494416847415711
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Bruna1891@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1691@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos296@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1701@hotmail.com
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.5679755581540391, Longitude: 0.058397355522897376
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica294@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo865@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui1459@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1701@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Coordenadas dos check points
+Latitude: 0.5680755581540391, Longitude: 0.05849735552289738
+Latitude: 0.5681755581540391, Longitude: 0.05859735552289738
+Tesouro máximo:127
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.6078142932022518, Longitude: 0.028197323992490086
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:António1059@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Leonor97@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa949@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Bruna117@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José377@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel74@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia1597@hotmail.com
+Tesouro máximo:74
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.45996879934699486, Longitude: 0.03826460338395099
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel44@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1506@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo862@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel74@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:João1892@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa825@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.9044198580549196, Longitude: 0.9322409568812637
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:José1451@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Leonor97@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca205@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel44@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1691@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José847@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José377@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:João1892@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.38943876002485367, Longitude: 0.3772825025665434
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1927@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Leonor0@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel74@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui640@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia1597@hotmail.com
+Coordenadas dos check points
+Latitude: 0.38953876002485366, Longitude: 0.3773825025665434
+Tesouro máximo:93
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.24392251102857354, Longitude: 0.3058357075040127
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago311@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo1607@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.3027843112341827, Longitude: 0.30827078895835425
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo82@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1755@hotmail.com
+Coordenadas dos check points
+Latitude: 0.3028843112341827, Longitude: 0.30837078895835424
+Tesouro máximo:80
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.0348667452643745, Longitude: 0.28776456439400544
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1927@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo865@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa825@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Tesouro máximo:135
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.536827675889089, Longitude: 0.021260169205891022
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo865@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel74@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo1607@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana1250@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Tesouro máximo:114
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.36887396619867885, Longitude: 0.8748364730319466
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Erica294@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1506@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Paula1677@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1755@hotmail.com
+Tesouro máximo:134
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.5160875425288206, Longitude: 0.04789299301960048
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica294@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rita1798@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago311@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Bruna117@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José377@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:João1892@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Coordenadas dos check points
+Latitude: 0.5161875425288206, Longitude: 0.047992993019600486
+Latitude: 0.5162875425288206, Longitude: 0.04809299301960049
+Latitude: 0.5163875425288206, Longitude: 0.04819299301960049
+Tesouro máximo:140
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.5104601469337449, Longitude: 0.4559488709054762
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo1607@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia1149@hotmail.com
+Tesouro máximo:121
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.7336757087745421, Longitude: 0.5781494970660287
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1506@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo82@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Tesouro máximo:170
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.7029961722928183, Longitude: 0.9724127791539146
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Bruna117@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Coordenadas dos check points
+Latitude: 0.7030961722928183, Longitude: 0.9725127791539145
+Tesouro máximo:68
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.47059390906209253, Longitude: 0.1661425207525341
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1506@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara812@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel74@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa825@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui640@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Tesouro máximo:100
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.8240710288586813, Longitude: 0.4792919301778158
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos296@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo865@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rita968@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:João1892@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1701@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia1149@hotmail.com
+Coordenadas dos check points
+Latitude: 0.8241710288586813, Longitude: 0.4793919301778158
+Tesouro máximo:97
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.08865409484007392, Longitude: 0.09061383087559804
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Paula282@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia1149@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz537@hotmail.com
+Tesouro máximo:98
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.637884815968887, Longitude: 0.15779398780349263
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Rita1798@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1927@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1496@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Bruna117@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José847@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Tesouro máximo:114
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.9055038996525593, Longitude: 0.13135703022187584
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1506@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo1607@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Tesouro máximo:129
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.04499534158037177, Longitude: 0.4936404440945521
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel44@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Leonor0@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo578@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José377@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rita968@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:João1892@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana1250@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.04131488916853443, Longitude: 0.9685526421787503
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana1250@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Tesouro máximo:81
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.8546481089363133, Longitude: 0.7518159524727142
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa949@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo862@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel74@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:João1892@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1483@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1755@hotmail.com
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.8876769920259431, Longitude: 0.1714888091004949
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina919@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Leonor97@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Leonor0@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1506@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1820@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo1607@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Coordenadas dos check points
+Latitude: 0.8877769920259431, Longitude: 0.1715888091004949
+Tesouro máximo:83
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.20157243354362342, Longitude: 0.11935679881876415
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa949@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1496@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José199@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel74@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana1250@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1701@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1755@hotmail.com
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.2834507735293992, Longitude: 0.01921748662714129
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo689@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana1250@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.8960916212241751, Longitude: 0.18595277470214278
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga535@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1506@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José377@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz408@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Tesouro máximo:122
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.0259934749417553, Longitude: 0.18170146816997623
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel44@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Bruna117@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:João1892@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1701@hotmail.com
+Tesouro máximo:127
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.025741769626693722, Longitude: 0.30457292485434373
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel74@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui640@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Paula282@hotmail.com
+Tesouro máximo:114
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.45532492907790945, Longitude: 0.2280626277609571
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Luís1927@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel44@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1506@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel74@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo1607@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia1149@hotmail.com
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.9136335598859326, Longitude: 0.042656511499924554
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo689@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:João1892@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Coordenadas dos check points
+Latitude: 0.9137335598859326, Longitude: 0.04275651149992456
+Latitude: 0.9138335598859326, Longitude: 0.04285651149992456
+Tesouro máximo:84
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.6047297708330033, Longitude: 0.7714433296459405
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1506@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel74@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Tesouro máximo:128
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.9046753370683107, Longitude: 0.1713757432427513
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1506@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1691@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui1459@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.284393999240103, Longitude: 0.12833397291307813
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa949@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José847@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui1459@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:João1892@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo1607@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui640@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.6894568051999178, Longitude: 0.6412412143166903
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Leonor97@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo82@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia1149@hotmail.com
+Tesouro máximo:93
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.6289421621970943, Longitude: 0.7985991398238357
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana1250@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1483@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia1149@hotmail.com
+Tesouro máximo:97
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.266556624776945, Longitude: 0.6927652397598769
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Coordenadas dos check points
+Latitude: 0.26665662477694496, Longitude: 0.6928652397598769
+Tesouro máximo:89
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.5482699973872514, Longitude: 0.9553728022335146
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga535@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Tesouro máximo:98
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.30591730273112716, Longitude: 0.23228391308721164
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel44@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1506@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel74@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui1459@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana1250@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1701@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.3139504679686267, Longitude: 0.40512075230833955
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Diogo204@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Bruna117@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:João1892@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana1250@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Coordenadas dos check points
+Latitude: 0.3140504679686267, Longitude: 0.40522075230833954
+Latitude: 0.31415046796862667, Longitude: 0.4053207523083395
+Tesouro máximo:132
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.8786149502275159, Longitude: 0.058239632864512836
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Leonor97@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel44@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui1459@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1755@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia1149@hotmail.com
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.2816232113358964, Longitude: 0.22016358735590724
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1927@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa949@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago311@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1691@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1343@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel74@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:João1892@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo1607@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Paula282@hotmail.com
+Tesouro máximo:132
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.03931387589872748, Longitude: 0.11242381715680827
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1506@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo1607@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Tesouro máximo:91
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.24286743344848305, Longitude: 0.2338682191431115
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.6226689215855683, Longitude: 0.3132564242676247
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Beatriz1373@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa949@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo1607@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui640@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Tesouro máximo:140
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.5428980681856627, Longitude: 0.002232400055798056
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Rita1798@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo689@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo578@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Paula1677@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel74@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo513@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui1459@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana1250@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Coordenadas dos check points
+Latitude: 0.5429980681856627, Longitude: 0.002332400055798056
+Latitude: 0.5430980681856626, Longitude: 0.0024324000557980558
+Latitude: 0.5431980681856626, Longitude: 0.0025324000557980556
+Tesouro máximo:104
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.2006721885300795, Longitude: 0.8064089126499944
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Leonor97@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel44@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa949@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel74@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1483@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1409@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Coordenadas dos check points
+Latitude: 0.2007721885300795, Longitude: 0.8065089126499944
+Latitude: 0.2008721885300795, Longitude: 0.8066089126499943
+Latitude: 0.20097218853007948, Longitude: 0.8067089126499943
+Tesouro máximo:128
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.18765876918250812, Longitude: 0.3389994326574375
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel44@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo689@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Paula1677@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui1459@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia1597@hotmail.com
+Coordenadas dos check points
+Latitude: 0.1877587691825081, Longitude: 0.33909943265743747
+Tesouro máximo:88
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.8191493841287992, Longitude: 0.2419522334454297
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica294@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo865@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Paula1677@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo513@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui1459@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui640@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Tesouro máximo:164
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.7187785810216129, Longitude: 0.7099479659038966
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Ana1370@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa949@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo689@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui1459@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António248@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo1607@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui640@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia1149@hotmail.com
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.4652466326919523, Longitude: 1.183906566186721E-4
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Diogo204@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1927@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José377@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo1607@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui640@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Tesouro máximo:121
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.6316456054100856, Longitude: 0.31287131083285524
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana952@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel74@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana1250@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui640@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Coordenadas dos check points
+Latitude: 0.6317456054100856, Longitude: 0.31297131083285523
+Latitude: 0.6318456054100856, Longitude: 0.3130713108328552
+Tesouro máximo:111
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.2582746901348201, Longitude: 0.9310502325974677
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana1250@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia751@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia1149@hotmail.com
+Coordenadas dos check points
+Latitude: 0.25837469013482006, Longitude: 0.9311502325974677
+Tesouro máximo:77
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.438234490072424, Longitude: 0.4009411738348495
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1173@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1927@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:João624@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1496@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1691@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José377@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana1250@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:João438@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sofia1149@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz537@hotmail.com
+Tesouro máximo:80
+
+Cache N1
+Tipo: MicroCache
+Coordenadas:Latitude: 0.6247860795239032, Longitude: 0.4312087224912773
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Luís1927@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José1698@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Leonor97@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Leonor0@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1506@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1691@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Olga1820@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Joana1250@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui640@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.9464998762386913, Longitude: 0.11658821091133587
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Erica349@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1022@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa949@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago311@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1730@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui1459@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António248@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:António703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Rui640@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1703@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Maria1409@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Coordenadas dos check points
+Latitude: 0.9465998762386912, Longitude: 0.11668821091133587
+Tesouro máximo:90
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.6417545413702576, Longitude: 0.5323302390915041
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa1687@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca205@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel44@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Vanessa949@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Ana1506@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo779@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Cristina1593@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1826@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo82@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1678@hotmail.com
+Coordenadas dos check points
+Latitude: 0.6418545413702575, Longitude: 0.5324302390915041
+Tesouro máximo:75
+
+Cache N1
+Tipo: MultiCache
+Coordenadas:Latitude: 0.8750190862052615, Longitude: 0.8127285725668203
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Gustavo453@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Manuel1555@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Tiago1287@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Beatriz644@hotmail.com
+Coordenadas dos check points
+Latitude: 0.8751190862052615, Longitude: 0.8128285725668203
+Latitude: 0.8752190862052615, Longitude: 0.8129285725668203
+Latitude: 0.8753190862052614, Longitude: 0.8130285725668203
+Tesouro máximo:125
+
+Cache N1
+Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.4199467198242419, Longitude: 0.7909123356006287
+Horas de criação:21:44:45 5/6/2015
+Livro de registos
+Horas:21:44:45 5/6/2015Utilizador:Matilde4@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Luís1927@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Leonor0@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Carlos1937@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1759@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José896@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo578@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:José377@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Diogo1528@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:João1892@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Francisca932@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Sara1075@hotmail.com
+Horas:21:44:45 5/6/2015Utilizador:Matilde383@hotmail.com
+Tesouro máximo:121
+

@@ -1,13 +1,14 @@
 import java.util.*;
 import java.text.SimpleDateFormat;
 import static java.lang.System.*;
+import java.io.*;
 /**
  * Escreva a descrição da classe Timeline aqui.
  * 
  * @author (seu nome) 
  * @version (número de versão ou data)
  */
-public class Timeline
+public class Timeline implements Serializable
 {
     /**
      * Variáveis de Instância
