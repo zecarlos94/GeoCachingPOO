@@ -33,7 +33,7 @@ public class TimelineComparator implements Comparator<Timeline>, Serializable
         if(d1.getYear()==d2.getYear() && d1.getMonth()==d2.getMonth() && d1.getDay()==d2.getDay() && d1.getHora()==d2.getHora() && d1.getMinuto()==d2.getMinuto() && d1.getSegundo()<d2.getSegundo()) return -1;
        }
         
-       
-       return 0;
+       return 1;
+//       return 0;
     }
 }

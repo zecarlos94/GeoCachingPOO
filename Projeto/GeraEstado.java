@@ -147,6 +147,7 @@ public class GeraEstado
             {
                 int i = random.nextInt(numeroCaches);
                 Cache cache = cachesCollection.get(i);
+                int geocoins = 0;
                 if(!cache.existe(email))
                     {
                         if(cache instanceof MicroCache )
@@ -155,17 +156,18 @@ public class GeraEstado
                             }
                         else if (cache instanceof MultiCache)
                             {
-                                int geocoins = ((MultiCache)cache).getGeoCoinsTotais();
+                                geocoins = ((MultiCache)cache).getGeoCoinsTotais();
                                 this.utilizadores.descobertaCache(email,cache,geocoins);
                                 
                             }
                         else
                             {
                                 int nP = ((MisteryCache)cache).getNumeroPerguntas();
-                                int geocoins = ((MisteryCache)cache).getGeoCoinsTotais(random.nextInt(nP+1));
+                                geocoins = ((MisteryCache)cache).getGeoCoinsTotais(random.nextInt(nP+1));
                                 this.utilizadores.descobertaCache(email,cache,geocoins);
                                 
                             }
+                         utilizadores.descobertaCache(email,cache,geocoins);
                          // caches.add(cache.getCoordenadas(),email)
                          count++;
                     }

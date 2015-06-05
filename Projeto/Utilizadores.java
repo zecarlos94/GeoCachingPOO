@@ -89,7 +89,7 @@ public class Utilizadores
         utilizador2.addAmigo(email1);
         
         utilizador1.addActividade(utilizador2.getNome(),adicionou);
-        utilizador2.addActividade(utilizador2.getNome(),adicionou);
+        utilizador2.addActividade(utilizador1.getNome(),adicionou);
         }
     }
       /**
@@ -106,7 +106,7 @@ public class Utilizadores
         utilizador2.removeAmigo(email1);
         
         utilizador1.addActividade(utilizador2.getNome(),removeu);
-        utilizador2.addActividade(utilizador2.getNome(),removeu);
+        utilizador2.addActividade(utilizador1.getNome(),removeu);
         
     }
     

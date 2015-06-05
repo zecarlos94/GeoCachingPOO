@@ -12,8 +12,9 @@ import java.util.*;
       char genero = geraGenero();
       String email; 
       String nome;
-      String aux = genero+" ";
-      if(aux.equals("M")){
+      //String aux = genero+" ";
+      // aux.equals("M")
+      if(genero == 'M' ){
          nome = geraNomesMas();
         
       }else{

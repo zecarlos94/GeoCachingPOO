@@ -192,7 +192,8 @@ public class Utilizador
      */
     public void addActividade(String nomeAmigo, String acontecimento)
     {
-        Actividade actividade = new ActividadeAmigo(this.getEmail(),nomeAmigo,acontecimento);
+        Timeline t = new Timeline();
+        Actividade actividade = new ActividadeAmigo(t,this.nome,nomeAmigo,acontecimento);
         this.actividades.put(actividade.getTime(),actividade);
     }
     
@@ -267,7 +268,15 @@ public class Utilizador
    public String toString() {
        StringBuilder sb = new StringBuilder();
        sb.append("Email:"+email+"\nNome:"+nome+"\nGenero:"+genero+"\nMorada:"+morada+"\nData de Nascimento:"+timeline_nascimento.toString()+"\n");
-       sb.append("Actividades:\n"+actividades.toString() +"\n");
+       
+       sb.append("Actividades:\n");
+       Iterator<Map.Entry<Timeline,Actividade>> it = actividades.entrySet().iterator();
+       while(it.hasNext())
+       {
+           sb.append( it.next().getValue().toString() + "\n");
+        }
+       
+       
        sb.append("Estatisticas:\n" + estatisticas.toString() + "\n");
        sb.append("Lista de amigos:\n" + this.amigos.toString() + "\n");
        sb.append("Lista de caches:\n" + this.myCaches.toString());

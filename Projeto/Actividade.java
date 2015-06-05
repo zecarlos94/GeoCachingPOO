@@ -62,7 +62,7 @@ public abstract class Actividade
     public String toString()
     { 
         StringBuilder sb = new StringBuilder();
-        sb.append( time.toString() + nome );
+        sb.append( time.toString() +" : " + nome );
         return sb.toString();
      }
     
