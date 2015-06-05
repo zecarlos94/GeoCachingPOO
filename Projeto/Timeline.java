@@ -162,11 +162,29 @@ public class Timeline
     
     public void jumpTime(double horas) throws NumberFormatException {
         double aux=horas;
-        int hora=(int) aux; this.hora=hora;
-        aux-=hora; aux*=60;
-        int minuto=(int) aux; this.minuto=minuto;
-        aux-=minuto; aux*=60;
-        int segundo=(int) aux; this.segundo=segundo; 
+        int hora=(int) aux;
+        this.hora+=hora;
+        
+        aux-=(double) hora; aux*=60;
+        int minutos=(int) aux;
+        this.minuto+=minutos;
+        
+        aux-=(double) minutos; aux*=60;
+        int segundos=(int) aux + 1;
+        this.segundo=segundo;
     }
     
+    public void backInTime(double horas) throws NumberFormatException {
+        double aux=horas;
+        int hora=(int) aux;
+        this.hora-=hora;
+        
+        aux-=(double) hora; aux*=60;
+        int minutos=(int) aux;
+        this.minuto+=minutos;
+        
+        aux-=(double) minutos; aux*=60;
+        int segundos=(int) aux + 1;
+        this.segundo=segundo;
+    }
 }
