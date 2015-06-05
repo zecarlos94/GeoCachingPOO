@@ -22,7 +22,7 @@ public class MisteryCache extends Cache implements Tesouro{
     public MisteryCache(Coordenadas coordenadas, ArrayList<ArrayList<String>> perguntasRespostas) throws NumberFormatException {
             super(coordenadas);
             setPerguntasRespostas(perguntasRespostas);
-            this.geocoins=geocoins;
+            this.geocoins=(new geraGeoCoins()).getGeoCoins();
     }
 
     public MisteryCache(MisteryCache c) throws NumberFormatException {

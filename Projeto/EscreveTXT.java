@@ -3,23 +3,25 @@ import java.io.*;
 
 public class EscreveTXT
 {
-    public static void escreveCaches(HashMap<Coordenadas,Cache> caches, String filename) throws IOException {
+    public void escreveCaches(Caches caches, String filename) throws IOException {
         PrintWriter pw = new PrintWriter(filename);
-        Iterator<Map.Entry<Coordenadas, Cache>> it=caches.entrySet().iterator();
+        Iterator<Map.Entry<Coordenadas, Cache>> it=caches.iterator();
+        int i=1;
         while(it.hasNext()) {
             Map.Entry<Coordenadas, Cache> elem=it.next();
-            pw.printf(elem.getKey().clone().toString()+ "       " +elem.getValue().clone().toString+ "\n");  
+            pw.printf( "Cache N"+ i + "\n" +elem.getValue().toString()+ "\n");  
         }
         pw.flush();
         pw.close();
     }
     
-    public static void escreveUsers(HashMap<String, Utilizador> utilizadores, String filename) throws IOException {
+    
+    public void escreveUsers(Utilizadores utilizadores, String filename) throws IOException {
         PrintWriter pw = new PrintWriter(filename);
-        Iterator<Map.Entry<String, Utilizador>> it=utilizadores.entrySet().iterator();
+        Iterator<Map.Entry<String, Utilizador>> it=utilizadores.iterator();
         while(it.hasNext()) {
             Map.Entry<String, Utilizador> elem=it.next();
-            pw.printf(elem.getKey().clone().toString()+ "       " +elem.getValue().clone().toString+ "\n");
+            pw.printf(elem.getKey().toString()+ "       " +elem.getValue().toString()+ "\n");
         }
         pw.flush();
         pw.close();

@@ -1,5 +1,6 @@
 
  import java.util.*;
+ import java.io.*;
 /**
  * Write a description of class GeraEstado here.
  * 
@@ -23,6 +24,8 @@ public class GeraEstado
         int i;
         Random random = new Random();
         
+        System.out.println("Starting");
+        
         this.utilizadores = new Utilizadores();
         for( i = 0 ; i < numeroUtilizadores;)
             {
@@ -32,9 +35,11 @@ public class GeraEstado
                         utilizadores.add(u);i++;
                     }
             }
-            
+        
+        System.out.println("Utilizadores gerados");
+        
         this.caches = new Caches();
-         for ( i = 0; i < numeroCaches ;)
+         for ( i = 0; i < numeroCaches ;i++)
             {
                 int opt = random.nextInt(3);
                 
@@ -43,7 +48,9 @@ public class GeraEstado
                 double latitude = random.nextDouble();
                 double longitude = random.nextDouble();
                 coord = new Coordenadas(latitude,longitude);
-                }while( !caches.existe(coord));
+      
+                }while( caches.existe(coord) );
+                // System.out.println("Coordenada Aceite");
                 Cache cache = null;
                 switch (opt)
                 {
@@ -57,14 +64,27 @@ public class GeraEstado
                     case 2:
                                 geraMysteryCache geradorPR = new geraMysteryCache();
                                 cache = new MisteryCache(coord,geradorPR.geraMysteryCache());
+                             //   System.out.printf("\n%s\n",cache.toString());
                                 break;
                 }
                 caches.add(cache);
             }
+            System.out.println("Caches geradas");
         
          geraAmizades();
-         geraDescobertas();
+         
+         System.out.println("Amizades geradas");
         
+          geraDescobertas();
+          
+         System.out.println("Descobertas geradas");
+         
+         EscreveTXT escreve = new EscreveTXT();
+         try{
+         
+         escreve.escreveUsers(this.utilizadores,"utilizadores.txt");
+         escreve.escreveCaches(this.caches,"caches.txt");
+        }catch(IOException e) {System.out.println("IOException"); }
     }
     
     public void geraAmizades()

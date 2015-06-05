@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=caches\ filename
+comment0.target=void\ escreveCaches(Caches,\ java.lang.String)
+comment1.params=utilizadores\ filename
+comment1.target=void\ escreveUsers(Utilizadores,\ java.lang.String)
+numComments=2

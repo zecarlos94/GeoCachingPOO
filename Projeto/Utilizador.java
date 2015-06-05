@@ -265,8 +265,15 @@ public class Utilizador
      * toString
      */
    public String toString() {
-        return "Utilizador: " +this.email+ " / " +this.password+ " / " +this.nome+ " / " +this.genero+ " / " +this.morada+ " / " +this.timeline_nascimento.toString()+ " / "
-                    +this.actividades.toString()+ " / " +this.estatisticas.toString()+ " / " +this.amigos.toString()+ " / " +this.myCaches.toString();
+       StringBuilder sb = new StringBuilder();
+       sb.append("Email:"+email+"\nNome:"+nome+"\nGenero:"+genero+"\nMorada:"+morada+"\nData de Nascimento:"+timeline_nascimento.toString()+"\n");
+       sb.append("Actividades:\n"+actividades.toString() +"\n");
+       sb.append("Estatisticas:\n" + estatisticas.toString() + "\n");
+       sb.append("Lista de amigos:\n" + this.amigos.toString() + "\n");
+       sb.append("Lista de caches:\n" + this.myCaches.toString());
+      
+       return sb.toString();
+               
    }
     
    /**

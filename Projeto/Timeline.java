@@ -157,6 +157,7 @@ public class Timeline
      * toString
      */
     public String toString() {
+        if(this.isData() ) return new String(this.day+ "/" +this.month+ "/" +this.year); else
         return new String(this.hora+ ":" +this.minuto+ ":" +this.segundo+ " " +this.day+ "/" +this.month+ "/" +this.year);
     }
     
