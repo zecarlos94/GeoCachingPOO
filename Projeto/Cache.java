@@ -27,13 +27,14 @@ public abstract class Cache
         this.coordenadas=new Coordenadas();
     }
     
+   
     protected Cache(HashMap<String, Timeline> livro_registos, Timeline t, Coordenadas coordenadas) throws NumberFormatException {
         this.livro_registos=new HashMap<String, Timeline>(livro_registos);
         this.timeline=new Timeline(t);
         this.coordenadas=new Coordenadas(coordenadas);
     }
 
-    protected Cache(Coordenadas coordenadas) throws NumberFormatException {
+    protected Cache(Coordenadas coordenadas) {
         this.livro_registos=new HashMap<String, Timeline>();
         this.timeline=new Timeline();
         this.coordenadas=new Coordenadas(coordenadas);
@@ -72,7 +73,12 @@ public abstract class Cache
         return this.coordenadas;
     }
     
-
+    /**
+     *  Verifica se um jogador já encontrou esta cache no passado
+     */
+    public boolean existe(String email){
+        return this.livro_registos.containsKey(email);
+    }
     
 
     

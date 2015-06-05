@@ -54,6 +54,8 @@ public class Caches
     
     public int size() { return this.caches.size();}
     
+    public Iterator<Map.Entry<Coordenadas,Cache>> iterator()   {   return this.caches.entrySet().iterator();}
+    
     /**
      *  Adiciona uma cache
      */

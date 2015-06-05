@@ -20,7 +20,7 @@ public class MultiCache extends Cache implements Tesouro
     public MultiCache(Coordenadas coordenadas,ArrayList<Coordenadas> checkpoints) throws NumberFormatException {
             super(coordenadas);
             setCheckpoints(checkpoints);
-            this.geocoins=geocoins;
+            this.geocoins=(new geraGeoCoins()).getGeoCoins();
     }
 
     public MultiCache(MultiCache c) throws NumberFormatException {
@@ -78,7 +78,7 @@ public class MultiCache extends Cache implements Tesouro
     /**
      * Devolve as coordenadas do próximo checkpoint, se existir
      */
-    public Coordenadas nextPoint(Coordenadas c) throws NumberFormatException {
+    public Coordenadas nextPoint(Coordenadas c) {
         boolean done=false; 
         Coordenadas r = null;
         Iterator<Coordenadas> it=this.checkpoints.iterator();
@@ -93,7 +93,7 @@ public class MultiCache extends Cache implements Tesouro
     /**
      * Verifica se as coordenadas dadas são as da cache final
      */
-    public boolean checkMC(Coordenadas c) throws NumberFormatException {
+    public boolean checkMC(Coordenadas c) {
         return super.coordenadas.equals(c);
     }
 

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=GeraEstado()
+comment1.params=
+comment1.target=void\ geraAmizades()
+comment2.params=
+comment2.target=void\ geraDescobertas()
+comment3.params=
+comment3.target=Utilizadores\ getUtilizadores()
+numComments=4

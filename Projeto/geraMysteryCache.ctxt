@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.util.ArrayList\ geraMysteryCache()
+comment1.params=op\u00E7\u00E3o
+comment1.target=java.lang.String\ perguntas(int)
+comment2.params=pergunta
+comment2.target=java.lang.String\ respostas(int)
+numComments=3

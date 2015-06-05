@@ -7,7 +7,8 @@ import java.util.*;
  */
 public class geraMysteryCache
 {
- public static ArrayList<ArrayList<String>> geraMysteryCache() {
+    
+ public ArrayList<ArrayList<String>> geraMysteryCache() {
    Random rn = new Random();
    int quantos=0,l,j=0;
    String s="N/A";

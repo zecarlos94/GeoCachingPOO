@@ -6,7 +6,7 @@ import java.util.*;
   private Utilizador utilizador;
  
   public geraUtilizador() { 
-      Timeline t = new Timeline();
+      Timeline t = geraData();
       String password = new String("pw");
       String morada = geraMorada();
       char genero = geraGenero();

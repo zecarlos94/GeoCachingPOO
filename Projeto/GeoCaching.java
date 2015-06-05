@@ -133,6 +133,7 @@ public class GeoCaching implements Serializable
     public void removeCache(Coordenadas c){
         caches.remove(c);
     }
+  
     /**
      *  Opções do evento
      */
