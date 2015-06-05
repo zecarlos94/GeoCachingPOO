@@ -96,12 +96,19 @@ public class MisteryCache extends Cache implements Tesouro{
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Tipo: MysteryCache \n " + super.toString());
+        sb.append("Tesouro máximo:" + getGeoCoinsTotais( perguntasRespostas.size() ) + "\n");
+      
         for ( ArrayList<String> par : this.perguntasRespostas)
             {
-                sb.append("Pergunta:"+par.get(0) + "\n");
-                sb .append("Resposta:" + par.get(1) + "\n");
+                int j=0;
+                for(String s : par)
+                {
+                if(j==0)sb.append("Pergunta:"+ s +  "\n");
+                if(j==1)sb.append("Resposta:" + s + "\n");
+                j++;
+                 }
             }
-        sb.append("Tesouro máximo:" + getGeoCoinsTotais( perguntasRespostas.size() ) + "\n");
+    
         return sb.toString();
     }
     

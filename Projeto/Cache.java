@@ -129,7 +129,7 @@ public abstract class Cache
     public String toString(){
         StringBuilder sb = new StringBuilder();
         sb.append("Coordenadas:"+coordenadas.toString() +"\n");
-        sb.append("Horas de criação:" + this.timeline.toString() + "\n" );
+        if(timeline!= null) sb.append("Horas de criação:" + this.timeline.toString() + "\n" );
         sb.append("Livro de registos\n");
         Iterator<Map.Entry<String,Timeline>> it = this.livro_registos.entrySet().iterator();
         while(it.hasNext())

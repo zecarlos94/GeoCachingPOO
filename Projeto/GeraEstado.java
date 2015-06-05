@@ -64,27 +64,31 @@ public class GeraEstado
                     case 2:
                                 geraMysteryCache geradorPR = new geraMysteryCache();
                                 cache = new MisteryCache(coord,geradorPR.geraMysteryCache());
-                             //   System.out.printf("\n%s\n",cache.toString());
+                                System.out.printf("\n%s\n",cache.toString());
                                 break;
                 }
                 caches.add(cache);
             }
-            System.out.println("Caches geradas");
+            
+         System.out.println("Caches geradas");
+            
+         System.out.printf("Numero de caches = %d",caches.size());
         
          geraAmizades();
          
          System.out.println("Amizades geradas");
         
-          geraDescobertas();
+         geraDescobertas();
           
          System.out.println("Descobertas geradas");
-         
+         /*
          EscreveTXT escreve = new EscreveTXT();
          try{
          
          escreve.escreveUsers(this.utilizadores,"utilizadores.txt");
          escreve.escreveCaches(this.caches,"caches.txt");
         }catch(IOException e) {System.out.println("IOException"); }
+    */
     }
     
     public void geraAmizades()

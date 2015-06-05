@@ -11,6 +11,4 @@ comment4.params=
 comment4.target=MicroCache\ clone()
 comment5.params=
 comment5.target=java.lang.String\ toString()
-comment6.params=email\ t
-comment6.target=void\ addLivroRegistos(java.lang.String,\ Timeline)
-numComments=7
+numComments=6
