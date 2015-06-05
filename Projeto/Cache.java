@@ -6,7 +6,7 @@ public abstract class Cache
      * Variáveis de Instância
      */
 
-    protected HashMap<String, Timeline> livro_registos;
+    protected TreeMap<Timeline,String> livro_registos;
     protected Timeline timeline;
     protected Coordenadas coordenadas;
     
@@ -22,20 +22,20 @@ public abstract class Cache
     */
    
     protected Cache() {
-        this.livro_registos=new HashMap<String, Timeline>();
+        this.livro_registos=new TreeMap<Timeline,String>(new TimelineComparator());
         this.timeline=new Timeline();
         this.coordenadas=new Coordenadas();
     }
     
    
-    protected Cache(HashMap<String, Timeline> livro_registos, Timeline t, Coordenadas coordenadas) throws NumberFormatException {
-        this.livro_registos=new HashMap<String, Timeline>(livro_registos);
+    protected Cache(TreeMap<Timeline,String> livro_registos, Timeline t, Coordenadas coordenadas) throws NumberFormatException {
+        this.livro_registos=new TreeMap<Timeline,String>(livro_registos);
         this.timeline=new Timeline(t);
         this.coordenadas=new Coordenadas(coordenadas);
     }
 
     protected Cache(Coordenadas coordenadas) {
-        this.livro_registos=new HashMap<String, Timeline>();
+        this.livro_registos=new TreeMap<Timeline,String>(new TimelineComparator());
         this.timeline=new Timeline();
         this.coordenadas=new Coordenadas(coordenadas);
     }
@@ -61,7 +61,7 @@ public abstract class Cache
     }
     */
    
-    public HashMap<String, Timeline> getLivroRegistos() {
+    public TreeMap<Timeline,String> getLivroRegistos() {
         return this.livro_registos;
     }
     
@@ -77,7 +77,10 @@ public abstract class Cache
      *  Verifica se um jogador já encontrou esta cache no passado
      */
     public boolean existe(String email){
-        return this.livro_registos.containsKey(email);
+        
+            
+        
+        return this.livro_registos.containsValue(email);
     }
     
 
@@ -98,15 +101,15 @@ public abstract class Cache
     }
     */
     
-    public void setLivroRegistos(HashMap<String, Timeline> livro_registos) {
-        HashMap<String, Timeline> aux=new HashMap<String, Timeline>();
-        Set<Map.Entry<String, Timeline>> eset=livro_registos.entrySet();
-        Iterator<Map.Entry<String, Timeline>> it=eset.iterator();
+    public void setLivroRegistos(TreeMap<Timeline,String> lr) {
+        TreeMap<Timeline,String> aux=new TreeMap<Timeline,String>(new TimelineComparator());
+       
+        Iterator<Map.Entry<Timeline, String>> it= lr.entrySet().iterator();
         while(it.hasNext()) {
-            Map.Entry<String, Timeline> elem=it.next();
-            aux.put(elem.getKey(), elem.getValue().clone());
+            Map.Entry<Timeline, String> elem=it.next();
+            aux.put(elem.getKey(), elem.getValue());
         }
-        this.livro_registos=aux;
+        this.livro_registos =aux;
     }
    
     public void setCoordenadas(Coordenadas coordenadas) throws NumberFormatException {
@@ -131,18 +134,18 @@ public abstract class Cache
         sb.append("Coordenadas:"+coordenadas.toString() +"\n");
         sb.append("Horas de criação:" + this.timeline.toString() + "\n" );
         sb.append("Livro de registos\n");
-        Iterator<Map.Entry<String,Timeline>> it = this.livro_registos.entrySet().iterator();
+        Iterator<Map.Entry<Timeline,String>> it = this.livro_registos.entrySet().iterator();
         while(it.hasNext())
         {
-            String email = it.next().getKey();
-            Timeline time = it.next().getValue();
-            if(email!=null && time!=null) sb.append("Horas:"+ time.toString() + "Utilizador:"+ email + "\n");
+            String email = it.next().getValue();
+            Timeline time = it.next().getKey();
+            sb.append("Horas:"+ time.toString() + "Utilizador:"+ email + "\n");
         }
         return sb.toString();
     }
     
     public void addLivroRegistos(String email, Timeline t) {
-       this.livro_registos.put(email, t);
+       this.livro_registos.put(t,email);
     }
   
     

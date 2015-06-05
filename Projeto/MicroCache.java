@@ -9,7 +9,7 @@ public class MicroCache extends Cache
 
    }
    
-   public MicroCache(HashMap<String, Timeline> livro_registos, Timeline t, Coordenadas coordenadas) 
+   public MicroCache(TreeMap<Timeline,String> livro_registos, Timeline t, Coordenadas coordenadas) 
    {
        super(livro_registos,t,coordenadas);
      

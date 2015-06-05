@@ -2,7 +2,7 @@
 comment0.params=
 comment0.target=MicroCache()
 comment1.params=livro_registos\ t\ coordenadas
-comment1.target=MicroCache(java.util.HashMap,\ Timeline,\ Coordenadas)
+comment1.target=MicroCache(java.util.TreeMap,\ Timeline,\ Coordenadas)
 comment2.params=coordenadas
 comment2.target=MicroCache(Coordenadas)
 comment3.params=mc

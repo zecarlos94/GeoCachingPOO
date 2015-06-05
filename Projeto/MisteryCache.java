@@ -13,7 +13,7 @@ public class MisteryCache extends Cache implements Tesouro{
            geocoins=(new geraGeoCoins()).getGeoCoins();
     }
     
-    public MisteryCache(HashMap<String,Timeline> livro_registos, Timeline timeline, Coordenadas coordenadas, ArrayList<ArrayList<String>> perguntasRespostas, int geocoins) throws NumberFormatException  {
+    public MisteryCache(TreeMap<Timeline,String> livro_registos, Timeline timeline, Coordenadas coordenadas, ArrayList<ArrayList<String>> perguntasRespostas, int geocoins) throws NumberFormatException  {
             super(livro_registos,timeline,coordenadas);
             setPerguntasRespostas(perguntasRespostas);
             this.geocoins=geocoins;

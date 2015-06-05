@@ -2,7 +2,7 @@
 comment0.params=
 comment0.target=MultiCache()
 comment1.params=livro_registos\ timeline\ coordenadas\ checkpoints\ geocoins
-comment1.target=MultiCache(java.util.HashMap,\ Timeline,\ Coordenadas,\ java.util.ArrayList,\ int)
+comment1.target=MultiCache(java.util.TreeMap,\ Timeline,\ Coordenadas,\ java.util.ArrayList,\ int)
 comment10.params=c
 comment10.target=Coordenadas\ nextPoint(Coordenadas)
 comment10.text=\n\ Devolve\ as\ coordenadas\ do\ pr\u00F3ximo\ checkpoint,\ se\ existir\n

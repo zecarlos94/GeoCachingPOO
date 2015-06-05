@@ -11,7 +11,7 @@ public class MultiCache extends Cache implements Tesouro
            geocoins=(new geraGeoCoins()).getGeoCoins();
     }
     
-    public MultiCache(HashMap<String,Timeline> livro_registos, Timeline timeline, Coordenadas coordenadas, ArrayList<Coordenadas> checkpoints, int geocoins) throws NumberFormatException {
+    public MultiCache(TreeMap<Timeline,String> livro_registos, Timeline timeline, Coordenadas coordenadas, ArrayList<Coordenadas> checkpoints, int geocoins) throws NumberFormatException {
             super(livro_registos,timeline,coordenadas);
             setCheckpoints(checkpoints);
             this.geocoins=geocoins;
