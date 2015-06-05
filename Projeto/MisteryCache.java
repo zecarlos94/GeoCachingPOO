@@ -78,12 +78,12 @@ public class MisteryCache extends Cache implements Tesouro{
       else return false;
     }
     
-    public int respostasCertas(ArrayList<ArrayList<String>> perguntasRespostas) {
+    public int respostasCertas() {
         int certas=0;
         String res="N/A";
         Scanner sc=new Scanner(System.in);
         ArrayList<ArrayList<String>> aux = new ArrayList<ArrayList<String>>();
-        for(ArrayList<String> par : perguntasRespostas){
+        for(ArrayList<String> par : this.perguntasRespostas){
             for(String s : par)
                 System.out.println("A pergunta é: "+par.get(1)+"\n");
                 System.out.println("Escreva a sua resposta\n");
@@ -103,5 +103,9 @@ public class MisteryCache extends Cache implements Tesouro{
             }
         sb.append("Tesouro máximo:" + getGeoCoinsTotais( perguntasRespostas.size() ) + "\n");
         return sb.toString();
+    }
+    
+    public void addLivroRegistos(String email, Timeline t) {
+       this.livro_registos.put(email, t.clone());
     }
 }

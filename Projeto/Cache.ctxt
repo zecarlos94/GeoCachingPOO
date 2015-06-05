@@ -11,6 +11,8 @@ comment11.target=boolean\ equals(java.lang.Object)
 comment11.text=\n\ Equals\n
 comment12.params=
 comment12.target=java.lang.String\ toString()
+comment13.params=email\ t
+comment13.target=void\ addLivroRegistos(java.lang.String,\ Timeline)
 comment2.params=coordenadas
 comment2.target=Cache(Coordenadas)
 comment3.params=c
@@ -31,4 +33,4 @@ comment8.target=void\ setLivroRegistos(java.util.HashMap)
 comment8.text=\n\ \ \ \ public\ void\ setLivroRegistos(HashMap<String,\ Data>\ livro_registos)\ {\n\ \ \ \ \ \ \ \ HashMap<String,\ Data>\ aux\=new\ HashMap<String,\ Data>();\n\ \ \ \ \ \ \ \ Set<Map.Entry<String,\ Data>>\ eset\=livro_registos.entrySet();\n\ \ \ \ \ \ \ \ Iterator<Map.Entry<String,\ Data>>\ it\=eset.iterator();\n\ \ \ \ \ \ \ \ while(it.hasNext())\ {\n\ \ \ \ \ \ \ \ \ \ \ \ Map.Entry<String,\ Data>\ elem\=it.next();\n\ \ \ \ \ \ \ \ \ \ \ \ aux.put(elem.getKey(),\ elem.getValue().clone());\n\ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ this.livro_registos\=aux;\n\ \ \ \ }\n
 comment9.params=coordenadas
 comment9.target=void\ setCoordenadas(Coordenadas)
-numComments=13
+numComments=14

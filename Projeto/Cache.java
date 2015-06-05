@@ -139,4 +139,6 @@ public abstract class Cache
         return sb.toString();
     }
     
+    public abstract void addLivroRegistos(String email, Timeline t);
+    
 }

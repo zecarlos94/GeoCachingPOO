@@ -393,17 +393,20 @@ public class Main
     public static int descobrirCache(String email){
         out.printf("\nInsira a latitude e a longitude da cache que deseja descobrir:");
         Coordenadas crds=scanCoordenadas();
-        Cache aux = getCache(crds);
+        Cache aux = c.getCaches().getCache(crds); 
+        Timeline t=new Timeline();
+        aux.addLivroRegistos(email, t);
         int res;
         if(aux instanceof MultiCache){
-            res=getGeoCoinsTotais();
-        
-        }else if(aux instanceof MisteryCache){
-            ArrayList<ArrayList<String>> prespaleatorio = geraMysteryCache();
-            res=getGeoCoinsTotais(respostasCertas(prespaleatorio));
-        }else if(aux instanceof MicroCache){
-            res=0;/*GeoCoins são 0*/
-            
-        }else res=0;
+            MultiCache mc=(MultiCache) aux;
+            res=mc.getGeoCoinsTotais();
+        }
+        else if(aux instanceof MisteryCache) {
+            MisteryCache mc=(MisteryCache) aux;
+            res=mc.getGeoCoinsTotais(mc.respostasCertas());
+        }
+        else if(aux instanceof MicroCache) res=0;/*GeoCoins são 0*/
+        else res=0;
+        return res;
     }
 }

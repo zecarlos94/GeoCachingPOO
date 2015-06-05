@@ -33,5 +33,9 @@ public class MicroCache extends Cache
    public String toString() {
         return "Tipo: MicroCache\n" + super.toString();
     }
+    
+    public void addLivroRegistos(String email, Timeline t) {
+       this.livro_registos.put(email, t.clone());
+    }
    
 }
