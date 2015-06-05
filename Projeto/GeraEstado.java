@@ -18,6 +18,8 @@ public class GeraEstado
     private Utilizadores utilizadores;
     
     private Caches caches;
+    
+    private CacheReports reports;
 
     public GeraEstado()
     {
@@ -68,16 +70,14 @@ public class GeraEstado
                 }
                 caches.add(cache);
             }
-            
-         System.out.println("Caches geradas");            
+                   
         
          geraAmizades();
-         
-         System.out.println("Amizades geradas");
+        
         
          geraDescobertas();
           
-         System.out.println("Descobertas geradas");
+         geraReports();
          
          EscreveTXT escreve = new EscreveTXT();
          try{
@@ -182,6 +182,22 @@ public class GeraEstado
           }
           
      }
+     
+     public void geraReports()
+     {  
+         int i=0;
+         boolean over = false;
+         Iterator<Map.Entry<Coordenadas,Cache>> it = this.caches.iterator();
+         while(it.hasNext() && !over )
+         {
+            Map.Entry<Coordenadas,Cache> elem = it.next();
+            Report report = new Report(elem.getKey() ,"Esta cache está a ser abusada sevaramente");
+            this.reports.add(report);
+            if(i==5) over = true;
+            i++;
+        }
+            
+        }
  
     public Utilizadores getUtilizadores()
     {
@@ -192,5 +208,8 @@ public class GeraEstado
         return this.caches.clone();
     }
     
+    public CacheReports getCacheReports(){
+        return this.reports.clone();
+    }
 }
 
