@@ -110,8 +110,16 @@ public class MultiCache extends Cache implements Tesouro
     }
     
     public String toString() {
-        return "MultiCache: " +this.getLivroRegistos().toString()+ " / " +this.getTimeline().toString()+ " / " +this.getCoordenadas().toString()+ " / " +this.getCheckpoints().toString()+
-                    " / " +this.geocoins;
+        StringBuilder sb = new StringBuilder();
+        sb.append("Tipo: MultiCache\n" + super.toString());
+        sb.append("Coordenadas dos check points\n");
+        
+        for(Coordenadas cp : this.checkpoints )
+            sb.append( cp.toString() + "\n");
+        
+        sb.append("Tesouro máximo:" + getGeoCoinsTotais() + "\n");
+        
+        return sb.toString();
     }
     
 }

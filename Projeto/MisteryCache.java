@@ -94,7 +94,14 @@ public class MisteryCache extends Cache implements Tesouro{
     }
     
     public String toString() {
-        return "MultiCache: " +this.getLivroRegistos().toString()+ " / " +this.getTimeline().toString()+ " / " +this.getCoordenadas().toString()+ " / " +this.perguntasRespostas.toString()+
-                    " / " +this.geocoins;
+        StringBuilder sb = new StringBuilder();
+        sb.append("Tipo: MysteryCache \n " + super.toString());
+        for ( ArrayList<String> par : this.perguntasRespostas)
+            {
+                sb.append("Pergunta:"+par.get(0) + "\n");
+                sb .append("Resposta:" + par.get(1) + "\n");
+            }
+        sb.append("Tesouro máximo:" + getGeoCoinsTotais( perguntasRespostas.size() ) + "\n");
+        return sb.toString();
     }
 }

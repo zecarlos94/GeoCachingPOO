@@ -125,5 +125,18 @@ public abstract class Cache
       return(this.livro_registos.equals(c.getLivroRegistos()) && this.timeline.equals(c.getTimeline()) && this.coordenadas.equals(c.getCoordenadas()));
     }
     
-    public abstract String toString();
+
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("Coordenadas:"+coordenadas.toString() +"\n");
+        sb.append("Horas de criação:" + this.timeline.toString() + "\n" );
+        sb.append("Livro de registos\n");
+        Iterator<Map.Entry<String,Timeline>> it = this.livro_registos.entrySet().iterator();
+        while(it.hasNext())
+        {
+            sb.append("Horas:"+ it.next().getValue() + "Utilizador:"+ it.next().getKey() + "\n");
+        }
+        return sb.toString();
+    }
+    
 }
