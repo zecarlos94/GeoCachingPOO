@@ -295,9 +295,11 @@ public class Utilizador implements Serializable
         int i=0;
         while(i<10 && t!=null) {
             if(i>0) t=this.actividades.higherKey(t);
-            Actividade a=this.actividades.get(t);
-            last10.add(a);
-            i++;
+            if(t!=null) {
+                Actividade a=this.actividades.get(t);
+                last10.add(a.clone());
+                i++;
+            }
         }
         return last10;
    }

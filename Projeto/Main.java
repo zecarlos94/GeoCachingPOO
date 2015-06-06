@@ -155,7 +155,7 @@ public class Main
             // fazer submenus, menu mycaches com (add remover ver)
             if(c.getInscricoesAbertas() ) out.printf("Inscrições abertas para o evento , 9 - Para registar\n"); 
             out.printf("\nOpções de Conta:\n   1-Informações\n   2-Adicionar Amigo\n   3-Remover Amigo\n   4-Informação dos amigos\n");
-            out.printf("   5-Reportar Cache\n   6-Adicionar Cache\n   7-Ver as minhas caches\n   8- Remover uma das minhas caches\n   9- Registar-se num Evento\n   10- Descobrir uma cache\n   0-Sair");
+            out.printf("   5-Reportar Cache\n   6-Adicionar Cache\n   7-Ver as minhas caches\n   8- Remover uma das minhas caches\n   9- Registar-se num Evento\n   10- Descobrir uma cache\n   0-Sair\n");
             optn=sc.nextInt();
             switch(optn) {
                 case 1: 
