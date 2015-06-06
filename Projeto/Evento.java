@@ -40,14 +40,15 @@ public class Evento implements Serializable
         
         Random random = new Random();
         
-        int numeroCaches = caches.size();// codigo errado
+        int numeroCaches = caches.size();
         
         HashMap<String,VariaveisUtilizador> variaveisUtilizadores = new HashMap<String,VariaveisUtilizador>();  // Variaveis de cada utilizador
         
+      
         Caches caches_disponiveis = new  Caches(caches);
-        
-        Caches caches_identificadas = new Caches();;    // colecçao de caches identificadas
-        
+     
+        Caches caches_identificadas = new Caches();    // colecçao de caches identificadas
+    
         this.clock_Evento = new Timeline();
       
         // Contem as velocidades com que se deslocaram os Utilizadores na ultima ronda
@@ -56,18 +57,19 @@ public class Evento implements Serializable
         //Guarda o factor de aumento de distancia percorrida do ultimo ciclo 
         HashMap<String,Double> factoresAumento = new HashMap<String,Double>();
         
-        // Contem o ultimo checkPoint que o utilizador já ultrapassou na MultiCache caso se verifique
-       // Não implementado HashMap<String,Coordenadas> checkPoints = new HashMap<String,Coordenadas>();
-    
+          
         Iterator<Map.Entry<String,Utilizador>> it = utilizadores.iterator();
         while(it.hasNext())
             {
-                String email = it.next().getKey();
-                Utilizador u = it.next().getValue();
+                Map.Entry<String,Utilizador> elem2 = it.next();
+                String email = elem2.getKey();
+                Utilizador u = elem2.getValue();
                 variaveisUtilizadores.put( email , new VariaveisUtilizador(u,clima));
             }
         // Obtém e guarda todos os dados simulados pelo evento
         // Em cada iteraçao há sempre um utilizador que descobre uma cache
+        
+        System.out.println("Variaveis do utilizador calculadas e colocadas");
         
         while(  caches_identificadas.size() != numeroCaches   )
         {
@@ -75,55 +77,52 @@ public class Evento implements Serializable
             Utilizador utilizadorMaisRapido = null;
             Cache cacheIdentificada = null;
             
+            System.out.printf("Caches_identificadas %d, numeroCaches %d\n", caches_identificadas.size(),numeroCaches);
+            
             // Calcula o utilizador que demorou menos tempo a encontrar a Cache
             // Acho q pode ser mudado para arrayList<VariantesUtilizador> esta 
             Iterator<Map.Entry<String,VariaveisUtilizador>> it2 = variaveisUtilizadores.entrySet().iterator();
-            while( it.hasNext() )
+            while( it2.hasNext() )
             {
-                VariaveisUtilizador variaveisU = it2.next().getValue();
-                Utilizador utilizador = utilizadores.get(it2.next().getKey()); // user
+                Map.Entry<String,VariaveisUtilizador> elem = it2.next();
+                VariaveisUtilizador variaveisU = elem.getValue();
+                Utilizador utilizador = utilizadores.get(elem.getKey()); // user
+                
                 
                 // Aumenta a distancia percorrida em 0 a 40%, uma vez que a anterior foi calculada em linha reta 
                 double aumentoDistancia = 0.4 * random.nextDouble();
                 
                 // Variável a guardar em velocidades
                 double velocidade = 0;
-                
-                
+                 
                 double tempoUtilizador; // Tempo hipotetico que o utilizador demoraria a encontrar a cache mais perto se ninguem encontrasse primeiro
                 Cache CacheMaisPerto = caches_disponiveis.cacheMaisPerto(variaveisU.getLocalizacao()); 
           
-                
                 double velocidadeUtilizador = variaveisU.getVelocidade();
                 
-                
+                if(CacheMaisPerto == null ) System.out.println("Cache mais perto é null");
                 if (CacheMaisPerto instanceof MultiCache)
                     {
-                       
                        //double distancia = ((MultiCache)CacheMaisPerto).distanciaPercorrida( variaveisU.getLocalizacao() ); // Devolve a distancia mínima para passar todos os checkpoints 
                        
-                       double distancia = CacheMaisPerto.getCoordenadas().distance( variaveisU.getLocalizacao());
+                       double distancia = CacheMaisPerto.getCoordenadas().distance( variaveisU.getLocalizacao()) * 0.001; // convertido para km
                        
                        distancia = distancia + aumentoDistancia*distancia; 
                   
-                       
-                       // boost de (4 a 8)km/h por cada multiCache que encontrou no passado
-                       // + (2 a 4) km/h por cada (misteryCache + microCache) 
-                       double boostVelocidade = variaveisU.getMultiCache() * ( random.nextInt(4) + 4) + (variaveisU.getMicroCache() + variaveisU.getMisteryCache()) * (random.nextInt(2)+ 2);
+                       // boost de (0 a 2)km/h por cada multiCache que encontrou no passado
+                       // + (0 a 1) km/h por cada (misteryCache + microCache) 
+                       double boostVelocidade = variaveisU.getMultiCache() * ( random.nextInt(3)) + (variaveisU.getMicroCache() + variaveisU.getMisteryCache()) * (random.nextInt(2));
       
                        velocidade = velocidadeUtilizador + boostVelocidade;
                        
-                       tempoUtilizador = velocidade / distancia ;
-                       
-                         
+                       tempoUtilizador =  distancia / velocidade  ;
+                    //   System.out.printf("MultiCache velocidade %f , tempoUtilizador %f, distancia %f\n",velocidade,tempoUtilizador,distancia);
                         
                     }
                     //  CacheMaisPerto é uma MicroCache ou uma MisteryCache
                  else 
-                    {
-                        
-                        
-                        double distancia = CacheMaisPerto.getCoordenadas().distance( variaveisU.getLocalizacao());
+                    {                  
+                        double distancia = CacheMaisPerto.getCoordenadas().distance( variaveisU.getLocalizacao()) * 0.001; // conversao para km
                         
                         distancia = distancia + aumentoDistancia*distancia; // Aumenta distancia em 0 a 20%
                         
@@ -134,12 +133,12 @@ public class Evento implements Serializable
                         
                         velocidade = velocidadeUtilizador + boostVelocidade;
                         
-                        tempoUtilizador = (velocidadeUtilizador + boostVelocidade) / distancia ;
+                        tempoUtilizador =  distancia / velocidade ;
                         
-                       
-                    
+                  //      System.out.printf("Micro ou MysteryCache velocidade %f , tempoUtilizador %f, distancia:%f\n",velocidade,tempoUtilizador,distancia);
                     
                     }
+                    
                     
                     // Guarda o factor de aumento de distancia do participante nesta ronda
                     factoresAumento.put(utilizador.getEmail(),aumentoDistancia);
@@ -148,7 +147,7 @@ public class Evento implements Serializable
                      velocidades.put(utilizador.getEmail(),velocidade);
                     
               
-                if( tempoUtilizador > melhorTempo)
+                if( tempoUtilizador  < melhorTempo)
                     {
                          melhorTempo = tempoUtilizador;
                          utilizadorMaisRapido = utilizador;
@@ -156,9 +155,13 @@ public class Evento implements Serializable
                     }
             }
             
+  
             // Avança no tempo para o momento em que foi descoberta a cache
             
+            System.out.printf("Salto de %f horas\n",melhorTempo);
+            System.out.printf("Antes: %s\n",this.clock_Evento.toString());
             this.clock_Evento.jumpTime(melhorTempo); 
+              System.out.printf("Depois: %s\n",this.clock_Evento.toString());
             
                
             // Calcular as novas posiçoes dos utilizadores no final de x horas, sendo x = melhorTempo ; 
@@ -175,7 +178,7 @@ public class Evento implements Serializable
                     double velocidade = velocidades.get( email );
                     
                     // Cálculo da distancia percorrida
-                    double distanciaPercorrida = (velocidade * melhorTempo);
+                    double distanciaPercorrida = (velocidade * melhorTempo) * 0.001; // convertido para km
                     
                     // Reduz o deslocamento do utilizador em 0 a 40% da distanciaPercorrida uma vez que é irrealista mover-se em linha reta
                     double deslocamento = distanciaPercorrida - distanciaPercorrida * aumentoDistancia;
@@ -184,14 +187,13 @@ public class Evento implements Serializable
                     Coordenadas destino = caches.cacheMaisPerto( variaveisU.getLocalizacao() ).getCoordenadas();
                     
                     // deslocamento devolve uma nova localizacao calculada a partir da direção e do deslocamento 
-                    Coordenadas novaLocalizacao = variaveisU.getLocalizacao().deslocamento(destino,deslocamento);
+                    Coordenadas novaLocalizacao = variaveisU.getLocalizacao().deslocamento(destino,deslocamento); // recebe km ???
                     
                     // Actualiza a nova localização do utilizador
                     variaveisU.setLocalizacao(novaLocalizacao);
                     
                 }
                 
-            
             // Adiciona a cache identificada e remove-a das disponiveis  
             
             caches_identificadas.add( cacheIdentificada );
@@ -199,7 +201,7 @@ public class Evento implements Serializable
             caches_disponiveis.remove( cacheIdentificada );
             
             
-            
+       //     System.out.println("A gerar pontuaçao");
             // Gera a pontuaçao e adiciona a informação da descoberta de cache aos dados do evento
             
             this.add( utilizadorMaisRapido , cacheIdentificada , this.clock_Evento); 
@@ -207,6 +209,10 @@ public class Evento implements Serializable
             
         }
         
+             EscreveTXT escreve = new EscreveTXT();
+             try{
+             escreve.escreveEvento(this,"evento.txt");
+            }catch(IOException e) {System.out.println("Evento IOException");}
         // Simulaçao do evento acaba, Informaçao guardada em this.descobertas
         
         
@@ -273,7 +279,7 @@ public class Evento implements Serializable
 
     public class VariaveisUtilizador
     {
-            private final double velocidadeBase = 25 ; // Velocidade Base km/h
+            private final double velocidadeBase = 5 ; // Velocidade Base km/h
             
             /**
                *    Variáveis de instancia

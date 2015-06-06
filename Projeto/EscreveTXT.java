@@ -29,4 +29,13 @@ public class EscreveTXT
         pw.flush();
         pw.close();
     }
+    
+    public void escreveEvento(Evento e,String filename) throws IOException {
+        PrintWriter pw = new PrintWriter(filename);
+
+        pw.printf(e.toString());
+   
+        pw.flush();
+        pw.close();
+    }
 }

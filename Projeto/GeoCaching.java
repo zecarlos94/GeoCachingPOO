@@ -60,6 +60,10 @@ public class GeoCaching implements Serializable
         return this.utilizadoresRegistados;
     }
     
+    public Utilizadores getUsersR(){
+        return this.utilizadores.toUtilizadores(this.utilizadoresRegistados);
+    }
+    
     public boolean getInscricoesAbertas() {
         return this.inscricoesAbertas;
     }
