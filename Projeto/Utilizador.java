@@ -229,7 +229,7 @@ public class Utilizador implements Serializable
      */
     public void addCache(Cache cache)
     {
-        Actividade actividade = new ActividadeCache(this.getNome(),cache.clone(),"adicionou");
+        Actividade actividade = new ActividadeCache(new Timeline(),this.getNome(),cache.clone(),"adicionou");
         this.actividades.put(actividade.getTime(),actividade);
         this.myCaches.add(cache);
     }
@@ -239,7 +239,7 @@ public class Utilizador implements Serializable
      */
     public void removeCache(Cache cache)
     {
-        Actividade actividade = new ActividadeCache(this.getNome(),cache.clone(),"removeu");
+        Actividade actividade = new ActividadeCache(new Timeline(),this.getNome(),cache.clone(),"removeu");
         this.actividades.put(actividade.getTime(),actividade);
         this.myCaches.remove(cache);
     }

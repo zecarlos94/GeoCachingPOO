@@ -16,9 +16,9 @@ public class ActividadeCache extends Actividade
      * Constructor for objects of class ActividadeCache
      *  Usa a hora do sistema
      */
-    public ActividadeCache(String nome,Cache cache,String acontecimento)
+    public ActividadeCache(Timeline time,String nome,Cache cache,String acontecimento)
     {
-        super(nome);
+        super(time,nome);
         if(cache instanceof MultiCache) this.cache = new MultiCache((MultiCache)cache);
         if(cache instanceof MisteryCache) this.cache = new MisteryCache((MisteryCache)cache);
         if(cache instanceof MicroCache) this.cache = new MicroCache((MicroCache)cache);

@@ -169,8 +169,33 @@ public class Utilizadores implements Serializable
     {
         return utilizadores.containsKey(email);
     }
+    /**
+     *  Adciona os emails dos utilizadores num array list
+     */
+    public ArrayList<String> toList()
+    {
+        ArrayList<String> lista = new ArrayList<String>();
+        Iterator<Map.Entry<String,Utilizador>> it = this.iterator();
+        while(it.hasNext())
+        {
+            Map.Entry<String,Utilizador> elem = it.next();
+            lista.add(elem.getKey());
+        }
+        return lista;
+    }
     
+    /**
+     *  Forma Utilizadores apartir de uma lista de emails e a informação dos utilizadores na classe
+     */
     
+    public Utilizadores toUtilizadores(ArrayList<String> lista)
+    {
+        Utilizadores res = new Utilizadores();
+        for(String email : lista){
+            res.add(this.utilizadores.get(email));
+        }
+        return res;
+    }
     public Utilizadores clone()
     {
         return new Utilizadores(this);

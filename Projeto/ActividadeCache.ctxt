@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=nome\ cache\ acontecimento
-comment0.target=ActividadeCache(java.lang.String,\ Cache,\ java.lang.String)
+comment0.params=time\ nome\ cache\ acontecimento
+comment0.target=ActividadeCache(Timeline,\ java.lang.String,\ Cache,\ java.lang.String)
 comment0.text=\n\ Constructor\ for\ objects\ of\ class\ ActividadeCache\n\ \ Usa\ a\ hora\ do\ sistema\n
 comment1.params=time\ nome\ cache\ acontecimento\ geocoins
 comment1.target=ActividadeCache(Timeline,\ java.lang.String,\ Cache,\ java.lang.String,\ int)

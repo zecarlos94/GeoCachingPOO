@@ -1,0 +1,1470 @@
+ Utilizador N 1
+Email:Manuel1456@hotmail.com
+Nome:Manuel
+Genero:M
+Morada:Rua Viseu
+Data de Nascimento:8/6/1997
+Actividades:
+11:4:51 6/6/2015 : Manuel adicionou Rui
+
+11:4:51 6/6/2015 : Manuel adicionou Luís
+
+11:4:51 6/6/2015 : Manuel adicionou Cristina
+
+11:4:51 6/6/2015 : Manuel adicionou José
+
+11:4:51 6/6/2015 : Manuel adicionou Manuel
+
+11:4:51 6/6/2015 : Manuel adicionou Carlos
+
+11:4:51 6/6/2015 : Manuel adicionou Sofia
+
+11:4:51 6/6/2015 : Manuel adicionou Ricardo
+
+11:4:51 6/6/2015 : Manuel adicionou Daniela
+
+11:4:51 6/6/2015 : Manuel adicionou Rui
+
+11:4:51 6/6/2015 : Manuel adicionou Olga
+
+11:4:51 6/6/2015 : Manuel adicionou Matilde
+
+11:4:51 6/6/2015 : Manuel adicionou uma MisteryCache
+
+11:4:51 6/6/2015 : Manuel descobriu uma MisteryCache e ganhou 53 geo-coins
+
+11:4:51 6/6/2015 : Manuel descobriu uma MisteryCache e ganhou 91 geo-coins
+
+11:4:51 6/6/2015 : Manuel descobriu uma MultiCache e ganhou 176 geo-coins
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		2	 		144	 	0	 	0	 	0	0	0	2
+MultiCache		1	 		176	 	0	 	0	 	0	0	0	1
+MicroCache		0	 		0	 	0	 	0	 	0	0	0	0
+
+Lista de amigos:
+[Rui1152@hotmail.com, Luís98@hotmail.com, Cristina1445@hotmail.com, José916@hotmail.com, Manuel292@hotmail.com, Carlos477@hotmail.com, Sofia885@hotmail.com, Ricardo165@hotmail.com, Daniela917@hotmail.com, Rui212@hotmail.com, Olga1925@hotmail.com, Matilde494@hotmail.com]
+Lista de caches:
+{Latitude: 0.9219944365839265, Longitude: 0.9971143953589202=Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.9219944365839265, Longitude: 0.9971143953589202
+Horas de criação:11:4:51 6/6/2015
+Livro de registos
+Horas:11:4:51 6/6/2015Utilizador:Olga1604@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:André514@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Sara1881@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Leonor1388@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:José1801@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Sara1217@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Cristina1395@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:João413@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Cristina811@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Leonor564@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Sofia607@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Rita1745@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Bruna1663@hotmail.com
+Tesouro máximo:147
+}
+ Utilizador N 2
+Email:Erica1864@hotmail.com
+Nome:Erica
+Genero:F
+Morada:Rua Viana
+Data de Nascimento:17/11/1994
+Actividades:
+11:4:51 6/6/2015 : Erica adicionou Sara
+
+11:4:51 6/6/2015 : Erica adicionou Rita
+
+11:4:51 6/6/2015 : Erica adicionou António
+
+11:4:51 6/6/2015 : Erica adicionou José
+
+11:4:51 6/6/2015 : Erica adicionou Tiago
+
+11:4:51 6/6/2015 : Erica adicionou Sofia
+
+11:4:51 6/6/2015 : Erica descobriu uma MultiCache e ganhou 177 geo-coins
+
+11:4:51 6/6/2015 : Erica descobriu uma MultiCache e ganhou 138 geo-coins
+
+11:4:51 6/6/2015 : Erica descobriu uma MultiCache e ganhou 99 geo-coins
+
+11:4:51 6/6/2015 : Erica descobriu uma MicroCache
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		0	 		0	 	0	 	0	 	0	0	0	0
+MultiCache		3	 		414	 	0	 	2	 	0	0	0	1
+MicroCache		1	 		0	 	0	 	0	 	0	0	0	1
+
+Lista de amigos:
+[Sara1751@hotmail.com, Rita515@hotmail.com, António1303@hotmail.com, José1502@hotmail.com, Tiago662@hotmail.com, Sofia1306@hotmail.com]
+Lista de caches:
+{}
+ Utilizador N 3
+Email:António1585@hotmail.com
+Nome:António
+Genero:M
+Morada:Rua Viseu
+Data de Nascimento:13/12/1996
+Actividades:
+11:4:51 6/6/2015 : António adicionou André
+
+11:4:51 6/6/2015 : António adicionou Beatriz
+
+11:4:51 6/6/2015 : António adicionou Vanessa
+
+11:4:51 6/6/2015 : António adicionou Rosa
+
+11:4:51 6/6/2015 : António adicionou Francisca
+
+11:4:51 6/6/2015 : António descobriu uma MultiCache e ganhou 99 geo-coins
+
+11:4:51 6/6/2015 : António descobriu uma MicroCache
+
+11:4:51 6/6/2015 : António descobriu uma MicroCache
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		0	 		0	 	0	 	0	 	0	0	0	0
+MultiCache		1	 		99	 	0	 	1	 	0	0	0	0
+MicroCache		2	 		0	 	0	 	1	 	0	0	0	1
+
+Lista de amigos:
+[André1983@hotmail.com, Beatriz978@hotmail.com, Vanessa1371@hotmail.com, Rosa784@hotmail.com, Francisca958@hotmail.com]
+Lista de caches:
+{}
+ Utilizador N 4
+Email:Paula323@hotmail.com
+Nome:Paula
+Genero:F
+Morada:Rua Viana
+Data de Nascimento:23/2/1989
+Actividades:
+11:4:51 6/6/2015 : Paula adicionou Rui
+
+11:4:51 6/6/2015 : Paula adicionou Matilde
+
+11:4:51 6/6/2015 : Paula adicionou André
+
+11:4:51 6/6/2015 : Paula adicionou Diogo
+
+11:4:51 6/6/2015 : Paula adicionou José
+
+11:4:51 6/6/2015 : Paula adicionou uma MisteryCache
+
+11:4:51 6/6/2015 : Paula descobriu uma MisteryCache e ganhou 93 geo-coins
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		1	 		93	 	0	 	1	 	0	0	0	0
+MultiCache		0	 		0	 	0	 	0	 	0	0	0	0
+MicroCache		0	 		0	 	0	 	0	 	0	0	0	0
+
+Lista de amigos:
+[Rui1152@hotmail.com, Matilde1895@hotmail.com, André455@hotmail.com, Diogo687@hotmail.com, José1499@hotmail.com]
+Lista de caches:
+{Latitude: 0.005097764840560681, Longitude: 0.6232326557501779=Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.005097764840560681, Longitude: 0.6232326557501779
+Horas de criação:11:4:51 6/6/2015
+Livro de registos
+Horas:11:4:51 6/6/2015Utilizador:Manuel1456@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Beatriz731@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:André514@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Sara1881@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Leonor1388@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:André455@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Paula262@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Beatriz978@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Vanessa1371@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Manuel781@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Matilde641@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Olga1925@hotmail.com
+Tesouro máximo:157
+}
+ Utilizador N 5
+Email:Luís1232@hotmail.com
+Nome:Luís
+Genero:M
+Morada:Rua Algarve
+Data de Nascimento:4/2/1990
+Actividades:
+11:4:51 6/6/2015 : Luís adicionou Joana
+
+11:4:51 6/6/2015 : Luís adicionou Francisca
+
+11:4:51 6/6/2015 : Luís adicionou Gustavo
+
+11:4:51 6/6/2015 : Luís adicionou Maria
+
+11:4:51 6/6/2015 : Luís adicionou Ricardo
+
+11:4:51 6/6/2015 : Luís adicionou Matilde
+
+11:4:51 6/6/2015 : Luís adicionou uma MisteryCache
+
+11:4:51 6/6/2015 : Luís descobriu uma MisteryCache e ganhou 155 geo-coins
+
+11:4:51 6/6/2015 : Luís descobriu uma MisteryCache e ganhou 59 geo-coins
+
+11:4:51 6/6/2015 : Luís descobriu uma MisteryCache e ganhou 109 geo-coins
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		3	 		323	 	0	 	1	 	0	0	0	2
+MultiCache		0	 		0	 	0	 	0	 	0	0	0	0
+MicroCache		0	 		0	 	0	 	0	 	0	0	0	0
+
+Lista de amigos:
+[Joana1914@hotmail.com, Francisca958@hotmail.com, Gustavo868@hotmail.com, Maria1209@hotmail.com, Ricardo1170@hotmail.com, Matilde494@hotmail.com]
+Lista de caches:
+{Latitude: 0.4153586258422166, Longitude: 0.8759523273435321=Tipo: MysteryCache 
+ Coordenadas:Latitude: 0.4153586258422166, Longitude: 0.8759523273435321
+Horas de criação:11:4:51 6/6/2015
+Livro de registos
+Horas:11:4:51 6/6/2015Utilizador:Sara1751@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Olga1604@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Rita1364@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Manuel1725@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:André455@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Vanessa1371@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Cristina1395@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:João413@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Rosa784@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:José998@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Olga1925@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:Sofia1423@hotmail.com
+Horas:11:4:51 6/6/2015Utilizador:José1499@hotmail.com
+Tesouro máximo:117
+}
+ Utilizador N 6
+Email:Rui1152@hotmail.com
+Nome:Rui
+Genero:M
+Morada:Rua Coimbra
+Data de Nascimento:28/6/1991
+Actividades:
+11:4:51 6/6/2015 : Rui adicionou Manuel
+
+11:4:51 6/6/2015 : Rui adicionou Paula
+
+11:4:51 6/6/2015 : Rui adicionou Cristina
+
+11:4:51 6/6/2015 : Rui adicionou Bruna
+
+11:4:51 6/6/2015 : Rui adicionou José
+
+11:4:51 6/6/2015 : Rui adicionou Paula
+
+11:4:51 6/6/2015 : Rui adicionou Olga
+
+11:4:51 6/6/2015 : Rui adicionou Matilde
+
+11:4:51 6/6/2015 : Rui adicionou André
+
+11:4:51 6/6/2015 : Rui adicionou Paula
+
+11:4:51 6/6/2015 : Rui adicionou Joana
+
+11:4:51 6/6/2015 : Rui descobriu uma MultiCache e ganhou 101 geo-coins
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		0	 		0	 	0	 	0	 	0	0	0	0
+MultiCache		1	 		101	 	0	 	0	 	0	0	0	1
+MicroCache		0	 		0	 	0	 	0	 	0	0	0	0
+
+Lista de amigos:
+[Manuel1456@hotmail.com, Paula323@hotmail.com, Cristina453@hotmail.com, Bruna509@hotmail.com, José998@hotmail.com, Paula633@hotmail.com, Olga1604@hotmail.com, Matilde1535@hotmail.com, André1632@hotmail.com, Paula953@hotmail.com, Joana1722@hotmail.com]
+Lista de caches:
+{}
+ Utilizador N 7
+Email:Sara1751@hotmail.com
+Nome:Sara
+Genero:F
+Morada:Rua Gaia
+Data de Nascimento:8/2/1991
+Actividades:
+11:4:51 6/6/2015 : Sara adicionou Olga
+
+11:4:51 6/6/2015 : Sara adicionou André
+
+11:4:51 6/6/2015 : Sara adicionou Erica
+
+11:4:51 6/6/2015 : Sara adicionou Manuel
+
+11:4:51 6/6/2015 : Sara adicionou Manuel
+
+11:4:51 6/6/2015 : Sara adicionou Paula
+
+11:4:51 6/6/2015 : Sara adicionou André
+
+11:4:51 6/6/2015 : Sara descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Sara descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Sara descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Sara descobriu uma MisteryCache e ganhou 85 geo-coins
+
+11:4:51 6/6/2015 : Sara descobriu uma MultiCache e ganhou 101 geo-coins
+
+11:4:51 6/6/2015 : Sara descobriu uma MultiCache e ganhou 136 geo-coins
+
+11:4:51 6/6/2015 : Sara descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Sara descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Sara descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Sara descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Sara descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Sara descobriu uma MisteryCache e ganhou 96 geo-coins
+
+11:4:51 6/6/2015 : Sara descobriu uma MultiCache e ganhou 81 geo-coins
+
+11:4:51 6/6/2015 : Sara descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Sara descobriu uma MultiCache e ganhou 120 geo-coins
+
+11:4:51 6/6/2015 : Sara descobriu uma MisteryCache e ganhou 88 geo-coins
+
+11:4:51 6/6/2015 : Sara descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Sara descobriu uma MultiCache e ganhou 121 geo-coins
+
+11:4:51 6/6/2015 : Sara descobriu uma MisteryCache e ganhou 87 geo-coins
+
+11:4:51 6/6/2015 : Sara descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Sara descobriu uma MultiCache e ganhou 135 geo-coins
+
+11:4:51 6/6/2015 : Sara descobriu uma MisteryCache e ganhou 98 geo-coins
+
+11:4:51 6/6/2015 : Sara descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Sara descobriu uma MultiCache e ganhou 177 geo-coins
+
+11:4:51 6/6/2015 : Sara descobriu uma MultiCache e ganhou 138 geo-coins
+
+11:4:51 6/6/2015 : Sara descobriu uma MultiCache e ganhou 127 geo-coins
+
+11:4:51 6/6/2015 : Sara descobriu uma MisteryCache e ganhou 73 geo-coins
+
+11:4:51 6/6/2015 : Sara descobriu uma MultiCache e ganhou 165 geo-coins
+
+11:4:51 6/6/2015 : Sara descobriu uma MisteryCache e ganhou 76 geo-coins
+
+11:4:51 6/6/2015 : Sara descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Sara descobriu uma MisteryCache e ganhou 115 geo-coins
+
+11:4:51 6/6/2015 : Sara descobriu uma MultiCache e ganhou 99 geo-coins
+
+11:4:51 6/6/2015 : Sara descobriu uma MultiCache e ganhou 70 geo-coins
+
+11:4:51 6/6/2015 : Sara descobriu uma MisteryCache e ganhou 74 geo-coins
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		9	 		792	 	0	 	1	 	0	0	0	8
+MultiCache		12	 		1470	 	0	 	6	 	0	0	0	6
+MicroCache		13	 		0	 	0	 	6	 	0	0	0	7
+
+Lista de amigos:
+[Olga1604@hotmail.com, André514@hotmail.com, Erica1864@hotmail.com, Manuel292@hotmail.com, Manuel1345@hotmail.com, Paula633@hotmail.com, André455@hotmail.com]
+Lista de caches:
+{}
+ Utilizador N 8
+Email:Paula633@hotmail.com
+Nome:Paula
+Genero:F
+Morada:Rua Coimbra
+Data de Nascimento:13/12/1985
+Actividades:
+11:4:51 6/6/2015 : Paula adicionou Sara
+
+11:4:51 6/6/2015 : Paula adicionou Diogo
+
+11:4:51 6/6/2015 : Paula adicionou André
+
+11:4:51 6/6/2015 : Paula adicionou Sofia
+
+11:4:51 6/6/2015 : Paula adicionou Rita
+
+11:4:51 6/6/2015 : Paula adicionou Rui
+
+11:4:51 6/6/2015 : Paula adicionou Cristina
+
+11:4:51 6/6/2015 : Paula adicionou Carlos
+
+11:4:51 6/6/2015 : Paula adicionou Rosa
+
+11:4:51 6/6/2015 : Paula descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Paula descobriu uma MultiCache e ganhou 126 geo-coins
+
+11:4:51 6/6/2015 : Paula descobriu uma MultiCache e ganhou 116 geo-coins
+
+11:4:51 6/6/2015 : Paula descobriu uma MultiCache e ganhou 138 geo-coins
+
+11:4:51 6/6/2015 : Paula descobriu uma MultiCache e ganhou 135 geo-coins
+
+11:4:51 6/6/2015 : Paula descobriu uma MultiCache e ganhou 115 geo-coins
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		0	 		0	 	0	 	0	 	0	0	0	0
+MultiCache		5	 		630	 	0	 	2	 	0	0	0	3
+MicroCache		1	 		0	 	0	 	1	 	0	0	0	0
+
+Lista de amigos:
+[Sara1751@hotmail.com, Diogo788@hotmail.com, André1632@hotmail.com, Sofia882@hotmail.com, Rita731@hotmail.com, Rui1152@hotmail.com, Cristina1445@hotmail.com, Carlos1659@hotmail.com, Rosa486@hotmail.com]
+Lista de caches:
+{}
+ Utilizador N 9
+Email:Ricardo1170@hotmail.com
+Nome:Ricardo
+Genero:M
+Morada:Rua Viana
+Data de Nascimento:3/7/1981
+Actividades:
+11:4:51 6/6/2015 : Ricardo adicionou Maria
+
+11:4:51 6/6/2015 : Ricardo adicionou Rui
+
+11:4:51 6/6/2015 : Ricardo adicionou Bruna
+
+11:4:51 6/6/2015 : Ricardo adicionou Luís
+
+11:4:51 6/6/2015 : Ricardo adicionou Matilde
+
+11:4:51 6/6/2015 : Ricardo adicionou Ricardo
+
+11:4:51 6/6/2015 : Ricardo adicionou Rita
+
+11:4:51 6/6/2015 : Ricardo adicionou Tiago
+
+11:4:51 6/6/2015 : Ricardo adicionou Cristina
+
+11:4:51 6/6/2015 : Ricardo adicionou Joana
+
+11:4:51 6/6/2015 : Ricardo adicionou Olga
+
+11:4:51 6/6/2015 : Ricardo descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Ricardo descobriu uma MisteryCache e ganhou 73 geo-coins
+
+11:4:51 6/6/2015 : Ricardo descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Ricardo descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Ricardo descobriu uma MisteryCache e ganhou 85 geo-coins
+
+11:4:51 6/6/2015 : Ricardo descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Ricardo descobriu uma MultiCache e ganhou 116 geo-coins
+
+11:4:51 6/6/2015 : Ricardo descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Ricardo descobriu uma MultiCache e ganhou 53 geo-coins
+
+11:4:51 6/6/2015 : Ricardo descobriu uma MisteryCache e ganhou 111 geo-coins
+
+11:4:51 6/6/2015 : Ricardo descobriu uma MultiCache e ganhou 126 geo-coins
+
+11:4:51 6/6/2015 : Ricardo descobriu uma MisteryCache e ganhou 75 geo-coins
+
+11:4:51 6/6/2015 : Ricardo descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Ricardo descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Ricardo descobriu uma MultiCache e ganhou 136 geo-coins
+
+11:4:51 6/6/2015 : Ricardo descobriu uma MultiCache e ganhou 121 geo-coins
+
+11:4:51 6/6/2015 : Ricardo descobriu uma MultiCache e ganhou 55 geo-coins
+
+11:4:51 6/6/2015 : Ricardo descobriu uma MultiCache e ganhou 115 geo-coins
+
+11:4:51 6/6/2015 : Ricardo descobriu uma MultiCache e ganhou 165 geo-coins
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		4	 		344	 	0	 	3	 	0	0	0	1
+MultiCache		8	 		887	 	0	 	4	 	0	0	0	4
+MicroCache		7	 		0	 	0	 	0	 	0	0	0	7
+
+Lista de amigos:
+[Maria1209@hotmail.com, Rui212@hotmail.com, Bruna1663@hotmail.com, Luís1232@hotmail.com, Matilde1535@hotmail.com, Ricardo1228@hotmail.com, Rita731@hotmail.com, Tiago1737@hotmail.com, Cristina1395@hotmail.com, Joana1914@hotmail.com, Olga1925@hotmail.com]
+Lista de caches:
+{}
+ Utilizador N 10
+Email:Sofia582@hotmail.com
+Nome:Sofia
+Genero:F
+Morada:Rua Coimbra
+Data de Nascimento:9/8/1986
+Actividades:
+11:4:51 6/6/2015 : Sofia adicionou Matilde
+
+11:4:51 6/6/2015 : Sofia adicionou Ana
+
+11:4:51 6/6/2015 : Sofia adicionou José
+
+11:4:51 6/6/2015 : Sofia adicionou Luís
+
+11:4:51 6/6/2015 : Sofia adicionou Ricardo
+
+11:4:51 6/6/2015 : Sofia adicionou José
+
+11:4:51 6/6/2015 : Sofia adicionou André
+
+11:4:51 6/6/2015 : Sofia adicionou Sara
+
+11:4:51 6/6/2015 : Sofia adicionou Carlos
+
+11:4:51 6/6/2015 : Sofia adicionou Rita
+
+11:4:51 6/6/2015 : Sofia adicionou José
+
+11:4:51 6/6/2015 : Sofia adicionou Carlos
+
+11:4:51 6/6/2015 : Sofia descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Sofia descobriu uma MisteryCache e ganhou 98 geo-coins
+
+11:4:51 6/6/2015 : Sofia descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Sofia descobriu uma MultiCache e ganhou 138 geo-coins
+
+11:4:51 6/6/2015 : Sofia descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Sofia descobriu uma MultiCache e ganhou 177 geo-coins
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		1	 		98	 	0	 	1	 	0	0	0	0
+MultiCache		2	 		315	 	0	 	2	 	0	0	0	0
+MicroCache		3	 		0	 	0	 	3	 	0	0	0	0
+
+Lista de amigos:
+[Matilde1895@hotmail.com, Ana1131@hotmail.com, José1801@hotmail.com, Luís766@hotmail.com, Ricardo165@hotmail.com, José916@hotmail.com, André1983@hotmail.com, Sara1881@hotmail.com, Carlos477@hotmail.com, Rita731@hotmail.com, José538@hotmail.com, Carlos1659@hotmail.com]
+Lista de caches:
+{}
+ Utilizador N 11
+Email:Rosa201@hotmail.com
+Nome:Rosa
+Genero:F
+Morada:Rua Viana
+Data de Nascimento:29/1/1984
+Actividades:
+11:4:51 6/6/2015 : Rosa adicionou Cristina
+
+11:4:51 6/6/2015 : Rosa adicionou João
+
+11:4:51 6/6/2015 : Rosa adicionou Bruna
+
+11:4:51 6/6/2015 : Rosa adicionou Bruna
+
+11:4:51 6/6/2015 : Rosa adicionou Maria
+
+11:4:51 6/6/2015 : Rosa adicionou Sofia
+
+11:4:51 6/6/2015 : Rosa adicionou Diogo
+
+11:4:51 6/6/2015 : Rosa adicionou José
+
+11:4:51 6/6/2015 : Rosa adicionou Cristina
+
+11:4:51 6/6/2015 : Rosa adicionou José
+
+11:4:51 6/6/2015 : Rosa adicionou Tiago
+
+11:4:51 6/6/2015 : Rosa adicionou José
+
+11:4:51 6/6/2015 : Rosa adicionou Daniela
+
+11:4:51 6/6/2015 : Rosa adicionou Rui
+
+11:4:51 6/6/2015 : Rosa descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Rosa descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Rosa descobriu uma MisteryCache e ganhou 74 geo-coins
+
+11:4:51 6/6/2015 : Rosa descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Rosa descobriu uma MultiCache e ganhou 165 geo-coins
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		1	 		74	 	0	 	1	 	0	0	0	0
+MultiCache		1	 		165	 	0	 	1	 	0	0	0	0
+MicroCache		3	 		0	 	0	 	1	 	0	0	0	2
+
+Lista de amigos:
+[Cristina1395@hotmail.com, João413@hotmail.com, Bruna1921@hotmail.com, Bruna509@hotmail.com, Maria1209@hotmail.com, Sofia1306@hotmail.com, Diogo687@hotmail.com, José916@hotmail.com, Cristina453@hotmail.com, José1801@hotmail.com, Tiago1737@hotmail.com, José1502@hotmail.com, Daniela1069@hotmail.com, Rui212@hotmail.com]
+Lista de caches:
+{}
+ Utilizador N 12
+Email:Diogo687@hotmail.com
+Nome:Diogo
+Genero:M
+Morada:Rua Porto
+Data de Nascimento:2/6/1991
+Actividades:
+11:4:51 6/6/2015 : Diogo adicionou Paula
+
+11:4:51 6/6/2015 : Diogo adicionou Rosa
+
+11:4:51 6/6/2015 : Diogo adicionou José
+
+11:4:51 6/6/2015 : Diogo adicionou Sofia
+
+11:4:51 6/6/2015 : Diogo descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Diogo descobriu uma MultiCache e ganhou 176 geo-coins
+
+11:4:51 6/6/2015 : Diogo descobriu uma MultiCache e ganhou 97 geo-coins
+
+11:4:51 6/6/2015 : Diogo descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Diogo descobriu uma MultiCache e ganhou 115 geo-coins
+
+11:4:51 6/6/2015 : Diogo descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Diogo descobriu uma MultiCache e ganhou 181 geo-coins
+
+11:4:51 6/6/2015 : Diogo descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Diogo descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Diogo descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Diogo descobriu uma MisteryCache e ganhou 82 geo-coins
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		1	 		82	 	0	 	0	 	0	0	0	1
+MultiCache		4	 		569	 	0	 	3	 	0	0	0	1
+MicroCache		6	 		0	 	0	 	2	 	0	0	0	4
+
+Lista de amigos:
+[Paula323@hotmail.com, Rosa201@hotmail.com, José1136@hotmail.com, Sofia607@hotmail.com]
+Lista de caches:
+{}
+ Utilizador N 13
+Email:José1136@hotmail.com
+Nome:José
+Genero:M
+Morada:Rua Aveiro
+Data de Nascimento:22/5/1994
+Actividades:
+11:4:51 6/6/2015 : José adicionou Diogo
+
+11:4:51 6/6/2015 : José adicionou Rosa
+
+11:4:51 6/6/2015 : José adicionou Bruna
+
+11:4:51 6/6/2015 : José adicionou Rita
+
+11:4:51 6/6/2015 : José adicionou Rosa
+
+11:4:51 6/6/2015 : José adicionou Cristina
+
+11:4:51 6/6/2015 : José adicionou Sara
+
+11:4:51 6/6/2015 : José adicionou Joana
+
+11:4:51 6/6/2015 : José descobriu uma MisteryCache e ganhou 76 geo-coins
+
+11:4:51 6/6/2015 : José descobriu uma MisteryCache e ganhou 89 geo-coins
+
+11:4:51 6/6/2015 : José descobriu uma MicroCache
+
+11:4:51 6/6/2015 : José descobriu uma MisteryCache e ganhou 105 geo-coins
+
+11:4:51 6/6/2015 : José descobriu uma MicroCache
+
+11:4:51 6/6/2015 : José descobriu uma MultiCache e ganhou 136 geo-coins
+
+11:4:51 6/6/2015 : José descobriu uma MicroCache
+
+11:4:51 6/6/2015 : José descobriu uma MicroCache
+
+11:4:51 6/6/2015 : José descobriu uma MicroCache
+
+11:4:51 6/6/2015 : José descobriu uma MisteryCache e ganhou 111 geo-coins
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		4	 		381	 	0	 	3	 	0	0	0	1
+MultiCache		1	 		136	 	0	 	0	 	0	0	0	1
+MicroCache		5	 		0	 	0	 	2	 	0	0	0	3
+
+Lista de amigos:
+[Diogo687@hotmail.com, Rosa784@hotmail.com, Bruna1921@hotmail.com, Rita1745@hotmail.com, Rosa1917@hotmail.com, Cristina1445@hotmail.com, Sara1217@hotmail.com, Joana1914@hotmail.com]
+Lista de caches:
+{}
+ Utilizador N 14
+Email:Joana146@hotmail.com
+Nome:Joana
+Genero:F
+Morada:Rua Braga
+Data de Nascimento:4/3/1992
+Actividades:
+11:4:51 6/6/2015 : Joana adicionou Paula
+
+11:4:51 6/6/2015 : Joana adicionou Bruna
+
+11:4:51 6/6/2015 : Joana adicionou José
+
+11:4:51 6/6/2015 : Joana adicionou Carlos
+
+11:4:51 6/6/2015 : Joana descobriu uma MultiCache e ganhou 135 geo-coins
+
+11:4:51 6/6/2015 : Joana descobriu uma MisteryCache e ganhou 89 geo-coins
+
+11:4:51 6/6/2015 : Joana descobriu uma MultiCache e ganhou 127 geo-coins
+
+11:4:51 6/6/2015 : Joana descobriu uma MultiCache e ganhou 97 geo-coins
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		1	 		89	 	0	 	1	 	0	0	0	0
+MultiCache		3	 		359	 	0	 	1	 	0	0	0	2
+MicroCache		0	 		0	 	0	 	0	 	0	0	0	0
+
+Lista de amigos:
+[Paula953@hotmail.com, Bruna509@hotmail.com, José1502@hotmail.com, Carlos1659@hotmail.com]
+Lista de caches:
+{}
+ Utilizador N 15
+Email:Beatriz731@hotmail.com
+Nome:Beatriz
+Genero:F
+Morada:Rua Maia
+Data de Nascimento:25/4/1985
+Actividades:
+11:4:51 6/6/2015 : Beatriz adicionou Manuel
+
+11:4:51 6/6/2015 : Beatriz adicionou Leonor
+
+11:4:51 6/6/2015 : Beatriz adicionou Diogo
+
+11:4:51 6/6/2015 : Beatriz adicionou Carlos
+
+11:4:51 6/6/2015 : Beatriz adicionou José
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MisteryCache e ganhou 144 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MisteryCache e ganhou 98 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MultiCache e ganhou 81 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MisteryCache e ganhou 133 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MisteryCache e ganhou 157 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MultiCache e ganhou 120 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MisteryCache e ganhou 79 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MultiCache e ganhou 123 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MisteryCache e ganhou 62 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MultiCache e ganhou 127 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MultiCache e ganhou 181 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MultiCache e ganhou 138 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MisteryCache e ganhou 91 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MisteryCache e ganhou 111 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MultiCache e ganhou 55 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MisteryCache e ganhou 111 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MultiCache e ganhou 116 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MultiCache e ganhou 135 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MultiCache e ganhou 121 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MultiCache e ganhou 85 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MultiCache e ganhou 136 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MisteryCache e ganhou 84 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MisteryCache e ganhou 76 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MisteryCache e ganhou 155 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MisteryCache e ganhou 96 geo-coins
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Beatriz descobriu uma MultiCache e ganhou 99 geo-coins
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		13	 		1397	 	0	 	4	 	0	0	0	9
+MultiCache		13	 		1517	 	0	 	9	 	0	0	0	4
+MicroCache		11	 		0	 	0	 	3	 	0	0	0	8
+
+Lista de amigos:
+[Manuel1345@hotmail.com, Leonor1485@hotmail.com, Diogo64@hotmail.com, Carlos477@hotmail.com, José998@hotmail.com]
+Lista de caches:
+{}
+ Utilizador N 16
+Email:Olga1604@hotmail.com
+Nome:Olga
+Genero:F
+Morada:Rua Algarve
+Data de Nascimento:1/6/1989
+Actividades:
+11:4:51 6/6/2015 : Olga adicionou Sara
+
+11:4:51 6/6/2015 : Olga adicionou Sofia
+
+11:4:51 6/6/2015 : Olga adicionou Rosa
+
+11:4:51 6/6/2015 : Olga adicionou Luís
+
+11:4:51 6/6/2015 : Olga adicionou Beatriz
+
+11:4:51 6/6/2015 : Olga adicionou Ricardo
+
+11:4:51 6/6/2015 : Olga adicionou Rui
+
+11:4:51 6/6/2015 : Olga adicionou Matilde
+
+11:4:51 6/6/2015 : Olga adicionou Carlos
+
+11:4:51 6/6/2015 : Olga adicionou António
+
+11:4:51 6/6/2015 : Olga adicionou Sofia
+
+11:4:51 6/6/2015 : Olga adicionou José
+
+11:4:51 6/6/2015 : Olga descobriu uma MisteryCache e ganhou 86 geo-coins
+
+11:4:51 6/6/2015 : Olga descobriu uma MisteryCache e ganhou 89 geo-coins
+
+11:4:51 6/6/2015 : Olga descobriu uma MultiCache e ganhou 120 geo-coins
+
+11:4:51 6/6/2015 : Olga descobriu uma MisteryCache e ganhou 89 geo-coins
+
+11:4:51 6/6/2015 : Olga descobriu uma MisteryCache e ganhou 106 geo-coins
+
+11:4:51 6/6/2015 : Olga descobriu uma MisteryCache e ganhou 117 geo-coins
+
+11:4:51 6/6/2015 : Olga descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Olga descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Olga descobriu uma MultiCache e ganhou 127 geo-coins
+
+11:4:51 6/6/2015 : Olga descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Olga descobriu uma MultiCache e ganhou 114 geo-coins
+
+11:4:51 6/6/2015 : Olga descobriu uma MisteryCache e ganhou 121 geo-coins
+
+11:4:51 6/6/2015 : Olga descobriu uma MultiCache e ganhou 115 geo-coins
+
+11:4:51 6/6/2015 : Olga descobriu uma MultiCache e ganhou 127 geo-coins
+
+11:4:51 6/6/2015 : Olga descobriu uma MisteryCache e ganhou 84 geo-coins
+
+11:4:51 6/6/2015 : Olga descobriu uma MisteryCache e ganhou 126 geo-coins
+
+11:4:51 6/6/2015 : Olga descobriu uma MisteryCache e ganhou 62 geo-coins
+
+11:4:51 6/6/2015 : Olga descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Olga descobriu uma MultiCache e ganhou 136 geo-coins
+
+11:4:51 6/6/2015 : Olga descobriu uma MultiCache e ganhou 70 geo-coins
+
+11:4:51 6/6/2015 : Olga descobriu uma MisteryCache e ganhou 93 geo-coins
+
+11:4:51 6/6/2015 : Olga descobriu uma MultiCache e ganhou 123 geo-coins
+
+11:4:51 6/6/2015 : Olga descobriu uma MisteryCache e ganhou 115 geo-coins
+
+11:4:51 6/6/2015 : Olga descobriu uma MultiCache e ganhou 126 geo-coins
+
+11:4:51 6/6/2015 : Olga descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Olga descobriu uma MicroCache
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		11	 		1088	 	0	 	5	 	0	0	0	6
+MultiCache		9	 		1058	 	0	 	4	 	0	0	0	5
+MicroCache		6	 		0	 	0	 	3	 	0	0	0	3
+
+Lista de amigos:
+[Sara1751@hotmail.com, Sofia882@hotmail.com, Rosa24@hotmail.com, Luís1667@hotmail.com, Beatriz978@hotmail.com, Ricardo165@hotmail.com, Rui1152@hotmail.com, Matilde1895@hotmail.com, Carlos477@hotmail.com, António1303@hotmail.com, Sofia607@hotmail.com, José1499@hotmail.com]
+Lista de caches:
+{}
+ Utilizador N 17
+Email:José916@hotmail.com
+Nome:José
+Genero:M
+Morada:Rua Gaia
+Data de Nascimento:16/9/1991
+Actividades:
+11:4:51 6/6/2015 : José adicionou Manuel
+
+11:4:51 6/6/2015 : José adicionou Rosa
+
+11:4:51 6/6/2015 : José adicionou Sofia
+
+11:4:51 6/6/2015 : José adicionou Rita
+
+11:4:51 6/6/2015 : José adicionou Carlos
+
+11:4:51 6/6/2015 : José descobriu uma MultiCache e ganhou 136 geo-coins
+
+11:4:51 6/6/2015 : José descobriu uma MicroCache
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		0	 		0	 	0	 	0	 	0	0	0	0
+MultiCache		1	 		136	 	0	 	0	 	0	0	0	1
+MicroCache		1	 		0	 	0	 	0	 	0	0	0	1
+
+Lista de amigos:
+[Manuel1456@hotmail.com, Rosa201@hotmail.com, Sofia582@hotmail.com, Rita1489@hotmail.com, Carlos477@hotmail.com]
+Lista de caches:
+{}
+ Utilizador N 18
+Email:Carlos1183@hotmail.com
+Nome:Carlos
+Genero:M
+Morada:Rua Lisboa
+Data de Nascimento:29/8/1984
+Actividades:
+11:4:51 6/6/2015 : Carlos adicionou Manuel
+
+11:4:51 6/6/2015 : Carlos adicionou Ricardo
+
+11:4:51 6/6/2015 : Carlos adicionou Luís
+
+11:4:51 6/6/2015 : Carlos adicionou Rita
+
+11:4:51 6/6/2015 : Carlos adicionou José
+
+11:4:51 6/6/2015 : Carlos descobriu uma MisteryCache e ganhou 88 geo-coins
+
+11:4:51 6/6/2015 : Carlos descobriu uma MisteryCache e ganhou 144 geo-coins
+
+11:4:51 6/6/2015 : Carlos descobriu uma MultiCache e ganhou 138 geo-coins
+
+11:4:51 6/6/2015 : Carlos descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Carlos descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Carlos descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Carlos descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Carlos descobriu uma MisteryCache e ganhou 82 geo-coins
+
+11:4:51 6/6/2015 : Carlos descobriu uma MultiCache e ganhou 115 geo-coins
+
+11:4:51 6/6/2015 : Carlos descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Carlos descobriu uma MisteryCache e ganhou 86 geo-coins
+
+11:4:51 6/6/2015 : Carlos descobriu uma MultiCache e ganhou 127 geo-coins
+
+11:4:51 6/6/2015 : Carlos descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Carlos descobriu uma MultiCache e ganhou 126 geo-coins
+
+11:4:51 6/6/2015 : Carlos descobriu uma MultiCache e ganhou 112 geo-coins
+
+11:4:51 6/6/2015 : Carlos descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Carlos descobriu uma MultiCache e ganhou 120 geo-coins
+
+11:4:51 6/6/2015 : Carlos descobriu uma MultiCache e ganhou 101 geo-coins
+
+11:4:51 6/6/2015 : Carlos descobriu uma MultiCache e ganhou 97 geo-coins
+
+11:4:51 6/6/2015 : Carlos descobriu uma MultiCache e ganhou 127 geo-coins
+
+11:4:51 6/6/2015 : Carlos descobriu uma MultiCache e ganhou 116 geo-coins
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		4	 		400	 	0	 	2	 	0	0	0	2
+MultiCache		10	 		1179	 	0	 	6	 	0	0	0	4
+MicroCache		7	 		0	 	0	 	2	 	0	0	0	5
+
+Lista de amigos:
+[Manuel292@hotmail.com, Ricardo1228@hotmail.com, Luís98@hotmail.com, Rita731@hotmail.com, José1499@hotmail.com]
+Lista de caches:
+{}
+ Utilizador N 19
+Email:André1983@hotmail.com
+Nome:André
+Genero:M
+Morada:Rua Viseu
+Data de Nascimento:1/4/1990
+Actividades:
+11:4:51 6/6/2015 : André adicionou André
+
+11:4:51 6/6/2015 : André adicionou Rita
+
+11:4:51 6/6/2015 : André adicionou Sofia
+
+11:4:51 6/6/2015 : André adicionou António
+
+11:4:51 6/6/2015 : André adicionou Matilde
+
+11:4:51 6/6/2015 : André adicionou Cristina
+
+11:4:51 6/6/2015 : André adicionou Tiago
+
+11:4:51 6/6/2015 : André adicionou Rita
+
+11:4:51 6/6/2015 : André adicionou José
+
+11:4:51 6/6/2015 : André adicionou José
+
+11:4:51 6/6/2015 : André descobriu uma MisteryCache e ganhou 121 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MicroCache
+
+11:4:51 6/6/2015 : André descobriu uma MicroCache
+
+11:4:51 6/6/2015 : André descobriu uma MicroCache
+
+11:4:51 6/6/2015 : André descobriu uma MisteryCache e ganhou 154 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MisteryCache e ganhou 126 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MultiCache e ganhou 120 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MultiCache e ganhou 123 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MultiCache e ganhou 53 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MisteryCache e ganhou 114 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MicroCache
+
+11:4:51 6/6/2015 : André descobriu uma MisteryCache e ganhou 89 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MisteryCache e ganhou 134 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MisteryCache e ganhou 111 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MultiCache e ganhou 177 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MultiCache e ganhou 136 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MicroCache
+
+11:4:51 6/6/2015 : André descobriu uma MisteryCache e ganhou 113 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MultiCache e ganhou 81 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MisteryCache e ganhou 62 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MicroCache
+
+11:4:51 6/6/2015 : André descobriu uma MultiCache e ganhou 101 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MultiCache e ganhou 136 geo-coins
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		9	 		1024	 	0	 	3	 	0	0	0	6
+MultiCache		8	 		927	 	0	 	6	 	0	0	0	2
+MicroCache		6	 		0	 	0	 	2	 	0	0	0	4
+
+Lista de amigos:
+[André1373@hotmail.com, Rita1745@hotmail.com, Sofia582@hotmail.com, António1585@hotmail.com, Matilde1895@hotmail.com, Cristina453@hotmail.com, Tiago662@hotmail.com, Rita731@hotmail.com, José998@hotmail.com, José1499@hotmail.com]
+Lista de caches:
+{}
+ Utilizador N 20
+Email:Diogo64@hotmail.com
+Nome:Diogo
+Genero:M
+Morada:Rua Viseu
+Data de Nascimento:5/7/1997
+Actividades:
+11:4:51 6/6/2015 : Diogo adicionou Beatriz
+
+11:4:51 6/6/2015 : Diogo adicionou Cristina
+
+11:4:51 6/6/2015 : Diogo adicionou Rita
+
+11:4:51 6/6/2015 : Diogo descobriu uma MultiCache e ganhou 136 geo-coins
+
+11:4:51 6/6/2015 : Diogo descobriu uma MultiCache e ganhou 177 geo-coins
+
+11:4:51 6/6/2015 : Diogo descobriu uma MisteryCache e ganhou 127 geo-coins
+
+11:4:51 6/6/2015 : Diogo descobriu uma MisteryCache e ganhou 116 geo-coins
+
+11:4:51 6/6/2015 : Diogo descobriu uma MultiCache e ganhou 114 geo-coins
+
+11:4:51 6/6/2015 : Diogo descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Diogo descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Diogo descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Diogo descobriu uma MultiCache e ganhou 76 geo-coins
+
+11:4:51 6/6/2015 : Diogo descobriu uma MisteryCache e ganhou 111 geo-coins
+
+11:4:51 6/6/2015 : Diogo descobriu uma MisteryCache e ganhou 66 geo-coins
+
+11:4:51 6/6/2015 : Diogo descobriu uma MultiCache e ganhou 81 geo-coins
+
+11:4:51 6/6/2015 : Diogo descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Diogo descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Diogo descobriu uma MultiCache e ganhou 165 geo-coins
+
+11:4:51 6/6/2015 : Diogo descobriu uma MisteryCache e ganhou 91 geo-coins
+
+11:4:51 6/6/2015 : Diogo descobriu uma MultiCache e ganhou 85 geo-coins
+
+11:4:51 6/6/2015 : Diogo descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Diogo descobriu uma MultiCache e ganhou 101 geo-coins
+
+11:4:51 6/6/2015 : Diogo descobriu uma MisteryCache e ganhou 144 geo-coins
+
+11:4:51 6/6/2015 : Diogo descobriu uma MisteryCache e ganhou 74 geo-coins
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		7	 		729	 	0	 	3	 	0	0	0	4
+MultiCache		8	 		935	 	0	 	6	 	0	0	0	2
+MicroCache		6	 		0	 	0	 	4	 	0	0	0	2
+
+Lista de amigos:
+[Beatriz731@hotmail.com, Cristina453@hotmail.com, Rita1364@hotmail.com]
+Lista de caches:
+{}
+ Utilizador N 21
+Email:Matilde1535@hotmail.com
+Nome:Matilde
+Genero:F
+Morada:Rua Coimbra
+Data de Nascimento:27/7/1990
+Actividades:
+11:4:51 6/6/2015 : Matilde adicionou Sofia
+
+11:4:51 6/6/2015 : Matilde adicionou António
+
+11:4:51 6/6/2015 : Matilde adicionou Daniela
+
+11:4:51 6/6/2015 : Matilde adicionou Francisca
+
+11:4:51 6/6/2015 : Matilde adicionou Rui
+
+11:4:51 6/6/2015 : Matilde adicionou Ricardo
+
+11:4:51 6/6/2015 : Matilde adicionou Rui
+
+11:4:51 6/6/2015 : Matilde adicionou José
+
+11:4:51 6/6/2015 : Matilde adicionou Daniela
+
+11:4:51 6/6/2015 : Matilde adicionou Rui
+
+11:4:51 6/6/2015 : Matilde adicionou Leonor
+
+11:4:51 6/6/2015 : Matilde adicionou Rosa
+
+11:4:51 6/6/2015 : Matilde descobriu uma MisteryCache e ganhou 114 geo-coins
+
+11:4:51 6/6/2015 : Matilde descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Matilde descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Matilde descobriu uma MultiCache e ganhou 130 geo-coins
+
+11:4:51 6/6/2015 : Matilde descobriu uma MisteryCache e ganhou 86 geo-coins
+
+11:4:51 6/6/2015 : Matilde descobriu uma MultiCache e ganhou 99 geo-coins
+
+11:4:51 6/6/2015 : Matilde descobriu uma MisteryCache e ganhou 72 geo-coins
+
+11:4:51 6/6/2015 : Matilde descobriu uma MultiCache e ganhou 181 geo-coins
+
+11:4:51 6/6/2015 : Matilde descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Matilde descobriu uma MultiCache e ganhou 101 geo-coins
+
+11:4:51 6/6/2015 : Matilde descobriu uma MisteryCache e ganhou 133 geo-coins
+
+11:4:51 6/6/2015 : Matilde descobriu uma MultiCache e ganhou 127 geo-coins
+
+11:4:51 6/6/2015 : Matilde descobriu uma MultiCache e ganhou 176 geo-coins
+
+11:4:51 6/6/2015 : Matilde descobriu uma MisteryCache e ganhou 89 geo-coins
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		5	 		494	 	0	 	4	 	0	0	0	1
+MultiCache		6	 		814	 	0	 	2	 	0	0	0	4
+MicroCache		3	 		0	 	0	 	1	 	0	0	0	2
+
+Lista de amigos:
+[Sofia885@hotmail.com, António1303@hotmail.com, Daniela1918@hotmail.com, Francisca958@hotmail.com, Rui212@hotmail.com, Ricardo1170@hotmail.com, Rui1152@hotmail.com, José1801@hotmail.com, Daniela1069@hotmail.com, Rui1660@hotmail.com, Leonor564@hotmail.com, Rosa486@hotmail.com]
+Lista de caches:
+{}
+ Utilizador N 22
+Email:Cristina453@hotmail.com
+Nome:Cristina
+Genero:F
+Morada:Rua Lisboa
+Data de Nascimento:19/2/1995
+Actividades:
+11:4:51 6/6/2015 : Cristina adicionou Diogo
+
+11:4:51 6/6/2015 : Cristina adicionou Rosa
+
+11:4:51 6/6/2015 : Cristina adicionou André
+
+11:4:51 6/6/2015 : Cristina adicionou André
+
+11:4:51 6/6/2015 : Cristina adicionou Rui
+
+11:4:51 6/6/2015 : Cristina adicionou Matilde
+
+11:4:51 6/6/2015 : Cristina adicionou Sofia
+
+11:4:51 6/6/2015 : Cristina adicionou Rui
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		0	 		0	 	0	 	0	 	0	0	0	0
+MultiCache		0	 		0	 	0	 	0	 	0	0	0	0
+MicroCache		0	 		0	 	0	 	0	 	0	0	0	0
+
+Lista de amigos:
+[Diogo64@hotmail.com, Rosa201@hotmail.com, André1983@hotmail.com, André514@hotmail.com, Rui1152@hotmail.com, Matilde1895@hotmail.com, Sofia882@hotmail.com, Rui1660@hotmail.com]
+Lista de caches:
+{}
+ Utilizador N 23
+Email:Rita1364@hotmail.com
+Nome:Rita
+Genero:F
+Morada:Rua Gaia
+Data de Nascimento:22/11/1993
+Actividades:
+11:4:51 6/6/2015 : Rita adicionou Diogo
+
+11:4:51 6/6/2015 : Rita adicionou Tiago
+
+11:4:51 6/6/2015 : Rita adicionou Paula
+
+11:4:51 6/6/2015 : Rita adicionou Tiago
+
+11:4:51 6/6/2015 : Rita adicionou Francisca
+
+11:4:51 6/6/2015 : Rita adicionou Ricardo
+
+11:4:51 6/6/2015 : Rita adicionou Daniela
+
+11:4:51 6/6/2015 : Rita adicionou Tiago
+
+11:4:51 6/6/2015 : Rita adicionou Rui
+
+11:4:51 6/6/2015 : Rita adicionou Rosa
+
+11:4:51 6/6/2015 : Rita descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Rita descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Rita descobriu uma MisteryCache e ganhou 79 geo-coins
+
+11:4:51 6/6/2015 : Rita descobriu uma MultiCache e ganhou 70 geo-coins
+
+11:4:51 6/6/2015 : Rita descobriu uma MultiCache e ganhou 55 geo-coins
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		1	 		79	 	0	 	0	 	0	0	0	1
+MultiCache		2	 		125	 	0	 	1	 	0	0	0	1
+MicroCache		2	 		0	 	0	 	0	 	0	0	0	2
+
+Lista de amigos:
+[Diogo64@hotmail.com, Tiago662@hotmail.com, Paula262@hotmail.com, Tiago935@hotmail.com, Francisca1233@hotmail.com, Ricardo165@hotmail.com, Daniela1069@hotmail.com, Tiago1737@hotmail.com, Rui212@hotmail.com, Rosa486@hotmail.com]
+Lista de caches:
+{}
+ Utilizador N 24
+Email:Diogo788@hotmail.com
+Nome:Diogo
+Genero:M
+Morada:Rua Aveiro
+Data de Nascimento:2/9/1981
+Actividades:
+11:4:51 6/6/2015 : Diogo adicionou Paula
+
+11:4:51 6/6/2015 : Diogo adicionou André
+
+11:4:51 6/6/2015 : Diogo adicionou Ricardo
+
+11:4:51 6/6/2015 : Diogo adicionou André
+
+11:4:51 6/6/2015 : Diogo adicionou José
+
+11:4:51 6/6/2015 : Diogo descobriu uma MicroCache
+
+11:4:51 6/6/2015 : Diogo descobriu uma MisteryCache e ganhou 62 geo-coins
+
+11:4:51 6/6/2015 : Diogo descobriu uma MultiCache e ganhou 76 geo-coins
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		1	 		62	 	0	 	1	 	0	0	0	0
+MultiCache		1	 		76	 	0	 	0	 	0	0	0	1
+MicroCache		1	 		0	 	0	 	1	 	0	0	0	0
+
+Lista de amigos:
+[Paula633@hotmail.com, André514@hotmail.com, Ricardo1228@hotmail.com, André455@hotmail.com, José1801@hotmail.com]
+Lista de caches:
+{}
+ Utilizador N 25
+Email:André514@hotmail.com
+Nome:André
+Genero:M
+Morada:Rua Coimbra
+Data de Nascimento:22/3/1991
+Actividades:
+11:4:51 6/6/2015 : André adicionou Sara
+
+11:4:51 6/6/2015 : André adicionou Cristina
+
+11:4:51 6/6/2015 : André adicionou Diogo
+
+11:4:51 6/6/2015 : André adicionou Ricardo
+
+11:4:51 6/6/2015 : André adicionou Sara
+
+11:4:51 6/6/2015 : André adicionou Sara
+
+11:4:51 6/6/2015 : André adicionou Sofia
+
+11:4:51 6/6/2015 : André adicionou Sofia
+
+11:4:51 6/6/2015 : André descobriu uma MicroCache
+
+11:4:51 6/6/2015 : André descobriu uma MicroCache
+
+11:4:51 6/6/2015 : André descobriu uma MisteryCache e ganhou 62 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MicroCache
+
+11:4:51 6/6/2015 : André descobriu uma MisteryCache e ganhou 93 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MicroCache
+
+11:4:51 6/6/2015 : André descobriu uma MicroCache
+
+11:4:51 6/6/2015 : André descobriu uma MisteryCache e ganhou 87 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MisteryCache e ganhou 144 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MicroCache
+
+11:4:51 6/6/2015 : André descobriu uma MicroCache
+
+11:4:51 6/6/2015 : André descobriu uma MisteryCache e ganhou 105 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MultiCache e ganhou 81 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MisteryCache e ganhou 147 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MicroCache
+
+11:4:51 6/6/2015 : André descobriu uma MicroCache
+
+11:4:51 6/6/2015 : André descobriu uma MicroCache
+
+11:4:51 6/6/2015 : André descobriu uma MicroCache
+
+11:4:51 6/6/2015 : André descobriu uma MisteryCache e ganhou 66 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MultiCache e ganhou 114 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MultiCache e ganhou 115 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MultiCache e ganhou 126 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MicroCache
+
+11:4:51 6/6/2015 : André descobriu uma MisteryCache e ganhou 111 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MisteryCache e ganhou 135 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MultiCache e ganhou 127 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MultiCache e ganhou 177 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MultiCache e ganhou 99 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MultiCache e ganhou 181 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MisteryCache e ganhou 66 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MultiCache e ganhou 120 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MisteryCache e ganhou 133 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MisteryCache e ganhou 135 geo-coins
+
+11:4:51 6/6/2015 : André descobriu uma MisteryCache e ganhou 59 geo-coins
+
+Estatisticas:
+		Caches Descobertas	GeoCoins Facturados	Nublado	Chuvas Fracas	Chuvas Fortes	Frio	Sol	Quente	
+MisteryCache		13	 		1343	 	0	 	8	 	0	0	0	5
+MultiCache		9	 		1140	 	0	 	6	 	0	0	0	3
+MicroCache		12	 		0	 	0	 	7	 	0	0	0	5
+
+Lista de amigos:
+[Sara1751@hotmail.com, Cristina453@hotmail.com, Diogo788@hotmail.com, Ricardo1218@hotmail.com, Sara1217@hotmail.com, Sara1964@hotmail.com, Sofia882@hotmail.com, Sofia607@hotmail.com]
+Lista de caches:
+{}

@@ -10,6 +10,7 @@ public class EscreveTXT
         while(it.hasNext()) {
             Map.Entry<Coordenadas, Cache> elem=it.next();
             pw.printf( "Cache N"+ i + "\n" +elem.getValue().toString()+ "\n");  
+            i++;
         }
         pw.flush();
         pw.close();
@@ -18,10 +19,12 @@ public class EscreveTXT
     
     public void escreveUsers(Utilizadores utilizadores, String filename) throws IOException {
         PrintWriter pw = new PrintWriter(filename);
+        int i = 1;
         Iterator<Map.Entry<String, Utilizador>> it=utilizadores.iterator();
         while(it.hasNext()) {
             Map.Entry<String, Utilizador> elem=it.next();
-            pw.printf(elem.getKey().toString()+ "       " +elem.getValue().toString()+ "\n");
+            pw.printf(" Utilizador N " + i + "\n" +elem.getValue().toString()+ "\n");
+            i++;
         }
         pw.flush();
         pw.close();

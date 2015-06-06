@@ -100,7 +100,9 @@ public class Evento implements Serializable
                 if (CacheMaisPerto instanceof MultiCache)
                     {
                        
-                       double distancia = ((MultiCache)CacheMaisPerto).distanciaPercorrida( variaveisU.getLocalizacao() ); // Devolve a distancia mínima para passar todos os checkpoints 
+                       //double distancia = ((MultiCache)CacheMaisPerto).distanciaPercorrida( variaveisU.getLocalizacao() ); // Devolve a distancia mínima para passar todos os checkpoints 
+                       
+                       double distancia = CacheMaisPerto.getCoordenadas().distance( variaveisU.getLocalizacao());
                        
                        distancia = distancia + aumentoDistancia*distancia; 
                   
@@ -303,8 +305,9 @@ public class Evento implements Serializable
                 this.microCache = utilizador.getEstatisticas().getCachesTipo(new String("MicroCache"));
                 this.caches = this.multiCache + this.misteryCache + this.microCache;
                 
- 
-               // variantes.setLocalizacao(0); // a alterar 
+                double latitude = random.nextDouble();
+                double longitude = random.nextDouble();
+                setLocalizacao( new Coordenadas(latitude,longitude)); 
             } 
         
             public void setLocalizacao(Coordenadas c){   this.localizacao = c;  }

@@ -23,10 +23,13 @@ public class GeoCaching implements Serializable
         limiteParticipantes = 0;
     }
     
-    public GeoCaching(Utilizadores users, Caches caches, CacheReports reports) {
+    public GeoCaching(Utilizadores users, Caches caches, CacheReports reports,ArrayList<String> registados,int limite,boolean inscricoes) {
         this.utilizadores=new Utilizadores(users);
         this.caches=new Caches(caches);
         this.reports=new CacheReports(reports);
+        this.utilizadoresRegistados =registados;
+        limiteParticipantes = limite;
+        inscricoesAbertas = inscricoes;
 
     }
     
@@ -126,6 +129,10 @@ public class GeoCaching implements Serializable
     }
     public void addReport(Report r){
         this.reports.add(r);
+    }
+    public void addCacheUtilizador(String email,Cache c){
+        caches.add(c);
+        utilizadores.addCache(email,c);
     }
     public void addCache(Cache c){
         caches.add(c);

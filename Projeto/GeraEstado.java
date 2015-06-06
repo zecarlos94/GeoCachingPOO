@@ -20,13 +20,14 @@ public class GeraEstado
     private Caches caches;
     
     private CacheReports reports;
+    
+    private Utilizadores utilizadoresRegistados;
 
     public GeraEstado()
     {
         int i;
         Random random = new Random();
         
-        System.out.println("Starting");
         
         this.utilizadores = new Utilizadores();
         for( i = 0 ; i < numeroUtilizadores;)
@@ -37,8 +38,6 @@ public class GeraEstado
                         utilizadores.add(u);i++;
                     }
             }
-        
-        System.out.println("Utilizadores gerados");
         
         this.caches = new Caches();
          for ( i = 0; i < numeroCaches ;i++)
@@ -79,11 +78,23 @@ public class GeraEstado
          this.reports = new CacheReports();
          geraReports();
          
+         // Inscreve os 25 primeiros utilizadores no evento
+         this.utilizadoresRegistados = new Utilizadores();
+         Iterator<Map.Entry<String,Utilizador>> it3 = this.utilizadores.iterator();
+         int c = 0;
+         while(it3.hasNext() && c < 25)
+         {
+             Map.Entry<String,Utilizador> elem = it3.next();
+             this.utilizadoresRegistados.add(elem.getValue());
+             c++;
+         }
+         
          EscreveTXT escreve = new EscreveTXT();
          try{
          
          escreve.escreveUsers(this.utilizadores,"utilizadores.txt");
          escreve.escreveCaches(this.caches,"caches.txt");
+         escreve.escreveUsers(this.utilizadoresRegistados,"utilizadoresRegistados.txt");
         }catch(IOException e) {System.out.println("IOException"); }
     
     }
@@ -136,6 +147,7 @@ public class GeraEstado
                 cachesCollection.add( it2.next().getValue() );
             }
             
+            int utilizadoresComCaches = 0;
 
           Iterator<Map.Entry<String,Utilizador>> it = this.utilizadores.iterator();
           while(it.hasNext())
@@ -145,6 +157,13 @@ public class GeraEstado
             if(random.nextInt(2) == 0) nDescobertas = random.nextInt(40);
             else nDescobertas = random.nextInt(7);
             int count = 0;
+            
+            if ( utilizadoresComCaches < 3){
+                Cache c = cachesCollection.get(utilizadoresComCaches);
+                this.utilizadores.addCache(email,c);
+                
+                utilizadoresComCaches++;
+            }
 
             while(count < nDescobertas)
             {
@@ -213,6 +232,10 @@ public class GeraEstado
     
     public CacheReports getCacheReports(){
         return this.reports.clone();
+    }
+    
+    public Utilizadores getUtilizadoresRegistados(){
+        return this.utilizadoresRegistados.clone();
     }
 }
 
