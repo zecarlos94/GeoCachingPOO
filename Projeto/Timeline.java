@@ -163,33 +163,43 @@ public class Timeline implements Serializable
     }
     
     public void jumpTime(double horas) throws NumberFormatException {
-        int div=0;
+        GregorianCalendar cal = new GregorianCalendar();
         double aux=horas;
         int hora=(int) aux;
-        this.hora+=hora;
-        if(this.hora>=24){
-            div=this.hora/24;
-            this.hora-=div*24;
-            this.day+=div;
-            div=0;
-        }
-        
         aux-=(double) hora; aux*=60;
         int minutos=(int) aux;
-        this.minuto+=minutos;
-        if(this.minuto>=60){
-            div=this.minuto/60;
-            this.minuto-=div*60;
-            div=0;
-        }
-        
         aux-=(double) minutos; aux*=60;
-        int segundos=(int) aux + 1;
-        this.segundo=segundo;
-        if(this.segundo>=60){
-            div=this.segundo/60;
-            this.segundo-=div*60;
-            div=0;
-        }
+        int segundos=(int) aux;
+        cal.add(GregorianCalendar.HOUR_OF_DAY, hora);
+        cal.add(GregorianCalendar.MINUTE, minutos);
+        cal.add(GregorianCalendar.SECOND, segundos);
+        this.hora=cal.get(Calendar.HOUR_OF_DAY); // 24 horas
+        this.minuto=cal.get(Calendar.MINUTE);
+        this.segundo=cal.get(Calendar.SECOND);
+        this.day=cal.get(Calendar.DAY_OF_MONTH);
+        this.month=(cal.get(Calendar.MONTH))+1; // Jan = 0, Dezembro = 11
+        this.year=cal.get(Calendar.YEAR);
+        
+        
+        // System.out.println("Hora: "+hora+"\nMin: "+minutos+"\nSegundos: "+segundos);
+    }
+    
+    public void backinTime(double horas) throws NumberFormatException {
+        GregorianCalendar cal = new GregorianCalendar();
+        double aux=horas;
+        int hora=(int) aux;
+        aux-=(double) hora; aux*=60;
+        int minutos=(int) aux;
+        aux-=(double) minutos; aux*=60;
+        int segundos=(int) aux;
+        cal.add(GregorianCalendar.HOUR_OF_DAY, -hora);
+        cal.add(GregorianCalendar.MINUTE, -minutos);
+        cal.add(GregorianCalendar.SECOND, -segundos);
+        this.hora=cal.get(Calendar.HOUR_OF_DAY); // 24 horas
+        this.minuto=cal.get(Calendar.MINUTE);
+        this.segundo=cal.get(Calendar.SECOND);
+        this.day=cal.get(Calendar.DAY_OF_MONTH);
+        this.month=(cal.get(Calendar.MONTH))+1; // Jan = 0, Dezembro = 11
+        this.year=cal.get(Calendar.YEAR);
     }
 }
