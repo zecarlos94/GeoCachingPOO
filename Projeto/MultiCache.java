@@ -41,7 +41,7 @@ public class MultiCache extends Cache implements Tesouro, Serializable
      */
     public int getGeoCoinsTotais()
     {
-        return this.geocoins + ((this.geocoins / 2) * (checkpoints.size() - 1));
+        return this.geocoins + ((this.geocoins / 2) * (checkpoints.size()));
     }
     
     public ArrayList<Coordenadas> getCheckpoints(){
