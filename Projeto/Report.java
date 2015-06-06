@@ -81,5 +81,15 @@ public class Report implements Serializable
       Report report = (Report) obj;
       return (this.coordenadas.equals(report.getCoordenadas()) && this.texto.equals(report.getTexto()) && this.time.equals(report.getTime()));
     }
-    //falta toString
+    
+
+    
+
+    
+  
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append(time.toString() + "\nCoordenadas: " + coordenadas.toString() + "\nTexto do utilizador:\n" + texto);
+        return sb.toString();
+    }
 }

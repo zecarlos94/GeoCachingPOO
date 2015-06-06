@@ -79,7 +79,16 @@ public class CacheReports implements Serializable
       CacheReports cr = (CacheReports) obj;
       return this.reports.equals(cr.getReports());
     }
-    //falta tostring
+   
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        Iterator<Report> it = this.reports.values().iterator();
+        sb.append("Reports:\n");
+        while(it.hasNext()){
+            sb.append(it.next().toString() + "\n");
+        }
+        return sb.toString();
+    }
     
     public Iterator<Map.Entry<Timeline, Report>> iterator() {
         return this.reports.entrySet().iterator();
