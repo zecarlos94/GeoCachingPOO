@@ -7,9 +7,10 @@ public class GeneroNaoExisteException extends Exception
     {
         super();
     }
-
+/*
     public GeneroNaoExisteException(char str)
     {
        super(str);
     }
+*/
 }

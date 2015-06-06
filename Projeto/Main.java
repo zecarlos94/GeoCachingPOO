@@ -269,8 +269,8 @@ public class Main
         out.println("   Morada: " +u.getMorada());
         out.println("   Data de Nascimento: " +u.getTimelineNascimento().toString());
         out.println("   Amigos: " +u.getAmigos().toString());
-        ArrayList<Actividade> last10=u.ultimasAtividades();
-        out.printf("\nÚltimas 10 atividades: "); last10.toString();
+        out.printf("\nÚltimas 10 atividades:\n%s ", u.ultimasAtividades());
+       
     }
     
     public static boolean validaCoord(String escala, double x) {
@@ -387,7 +387,7 @@ public class Main
         c = new GeoCaching( (GeoCaching) ois.readObject());
         ois.close();
     }
-    public static void saveState(String filename) throws IOException{
+    public static void saveGeneratedState(String filename) throws IOException{
         GeraEstado g=new GeraEstado();
         GeoCaching e=new GeoCaching(g.getUtilizadores(), g.getCaches(), g.getCacheReports(),g.getAdmins(),g.getUtilizadoresRegistados().toList(),30,true);
         FileOutputStream fos = new FileOutputStream(filename);
@@ -395,6 +395,15 @@ public class Main
         oos.writeObject(e); // Mudar para "e" aqui se quiser dar load ao estado
         oos.close();
     }
+    
+    public static void saveState(String filename) throws IOException{
+   
+        FileOutputStream fos = new FileOutputStream(filename);
+        ObjectOutputStream oos = new ObjectOutputStream(fos);
+        oos.writeObject(c); 
+        oos.close();
+    }
+    
     
     public static int descobrirCache(String email){
         out.printf("\nInsira a latitude e a longitude da cache que deseja descobrir:");

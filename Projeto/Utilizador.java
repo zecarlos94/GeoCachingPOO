@@ -45,7 +45,7 @@ public class Utilizador implements Serializable
          this.estatisticas= new StatsUtilizador();
         this.amigos=new ArrayList<String>();
         this.myCaches = new Caches();
-        this.actividades=new TreeMap<Timeline, Actividade>(new TimelineComparator());
+        this.actividades=new TreeMap<Timeline, Actividade>(new TimelineComparatorDecrescente());
     }
     
    
@@ -56,7 +56,7 @@ public class Utilizador implements Serializable
          this.morada=morada;
         this.genero=genero;
         this.timeline_nascimento=new Timeline(timeline_nascimento);
-        this.actividades=new TreeMap<Timeline, Actividade>(new TimelineComparator());
+        this.actividades=new TreeMap<Timeline, Actividade>(new TimelineComparatorDecrescente());
         this.estatisticas=estatisticas;
         this.amigos=new ArrayList<String>();
         this.myCaches = caches.clone();
@@ -145,7 +145,7 @@ public class Utilizador implements Serializable
     }
     
     public void setAtividades(TreeMap<Timeline, Actividade> timeline) throws NumberFormatException {
-        TreeMap<Timeline, Actividade> aux=new TreeMap<Timeline, Actividade>(new TimelineComparator());
+        TreeMap<Timeline, Actividade> aux=new TreeMap<Timeline, Actividade>(new TimelineComparatorDecrescente());
         Set<Map.Entry<Timeline, Actividade>> eset=timeline.entrySet();
         Iterator<Map.Entry<Timeline, Actividade>> it=eset.iterator();
         while(it.hasNext()) {
@@ -260,7 +260,7 @@ public class Utilizador implements Serializable
       Utilizador c = (Utilizador) obj;
       return(this.email.equals(c.getEmail()) && this.password.equals(c.getPassword()) && this.nome.equals(c.getNome()) && this.genero==c.getGenero() 
                  && this.morada.equals(c.getMorada()) && this.timeline_nascimento.equals(c.getTimelineNascimento()) && this.actividades.equals(c.getAtividades())
-                 && this.estatisticas.equals(c.getEstatisticas()) && this.amigos.equals(c.getAmigos())); // falta adicionar equals à classe Caches);
+                 && this.estatisticas.equals(c.getEstatisticas()) && this.amigos.equals(c.getAmigos()));
     }
     
    /**
@@ -289,19 +289,33 @@ public class Utilizador implements Serializable
    /**
      * Devolve um ArrayList com as últimas 10 atividades do utilizador
      */
+   public String ultimasAtividades() {
+        StringBuilder sb = new StringBuilder();
+   
+       Iterator<Actividade> it = this.actividades.values().iterator();
+       while(it.hasNext())
+       {
+           
+           sb.append( it.next().toString() + "\n");
+        }
+        sb.append("\n");
+        return sb.toString();
+   }
+    
+   /**
+     * Devolve um ArrayList com as últimas 10 atividades do utilizador
+     */
+    /*
    public ArrayList<Actividade> ultimasAtividades() {
         ArrayList<Actividade> last10=new ArrayList<Actividade>();
-        Timeline t=this.actividades.firstKey();
-        int i=0;
-        while(i<10 && t!=null) {
-            if(i>0) t=this.actividades.higherKey(t);
-            if(t!=null) {
-                Actividade a=this.actividades.get(t);
-                last10.add(a.clone());
-                i++;
-            }
+   
+       Iterator<Actividade> it = actividades.values().iterator();
+       while(it.hasNext())
+       {
+           
+           last10.add(it.next());
         }
         return last10;
    }
-    
+   */
 }

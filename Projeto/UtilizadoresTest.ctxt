@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.params=
+comment0.target=UtilizadoresTest()
+comment0.text=\n\ \ \ \ Timeline\ tn2\=new\ Timeline();\n\ \ \ \ TreeMap<Timeline,\ Actividade>\ act\=new\ TreeMap<Timeline,\ Actividade>();\n\ \ \ \ HashMap<String,\ Integer>\ stat\=new\ HashMap<String,\ Integer>();\n\ \ \ \ ArrayList<String>\ amgs\=new\ ArrayList<String>();\n\ \ \ \ Caches\ mc\ \=\ new\ Caches();\n\ \ \ \ Utilizadores\ u\ \=\ new\ Utilizadores();\n
+comment1.params=
+comment1.target=void\ setUp()
+comment2.params=
+comment2.target=void\ tearDown()
+comment3.params=
+comment3.target=void\ inserir_existe()
+comment3.text=\n\ Testar\ a\ existencia\ ou\ n\u00E3o\ de\ um\ Utilizador\n\ \n\ Para\ falhar\:\ alterar\ o\ m\u00E9todo\ existeUtilizador()\ para\ retornar\ sempre\ false\ (ou\ true)\n\ Alternativamente,\ alterar\ o\ m\u00E9todo\ getUtilizador()\ para\ retornar\ sempre\ null\n
+comment4.params=
+comment4.target=void\ testeAddRemove()
+comment4.text=\n\ Teste\ de\ adicionar\ e\ remover.\n\ \n\ Para\ falhar\:\ comentar\ o\ put\ em\ add(),\ ou,\ remove\ em\ remove()\n
+comment5.params=
+comment5.target=void\ testGet()
+comment5.text=\n\ Teste\ de\ consulta\n\ \n\ Para\ falhar\:\ alterar\ o\ return\ de\ get()\ para\ "return\ null"\n
+comment6.params=
+comment6.target=void\ testClone()
+comment6.text=\n\ Teste\ de\ clones\ na\ consulta\n\ \n\ Para\ falhar\:\ comentar\ o\ clone\ em\ get()\ e\ em\ add()\n
+numComments=7

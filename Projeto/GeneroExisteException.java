@@ -8,7 +8,7 @@ public class GeneroExisteException extends Exception
         super();
     }
 
-    public GeneroExisteException(char str)
+    public GeneroExisteException(String str)
     {
        super(str);
     }

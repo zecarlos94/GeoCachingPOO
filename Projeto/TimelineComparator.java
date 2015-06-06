@@ -2,7 +2,7 @@ import java.util.Comparator;
 import java.io.Serializable;
 
 /**
- * Classe fundamental para ordenar a TreeMap de atividades, pois utiliza um comparador de tempo
+ *  Ordena por ordem crescente do tempo, usado em evento ... 
  */
 public class TimelineComparator implements Comparator<Timeline>, Serializable
 {
