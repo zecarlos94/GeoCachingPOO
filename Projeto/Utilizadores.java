@@ -208,4 +208,8 @@ public class Utilizadores implements Serializable
       Utilizadores c = (Utilizadores) obj;
       return this.utilizadores.equals(c.getUtilizadores());
     }
+    
+    public String toString() {
+        return new String(this.utilizadores.toString());
+    }
 }
