@@ -163,30 +163,33 @@ public class Timeline implements Serializable
     }
     
     public void jumpTime(double horas) throws NumberFormatException {
+        int div=0;
         double aux=horas;
         int hora=(int) aux;
         this.hora+=hora;
+        if(this.hora>=24){
+            div=this.hora/24;
+            this.hora-=div*24;
+            this.day+=div;
+            div=0;
+        }
         
         aux-=(double) hora; aux*=60;
         int minutos=(int) aux;
         this.minuto+=minutos;
+        if(this.minuto>=60){
+            div=this.minuto/60;
+            this.minuto-=div*60;
+            div=0;
+        }
         
         aux-=(double) minutos; aux*=60;
         int segundos=(int) aux + 1;
         this.segundo=segundo;
-    }
-    
-    public void backInTime(double horas) throws NumberFormatException {
-        double aux=horas;
-        int hora=(int) aux;
-        this.hora-=hora;
-        
-        aux-=(double) hora; aux*=60;
-        int minutos=(int) aux;
-        this.minuto+=minutos;
-        
-        aux-=(double) minutos; aux*=60;
-        int segundos=(int) aux + 1;
-        this.segundo=segundo;
+        if(this.segundo>=60){
+            div=this.segundo/60;
+            this.segundo-=div*60;
+            div=0;
+        }
     }
 }
