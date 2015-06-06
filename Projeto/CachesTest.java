@@ -1,46 +1,40 @@
-
-
 import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import java.util.Set;
 
-/**
- * A classe de teste CachesTest.
- *
- * @author  (seu nome)
- * @version (um número de versão ou data)
- */
+
 public class CachesTest
 {
-
-    private Caches cs;
+    private Caches c;
 
     /**
-     * Construtor default para a classe de teste CachesTest
+     * Default constructor for test class EmpresaZecaTest
      */
     public CachesTest()
     {
     }
 
-
     /**
      * Sets up the test fixture.
      * Called before every test case method.
-     * Inicializa a variável de instância mEmpresa antes de cada teste
+     * Inicializa a variável de instância c antes de cada teste
      */
     @Before
     public void setUp()
     {
-
-        cs=new Caches();
-        MultiCache m1 = new MultiCache();
-        MisteryCache m2 = new MisteryCache();
-        MicroCache m3 = new MicroCache();
-        cs.add(m1);
-        cs.add(m2);
-        cs.add(m3);
-        cs.add(new MultiCache());
+        c = new Caches();
+        Coordenadas coord1 = new Coordenadas(10,10);
+        MicroCache c1 = new MicroCache(coord1);
+        Coordenadas coord2 = new Coordenadas(12,12);
+        MicroCache c2 = new MicroCache(coord2);
+        Coordenadas coord3 = new Coordenadas(14,14);
+        MicroCache c3 = new MicroCache(coord3);
+        
+        c.add(c1);
+        c.add(c2);
+        c.add(c3);
     }
 
     /**
@@ -54,82 +48,74 @@ public class CachesTest
     {
     }
 
-
     /**
      * Testar a existencia ou não de uma Cache.
-     * 
-     * Para falhar: alterar o método existe() para retornar sempre false (ou true)
-     * Alternativamente, alterar o método get() para retornar sempre null
      */
     @Test
     public void inserir_existe()
     {
-        MultiCache mma = new MultiCache();
-        cs.add(mma);
+       Coordenadas coordA = new Coordenadas(4,4);
+       MicroCache cA = new MicroCache(coordA);
+        
+       c.add(cA);
         //existente
         //se o método existe retornar "false" para uma cache existente, este teste falha
-        assertTrue(cs.existe(mma));
-        //Se for retornado um nulo no método get, este teste falha
-        assertNotNull(u.get(mma));
-        //inexistente
-        //a cache abc não existe, se retornar true, o teste falha
-        assertFalse(cs.existe(abc));
-         //da mesma forma, o teste falha se retornar algo que não null
-        assertNull(u.get(abc));
+        assertTrue(c.existe(cA));
+       //Se for retornado um nulo no método get, este teste falha
+       assertNotNull(c.getCache(coordA));
+       //inexistente
+       //a cache com coordenadas cA2 não existe, se retornar true, o teste falha
+       Coordenadas coordA2 = new Coordenadas(11,4);
+       MicroCache cA2 = new MicroCache(coordA2);
+       assertFalse(c.existe(cA2));
     }
 
     /**
      * Teste de adicionar e remover.
-     * 
-     * Para falhar: comentar o put em add(), ou, remove em remove()
      */
     @Test
-    public void testeAddRemove(){
-        assertFalse(cs.existe(abc));
-        cs.add(new MicroCache(abc));/*inserir abc*/
-        assertTrue(cs.existe(abc));
-        cs.remove(abc);
-        assertFalse(cs.existe(abc));
-    }
+     public void testeAddRemove(){
+         Coordenadas aux = new Coordenadas(1,1);
+         assertFalse(c.existe(aux));
+         
+         Coordenadas coordB = new Coordenadas(3,3);
+         MicroCache cB = new MicroCache(coordB);
+       
+         c.add(cB);
+         
+         assertTrue(c.existe(cB));
+         
+         c.remove(cB);
+         
+         assertFalse(c.existe(cB));
+     }
 
-    /**
+     /**
      * Teste de consulta
-     * 
-     * Para falhar: alterar o return de get() para "return null"
      */
     @Test
-    public void testGet() {
-        Cache n = new Cache(poo);
-        assertNull(cs.get(poo));
-        cs.add(n);
-        Cache n2 = cs.get(poo);
-        assertNotNull(n2);
+     public void testGet() {
+       Coordenadas coordC = new Coordenadas(2,2);
+       MicroCache cC = new MicroCache(coordC);
+       c.add(cC);
+         
+       MicroCache cD = (MicroCache) c.getCache(coordC);
+       assertTrue(c.existe(cD));
     }
-
-    /**
-     * Teste de consulta
-     * 
-     * Para falhar: alterar o return de getCaches() para "return null"
-     */
-    @Test
-    public void testGet() {
-        HashMap<Coordenadas,Cache> a = new HashMap<Coordenadas,Cache>();
-        a=cs.getCaches();
-        assertNotNull(a);
-
-    }
+ 
     /**
      * Teste de clones na consulta
-     * 
-     * Para falhar: comentar o clone em get() e em add()
      */
     @Test
-    public void testClone() {
-        MicroCache n = new MicroCache(abc);/*inserir abc*/
-        cs.add(n);
-        Cache t = cs.get(abc);/*Devolve so 1 cache*/
-        assertNotSame(n,t);
-        assertEquals(n,t);
+     public void testClone() {
+       Coordenadas coordE = new Coordenadas(7,7);
+       MicroCache cE = new MicroCache(coordE);
+       c.add(cE);
+         
+       MicroCache f = (MicroCache) c.getCache(coordE);
+       assertNotSame(cE,f);
+       assertEquals(cE,f); 
     }
-
 }
+
+
