@@ -388,10 +388,11 @@ public class Main
         ois.close();
     }
     public static void saveState(String filename) throws IOException{
-   //      GeoCaching e=new GeoCaching(g.getUtilizadores(), g.getCaches(), g.getCacheReports(),g.getAdmins(),g.getUtilizadoresRegistados().toList(),30,true);
+        GeraEstado g=new GeraEstado();
+        GeoCaching e=new GeoCaching(g.getUtilizadores(), g.getCaches(), g.getCacheReports(),g.getAdmins(),g.getUtilizadoresRegistados().toList(),30,true);
         FileOutputStream fos = new FileOutputStream(filename);
         ObjectOutputStream oos = new ObjectOutputStream(fos);
-        oos.writeObject(c); // Mudar para "e" aqui se quiser dar load ao estado
+        oos.writeObject(e); // Mudar para "e" aqui se quiser dar load ao estado
         oos.close();
     }
     
