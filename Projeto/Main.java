@@ -19,11 +19,12 @@ public class Main
         
         menuInicial(); // Acede ao menu
         
-        out.printf("\nDeseja gravar o estado em ficheiro binário?\n   1 - Sim\n   2 - Não\n");
+        out.printf("\nDeseja gravar o estado em ficheiro binário?\n   1 - Estado Atual\n   2 - Gerar novo estado\n   3 - Não\n");
         optn=sc.nextInt();
-        if(optn==1) {
+        if(optn!=3) {
             out.printf("\nInsira o nome do ficheiro: "); String nome=sc.next();
-            saveState(nome);
+            if(optn==1) saveState(nome);
+            if(optn==2) saveGeneratedState(nome);
         }
         out.printf("\nSaiu da aplicação! Adeus!\n");
     }
@@ -59,24 +60,23 @@ public class Main
         out.printf("\nInsira o seu email: ");
         String email=sc.next();
    
-        if(c.contaExiste(email)) {
-      
+        if(c.contaExiste(email) || c.isAdmin(email)) {
             do {
-                out.printf("Introduza a password: ");
-                String pw =sc.next();
-                if(c.passwordCerta(email,pw)) {
-                   if(c.isAdmin(email)) menuAdmin(email);
-                   else menuUser(email);
-                   break;
-                }
-                else {
-                    out.printf("\nPassword Incorreta!\n");
-                    cicle=1; i++;
-                }
+                    out.printf("Introduza a password: ");
+                    String pw =sc.next();
+                    if(c.passwordCerta(email,pw)) {
+                        if(c.isAdmin(email)) menuAdmin(email);
+                        else menuUser(email);
+                        break;
+                    }
+                    else {
+                        out.printf("\nPassword Incorreta!\n");
+                        cicle=1; i++;
+                    }
             } while(cicle==1 && i<3);
             if(i==3) {
-                email =null ;      // Acesso negado uma vez que falhou as tentativas todas, de volta ao menu principal
-                out.printf("\n\nEsgotou o limite de tentativas!\n\n");
+                    email =null ;      // Acesso negado uma vez que falhou as tentativas todas, de volta ao menu principal
+                    out.printf("\n\nEsgotou o limite de tentativas!\n\n");
             }
         }
         else out.printf("\nNão existe nenhum utilizador com o email dado!\n"); 
@@ -286,7 +286,7 @@ public class Main
         Utilizador u = c.getUtilizador(email);
         do {
             // fazer submenus, menu mycaches com (add remover ver)
-            out.printf("\nOpções de Administrador:\n 1 - Ver reports \n 2 - Remover uma cache\n 3 - Abrir inscrições de evento\n 0 - Sair");
+            out.printf("\nOpções de Administrador:\n 1 - Ver reports \n 2 - Remover uma cache\n 3 - Abrir inscrições de evento\n 0 - Sair\n");
             optn=sc.nextInt();
             switch(optn) {
                 case 1: 
