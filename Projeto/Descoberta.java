@@ -50,7 +50,7 @@ public class Descoberta implements Serializable
     
     public String toString(){
         StringBuilder sb = new StringBuilder();
-        sb.append(time.toString() + ":" + "O utilizador " + utilizador + "descobriu uma " + cacheName + "e fez " + pontos + " pontos!");
+        sb.append(time.toString() + ":" + "O utilizador " + utilizador + " descobriu uma " + cacheName + "e fez " + pontos + " pontos!");
         return sb.toString();
     }
 

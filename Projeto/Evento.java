@@ -23,6 +23,9 @@ public class Evento implements Serializable
     // Contem os resultados gerados pelo Evento
     ArrayList<Descoberta> descobertas = new ArrayList<Descoberta>();
     
+    // Ordenado por ordem decrescente de pontos dos utilizadores, contem o numero de cada cache descoberta 
+    TreeMap<Integer,PontuacaoAux> pontuacao;
+    
     // Data de término de inscriçoes
     Timeline inicio;  
     
@@ -208,6 +211,8 @@ public class Evento implements Serializable
                
             
         }
+        // calcula o vencedor e gera os stats de caches descobertas de cada um
+            pontuacao();
         
              EscreveTXT escreve = new EscreveTXT();
              try{
@@ -230,6 +235,43 @@ public class Evento implements Serializable
         
         this.descobertas.add(descoberta);
     }
+    
+  
+    
+    public void pontuacao(){
+        
+           this.pontuacao = new TreeMap<Integer,PontuacaoAux>(new IntegerComparator());
+           
+           HashMap<String,PontuacaoAux> aux = new HashMap<String,PontuacaoAux>();
+           for(Descoberta elem : this.descobertas)
+           {
+               String email = elem.getEmail();
+               if(aux.containsKey(email))
+               {
+                   PontuacaoAux status = aux.get(email);
+                   status.addPontos(elem.getPontos());
+                   String cacheName = elem.getCacheName();
+                   if ( cacheName.equals("MultiCache")) status.addMultiCache();
+                   if ( cacheName.equals("MicroCache")) status.addMicroCache();
+                   if( cacheName.equals("MisteryCache")) status.addMysteryCache();
+                }
+                else{
+                    PontuacaoAux status = new PontuacaoAux(email);
+                    status.addPontos(elem.getPontos());
+                    String cacheName = elem.getCacheName();
+                    if ( cacheName.equals("MultiCache")) status.addMultiCache();
+                    if ( cacheName.equals("MicroCache")) status.addMicroCache();
+                    if( cacheName.equals("MisteryCache")) status.addMysteryCache();
+                    aux.put(email,status);
+                }
+           }
+           Iterator<Map.Entry<String,PontuacaoAux>> it = aux.entrySet().iterator();
+           while(it.hasNext())
+           {
+               Map.Entry<String,PontuacaoAux> elem = it.next();
+               this.pontuacao.put(elem.getValue().getPontos(),elem.getValue());
+           }
+    }
  
     public String vencedor()
     {
@@ -247,8 +289,25 @@ public class Evento implements Serializable
         sb.append("O vencedor é "+vencedor + " com um total impressionante de "+mPontos +" pontos\n");
         return sb.toString(); 
     }
-    
+   
+      
     public String toString()
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.append("\nLog de descobertas\n"+this.toStringLog());
+        sb.append("Stats dos participantes\n");
+        Iterator<Map.Entry<Integer,PontuacaoAux>> it = this.pontuacao.entrySet().iterator();
+        while(it.hasNext()){
+            Map.Entry<Integer,PontuacaoAux> elem = it.next();
+            PontuacaoAux stats = elem.getValue();
+            sb.append("O participante "+ stats.getEmail() + " fez " + stats.getPontos() + " pontos com:\n");
+            sb.append( stats.getMultiCache() + " MultiCaches " + stats.getMicroCache() + " MicroCache " + stats.getMysteryCache() + " MysteryCache\n");
+        }
+        
+        return sb.toString();
+    }
+    
+    public String toStringLog()
     {
         StringBuilder sb = new StringBuilder();
         for(Descoberta elem : this.descobertas)
@@ -260,7 +319,7 @@ public class Evento implements Serializable
     /**
      *  toString usado para mostrar aos utilizadores o decorrer do evento, ou seja, quando o mesmo ainda não acabou
      */
-    public String toString(Timeline time)
+    public String toStringLog(Timeline time)
     {
         StringBuilder sb = new StringBuilder();
         Iterator<Descoberta> it = descobertas.iterator();
