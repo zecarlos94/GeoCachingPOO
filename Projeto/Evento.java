@@ -72,15 +72,13 @@ public class Evento implements Serializable
         // Obtém e guarda todos os dados simulados pelo evento
         // Em cada iteraçao há sempre um utilizador que descobre uma cache
         
-        System.out.println("Variaveis do utilizador calculadas e colocadas");
-        
         while(  caches_identificadas.size() != numeroCaches   )
         {
             double melhorTempo = Double.MAX_VALUE ;
             Utilizador utilizadorMaisRapido = null;
             Cache cacheIdentificada = null;
             
-            System.out.printf("Caches_identificadas %d, numeroCaches %d\n", caches_identificadas.size(),numeroCaches);
+ 
             
             // Calcula o utilizador que demorou menos tempo a encontrar a Cache
             // Acho q pode ser mudado para arrayList<VariantesUtilizador> esta 
@@ -161,10 +159,11 @@ public class Evento implements Serializable
   
             // Avança no tempo para o momento em que foi descoberta a cache
             
+            if(caches_identificadas.size() < 20){
             System.out.printf("Salto de %f horas\n",melhorTempo);
-            System.out.printf("Antes: %s\n",this.clock_Evento.toString());
+            System.out.printf("Antes: %s\n",this.clock_Evento.toString());}
             this.clock_Evento.jumpTime(melhorTempo); 
-              System.out.printf("Depois: %s\n",this.clock_Evento.toString());
+             if(caches_identificadas.size() < 20) System.out.printf("Depois: %s\n",this.clock_Evento.toString());
             
                
             // Calcular as novas posiçoes dos utilizadores no final de x horas, sendo x = melhorTempo ; 
@@ -204,9 +203,9 @@ public class Evento implements Serializable
             caches_disponiveis.remove( cacheIdentificada );
             
             
-       //     System.out.println("A gerar pontuaçao");
             // Gera a pontuaçao e adiciona a informação da descoberta de cache aos dados do evento
-            
+           // System.out.printf("Tempo saltado: %f",melhorTempo);
+            //System.out.printf("Tempo a gravar: %s",this.clock_Evento.toString());
             this.add( utilizadorMaisRapido , cacheIdentificada , this.clock_Evento); 
                
             
@@ -272,24 +271,6 @@ public class Evento implements Serializable
                this.pontuacao.put(elem.getValue().getPontos(),elem.getValue());
            }
     }
- 
-    public String vencedor()
-    {
-        String vencedor = null;
-        int mPontos = -1;
-        for(Descoberta elem : this.descobertas)
-        {
-            int pontos = elem.getPontos();
-            if(pontos > mPontos){
-                    mPontos = pontos;
-                    vencedor = elem.getEmail();
-            }
-        }
-        StringBuilder sb = new StringBuilder();
-        sb.append("O vencedor é "+vencedor + " com um total impressionante de "+mPontos +" pontos\n");
-        return sb.toString(); 
-    }
-   
       
     public String toString()
     {
@@ -311,8 +292,8 @@ public class Evento implements Serializable
     {
         StringBuilder sb = new StringBuilder();
         for(Descoberta elem : this.descobertas)
-            sb.append(elem+"\n");
-        sb.append(vencedor());
+            sb.append(elem.toString()+"\n");
+        sb.append("\n");
         return sb.toString();
     }
     
@@ -326,7 +307,7 @@ public class Evento implements Serializable
         Comparator<Timeline> ct = new TimelineComparator();
         while(it.hasNext()){
             Descoberta elem = it.next();
-            if(ct.compare( elem.getTime(),time) <= 0 ) sb.append(elem+"\n");
+            if(ct.compare( elem.getTime(),time) <= 0 ) sb.append(elem.toString()+"\n");
         }
         return sb.toString();   
     }

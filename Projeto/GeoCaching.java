@@ -23,10 +23,11 @@ public class GeoCaching implements Serializable
         limiteParticipantes = 0;
     }
     
-    public GeoCaching(Utilizadores users, Caches caches, CacheReports reports,ArrayList<String> registados,int limite,boolean inscricoes) {
+    public GeoCaching(Utilizadores users, Caches caches, CacheReports reports,ArrayList<String> admins,ArrayList<String> registados,int limite,boolean inscricoes) {
         this.utilizadores=new Utilizadores(users);
         this.caches=new Caches(caches);
         this.reports=new CacheReports(reports);
+        this.admins = new ArrayList<String>(admins);
         this.utilizadoresRegistados =registados;
         limiteParticipantes = limite;
         inscricoesAbertas = inscricoes;
@@ -38,6 +39,9 @@ public class GeoCaching implements Serializable
         this.admins=gc.getAdmins();
         this.caches=gc.getCaches();
         this.reports=gc.getReports();
+        this.inscricoesAbertas = gc.getInscricoesAbertas();
+        this.utilizadoresRegistados = gc.getUtilizadoresRegistados();
+        this.limiteParticipantes = gc.getLimiteParticipantes();
     }
     
     public Utilizadores getUtilizadores() {
@@ -60,12 +64,19 @@ public class GeoCaching implements Serializable
         return this.utilizadoresRegistados;
     }
     
+    /**
+     *  Retorna os utilizadores registados em forma de Utilizadores
+     */
     public Utilizadores getUsersR(){
         return this.utilizadores.toUtilizadores(this.utilizadoresRegistados);
     }
     
     public boolean getInscricoesAbertas() {
         return this.inscricoesAbertas;
+    }
+    
+    public int getLimiteParticipantes() {
+        return this.limiteParticipantes;
     }
     
     public void setInscricoesAbertas(boolean bool) {

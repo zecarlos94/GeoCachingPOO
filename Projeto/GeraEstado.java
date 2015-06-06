@@ -22,6 +22,8 @@ public class GeraEstado
     private CacheReports reports;
     
     private Utilizadores utilizadoresRegistados;
+    
+    private ArrayList<String> admins;
 
     public GeraEstado()
     {
@@ -88,6 +90,11 @@ public class GeraEstado
              this.utilizadoresRegistados.add(elem.getValue());
              c++;
          }
+         
+         this.admins = new ArrayList<String>();
+         admins.add("Gustavo");
+         admins.add("Zé");
+         admins.add("Tiago");
          
          EscreveTXT escreve = new EscreveTXT();
          try{
@@ -205,21 +212,22 @@ public class GeraEstado
      public void geraReports()
      {  
          int i=0;
-         boolean over = false;
          Iterator<Map.Entry<Coordenadas,Cache>> it = this.caches.iterator();
-         while(it.hasNext())
+         while(it.hasNext() && i < 5)
          {
             Map.Entry<Coordenadas,Cache> elem = it.next();
             Report report = new Report(elem.getKey() ,"Esta cache está a ser abusada sevaramente");
             this.reports.add(report);
-            if(i==5) {
-                over = true;
-                break;
-            }
+    
             i++;
         }
             
         }
+        
+    public ArrayList<String> getAdmins()
+    {
+        return new ArrayList<String>(this.admins);
+    }
  
     public Utilizadores getUtilizadores()
     {

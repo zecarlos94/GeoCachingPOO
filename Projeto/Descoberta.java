@@ -19,7 +19,7 @@ public class Descoberta implements Serializable
     public Descoberta(Utilizador vencedorRonda,Cache cacheIdentificada,Timeline tempo)
     {
         this.utilizador = vencedorRonda.getEmail();
-        this.time = tempo;
+        this.time = tempo.clone();
         this.cacheName = cacheIdentificada.getClass().getSimpleName();
         if( cacheIdentificada instanceof MultiCache ) pontos = ((MultiCache)cacheIdentificada).getGeoCoinsTotais();
         else if (cacheIdentificada instanceof MicroCache) pontos = (new geraGeoCoins()).getGeoCoins(); // entre 50-100 pontos
@@ -50,6 +50,7 @@ public class Descoberta implements Serializable
     
     public String toString(){
         StringBuilder sb = new StringBuilder();
+       
         sb.append(time.toString() + ":" + "O utilizador " + utilizador + " descobriu uma " + cacheName + "e fez " + pontos + " pontos!");
         return sb.toString();
     }

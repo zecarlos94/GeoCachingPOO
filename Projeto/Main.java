@@ -14,7 +14,7 @@ public class Main
         optn = sc.nextInt();
         if(optn==1) {
             out.printf("\nInsira o nome do ficheiro: "); String nome=sc.next();
-            c=loadState(nome);
+            loadState(nome);
         }
         
         menuInicial(); // Acede ao menu
@@ -374,16 +374,21 @@ public class Main
     /**
      * Funções que guardam e lêem estados em ficheiros binários
      */
+    /*
     public static GeoCaching loadState(String filename) throws IOException, ClassNotFoundException {
         ObjectInputStream ois = new ObjectInputStream (new FileInputStream(filename));
         GeoCaching e = (GeoCaching) ois.readObject();
         ois.close();
         return e;
     }
-    
+    */
+    public static void loadState(String filename) throws IOException, ClassNotFoundException {
+        ObjectInputStream ois = new ObjectInputStream (new FileInputStream(filename));
+        c = new GeoCaching( (GeoCaching) ois.readObject());
+        ois.close();
+    }
     public static void saveState(String filename) throws IOException{
-      //  GeraEstado g=new GeraEstado();
-      //  GeoCaching e=new GeoCaching(g.getUtilizadores(), g.getCaches(), g.getCacheReports(),g.getUtilizadoresRegistados().toList(),30,true);
+   //      GeoCaching e=new GeoCaching(g.getUtilizadores(), g.getCaches(), g.getCacheReports(),g.getAdmins(),g.getUtilizadoresRegistados().toList(),30,true);
         FileOutputStream fos = new FileOutputStream(filename);
         ObjectOutputStream oos = new ObjectOutputStream(fos);
         oos.writeObject(c); // Mudar para "e" aqui se quiser dar load ao estado

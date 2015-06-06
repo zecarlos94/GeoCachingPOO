@@ -11,8 +11,8 @@ comment11.target=java.util.ArrayList\ criaPerguntasRespostas()
 comment12.params=
 comment12.target=java.util.ArrayList\ criaCheckpoints()
 comment13.params=filename
-comment13.target=GeoCaching\ loadState(java.lang.String)
-comment13.text=\n\ Fun\u00E7\u00F5es\ que\ guardam\ e\ l\u00EAem\ estados\ em\ ficheiros\ bin\u00E1rios\n
+comment13.target=void\ loadState(java.lang.String)
+comment13.text=\n\ \ \ \ public\ static\ GeoCaching\ loadState(String\ filename)\ throws\ IOException,\ ClassNotFoundException\ {\n\ \ \ \ \ \ \ \ ObjectInputStream\ ois\ \=\ new\ ObjectInputStream\ (new\ FileInputStream(filename));\n\ \ \ \ \ \ \ \ GeoCaching\ e\ \=\ (GeoCaching)\ ois.readObject();\n\ \ \ \ \ \ \ \ ois.close();\n\ \ \ \ \ \ \ \ return\ e;\n\ \ \ \ }\n
 comment14.params=filename
 comment14.target=void\ saveState(java.lang.String)
 comment15.params=email
