@@ -1,7 +1,0 @@
-#BlueJ class context
-comment0.params=
-comment0.target=GeneroExisteException()
-comment0.text=\n\ COnstrutor\ para\ objetos\ da\ classe\ GeneroExisteException\n
-comment1.params=str
-comment1.target=GeneroExisteException(java.lang.String)
-numComments=2
